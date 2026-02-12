@@ -30,6 +30,25 @@ DINING_HALLS = [
     "twigs-at-oxford",
 ]
 
+HALL_ALIASES = {
+    "bursley": "bursley", "b": "bursley",
+    "east-quad": "east-quad", "eq": "east-quad",
+    "mosher-jordan": "mosher-jordan", "mj": "mosher-jordan",
+    "south-quad": "south-quad", "sq": "south-quad",
+    "twigs-at-oxford": "twigs-at-oxford", "twigs": "twigs-at-oxford",
+}
+
+
+def resolve_hall(name: str) -> str:
+    """Resolve a hall name or alias to the canonical slug."""
+    key = name.lower().strip()
+    if key in HALL_ALIASES:
+        return HALL_ALIASES[key]
+    raise ValueError(
+        f"Unknown hall '{name}'. Options: {', '.join(DINING_HALLS)} "
+        f"(aliases: b, eq, mj, sq, twigs)"
+    )
+
 
 def fetch_menu(hall: str = "bursley", menu_date: str | None = None) -> dict:
     """Fetch and parse the menu for a given dining hall and date.

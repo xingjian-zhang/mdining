@@ -16,7 +16,7 @@ import subprocess
 import sys
 from datetime import datetime
 
-from scraper import DINING_HALLS, fetch_menu
+from scraper import HALL_ALIASES, fetch_menu, resolve_hall
 
 # ANSI colors
 DIM = "\033[2m"
@@ -152,10 +152,11 @@ def main():
         "meal", nargs="?", default=None,
         help="Filter to a meal: breakfast, lunch, or dinner",
     )
+    aliases = ", ".join(f"{a}={v}" for a, v in HALL_ALIASES.items() if a != v)
     parser.add_argument(
-        "-l", "--hall", default="bursley", choices=DINING_HALLS,
+        "-l", "--hall", default="bursley",
         metavar="HALL",
-        help=f"Dining hall (default: bursley). Options: {', '.join(DINING_HALLS)}",
+        help=f"Dining hall (default: bursley). Aliases: {aliases}",
     )
     parser.add_argument(
         "-d", "--date", default=None,
@@ -175,7 +176,13 @@ def main():
     )
     args = parser.parse_args()
 
-    data = fetch_menu(hall=args.hall, menu_date=args.date)
+    try:
+        hall = resolve_hall(args.hall)
+    except ValueError as e:
+        print(str(e), file=sys.stderr)
+        sys.exit(1)
+
+    data = fetch_menu(hall=hall, menu_date=args.date)
 
     if args.meal:
         key = args.meal.lower()
