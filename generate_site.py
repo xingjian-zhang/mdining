@@ -241,25 +241,15 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                                 continue
                             emoji, cn, en, css_class = info
                             if trait.startswith("Carbon Footprint"):
-                                level_cn = {"Low": "低碳", "Medium": "中碳", "High": "高碳"}
-                                level_en = {"Low": "Low", "Medium": "Med", "High": "High"}
-                                lvl = trait.split()[-1]
                                 carbon_html = (
-                                    f'<span class="indicator carbon {css_class}" title="{trait}">'
+                                    f'<span class="indicator {css_class}" title="{trait}">'
                                     f'{emoji}'
-                                    f'<span class="cn">碳{level_cn.get(lvl, lvl)}</span>'
-                                    f'<span class="en">CO₂ {level_en.get(lvl, lvl)}</span>'
                                     f'</span>'
                                 )
                             elif trait.startswith("Nutrient Dense"):
-                                parts = trait.replace("Nutrient Dense ", "").strip()
-                                level_map_cn = {"High": "高", "Medium High": "中高", "Medium": "中", "Low Medium": "中低", "Low": "低"}
-                                level_map_en = {"High": "High", "Medium High": "Med+", "Medium": "Med", "Low Medium": "Med-", "Low": "Low"}
                                 nutri_html = (
-                                    f'<span class="indicator nutri {css_class}" title="{trait}">'
+                                    f'<span class="indicator {css_class}" title="{trait}">'
                                     f'{emoji}'
-                                    f'<span class="cn">营养{level_map_cn.get(parts, parts)}</span>'
-                                    f'<span class="en">Nutri {level_map_en.get(parts, parts)}</span>'
                                     f'</span>'
                                 )
                             else:
