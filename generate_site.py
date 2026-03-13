@@ -36,12 +36,24 @@ MEAL_NAMES_CN = {
     "brunch": "早午餐",
 }
 
-TRAIT_NAMES_CN = {
-    "Vegan": "纯素",
-    "Vegetarian": "素食",
-    "Gluten Free": "无麸质",
-    "Halal": "清真",
-    "Kosher": "犹太洁食",
+TRAIT_DISPLAY = {
+    # trait: (emoji, cn_label, en_label, css_class)
+    "Vegan": ("🌱", "纯素", "Vegan", "vegan"),
+    "Vegetarian": ("🥬", "素食", "Vegetarian", "vegetarian"),
+    "Gluten Free": ("🌾", "无麸质", "GF", "gluten-free"),
+    "Halal": ("☪️", "清真", "Halal", "halal"),
+    "Kosher": ("✡️", "犹太洁食", "Kosher", "kosher"),
+    "Spicy": ("🌶️", "辣", "Spicy", "spicy"),
+    # Carbon footprint — rendered as dot indicator
+    "Carbon Footprint Low": ("🟢", "", "", "carbon-low"),
+    "Carbon Footprint Medium": ("🟡", "", "", "carbon-med"),
+    "Carbon Footprint High": ("🔴", "", "", "carbon-high"),
+    # Nutrient density — rendered as dot indicator
+    "Nutrient Dense High": ("⬆️", "", "", "nutri-high"),
+    "Nutrient Dense Medium High": ("↗️", "", "", "nutri-medhigh"),
+    "Nutrient Dense Medium": ("➡️", "", "", "nutri-med"),
+    "Nutrient Dense Low Medium": ("↘️", "", "", "nutri-lowmed"),
+    "Nutrient Dense Low": ("⬇️", "", "", "nutri-low"),
 }
 
 ALLERGEN_NAMES_CN = {
@@ -219,57 +231,48 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                         name_en = item["name"]
                         name_cn = translations.get(name_en, name_en)
 
-                        # Trait badges
+                        # Trait badges + indicators
                         traits_html = ""
+                        carbon_html = ""
+                        nutri_html = ""
                         for trait in item.get("traits", []):
-                            trait_cn = TRAIT_NAMES_CN.get(trait, trait)
-                            css_class = trait.lower().replace(" ", "-")
-                            traits_html += (
-                                f'<span class="trait-badge {css_class}">'
-                                f'<span class="cn">{trait_cn}</span>'
-                                f'<span class="en">{trait}</span>'
-                                f'</span>'
-                            )
-
-                        # Allergens
-                        allergens_html = ""
-                        if item.get("allergens"):
-                            allergen_items = []
-                            for a in item["allergens"]:
-                                a_cn = ALLERGEN_NAMES_CN.get(a, a)
-                                allergen_items.append(
-                                    f'<span class="allergen">'
-                                    f'<span class="cn">{a_cn}</span>'
-                                    f'<span class="en">{a}</span>'
+                            info = TRAIT_DISPLAY.get(trait)
+                            if not info:
+                                continue
+                            emoji, cn, en, css_class = info
+                            if trait.startswith("Carbon Footprint"):
+                                level_cn = {"Low": "低碳", "Medium": "中碳", "High": "高碳"}
+                                level_en = {"Low": "Low", "Medium": "Med", "High": "High"}
+                                lvl = trait.split()[-1]
+                                carbon_html = (
+                                    f'<span class="indicator carbon {css_class}" title="{trait}">'
+                                    f'{emoji}'
+                                    f'<span class="cn">碳{level_cn.get(lvl, lvl)}</span>'
+                                    f'<span class="en">CO₂ {level_en.get(lvl, lvl)}</span>'
                                     f'</span>'
                                 )
-                            allergens_html = (
-                                f'<div class="allergens">'
-                                f'<span class="allergen-label">'
-                                f'<span class="cn">过敏原:</span>'
-                                f'<span class="en">Allergens:</span>'
-                                f'</span> '
-                                f'{", ".join(allergen_items)}'
-                                f'</div>'
-                            )
-
-                        # Nutrition (collapsible)
-                        nutrition_html = ""
-                        if item.get("nutrition"):
-                            nut = item["nutrition"]
-                            rows = ""
-                            for key, val in nut.items():
-                                label = key.replace("_", " ").title()
-                                rows += f"<tr><td>{label}</td><td>{val}</td></tr>"
-                            nutrition_html = (
-                                f'<details class="nutrition-details">'
-                                f'<summary>'
-                                f'<span class="cn">营养信息</span>'
-                                f'<span class="en">Nutrition</span>'
-                                f'</summary>'
-                                f'<table class="nutrition-table">{rows}</table>'
-                                f'</details>'
-                            )
+                            elif trait.startswith("Nutrient Dense"):
+                                parts = trait.replace("Nutrient Dense ", "").strip()
+                                level_map_cn = {"High": "高", "Medium High": "中高", "Medium": "中", "Low Medium": "中低", "Low": "低"}
+                                level_map_en = {"High": "High", "Medium High": "Med+", "Medium": "Med", "Low Medium": "Med-", "Low": "Low"}
+                                nutri_html = (
+                                    f'<span class="indicator nutri {css_class}" title="{trait}">'
+                                    f'{emoji}'
+                                    f'<span class="cn">营养{level_map_cn.get(parts, parts)}</span>'
+                                    f'<span class="en">Nutri {level_map_en.get(parts, parts)}</span>'
+                                    f'</span>'
+                                )
+                            else:
+                                traits_html += (
+                                    f'<span class="trait-badge {css_class}">'
+                                    f'{emoji}'
+                                    f'<span class="cn">{cn}</span>'
+                                    f'<span class="en">{en}</span>'
+                                    f'</span>'
+                                )
+                        indicators_html = ""
+                        if carbon_html or nutri_html:
+                            indicators_html = f'<div class="indicators">{carbon_html}{nutri_html}</div>'
 
                         trait_data = " ".join(
                             t.lower().replace(" ", "-") for t in item.get("traits", [])
@@ -283,8 +286,7 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             f'</span>'
                             f'<span class="item-traits">{traits_html}</span>'
                             f'</div>'
-                            f'{allergens_html}'
-                            f'{nutrition_html}'
+                            f'{indicators_html}'
                             f'</div>'
                         )
 
@@ -497,54 +499,41 @@ header h1 {{
     border-radius: 12px;
     font-weight: 500;
     white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
 }}
 .trait-badge.vegan {{ background: #d4edda; color: #155724; }}
 .trait-badge.vegetarian {{ background: #d1ecf1; color: #0c5460; }}
 .trait-badge.gluten-free {{ background: #fff3cd; color: #856404; }}
 .trait-badge.halal {{ background: #f8d7da; color: #721c24; }}
 .trait-badge.kosher {{ background: #e2d5f1; color: #4a235a; }}
+.trait-badge.spicy {{ background: #ffe0cc; color: #c0392b; }}
 @media (prefers-color-scheme: dark) {{
     :root:not(.light-theme) .trait-badge.vegan {{ background: #1e3a2a; color: #75d69c; }}
     :root:not(.light-theme) .trait-badge.vegetarian {{ background: #1a3a4a; color: #6ec8db; }}
     :root:not(.light-theme) .trait-badge.gluten-free {{ background: #3a3520; color: #e0c36a; }}
     :root:not(.light-theme) .trait-badge.halal {{ background: #3a1a1a; color: #e87878; }}
     :root:not(.light-theme) .trait-badge.kosher {{ background: #2a1a3a; color: #b088d0; }}
+    :root:not(.light-theme) .trait-badge.spicy {{ background: #3a2010; color: #f0a070; }}
 }}
 .dark-theme .trait-badge.vegan {{ background: #1e3a2a; color: #75d69c; }}
 .dark-theme .trait-badge.vegetarian {{ background: #1a3a4a; color: #6ec8db; }}
 .dark-theme .trait-badge.gluten-free {{ background: #3a3520; color: #e0c36a; }}
 .dark-theme .trait-badge.halal {{ background: #3a1a1a; color: #e87878; }}
 .dark-theme .trait-badge.kosher {{ background: #2a1a3a; color: #b088d0; }}
-.allergens {{
-    font-size: 0.8rem;
-    color: var(--text-secondary);
+.dark-theme .trait-badge.spicy {{ background: #3a2010; color: #f0a070; }}
+.indicators {{
+    display: flex;
+    gap: 10px;
     margin-top: 4px;
-}}
-.allergen-label {{
-    font-weight: 500;
-}}
-.nutrition-details {{
-    margin-top: 6px;
-    font-size: 0.8rem;
-}}
-.nutrition-details summary {{
-    cursor: pointer;
+    font-size: 0.75rem;
     color: var(--text-secondary);
-    font-weight: 500;
 }}
-.nutrition-table {{
-    width: 100%;
-    margin-top: 6px;
-    border-collapse: collapse;
-}}
-.nutrition-table td {{
-    padding: 3px 8px;
-    border-bottom: 1px solid var(--border);
-    font-size: 0.78rem;
-}}
-.nutrition-table td:last-child {{
-    text-align: right;
-    font-weight: 500;
+.indicator {{
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
 }}
 .no-menu {{
     text-align: center;
@@ -707,6 +696,9 @@ body.lang-cn .en {{ display: none !important; }}
     </button>
     <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)">
         <span class="cn">犹太洁食</span><span class="en">Kosher</span>
+    </button>
+    <button class="filter-btn" data-filter="spicy" onclick="toggleFilter(this)">
+        🌶️ <span class="cn">辣</span><span class="en">Spicy</span>
     </button>
 </div>
 
