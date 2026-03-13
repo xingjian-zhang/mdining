@@ -78,10 +78,12 @@ Build a static website (GitHub Pages) that displays all Michigan Dining hall men
 - [x] Print-friendly CSS — hides controls/tabs/filters, shows all halls with headers, removes shadows
 - **Notes:** Items have `data-traits` attribute for JS filtering. Filter buttons are bilingual.
 
-### Task 3.3 — SEO & metadata
-- [ ] Proper `<meta>` tags (charset, viewport, description)
-- [ ] Open Graph tags for social sharing
-- [ ] Favicon
+### Task 3.3 — SEO & metadata ✅
+- [x] Proper `<meta>` tags (charset, viewport, description) — already present from Task 1.3
+- [x] Open Graph tags (og:title, og:description, og:type, og:locale + alternate)
+- [x] Twitter card meta tags
+- [x] Theme-color meta for light/dark modes
+- [x] Inline SVG favicon (🍽️ emoji, no external file needed)
 
 ---
 
@@ -91,6 +93,7 @@ Build a static website (GitHub Pages) that displays all Michigan Dining hall men
 - [x] Chinese translation via Claude CLI working in menu.py
 - [x] Phase 1 complete: `generate_site.py` with concurrent fetching, translation (with cache), and full HTML rendering
 - [x] Phase 2 complete: GitHub Actions workflow with daily cron + manual dispatch, deploys to GitHub Pages
+- [x] Phase 3 complete: Error handling, visual polish, SEO metadata
 
 ## Notes
 - The existing `translate_menu()` in `menu.py` is the reference for how to call Claude CLI for translation

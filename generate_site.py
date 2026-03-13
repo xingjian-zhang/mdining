@@ -337,7 +337,16 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="密歇根大学餐厅每日菜单 - Michigan Dining daily menus in Chinese and English">
 <meta property="og:title" content="密歇根大学餐厅菜单 / Michigan Dining Menus">
-<meta property="og:description" content="每日更新的密歇根大学餐厅菜单，中英双语">
+<meta property="og:description" content="每日更新的密歇根大学餐厅菜单，中英双语 - Daily updated bilingual menus">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="密歇根大学餐厅菜单 / Michigan Dining Menus">
+<meta name="twitter:description" content="每日更新的密歇根大学餐厅菜单，中英双语">
+<meta name="theme-color" content="#0d6efd" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
 <title>密歇根大学餐厅菜单 / Michigan Dining Menus</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
