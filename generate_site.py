@@ -14,7 +14,6 @@ Usage:
 import argparse
 import json
 import os
-import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
@@ -104,59 +103,42 @@ def collect_unique_names(all_menus: list[dict]) -> list[str]:
     return names
 
 
-def translate_batch(names: list[str]) -> dict[str, str]:
-    """Translate a single batch of item names via Claude CLI."""
-    prompt = (
-        "Translate each food/dish name to Chinese (simplified). "
-        "Return ONLY a numbered list with the Chinese translation, one per line, "
-        "same order as input. No pinyin, no explanations.\n\n"
-        + "\n".join(f"{i+1}. {n}" for i, n in enumerate(names))
-    )
-    try:
-        result = subprocess.run(
-            ["claude", "-p", prompt, "--model", "haiku"],
-            capture_output=True, text=True, timeout=60,
-        )
-    except (FileNotFoundError, subprocess.TimeoutExpired) as e:
-        print(f"  Warning: Translation batch failed ({e})", file=sys.stderr)
-        return {}
-
-    if result.returncode != 0:
-        print(f"  Warning: Translation batch failed (exit {result.returncode})", file=sys.stderr)
-        return {}
-
-    translations = {}
-    for line in result.stdout.strip().splitlines():
-        line = line.strip()
-        if not line:
-            continue
-        parts = line.split(".", 1) if "." in line[:5] else line.split("、", 1)
-        if len(parts) == 2:
-            try:
-                idx = int(parts[0].strip()) - 1
-                if 0 <= idx < len(names):
-                    translations[names[idx]] = parts[1].strip()
-            except ValueError:
-                continue
-    return translations
-
-
 def translate_names(names: list[str]) -> dict[str, str]:
-    """Translate item names to Chinese using Claude CLI. Batches large lists."""
+    """Translate item names to Chinese using Google Translate (free)."""
     if not names:
         return {}
 
-    # Batch into groups of 50 to avoid CLI timeouts on large menus
+    try:
+        from deep_translator import GoogleTranslator
+    except ImportError:
+        print("  Warning: deep-translator not installed, skipping translation", file=sys.stderr)
+        return {}
+
+    translator = GoogleTranslator(source="en", target="zh-CN")
+    translations = {}
+    # Google Translate supports batch via translate_batch (max ~5000 chars)
     BATCH_SIZE = 50
-    all_translations = {}
     for i in range(0, len(names), BATCH_SIZE):
         batch = names[i:i + BATCH_SIZE]
         if len(names) > BATCH_SIZE:
-            print(f"    Batch {i // BATCH_SIZE + 1}/{(len(names) + BATCH_SIZE - 1) // BATCH_SIZE}...",
-                  file=sys.stderr)
-        result = translate_batch(batch)
-        all_translations.update(result)
-    return all_translations
+            print(f"    Batch {i // BATCH_SIZE + 1}/{(len(names) + BATCH_SIZE - 1) // BATCH_SIZE}...")
+        try:
+            results = translator.translate_batch(batch)
+            for name, cn in zip(batch, results):
+                if cn:
+                    translations[name] = cn
+        except Exception as e:
+            print(f"  Warning: Translation batch failed ({e})", file=sys.stderr)
+            # Fallback: translate one by one
+            for name in batch:
+                try:
+                    cn = translator.translate(name)
+                    if cn:
+                        translations[name] = cn
+                except Exception:
+                    pass
+
+    return translations
 
 
 def load_translation_cache(cache_path: str) -> dict[str, str]:
