@@ -270,7 +270,8 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                                 )
 
                         trait_data = " ".join(
-                            t.lower().replace(" ", "-") for t in item.get("traits", [])
+                            TRAIT_DISPLAY[t][3] if t in TRAIT_DISPLAY else t.lower().replace(" ", "-")
+                            for t in item.get("traits", [])
                         )
                         items_html += (
                             f'<div class="menu-item" data-traits="{trait_data}">'
@@ -689,22 +690,28 @@ body.lang-cn .en {{ display: none !important; }}
 
 <div class="filter-bar">
     <button class="filter-btn" data-filter="vegan" onclick="toggleFilter(this)">
-        <span class="cn">纯素</span><span class="en">Vegan</span>
+        🌱 <span class="cn">纯素</span><span class="en">Vegan</span>
     </button>
     <button class="filter-btn" data-filter="vegetarian" onclick="toggleFilter(this)">
-        <span class="cn">素食</span><span class="en">Vegetarian</span>
+        🥬 <span class="cn">素食</span><span class="en">Vegetarian</span>
     </button>
     <button class="filter-btn" data-filter="gluten-free" onclick="toggleFilter(this)">
-        <span class="cn">无麸质</span><span class="en">GF</span>
+        🌾 <span class="cn">无麸质</span><span class="en">GF</span>
     </button>
     <button class="filter-btn" data-filter="halal" onclick="toggleFilter(this)">
-        <span class="cn">清真</span><span class="en">Halal</span>
+        ☪️ <span class="cn">清真</span><span class="en">Halal</span>
     </button>
     <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)">
-        <span class="cn">犹太洁食</span><span class="en">Kosher</span>
+        ✡️ <span class="cn">犹太洁食</span><span class="en">Kosher</span>
     </button>
     <button class="filter-btn" data-filter="spicy" onclick="toggleFilter(this)">
         🌶️ <span class="cn">辣</span><span class="en">Spicy</span>
+    </button>
+    <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">
+        🟢 <span class="cn">低碳</span><span class="en">Low CO₂</span>
+    </button>
+    <button class="filter-btn" data-filter="nutri-high" onclick="toggleFilter(this)">
+        ⬆️ <span class="cn">高营养</span><span class="en">High Nutri</span>
     </button>
 </div>
 
