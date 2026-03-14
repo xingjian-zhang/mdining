@@ -643,17 +643,7 @@ footer {{
 .menu-item.filtered-out {{
     display: none;
 }}
-/* Language toggle: default shows Chinese primary */
-body.lang-en .cn {{ display: none; }}
-body.lang-cn .en {{ display: none; }}
-body:not(.lang-en):not(.lang-cn) .item-name .cn {{ display: block; }}
-body:not(.lang-en):not(.lang-cn) .item-name .en {{ display: block; }}
-body:not(.lang-en):not(.lang-cn) .meal-name .en,
-body:not(.lang-en):not(.lang-cn) .hall-tab .en {{
-    font-size: 0.8em;
-    color: var(--text-secondary);
-}}
-/* Default: both languages shown, Chinese primary */
+/* Bilingual: Chinese primary, English secondary */
 .cn {{ display: inline; }}
 .en {{ display: inline; margin-left: 4px; }}
 .item-name .cn {{ display: block; margin-left: 0; }}
@@ -661,8 +651,6 @@ body:not(.lang-en):not(.lang-cn) .hall-tab .en {{
 .meal-name .en {{ margin-left: 6px; font-size: 0.85em; color: var(--text-secondary); }}
 .hall-tab .en {{ display: block; font-size: 0.75em; color: var(--text-secondary); }}
 .hall-tab .cn {{ display: block; }}
-body.lang-en .cn {{ display: none !important; }}
-body.lang-cn .en {{ display: none !important; }}
 @media (max-width: 600px) {{
     body {{ padding: 8px; }}
     header h1 {{ font-size: 1.2rem; }}
@@ -706,12 +694,6 @@ body.lang-cn .en {{ display: none !important; }}
             <span class="toggle-option" data-meal="breakfast" onclick="switchMeal('breakfast')"><span class="cn">早餐</span><span class="en">Breakfast</span></span>
             <span class="toggle-option active" data-meal="lunch" onclick="switchMeal('lunch')"><span class="cn">午餐</span><span class="en">Lunch</span></span>
             <span class="toggle-option" data-meal="dinner" onclick="switchMeal('dinner')"><span class="cn">晚餐</span><span class="en">Dinner</span></span>
-        </div>
-        <div class="toggle-switch" id="lang-toggle" onclick="toggleLang()">
-            <div class="toggle-slider" id="lang-slider"></div>
-            <span class="toggle-option active" data-lang="0">中英</span>
-            <span class="toggle-option" data-lang="1">中文</span>
-            <span class="toggle-option" data-lang="2">EN</span>
         </div>
         <div class="toggle-switch" id="theme-toggle" onclick="toggleTheme()">
             <div class="toggle-slider" id="theme-slider"></div>
@@ -827,22 +809,6 @@ function positionSlider(toggleEl, activeOption, sliderId) {{
     slider.style.left = (activeOption.offsetLeft) + 'px';
 }}
 
-// Language toggle
-let langState = 0; // 0=both, 1=cn-only, 2=en-only
-function updateLangSlider() {{
-    const toggle = document.getElementById('lang-toggle');
-    const options = toggle.querySelectorAll('.toggle-option');
-    options.forEach((o, i) => o.classList.toggle('active', i === langState));
-    positionSlider(toggle, options[langState], 'lang-slider');
-}}
-function toggleLang() {{
-    langState = (langState + 1) % 3;
-    document.body.classList.remove('lang-cn', 'lang-en');
-    if (langState === 1) document.body.classList.add('lang-cn');
-    else if (langState === 2) document.body.classList.add('lang-en');
-    updateLangSlider();
-}}
-updateLangSlider();
 
 // Theme toggle
 let themeState = 0; // 0=light, 1=dark
