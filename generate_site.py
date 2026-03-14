@@ -287,14 +287,12 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             nutri_dot = f'<span class="nutri-dot {nutri_class}" title="{nutri_class}"></span>'
                         items_html += (
                             f'<div class="menu-item{border_class}" data-traits="{trait_data}">'
-                            f'<div class="item-header">'
                             f'<span class="item-name">'
                             f'<span class="cn">{name_cn}</span>'
                             f'<span class="en">{name_en}</span>'
                             f'</span>'
+                            f'{traits_html}'
                             f'{nutri_dot}'
-                            f'</div>'
-                            f'{f"""<div class="item-tags">{traits_html}</div>""" if traits_html else ""}'
                             f'</div>'
                         )
 
@@ -480,89 +478,54 @@ header h1 {{
     margin-bottom: -2px;
 }}
 .meal-section {{
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }}
 .meal-name {{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    padding: 8px 0;
+    padding: 6px 0;
     border-bottom: 1px solid var(--border);
-    margin-bottom: 12px;
-}}
-.station {{
-    margin-bottom: 20px;
-    padding-bottom: 8px;
-    border-bottom: 1px dashed var(--border);
-}}
-.station:last-child {{
-    border-bottom: none;
-}}
-.station-name {{
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--accent);
-    padding: 4px 0;
     margin-bottom: 8px;
 }}
-.menu-item {{
-    background: var(--bg-card);
-    border-radius: var(--radius);
-    padding: 10px 14px;
-    margin-bottom: 6px;
-    box-shadow: var(--shadow);
+.station {{
+    margin-bottom: 12px;
 }}
-.item-header {{
+.station:last-child {{
+    margin-bottom: 0;
+}}
+.station-name {{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--accent);
+    padding: 2px 0;
+    margin-bottom: 2px;
+}}
+.menu-item {{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 8px;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 10px;
+    border-radius: var(--radius);
+}}
+.menu-item:hover {{
+    background: var(--bg-card);
 }}
 .item-name {{
-    font-weight: 500;
-    flex: 1;
+    font-size: 0.9rem;
 }}
 .item-name .en {{
     color: var(--text-secondary);
-    font-size: 0.85rem;
-    font-weight: 400;
-}}
-/* Item tags row */
-.item-tags {{
-    display: flex;
-    gap: 4px;
-    flex-wrap: wrap;
-    margin-top: 4px;
+    font-size: 0.8rem;
+    margin-left: 4px;
 }}
 .trait-badge {{
-    font-size: 0.7rem;
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-weight: 500;
-    white-space: nowrap;
-    display: inline-flex;
-    align-items: center;
-    gap: 3px;
+    font-size: 0.75rem;
+    line-height: 1;
 }}
-.trait-badge.vegan {{ background: #d4edda; color: #155724; }}
-.trait-badge.vegetarian {{ background: #d1ecf1; color: #0c5460; }}
-.trait-badge.gluten-free {{ background: #fff3cd; color: #856404; }}
-.trait-badge.halal {{ background: #f8d7da; color: #721c24; }}
-.trait-badge.kosher {{ background: #e2d5f1; color: #4a235a; }}
-.trait-badge.spicy {{ background: #ffe0cc; color: #c0392b; }}
-@media (prefers-color-scheme: dark) {{
-    :root:not(.light-theme) .trait-badge.vegan {{ background: #1e3a2a; color: #75d69c; }}
-    :root:not(.light-theme) .trait-badge.vegetarian {{ background: #1a3a4a; color: #6ec8db; }}
-    :root:not(.light-theme) .trait-badge.gluten-free {{ background: #3a3520; color: #e0c36a; }}
-    :root:not(.light-theme) .trait-badge.halal {{ background: #3a1a1a; color: #e87878; }}
-    :root:not(.light-theme) .trait-badge.kosher {{ background: #2a1a3a; color: #b088d0; }}
-    :root:not(.light-theme) .trait-badge.spicy {{ background: #3a2010; color: #f0a070; }}
+.trait-badge .cn,
+.trait-badge .en {{
+    display: none;
 }}
-.dark-theme .trait-badge.vegan {{ background: #1e3a2a; color: #75d69c; }}
-.dark-theme .trait-badge.vegetarian {{ background: #1a3a4a; color: #6ec8db; }}
-.dark-theme .trait-badge.gluten-free {{ background: #3a3520; color: #e0c36a; }}
-.dark-theme .trait-badge.halal {{ background: #3a1a1a; color: #e87878; }}
-.dark-theme .trait-badge.kosher {{ background: #2a1a3a; color: #b088d0; }}
-.dark-theme .trait-badge.spicy {{ background: #3a2010; color: #f0a070; }}
 /* Carbon footprint: left border color */
 .menu-item.carbon-low {{ border-left: 3px solid #28a745; }}
 .menu-item.carbon-med {{ border-left: 3px solid #ffc107; }}
@@ -646,8 +609,8 @@ footer {{
 /* Bilingual: Chinese primary, English secondary */
 .cn {{ display: inline; }}
 .en {{ display: inline; margin-left: 4px; }}
-.item-name .cn {{ display: block; margin-left: 0; }}
-.item-name .en {{ display: block; margin-left: 0; }}
+.item-name .cn {{ display: inline; }}
+.item-name .en {{ display: inline; }}
 .meal-name .en {{ margin-left: 6px; font-size: 0.85em; color: var(--text-secondary); }}
 .hall-tab .en {{ display: block; font-size: 0.75em; color: var(--text-secondary); }}
 .hall-tab .cn {{ display: block; }}
