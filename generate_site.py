@@ -862,6 +862,14 @@ def main():
     )
     print(f"  Found {total_items} items across {len(all_menus)} halls.")
 
+    # Save dataset
+    data_dir = "data"
+    os.makedirs(data_dir, exist_ok=True)
+    data_path = os.path.join(data_dir, f"{menu_date}.json")
+    with open(data_path, "w", encoding="utf-8") as f:
+        json.dump(all_menus, f, ensure_ascii=False, indent=2)
+    print(f"  Dataset saved: {data_path}")
+
     # Translate
     translations = {}
     if not args.no_translate:
