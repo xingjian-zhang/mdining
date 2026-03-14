@@ -281,26 +281,6 @@ footer {
     margin-top: 24px;
 }
 /* Meal tabs */
-.meal-tabs {
-    display: flex;
-    justify-content: center;
-    gap: 4px;
-    margin-bottom: 10px;
-}
-.meal-tab {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    color: var(--text-secondary);
-    padding: 6px 18px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-family: inherit;
-    font-weight: 500;
-    transition: all 0.2s;
-}
-.meal-tab:hover { background: var(--bg-hover); }
-.meal-tab.active { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
 .meal-section.meal-hidden { display: none; }
 /* Dietary filter bar */
 .filter-bar {
@@ -392,6 +372,12 @@ body.lang-cn .en { display: none !important; }
     </h1>
     <div class="date-display">Saturday, March 14, 2026</div>
     <div class="controls">
+        <div class="toggle-switch" id="meal-toggle">
+            <div class="toggle-slider" id="meal-slider"></div>
+            <span class="toggle-option" data-meal="breakfast" onclick="switchMeal('breakfast')"><span class="cn">早餐</span><span class="en">Breakfast</span></span>
+            <span class="toggle-option active" data-meal="lunch" onclick="switchMeal('lunch')"><span class="cn">午餐</span><span class="en">Lunch</span></span>
+            <span class="toggle-option" data-meal="dinner" onclick="switchMeal('dinner')"><span class="cn">晚餐</span><span class="en">Dinner</span></span>
+        </div>
         <div class="toggle-switch" id="lang-toggle" onclick="toggleLang()">
             <div class="toggle-slider" id="lang-slider"></div>
             <span class="toggle-option active" data-lang="0">中英</span>
@@ -405,21 +391,6 @@ body.lang-cn .en { display: none !important; }
         </div>
     </div>
 </header>
-
-<div class="meal-tabs">
-    <button class="meal-tab" data-meal="breakfast" onclick="switchMeal(this)">
-        <span class="cn">早餐</span><span class="en">Breakfast</span>
-    </button>
-    <button class="meal-tab active" data-meal="lunch" onclick="switchMeal(this)">
-        <span class="cn">午餐</span><span class="en">Lunch</span>
-    </button>
-    <button class="meal-tab" data-meal="dinner" onclick="switchMeal(this)">
-        <span class="cn">晚餐</span><span class="en">Dinner</span>
-    </button>
-    <button class="meal-tab" data-meal="all" onclick="switchMeal(this)">
-        <span class="cn">全部</span><span class="en">All</span>
-    </button>
-</div>
 
 <details class="filter-panel">
     <summary class="filter-toggle"><span class="cn">筛选</span><span class="en">Filter</span></summary>
@@ -454,8 +425,8 @@ body.lang-cn .en { display: none !important; }
 </main>
 
 <footer>
-    <span class="cn">最后更新: 2026-03-14 15:13</span>
-    <span class="en">Last updated: 2026-03-14 15:13</span>
+    <span class="cn">最后更新: 2026-03-14 15:23</span>
+    <span class="en">Last updated: 2026-03-14 15:23</span>
 </footer>
 
 <script>
@@ -479,24 +450,31 @@ document.querySelectorAll('.hall-tab').forEach(tab => {
     });
 });
 
-// Meal tab switching
+// Meal toggle switching
 let activeMeal = 'lunch';
-function switchMeal(btn) {
-    document.querySelectorAll('.meal-tab').forEach(t => t.classList.remove('active'));
-    btn.classList.add('active');
-    activeMeal = btn.dataset.meal;
+function updateMealSlider() {
+    const toggle = document.getElementById('meal-toggle');
+    const options = toggle.querySelectorAll('.toggle-option');
+    options.forEach(o => o.classList.toggle('active', o.dataset.meal === activeMeal));
+    const active = toggle.querySelector('.toggle-option.active');
+    if (active) positionSlider(toggle, active, 'meal-slider');
+}
+function switchMeal(meal) {
+    activeMeal = meal;
     document.querySelectorAll('.meal-section').forEach(el => {
-        if (activeMeal === 'all' || el.dataset.meal === activeMeal) {
+        if (el.dataset.meal === activeMeal) {
             el.classList.remove('meal-hidden');
         } else {
             el.classList.add('meal-hidden');
         }
     });
+    updateMealSlider();
 }
 // Default to lunch on load
 document.querySelectorAll('.meal-section').forEach(el => {
     if (el.dataset.meal !== 'lunch') el.classList.add('meal-hidden');
 });
+updateMealSlider();
 
 // Dietary filter toggles
 let activeFilters = new Set();
