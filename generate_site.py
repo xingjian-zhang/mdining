@@ -244,6 +244,8 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
             for meal_key, stations in menu["meals"].items():
                 meal_cn = MEAL_NAMES_CN.get(meal_key, meal_key.title())
                 meal_en = meal_key.title()
+                # Normalize brunch to lunch tab so it's visible on weekends
+                tab_key = "lunch" if meal_key == "brunch" else meal_key
 
                 stations_html = ""
                 for station_name, items in stations.items():
@@ -309,7 +311,7 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                     )
 
                 meals_html += (
-                    f'<div class="meal-section" data-meal="{meal_key}">'
+                    f'<div class="meal-section" data-meal="{tab_key}">'
                     f'<h3 class="meal-name">'
                     f'<span class="cn">{meal_cn}</span>'
                     f'<span class="en">{meal_en}</span>'
