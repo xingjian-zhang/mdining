@@ -274,13 +274,14 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             TRAIT_DISPLAY[t][3] if t in TRAIT_DISPLAY else t.lower().replace(" ", "-")
                             for t in item.get("traits", [])
                         )
+                        items_wrap = f'<span class="item-traits">{traits_html}</span>' if traits_html else ''
                         items_html += (
                             f'<div class="menu-item" data-traits="{trait_data}">'
                             f'<span class="item-name">'
                             f'<span class="cn">{name_cn}</span>'
                             f'<span class="en">{name_en}</span>'
                             f'</span>'
-                            f'{traits_html}'
+                            f'{items_wrap}'
                             f'</div>'
                         )
 
@@ -482,18 +483,21 @@ header h1 {{
     margin-bottom: 0;
 }}
 .station-name {{
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 0.85rem;
+    font-weight: 600;
     color: var(--accent);
-    padding: 2px 0;
-    margin-bottom: 2px;
+    padding: 4px 0 2px;
+    margin-bottom: 0;
+    letter-spacing: 0.02em;
 }}
 .menu-item {{
     display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 3px 10px;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    gap: 4px;
+    padding: 2px 10px;
     border-radius: var(--radius);
+    line-height: 1.6;
 }}
 .menu-item:hover {{
     background: var(--bg-card);
@@ -505,6 +509,12 @@ header h1 {{
     color: var(--text-secondary);
     font-size: 0.8rem;
     margin-left: 4px;
+}}
+.item-traits {{
+    display: inline-flex;
+    gap: 1px;
+    flex-shrink: 0;
+    white-space: nowrap;
 }}
 .trait-badge {{
     font-size: 0.75rem;
@@ -588,11 +598,15 @@ footer {{
 .hall-tab .cn {{ display: block; }}
 @media (max-width: 600px) {{
     body {{ padding: 8px; }}
-    header h1 {{ font-size: 1.2rem; }}
-    .hall-tab {{ padding: 6px 10px; font-size: 0.8rem; }}
-    .menu-item {{ padding: 8px 10px; }}
-    .item-header {{ flex-direction: column; }}
-    .item-traits {{ margin-top: 4px; }}
+    header h1 {{ font-size: 1.1rem; }}
+    .controls {{ flex-wrap: wrap; justify-content: center; }}
+    .hall-tab {{ padding: 4px 8px; font-size: 0.75rem; }}
+    .hall-tab .en {{ font-size: 0.65em; }}
+    .menu-item {{ padding: 2px 6px; gap: 3px; }}
+    .item-name {{ font-size: 0.82rem; }}
+    .item-name .en {{ font-size: 0.75rem; }}
+    .station-name {{ font-size: 0.8rem; }}
+    .meal-name {{ font-size: 1rem; }}
 }}
 @media print {{
     .controls, .toggle-btn, .filter-bar, .hall-tabs {{ display: none; }}
