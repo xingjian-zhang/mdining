@@ -45,15 +45,15 @@ TRAIT_DISPLAY = {
     "Kosher": ("✡️", "犹太洁食", "Kosher", "kosher"),
     "Spicy": ("🌶️", "辣", "Spicy", "spicy"),
     # Carbon footprint — rendered as dot indicator
-    "Carbon Footprint Low": ("🟢", "", "", "carbon-low"),
-    "Carbon Footprint Medium": ("🟡", "", "", "carbon-med"),
-    "Carbon Footprint High": ("🔴", "", "", "carbon-high"),
+    "Carbon Footprint Low": ("🌿", "低碳", "Low CO₂", "carbon-low"),
+    "Carbon Footprint Medium": ("", "", "", "carbon-med"),
+    "Carbon Footprint High": ("🔥", "高碳", "High CO₂", "carbon-high"),
     # Nutrient density — rendered as dot indicator
-    "Nutrient Dense High": ("⬆️", "", "", "nutri-high"),
-    "Nutrient Dense Medium High": ("↗️", "", "", "nutri-medhigh"),
-    "Nutrient Dense Medium": ("➡️", "", "", "nutri-med"),
-    "Nutrient Dense Low Medium": ("↘️", "", "", "nutri-lowmed"),
-    "Nutrient Dense Low": ("⬇️", "", "", "nutri-low"),
+    "Nutrient Dense High": ("⭐", "高营养", "Nutritious", "nutri-high"),
+    "Nutrient Dense Medium High": ("⭐", "高营养", "Nutritious", "nutri-medhigh"),
+    "Nutrient Dense Medium": ("", "", "", "nutri-med"),
+    "Nutrient Dense Low Medium": ("", "", "", "nutri-lowmed"),
+    "Nutrient Dense Low": ("", "", "", "nutri-low"),
 }
 
 STATION_NAMES_CN = {
@@ -254,45 +254,33 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                         name_en = item["name"]
                         name_cn = translations.get(name_en, name_en)
 
-                        # Separate dietary tags from carbon/nutrient
                         traits_html = ""
-                        carbon_class = ""
-                        nutri_class = ""
                         for trait in item.get("traits", []):
                             info = TRAIT_DISPLAY.get(trait)
                             if not info:
                                 continue
                             emoji, cn, en, css_class = info
-                            if trait.startswith("Carbon Footprint"):
-                                carbon_class = css_class
-                            elif trait.startswith("Nutrient Dense"):
-                                nutri_class = css_class
-                            else:
-                                traits_html += (
-                                    f'<span class="trait-badge {css_class}">'
-                                    f'{emoji}'
-                                    f'<span class="cn">{cn}</span>'
-                                    f'<span class="en">{en}</span>'
-                                    f'</span>'
-                                )
+                            if not emoji:
+                                continue
+                            traits_html += (
+                                f'<span class="trait-badge {css_class}">'
+                                f'{emoji}'
+                                f'<span class="cn">{cn}</span>'
+                                f'<span class="en">{en}</span>'
+                                f'</span>'
+                            )
 
                         trait_data = " ".join(
                             TRAIT_DISPLAY[t][3] if t in TRAIT_DISPLAY else t.lower().replace(" ", "-")
                             for t in item.get("traits", [])
                         )
-                        # Left border = carbon color, right dot = nutrient
-                        border_class = f" {carbon_class}" if carbon_class else ""
-                        nutri_dot = ""
-                        if nutri_class:
-                            nutri_dot = f'<span class="nutri-dot {nutri_class}" title="{nutri_class}"></span>'
                         items_html += (
-                            f'<div class="menu-item{border_class}" data-traits="{trait_data}">'
+                            f'<div class="menu-item" data-traits="{trait_data}">'
                             f'<span class="item-name">'
                             f'<span class="cn">{name_cn}</span>'
                             f'<span class="en">{name_en}</span>'
                             f'</span>'
                             f'{traits_html}'
-                            f'{nutri_dot}'
                             f'</div>'
                         )
 
@@ -526,22 +514,6 @@ header h1 {{
 .trait-badge .en {{
     display: none;
 }}
-/* Carbon footprint: left border color */
-.menu-item.carbon-low {{ border-left: 3px solid #28a745; }}
-.menu-item.carbon-med {{ border-left: 3px solid #ffc107; }}
-.menu-item.carbon-high {{ border-left: 3px solid #dc3545; }}
-/* Nutrient density dot */
-.nutri-dot {{
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    margin-top: 6px;
-}}
-.nutri-dot.nutri-high {{ background: #28a745; }}
-.nutri-dot.nutri-medhigh {{ background: #5cb85c; }}
-.nutri-dot.nutri-med {{ background: #aaa; }}
-.nutri-dot.nutri-lowmed {{ background: #f0ad4e; }}
-.nutri-dot.nutri-low {{ background: #dc3545; }}
 /* Collapsible filter panel */
 .filter-panel {{
     text-align: center;
