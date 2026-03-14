@@ -414,18 +414,39 @@ header h1 {{
     gap: 8px;
     margin: 12px 0;
 }}
-.toggle-btn {{
+.toggle-switch {{
+    position: relative;
+    display: flex;
+    align-items: center;
     background: var(--bg-card);
     border: 1px solid var(--border);
-    color: var(--text);
-    padding: 6px 14px;
     border-radius: 20px;
+    padding: 2px;
     cursor: pointer;
-    font-size: 0.85rem;
-    transition: all 0.2s;
+    font-size: 0.8rem;
+    user-select: none;
+    transition: background 0.2s;
 }}
-.toggle-btn:hover {{
+.toggle-switch .toggle-option {{
+    padding: 4px 10px;
+    border-radius: 16px;
+    transition: all 0.25s;
+    color: var(--text-secondary);
+    z-index: 1;
+    white-space: nowrap;
+}}
+.toggle-switch .toggle-option.active {{
+    color: var(--text);
+    font-weight: 600;
+}}
+.toggle-switch .toggle-slider {{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: calc(100% - 4px);
+    border-radius: 16px;
     background: var(--bg-hover);
+    transition: all 0.25s ease;
 }}
 .hall-tabs {{
     display: flex;
@@ -700,8 +721,17 @@ body.lang-cn .en {{ display: none !important; }}
     </h1>
     <div class="date-display">{date_display}</div>
     <div class="controls">
-        <button class="toggle-btn" id="lang-toggle" onclick="toggleLang()">EN / 中文</button>
-        <button class="toggle-btn" id="theme-toggle" onclick="toggleTheme()">🌙 / ☀️</button>
+        <div class="toggle-switch" id="lang-toggle" onclick="toggleLang()">
+            <div class="toggle-slider" id="lang-slider"></div>
+            <span class="toggle-option active" data-lang="0">中英</span>
+            <span class="toggle-option" data-lang="1">中文</span>
+            <span class="toggle-option" data-lang="2">EN</span>
+        </div>
+        <div class="toggle-switch" id="theme-toggle" onclick="toggleTheme()">
+            <div class="toggle-slider" id="theme-slider"></div>
+            <span class="toggle-option active" data-theme="light">☀️</span>
+            <span class="toggle-option" data-theme="dark">🌙</span>
+        </div>
     </div>
 </header>
 
@@ -812,32 +842,62 @@ function applyFilters() {{
     }});
 }}
 
+// Slider positioning helper
+function positionSlider(toggleEl, activeOption, sliderId) {{
+    const slider = document.getElementById(sliderId);
+    slider.style.width = activeOption.offsetWidth + 'px';
+    slider.style.left = (activeOption.offsetLeft) + 'px';
+}}
+
 // Language toggle
 let langState = 0; // 0=both, 1=cn-only, 2=en-only
+function updateLangSlider() {{
+    const toggle = document.getElementById('lang-toggle');
+    const options = toggle.querySelectorAll('.toggle-option');
+    options.forEach((o, i) => o.classList.toggle('active', i === langState));
+    positionSlider(toggle, options[langState], 'lang-slider');
+}}
 function toggleLang() {{
     langState = (langState + 1) % 3;
     document.body.classList.remove('lang-cn', 'lang-en');
     if (langState === 1) document.body.classList.add('lang-cn');
     else if (langState === 2) document.body.classList.add('lang-en');
-    const labels = ['中英', '中文', 'EN'];
-    document.getElementById('lang-toggle').textContent = labels[langState];
+    updateLangSlider();
 }}
+updateLangSlider();
 
 // Theme toggle
+let themeState = 0; // 0=light, 1=dark
+function updateThemeSlider() {{
+    const toggle = document.getElementById('theme-toggle');
+    const options = toggle.querySelectorAll('.toggle-option');
+    options.forEach((o, i) => o.classList.toggle('active', i === themeState));
+    positionSlider(toggle, options[themeState], 'theme-slider');
+}}
 function toggleTheme() {{
     const html = document.documentElement;
     if (html.classList.contains('dark-theme')) {{
         html.classList.remove('dark-theme');
         html.classList.add('light-theme');
+        themeState = 0;
     }} else if (html.classList.contains('light-theme')) {{
         html.classList.remove('light-theme');
         html.classList.add('dark-theme');
+        themeState = 1;
     }} else {{
-        // Auto mode — detect and flip
         const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         html.classList.add(isDark ? 'light-theme' : 'dark-theme');
+        themeState = isDark ? 0 : 1;
     }}
+    updateThemeSlider();
 }}
+// Init theme slider based on current state
+if (document.documentElement.classList.contains('dark-theme') ||
+    (!document.documentElement.classList.contains('light-theme') &&
+     window.matchMedia('(prefers-color-scheme: dark)').matches)) {{
+    themeState = 1;
+}}
+updateThemeSlider();
 </script>
 </body>
 </html>"""

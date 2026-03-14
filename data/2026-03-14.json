@@ -2306,7 +2306,14 @@
             ]
           },
           {
-            "name": "UNIT CHOICE MEAL"
+            "name": "Sunshine Quinoa Salad",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Spicy",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
           }
         ],
         "Halal": [
@@ -2320,7 +2327,7 @@
             ]
           },
           {
-            "name": "Roasted Broccoli",
+            "name": "Shaved Brussel Sprouts w/ Apple",
             "traits": [
               "Gluten Free",
               "Nutrient Dense High",
@@ -2399,14 +2406,6 @@
         ],
         "Wild Fire Maize": [
           {
-            "name": "Hot Shawarma Chicken Sando",
-            "traits": [
-              "Halal",
-              "Nutrient Dense Medium",
-              "Carbon Footprint High"
-            ]
-          },
-          {
             "name": "Beef and Mushroom Blended Burger",
             "traits": [
               "Halal",
@@ -2426,6 +2425,60 @@
         "Two Oceans": [
           {
             "name": "No Service at this Time"
+          }
+        ],
+        "Smoke": [
+          {
+            "name": "Hot Shawarma Chicken Sando",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "King's Hawaiian Bun",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Garlic Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Nashville Hot Oil",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Spicy",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Dill Pickle Chips",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Seasoned Fries",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
           }
         ],
         "Kosher": [
@@ -2459,6 +2512,22 @@
             "name": "Faygo RedPop Cream Cake",
             "traits": [
               "Nutrient Dense Low",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chocolate Chunk Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Pineapple Upside Down Cake",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
               "Carbon Footprint Low"
             ]
           },
