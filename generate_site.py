@@ -647,8 +647,9 @@ footer {{
         <button class="filter-btn" data-filter="halal" onclick="toggleFilter(this)">☪️ <span class="cn">清真</span><span class="en">Halal</span></button>
         <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)">✡️ <span class="cn">犹太洁食</span><span class="en">Kosher</span></button>
         <button class="filter-btn" data-filter="spicy" onclick="toggleFilter(this)">🌶️ <span class="cn">辣</span><span class="en">Spicy</span></button>
-        <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">🟢 <span class="cn">低碳</span><span class="en">Low CO₂</span></button>
-        <button class="filter-btn" data-filter="nutri-high" onclick="toggleFilter(this)">⬆️ <span class="cn">高营养</span><span class="en">Nutri+</span></button>
+        <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">🌿 <span class="cn">低碳</span><span class="en">Low CO₂</span></button>
+        <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)">🔥 <span class="cn">高碳</span><span class="en">High CO₂</span></button>
+        <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)">⭐ <span class="cn">高营养</span><span class="en">Nutritious</span></button>
     </div>
 </details>
 
@@ -732,7 +733,7 @@ function applyFilters() {{
     }}
     document.querySelectorAll('.menu-item').forEach(el => {{
         const traits = el.dataset.traits || '';
-        const match = [...activeFilters].some(f => traits.includes(f));
+        const match = [...activeFilters].some(f => f.split(' ').some(sub => traits.includes(sub)));
         el.classList.toggle('filtered-out', !match);
     }});
 }}
