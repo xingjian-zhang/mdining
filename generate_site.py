@@ -550,16 +550,19 @@ footer {{
 .filter-btn {{
     background: none;
     border: 1.5px solid transparent;
-    padding: 2px 5px;
-    border-radius: 6px;
+    padding: 2px 8px;
+    border-radius: 12px;
     cursor: pointer;
-    font-size: 0.9rem;
-    line-height: 1;
+    font-size: 0.75rem;
+    line-height: 1.4;
     transition: all 0.15s;
     opacity: 0.5;
+    white-space: nowrap;
+    font-family: inherit;
+    color: var(--text-secondary);
 }}
 .filter-btn:hover {{ opacity: 0.8; background: var(--bg-hover); }}
-.filter-btn.active {{ opacity: 1; border-color: var(--accent); background: var(--accent-light); }}
+.filter-btn.active {{ opacity: 1; border-color: var(--accent); color: var(--accent); background: var(--accent-light); }}
 /* Smooth hall content transitions */
 .hall-content {{
     animation: fadeIn 0.2s ease-in;
@@ -633,14 +636,14 @@ footer {{
             <span class="toggle-option" data-theme="dark">🌙</span>
         </div>
         <div class="filter-bar">
-            <button class="filter-btn" data-filter="vegan" onclick="toggleFilter(this)" title="Vegan 纯素">🌱</button>
-            <button class="filter-btn" data-filter="vegetarian" onclick="toggleFilter(this)" title="Vegetarian 素食">🥬</button>
-            <button class="filter-btn" data-filter="gluten-free" onclick="toggleFilter(this)" title="Gluten Free 无麸质">🌾</button>
-            <button class="filter-btn" data-filter="halal" onclick="toggleFilter(this)" title="Halal 清真">☪️</button>
-            <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)" title="Kosher 犹太洁食">✡️</button>
-            <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)" title="Low CO₂ 低碳">🌿</button>
-            <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)" title="High CO₂ 高碳">🔥</button>
-            <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)" title="Nutritious 高营养">⭐</button>
+            <button class="filter-btn" data-filter="vegan" onclick="toggleFilter(this)">🌱 Vegan</button>
+            <button class="filter-btn" data-filter="vegetarian" onclick="toggleFilter(this)">🥬 Veg</button>
+            <button class="filter-btn" data-filter="gluten-free" onclick="toggleFilter(this)">🌾 GF</button>
+            <button class="filter-btn" data-filter="halal" onclick="toggleFilter(this)">☪️ Halal</button>
+            <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)">✡️ Kosher</button>
+            <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">🌿 Low CO₂</button>
+            <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)">🔥 High CO₂</button>
+            <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)">⭐ Nutritious</button>
         </div>
     </div>
 </header>
