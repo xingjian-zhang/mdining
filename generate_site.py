@@ -663,6 +663,7 @@ footer {{
         </div>
     </div>
     <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all" onclick="clearFilters()">All</button>
         <button class="filter-btn" data-filter="vegan" onclick="toggleFilter(this)">Vegan</button>
         <button class="filter-btn" data-filter="vegetarian" onclick="toggleFilter(this)">Vegetarian</button>
         <button class="filter-btn" data-filter="gluten-free" onclick="toggleFilter(this)">Gluten Free</button>
@@ -735,6 +736,17 @@ updateMealSlider();
 
 // Dietary filter toggles
 let activeFilters = new Set();
+const allBtn = () => document.querySelector('.filter-btn[data-filter="all"]');
+function updateAllBtn() {{
+    const btn = allBtn();
+    if (btn) btn.classList.toggle('active', activeFilters.size === 0);
+}}
+function clearFilters() {{
+    activeFilters.clear();
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    updateAllBtn();
+    applyFilters();
+}}
 function toggleFilter(btn) {{
     const filter = btn.dataset.filter;
     if (activeFilters.has(filter)) {{
@@ -744,6 +756,7 @@ function toggleFilter(btn) {{
         activeFilters.add(filter);
         btn.classList.add('active');
     }}
+    updateAllBtn();
     applyFilters();
 }}
 function applyFilters() {{
