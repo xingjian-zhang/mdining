@@ -232,8 +232,7 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
 
         hall_tabs_html += (
             f'<button class="hall-tab{active}" data-hall="{hall}">'
-            f'<span class="cn">{hall_cn}</span>'
-            f'<span class="en">{hall_en}</span>'
+            f'{hall_en}'
             f'</button>\n'
         )
 
@@ -580,8 +579,6 @@ footer {{
 .item-name .cn {{ display: inline; }}
 .item-name .en {{ display: inline; }}
 .meal-name .en {{ margin-left: 6px; font-size: 0.85em; color: var(--text-secondary); }}
-.hall-tab .en {{ display: block; font-size: 0.75em; color: var(--text-secondary); }}
-.hall-tab .cn {{ display: block; }}
 @media (max-width: 600px) {{
     body {{ padding: 8px; }}
     header h1 {{ font-size: 1.1rem; }}
