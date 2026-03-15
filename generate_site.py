@@ -12,11 +12,14 @@ Usage:
 """
 
 import argparse
+import glob
 import json
 import os
 import sys
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 
 from scraper import DINING_HALLS, fetch_menu
 
@@ -55,26 +58,6 @@ TRAIT_DISPLAY = {
     "Nutrient Dense Low": ("", "nutri-low"),
 }
 
-STATION_NAMES_CN = {
-    "Soup": "汤类",
-    "Signature Maize": "招牌 Maize",
-    "Signature Blue": "招牌 Blue",
-    "24 Carrots": "24 Carrots 健康",
-    "Halal": "清真",
-    "Pizziti": "披萨",
-    "Wild Fire Maize": "烧烤",
-    "Deli": "熟食",
-    "MBakery": "烘焙",
-    "World Palate Maize": "世界风味",
-    "World Palate Blue": "世界风味",
-    "Kosher Deli": "犹太熟食",
-    "Fresh Coast": "新鲜海岸",
-    "Blue Garden": "花园沙拉",
-    "Maize Garden": "花园沙拉",
-    "Cereal": "麦片",
-    "Grill": "烧烤",
-    "Breakfast": "早餐",
-}
 
 ALLERGEN_NAMES_CN = {
     "Wheat": "小麦",
@@ -90,7 +73,30 @@ ALLERGEN_NAMES_CN = {
     "Corn": "玉米",
 }
 
+# Keyword rules for meat type detection (checked against lowercased item name)
+MEAT_RULES = [
+    ("Beef", ["beef", "steak", "burger"]),
+    ("Pork", ["pork", "bacon", "ham", "kielbasa", "sausage"]),
+    ("Chicken", ["chicken"]),
+    ("Turkey", ["turkey"]),
+    ("Lamb", ["lamb"]),
+    ("Fish", ["fish", "salmon", "tuna", "cod", "tilapia", "mahi"]),
+    ("Seafood", ["shrimp", "lobster", "crab", "clam", "mussel", "oyster", "scallop", "calamari"]),
+]
+
 SITE_DIR = "site"
+
+
+def detect_meat_type(name: str) -> str | None:
+    """Detect meat type from item name using keyword rules."""
+    low = name.lower()
+    # Exclude false positives
+    if "oyster cracker" in low or "oyster sauce" in low:
+        return None
+    for label, keywords in MEAT_RULES:
+        if any(kw in low for kw in keywords):
+            return label
+    return None
 
 
 def fetch_all_halls(menu_date: str | None = None) -> list[dict]:
@@ -133,6 +139,27 @@ def collect_unique_names(all_menus: list[dict]) -> list[str]:
                         seen.add(name)
                         names.append(name)
     return names
+
+
+def load_all_data_files(data_dir: str = "data") -> list[list[dict]]:
+    """Load all saved JSON data files, returning list of per-date menu lists."""
+    all_days = []
+    for path in sorted(glob.glob(os.path.join(data_dir, "*.json"))):
+        with open(path) as f:
+            all_days.append(json.load(f))
+    return all_days
+
+
+def compute_item_frequency(all_days: list[list[dict]]) -> Counter:
+    """Count how many times each item appears across all saved daily data."""
+    counter = Counter()
+    for day_menus in all_days:
+        for hall_menu in day_menus:
+            for meal_stations in hall_menu.get("meals", {}).values():
+                for items in meal_stations.values():
+                    for item in items:
+                        counter[item["name"]] += 1
+    return counter
 
 
 def translate_names(names: list[str]) -> dict[str, str]:
@@ -215,10 +242,10 @@ def format_hall_name(slug: str) -> str:
 
 
 def render_html(all_menus: list[dict], translations: dict[str, str],
-                menu_date: str) -> str:
+                menu_date: str, item_freq: Counter | None = None) -> str:
     """Render all menu data into a self-contained HTML page."""
     date_display = datetime.strptime(menu_date, "%Y-%m-%d").strftime("%A, %B %-d, %Y")
-    now = datetime.now().strftime("%Y-%m-%d %H:%M")
+    now = datetime.now(ZoneInfo("America/Detroit")).strftime("%Y-%m-%d %H:%M")
 
     # Build hall tabs and content
     hall_tabs_html = ""
@@ -262,10 +289,25 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                                 continue
                             traits_html += f'<span class="trait-badge {css_class}">{label}</span>'
 
+                        # Meat type badge
+                        meat_type = detect_meat_type(name_en)
+                        if meat_type:
+                            css = meat_type.lower()
+                            traits_html += f'<span class="trait-badge meat-{css}">{meat_type}</span>'
+
+                        # Mark rare items (appeared < 2 times in last 14 days)
+                        is_rare = (item_freq is not None
+                                   and len(item_freq) > 0
+                                   and item_freq.get(name_en, 0) < 2)
+                        if is_rare:
+                            traits_html += '<span class="trait-badge rare">Rare</span>'
+
                         trait_data = " ".join(
                             TRAIT_DISPLAY[t][1] if t in TRAIT_DISPLAY else t.lower().replace(" ", "-")
                             for t in item.get("traits", [])
                         )
+                        if is_rare:
+                            trait_data += " rare"
                         items_wrap = f'<span class="item-traits">{traits_html}</span>' if traits_html else ''
                         items_html += (
                             f'<div class="menu-item" data-traits="{trait_data}">'
@@ -277,11 +319,7 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             f'</div>'
                         )
 
-                    station_cn = STATION_NAMES_CN.get(station_name, "")
-                    station_label = (
-                        f'<span class="cn">{station_cn}</span> <span class="en">{station_name}</span>'
-                        if station_cn else station_name
-                    )
+                    station_label = station_name
                     stations_html += (
                         f'<div class="station">'
                         f'<h4 class="station-name">{station_label}</h4>'
@@ -312,18 +350,18 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="密歇根大学餐厅每日菜单 - Michigan Dining daily menus in Chinese and English">
-<meta property="og:title" content="密歇根大学餐厅菜单 / Michigan Dining Menus">
-<meta property="og:description" content="每日更新的密歇根大学餐厅菜单，中英双语 - Daily updated bilingual menus">
+<meta property="og:title" content="Michigan Dining Menus">
+<meta property="og:description" content="Daily updated Michigan Dining menus with Chinese translations">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="密歇根大学餐厅菜单 / Michigan Dining Menus">
-<meta name="twitter:description" content="每日更新的密歇根大学餐厅菜单，中英双语">
+<meta name="twitter:title" content="Michigan Dining Menus">
+<meta name="twitter:description" content="Daily updated Michigan Dining menus with Chinese translations">
 <meta name="theme-color" content="#0d6efd" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
-<title>密歇根大学餐厅菜单 / Michigan Dining Menus</title>
+<title>Michigan Dining Menus</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -640,14 +678,85 @@ footer {{
     .menu-item {{ box-shadow: none; border: 1px solid #ddd; }}
     body {{ max-width: 100%; }}
 }}
+.trait-badge.rare {{ background: hsl(280 60% 93%); color: hsl(280 50% 35%); }}
+.trait-badge[class*="meat-"] {{ background: hsl(15 60% 93%); color: hsl(15 50% 32%); }}
+.dark-theme .trait-badge.rare {{ background: hsl(280 25% 17%); color: hsl(280 40% 70%); }}
+.dark-theme .trait-badge[class*="meat-"] {{ background: hsl(15 25% 16%); color: hsl(15 45% 65%); }}
+@media (prefers-color-scheme: dark) {{
+    :root:not(.light-theme) .trait-badge.rare {{ background: hsl(280 25% 17%); color: hsl(280 40% 70%); }}
+    :root:not(.light-theme) .trait-badge[class*="meat-"] {{ background: hsl(15 25% 16%); color: hsl(15 45% 65%); }}
+}}
+.help-btn {{
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 9999px;
+    color: var(--text-secondary);
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 3px 10px;
+    transition: all 0.15s;
+    white-space: nowrap;
+}}
+.help-btn:hover {{ color: var(--text); border-color: var(--accent); }}
+.help-overlay {{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+}}
+.help-overlay.visible {{ display: flex; }}
+.help-card {{
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 420px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}}
+.help-card h2 {{
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}}
+.help-card p {{
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    line-height: 1.6;
+}}
+.help-card .badge-row {{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+}}
+.help-card .badge-desc {{
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}}
+.help-close {{
+    float: right;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+    font-family: inherit;
+}}
+.help-close:hover {{ color: var(--text); }}
 </style>
 </head>
 <body>
 <header>
-    <h1>
-        <span class="cn">密歇根大学餐厅菜单</span>
-        <span class="en">Michigan Dining Menus</span>
-    </h1>
+    <h1>Michigan Dining Menus</h1>
     <div class="date-display">{date_display}</div>
     <div class="controls">
         <div class="toggle-switch" id="meal-toggle">
@@ -661,6 +770,7 @@ footer {{
             <span class="toggle-option active" data-theme="light">☀️</span>
             <span class="toggle-option" data-theme="dark">🌙</span>
         </div>
+        <button class="help-btn" onclick="document.getElementById('help').classList.add('visible')" aria-label="Help">?</button>
     </div>
     <div class="filter-bar">
         <button class="filter-btn active" data-filter="all" onclick="clearFilters()">All</button>
@@ -672,6 +782,7 @@ footer {{
         <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">Low CO₂</button>
         <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)">High CO₂</button>
         <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)">Nutritious</button>
+        <button class="filter-btn" data-filter="rare" onclick="toggleFilter(this)">Rare</button>
     </div>
 </header>
 
@@ -686,6 +797,43 @@ footer {{
 <footer>
     Last updated: {now}
 </footer>
+
+<div id="help" class="help-overlay" onclick="if(event.target===this)this.classList.remove('visible')">
+<div class="help-card">
+    <button class="help-close" onclick="document.getElementById('help').classList.remove('visible')">&times;</button>
+    <h2>How to use</h2>
+    <p>Browse menus for each dining hall using the tabs. Switch between meals with the toggle at the top.</p>
+    <h2>Filter by diet</h2>
+    <p>Tap the filter buttons to show only items matching your diet. You can combine multiple filters.</p>
+    <h2>Labels</h2>
+    <div class="badge-row">
+        <span class="trait-badge vegan">V</span>
+        <span class="trait-badge vegetarian">VG</span>
+        <span class="trait-badge gluten-free">GF</span>
+        <span class="trait-badge halal">H</span>
+        <span class="trait-badge kosher">K</span>
+    </div>
+    <div class="badge-desc">V = Vegan, VG = Vegetarian, GF = Gluten Free, H = Halal, K = Kosher</div>
+    <div class="badge-row">
+        <span class="trait-badge carbon-low">Low CO&#8322;</span>
+        <span class="trait-badge carbon-high">High CO&#8322;</span>
+        <span class="trait-badge nutri-high">Nutritious</span>
+        <span class="trait-badge spicy">Spicy</span>
+    </div>
+    <div class="badge-desc">Environmental and nutritional indicators from Michigan Dining.</div>
+    <div class="badge-row">
+        <span class="trait-badge meat-beef">Beef</span>
+        <span class="trait-badge meat-pork">Pork</span>
+        <span class="trait-badge meat-chicken">Chicken</span>
+        <span class="trait-badge meat-fish">Fish</span>
+    </div>
+    <div class="badge-desc">Meat type detected from the item name.</div>
+    <div class="badge-row">
+        <span class="trait-badge rare">Rare</span>
+    </div>
+    <div class="badge-desc">Items that rarely appear on the menu (fewer than 2 times in the past 2 weeks). Don't miss these!</div>
+</div>
+</div>
 
 <script>
 // Hall tab switching with fade
@@ -811,6 +959,8 @@ if (document.documentElement.classList.contains('dark-theme') ||
     themeState = 1;
 }}
 updateThemeSlider();
+
+
 </script>
 </body>
 </html>"""
@@ -823,7 +973,7 @@ def main():
     parser.add_argument("--no-translate", action="store_true", help="Skip Chinese translation")
     args = parser.parse_args()
 
-    menu_date = args.date or datetime.now().strftime("%Y-%m-%d")
+    menu_date = args.date or datetime.now(ZoneInfo("America/Detroit")).strftime("%Y-%m-%d")
 
     print(f"Fetching menus for {menu_date} from {len(DINING_HALLS)} halls...")
     all_menus = fetch_all_halls(menu_date)
@@ -844,17 +994,37 @@ def main():
     print(f"  Dataset saved: {data_path}")
 
     # Translate
-    translations = {}
-    if not args.no_translate:
+    cache_path = os.path.join(args.output, "translations_cache.json")
+    if args.no_translate:
+        translations = load_translation_cache(cache_path)
+        print(f"  Translations: {len(translations)} cached (skipping API)")
+    else:
         names = collect_unique_names(all_menus)
         if names:
-            cache_path = os.path.join(args.output, "translations_cache.json")
             translations = translate_with_cache(names, cache_path)
             print(f"  Translations: {len(translations)} / {len(names)} items")
+        else:
+            translations = {}
+
+    # Compute item frequency from historical data (last 14 days)
+    all_days = load_all_data_files("data")
+    item_freq = None
+    if len(all_days) >= 3:
+        # Only use last 14 days of data
+        cutoff = (datetime.now(ZoneInfo("America/Detroit"))
+                  - timedelta(days=14)).strftime("%Y-%m-%d")
+        recent_days = [
+            day for day in all_days
+            if day and day[0].get("date", "") >= cutoff
+        ]
+        item_freq = compute_item_frequency(recent_days) if recent_days else None
+        if item_freq:
+            rare_count = sum(1 for c in item_freq.values() if c < 2)
+            print(f"  Item frequency: {len(item_freq)} items tracked ({rare_count} rare) over {len(recent_days)} days")
 
     # Render HTML
     print("Generating HTML...")
-    html = render_html(all_menus, translations, menu_date)
+    html = render_html(all_menus, translations, menu_date, item_freq=item_freq)
 
     os.makedirs(args.output, exist_ok=True)
     output_path = os.path.join(args.output, "index.html")

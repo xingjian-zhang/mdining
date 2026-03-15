@@ -1,0 +1,2962 @@
+[
+  {
+    "hall": "bursley",
+    "date": "2026-03-15",
+    "meals": {
+      "breakfast": {
+        "Hot Cereal": [
+          {
+            "name": "Oatmeal",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Brown Sugar",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Toast": [
+          {
+            "name": "Potato Tots",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Smoked Kielbasa Polish Sausage",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Scrambled Eggs",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Texas French Toast",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Scrambled Tofu w/ Spinach",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Blueberry Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chocolate Croissant",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cappuccino Chocolate Chip Muffins",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      },
+      "brunch": {
+        "Hot Cereal": [
+          {
+            "name": "Oatmeal",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Brown Sugar",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Toast": [
+          {
+            "name": "Hash Browns",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Smoked Kielbasa Polish Sausage",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Scrambled Eggs",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Texas French Toast",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Scrambled Tofu w/ Spinach",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Soup": [
+          {
+            "name": "Hearty Vegetable Chowder",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Chicken Noodle Soup",
+            "traits": [
+              "Nutrient Dense Low",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Asian Dipping Sauce",
+            "traits": [
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Oyster Crackers",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "Tofu Teriyaki",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Spring Rolls",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Medium Grain Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Chicken Tinga",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Tortilla Chips",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Spicy Black Beans",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Spicy",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Guacamole",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Garlic Cheese Bread",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cheese Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Pepperoni Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Pineapple Fruit Pizza",
+            "traits": [
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Deli": [
+          {
+            "name": "Sandwiches Made to Order"
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Maize and Blue Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cinnamon Sugar Donuts",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Lemon Raspberry Cookie Sandwich",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Blueberry Pie",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chocolate Chunk Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chocolate Pumpkin Bread",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Iced Oatmeal Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      },
+      "dinner": {
+        "Soup": [
+          {
+            "name": "Maize Chowder",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Oyster Crackers",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Signature Maize": [
+          {
+            "name": "General Tso's Beef",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Medium Grain Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chopped Green Onions",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Vegetable Egg Rolls",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "General Tso's Tofu",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Medium Grain Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chopped Green Onions",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Halal BBQ Chicken Thigh",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Baked Sweet Potatoes",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Jalapeno Honey Glaze",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Seasonal Vegetable"
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Garlic Cheese Bread",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cheese Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Pepperoni Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Three Meat Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Medium"
+            ]
+          }
+        ],
+        "Wild Fire Maize": [
+          {
+            "name": "Beef and Mushroom Blended Burger",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Beef & Mushroom Blend Burger w/ American",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Seasoned Curly Fries",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Breads and Rolls": [
+          {
+            "name": "Assorted Rolls",
+            "traits": [
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Deli": [
+          {
+            "name": "Sandwiches Made to Order"
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Cherry Pie",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Iced Oatmeal Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "hall": "east-quad",
+    "date": "2026-03-15",
+    "meals": {
+      "breakfast": {
+        "Hot Cereal": [
+          {
+            "name": "Oatmeal",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Toast": [
+          {
+            "name": "Scrambled Eggs",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Scrambled Tofu w/ Spinach",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Bacon",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Deep Fried Hashbrowns",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Roasted Broccoli",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Belgian Waffles",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Breakfast Cookies with Peanuts",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chocolate Pumpkin Bread",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Blueberry Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chocolate Chocolate Chip Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      },
+      "brunch": {
+        "Hot Cereal": [
+          {
+            "name": "Oatmeal",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Toast": [
+          {
+            "name": "Scrambled Eggs",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Scrambled Tofu w/ Spinach",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Bacon",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Deep Fried Hashbrowns",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Roasted Broccoli",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Belgian Waffles",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Soup": [
+          {
+            "name": "Corn Chowder",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Black Bean Soup",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "Kettle Potato Chips",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Bean and Cheese Tostada",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Fresh Pico De Gallo",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Shredded Iceberg Lettuce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Sour Cream",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Tofu Teriyaki",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Taco Beef",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Tortilla Chips",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Spicy Black Beans",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Spicy",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cebollas Encurtidas",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Guacamole",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Vita": [
+          {
+            "name": "Rotini Pasta",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Marinara Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Pineapple Fruit Pizza",
+            "traits": [
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cheese Bread",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Pepperoni Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cheese Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Wild Fire Maize": [
+          {
+            "name": "Spicy Chicken",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense Medium",
+              "Spicy",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Rice Pilaf",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Roasted Butternut Squash",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Chocolate Chocolate Chip Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Blueberry Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Breakfast Cookies with Peanuts",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chocolate Pumpkin Bread",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Pineapple Upside Down Cake",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Lemon Raspberry Cookie Sandwich",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Faygo RedPop Cream Cake",
+            "traits": [
+              "Nutrient Dense Low",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Iced Oatmeal Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      },
+      "dinner": {
+        "Soup": [
+          {
+            "name": "UNIT CHOICE MEAL"
+          },
+          {
+            "name": "Maize Chowder",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          }
+        ],
+        "Signature Maize": [
+          {
+            "name": "Chicken Marsala",
+            "traits": [
+              "Nutrient Dense High",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Garlicky Mashed Potatoes",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Roasted Broccoli",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "Sukiyaki-Style Udon Bowl",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Bean and Cheese Tostada",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Fresh Pico De Gallo",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Shredded Lettuce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Sour Cream",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Blanco Flatbread Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Ancho Flank Steak",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Baked Sweet Potatoes",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Jalapeno Honey Glaze",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Southwest Salad",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Vita": [
+          {
+            "name": "Rotini Pasta",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Marinara Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Cheese Bread",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Pepperoni Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cheese Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Pineapple Fruit Pizza",
+            "traits": [
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Wild Fire Maize": [
+          {
+            "name": "Beef and Mushroom Blended Burger",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Beef & Mushroom Blend Burger w/ American",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Seasoned Curly Fries",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Chocolate Chunk Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cherry Pie",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Iced Oatmeal Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "hall": "mosher-jordan",
+    "date": "2026-03-15",
+    "meals": {
+      "breakfast": {
+        "Hot Cereal": [
+          {
+            "name": "Oatmeal",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Toast": [
+          {
+            "name": "Roasted Broccoli",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Sweet Potato Wedges",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Scrambled Eggs",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Scrambled Tofu w/ Spinach",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Smoked Kielbasa Polish Sausage",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Chocolate Chip Pancakes",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Kale and Roasted Cauliflower Frittata",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Blueberry Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Apple Cinnamon Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Assorted Mini Scones",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      },
+      "brunch": {
+        "Hot Cereal": [
+          {
+            "name": "Oatmeal",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Toast": [
+          {
+            "name": "Roasted Broccoli",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Sweet Potato Wedges",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Scrambled Eggs",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Scrambled Tofu w/ Spinach",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Smoked Kielbasa Polish Sausage",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Chocolate Chip Pancakes",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Kale and Roasted Cauliflower Frittata",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          }
+        ],
+        "Soup": [
+          {
+            "name": "Vegetable Rice Soup",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "Cavatappi Pasta with Spinach and Peppers",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Marinara Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Taco Chicken",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Spicy Black Beans",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Spicy",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Tortilla Chips",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cebollas Encurtidas",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Pepperoni Flatbread Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cheese Flatbread Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "UNIT CHOICE MEAL"
+          }
+        ],
+        "Deli": [
+          {
+            "name": "Sandwiches Made to Order"
+          }
+        ],
+        "Kings Hawaiian Grill": [
+          {
+            "name": "Beef and Mushroom Blended Burger",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Beef & Mushroom Blended Burger w/ Cheese",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Mojo Grilled Chicken Sandwich",
+            "traits": [
+              "Nutrient Dense Medium High",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Seasoned Curly Fries",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Black Bean Burger w/ King's Hawaiian Bun",
+            "traits": [
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Chocolate Pumpkin Bread",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Iced Oatmeal Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chocolate Chunk Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      },
+      "dinner": {
+        "Soup": [
+          {
+            "name": "Vegetable Rice Soup",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Signature Maize": [
+          {
+            "name": "Huli Huli Chicken",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Basmati Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Roasted Broccoli",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "World Palate Maize": [
+          {
+            "name": "Halal Greek Nachos with Lamb",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense Low",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Chopped Tomatoes",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Sliced Black Olives",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Pepperoncini",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "Sukiyaki-Style Udon Bowl",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chopped Green Onions",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Halal Roast Beef",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Baked Sweet Potatoes",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Roasted Cauliflower",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chimichurri Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Pepperoni Flatbread Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cheese Flatbread Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cheese Flatbread",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          }
+        ],
+        "Deli": [
+          {
+            "name": "Sandwiches Made to Order"
+          }
+        ],
+        "Kings Hawaiian Grill": [
+          {
+            "name": "Beef and Mushroom Blended Burger",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Beef & Mushroom Blended Burger w/ Cheese",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Mojo Grilled Chicken Sandwich",
+            "traits": [
+              "Nutrient Dense Medium High",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Black Bean Burger w/ King's Hawaiian Bun",
+            "traits": [
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Criss Cross Fries",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Cherry Pie",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chocolate Chunk Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "hall": "south-quad",
+    "date": "2026-03-15",
+    "meals": {
+      "breakfast": {
+        "Hot Cereal": [
+          {
+            "name": "Oatmeal",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Toast": [
+          {
+            "name": "Roasted Brussels Sprouts",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Scrambled Tofu w/ Spinach",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Potato Tots",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Scrambled Eggs",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Smoked Kielbasa Polish Sausage",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Texas French Toast",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Apple Cinnamon Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cranberry Orange Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cappuccino Chocolate Chip Muffins",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chocolate Pumpkin Bread",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      },
+      "brunch": {
+        "Salad Bar": [
+          {
+            "name": "Italian White Bean Salad",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Hot Cereal": [
+          {
+            "name": "Oatmeal",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Toast": [
+          {
+            "name": "Roasted Brussels Sprouts",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Scrambled Tofu w/ Spinach",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Potato Tots",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Scrambled Eggs",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Smoked Kielbasa Polish Sausage",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Texas French Toast",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          }
+        ],
+        "Soup": [
+          {
+            "name": "Chicken Tortellini Soup",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Signature Maize": [
+          {
+            "name": "Popcorn Shrimp",
+            "traits": [
+              "Nutrient Dense Low",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Tossed Salad",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Garlic Bread",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Remoulade Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "Vegan Grilled Cheese",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Vegan Tomato Soup",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Kettle Potato Chips",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Crispy Veggie Patty on White Bun",
+            "traits": [
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Spinach Saute",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Tabbouleh Salad",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Chicken Tinga",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Tortilla Chips",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Spicy Black Beans",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Spicy",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cebollas Encurtidas",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Vita": [
+          {
+            "name": "Bowtie Pasta",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Alfredo Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Marinara Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Sabroso": [
+          {
+            "name": "No Service at this Time"
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Cheese Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Pepperoni Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Medium"
+            ]
+          }
+        ],
+        "Wild Fire Maize": [
+          {
+            "name": "Beef and Mushroom Blended Burger",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Turkey Burger on White Bun",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "French Fries",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Two Oceans": [
+          {
+            "name": "No Service at this Time"
+          }
+        ],
+        "Kosher": [
+          {
+            "name": "Tomato Rice Soup",
+            "traits": [
+              "Kosher",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Brown Sugar Oatmeal",
+            "traits": [
+              "Kosher",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Double Chocolate Muffin",
+            "traits": [
+              "Kosher",
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Curry Roasted Carrots",
+            "traits": [
+              "Gluten Free",
+              "Kosher",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Bruschetta Tofu Scramble",
+            "traits": [
+              "Gluten Free",
+              "Kosher",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Herb Roasted Breakfast Potatoes",
+            "traits": [
+              "Gluten Free",
+              "Kosher",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Scrambled Eggs",
+            "traits": [
+              "Gluten Free",
+              "Kosher",
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Romaine Salad",
+            "traits": [
+              "Gluten Free",
+              "Kosher",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Fresh Fruit Cup",
+            "traits": [
+              "Gluten Free",
+              "Kosher",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Breads and Rolls": [
+          {
+            "name": "Focaccia",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Whipped Butter",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Whipped Margarine",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Deli": [
+          {
+            "name": "Sandwiches Made to Order"
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Cranberry Orange Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cappuccino Chocolate Chip Muffins",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Apple Cinnamon Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chocolate Pumpkin Bread",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Iced Oatmeal Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Faygo RedPop Cream Cake",
+            "traits": [
+              "Nutrient Dense Low",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      },
+      "dinner": {
+        "Soup": [
+          {
+            "name": "Chicken Tortellini Soup",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Signature Maize": [
+          {
+            "name": "Chicken Marsala",
+            "traits": [
+              "Nutrient Dense High",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Fresh Steamed Broccoli Florets",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "Sukiyaki-Style Udon Bowl",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Crispy Veggie Patty on White Bun",
+            "traits": [
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Spinach Saute",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Ruby Wild Grain Blend",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Ancho Flank Steak",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Baked Sweet Potatoes",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Southwest Salad",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Jalapeno Honey Glaze",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Vita": [
+          {
+            "name": "Penne Pasta",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Alfredo Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Marinara Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Sabroso": [
+          {
+            "name": "No Service at this Time"
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Cheese Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Pepperoni Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Wild Fire Maize": [
+          {
+            "name": "Beef and Mushroom Blended Burger",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Turkey Burger on White Bun",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "French Fries",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Two Oceans": [
+          {
+            "name": "No Service at this Time"
+          }
+        ],
+        "Kosher": [
+          {
+            "name": "Tomato Rice Soup",
+            "traits": [
+              "Kosher",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chicken Breast Dakota",
+            "traits": [
+              "Kosher",
+              "Nutrient Dense Medium",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Balsamic Marinated Tofu",
+            "traits": [
+              "Gluten Free",
+              "Kosher",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Quinoa",
+            "traits": [
+              "Gluten Free",
+              "Kosher",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Grilled Vegetables",
+            "traits": [
+              "Gluten Free",
+              "Kosher",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Romaine Salad",
+            "traits": [
+              "Gluten Free",
+              "Kosher",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Fresh Fruit Cup",
+            "traits": [
+              "Gluten Free",
+              "Kosher",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Deli": [
+          {
+            "name": "Sandwiches Made to Order"
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Chocolate Chunk Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Sugar Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cherry Pie",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Iced Oatmeal Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "hall": "twigs-at-oxford",
+    "date": "2026-03-15",
+    "meals": {
+      "brunch": {
+        "Hot Cereal": [
+          {
+            "name": "Oatmeal",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Toast": [
+          {
+            "name": "Scrambled Eggs",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Potato Tots",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Carrots",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Scrambled Tofu w/ Spinach",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Cheddar Cheese Strata",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Smoked Kielbasa Polish Sausage",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Carbon Footprint Medium"
+            ]
+          }
+        ],
+        "Soup": [
+          {
+            "name": "Maize Chowder",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          }
+        ],
+        "Signature Maize": [
+          {
+            "name": "Tofu Teriyaki",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Italian Grilled Shrimp",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Popcorn Shrimp",
+            "traits": [
+              "Nutrient Dense Low",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Italian Sausage",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Long Grain Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Taco Chicken",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Spicy Black Beans",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Spicy",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Blueberry Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chocolate Pumpkin Bread",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Iced Oatmeal Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Chocolate Chocolate Chip Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Honey Glazed Donuts",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      },
+      "dinner": {
+        "Soup": [
+          {
+            "name": "Maize Chowder",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ]
+          }
+        ],
+        "Signature Maize": [
+          {
+            "name": "Halal Italian Chicken",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint Medium"
+            ]
+          },
+          {
+            "name": "Vegetable Blend",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Sloppy Joe Slider w/ Cheese Sauce",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Sukiyaki-Style Udon Bowl",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Ancho Flank Steak",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint High"
+            ]
+          },
+          {
+            "name": "Baked Sweet Potatoes",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Jalapeno Honey Glaze",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ]
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Cherry Pie",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          },
+          {
+            "name": "Iced Oatmeal Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ]
+          }
+        ]
+      }
+    }
+  }
+]
