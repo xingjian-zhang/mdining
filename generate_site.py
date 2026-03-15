@@ -524,22 +524,6 @@ header h1 {{
 .trait-badge .en {{
     display: none;
 }}
-/* Collapsible filter panel */
-.filter-panel {{
-    text-align: center;
-    margin-bottom: 8px;
-}}
-.filter-toggle {{
-    cursor: pointer;
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-    font-family: inherit;
-    list-style: none;
-    padding: 4px 0;
-}}
-.filter-toggle::-webkit-details-marker {{ display: none; }}
-.filter-toggle::before {{ content: "▶ "; font-size: 0.7em; }}
-.filter-panel[open] .filter-toggle::before {{ content: "▼ "; }}
 .no-menu {{
     text-align: center;
     padding: 40px 20px;
@@ -556,27 +540,26 @@ footer {{
 }}
 /* Meal tabs */
 .meal-section.meal-hidden {{ display: none; }}
-/* Dietary filter bar */
+/* Filter pills */
 .filter-bar {{
     display: flex;
     justify-content: center;
-    gap: 6px;
+    gap: 3px;
     flex-wrap: wrap;
-    margin-bottom: 12px;
 }}
 .filter-btn {{
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    color: var(--text-secondary);
-    padding: 4px 12px;
-    border-radius: 16px;
+    background: none;
+    border: 1.5px solid transparent;
+    padding: 2px 5px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 0.8rem;
-    font-family: inherit;
-    transition: all 0.2s;
+    font-size: 0.9rem;
+    line-height: 1;
+    transition: all 0.15s;
+    opacity: 0.5;
 }}
-.filter-btn:hover {{ background: var(--bg-hover); }}
-.filter-btn.active {{ border-color: var(--accent); color: var(--accent); background: var(--accent-light); }}
+.filter-btn:hover {{ opacity: 0.8; background: var(--bg-hover); }}
+.filter-btn.active {{ opacity: 1; border-color: var(--accent); background: var(--accent-light); }}
 /* Smooth hall content transitions */
 .hall-content {{
     animation: fadeIn 0.2s ease-in;
@@ -649,23 +632,18 @@ footer {{
             <span class="toggle-option active" data-theme="light">☀️</span>
             <span class="toggle-option" data-theme="dark">🌙</span>
         </div>
+        <div class="filter-bar">
+            <button class="filter-btn" data-filter="vegan" onclick="toggleFilter(this)" title="Vegan 纯素">🌱</button>
+            <button class="filter-btn" data-filter="vegetarian" onclick="toggleFilter(this)" title="Vegetarian 素食">🥬</button>
+            <button class="filter-btn" data-filter="gluten-free" onclick="toggleFilter(this)" title="Gluten Free 无麸质">🌾</button>
+            <button class="filter-btn" data-filter="halal" onclick="toggleFilter(this)" title="Halal 清真">☪️</button>
+            <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)" title="Kosher 犹太洁食">✡️</button>
+            <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)" title="Low CO₂ 低碳">🌿</button>
+            <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)" title="High CO₂ 高碳">🔥</button>
+            <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)" title="Nutritious 高营养">⭐</button>
+        </div>
     </div>
 </header>
-
-<details class="filter-panel">
-    <summary class="filter-toggle"><span class="cn">筛选</span><span class="en">Filter</span></summary>
-    <div class="filter-bar">
-        <button class="filter-btn" data-filter="vegan" onclick="toggleFilter(this)">🌱 <span class="cn">纯素</span><span class="en">Vegan</span></button>
-        <button class="filter-btn" data-filter="vegetarian" onclick="toggleFilter(this)">🥬 <span class="cn">素食</span><span class="en">Veg</span></button>
-        <button class="filter-btn" data-filter="gluten-free" onclick="toggleFilter(this)">🌾 <span class="cn">无麸质</span><span class="en">GF</span></button>
-        <button class="filter-btn" data-filter="halal" onclick="toggleFilter(this)">☪️ <span class="cn">清真</span><span class="en">Halal</span></button>
-        <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)">✡️ <span class="cn">犹太洁食</span><span class="en">Kosher</span></button>
-        <button class="filter-btn" data-filter="spicy" onclick="toggleFilter(this)">🌶️ <span class="cn">辣</span><span class="en">Spicy</span></button>
-        <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">🌿 <span class="cn">低碳</span><span class="en">Low CO₂</span></button>
-        <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)">🔥 <span class="cn">高碳</span><span class="en">High CO₂</span></button>
-        <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)">⭐ <span class="cn">高营养</span><span class="en">Nutritious</span></button>
-    </div>
-</details>
 
 <nav class="hall-tabs">
 {hall_tabs_html}
