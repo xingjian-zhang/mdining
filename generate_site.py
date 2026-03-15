@@ -632,16 +632,16 @@ footer {{
             <span class="toggle-option active" data-theme="light">☀️</span>
             <span class="toggle-option" data-theme="dark">🌙</span>
         </div>
-        <div class="filter-bar">
-            <button class="filter-btn" data-filter="vegan" onclick="toggleFilter(this)">🌱 Vegan</button>
-            <button class="filter-btn" data-filter="vegetarian" onclick="toggleFilter(this)">🥬 Veg</button>
-            <button class="filter-btn" data-filter="gluten-free" onclick="toggleFilter(this)">🌾 GF</button>
-            <button class="filter-btn" data-filter="halal" onclick="toggleFilter(this)">☪️ Halal</button>
-            <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)">✡️ Kosher</button>
-            <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">🌿 Low CO₂</button>
-            <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)">🔥 High CO₂</button>
-            <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)">⭐ Nutritious</button>
-        </div>
+    </div>
+    <div class="filter-bar">
+        <button class="filter-btn" data-filter="vegan" onclick="toggleFilter(this)">🌱 Vegan</button>
+        <button class="filter-btn" data-filter="vegetarian" onclick="toggleFilter(this)">🥬 Veg</button>
+        <button class="filter-btn" data-filter="gluten-free" onclick="toggleFilter(this)">🌾 GF</button>
+        <button class="filter-btn" data-filter="halal" onclick="toggleFilter(this)">☪️ Halal</button>
+        <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)">✡️ Kosher</button>
+        <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">🌿 Low CO₂</button>
+        <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)">🔥 High CO₂</button>
+        <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)">⭐ Nutritious</button>
     </div>
 </header>
 
