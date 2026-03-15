@@ -576,9 +576,9 @@ footer {{
     margin-bottom: 4px;
 }}
 .filter-btn {{
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    padding: 3px 10px;
+    background: transparent;
+    border: 1.5px dashed var(--border);
+    padding: 3px 12px;
     border-radius: 9999px;
     cursor: pointer;
     font-size: 11px;
@@ -589,8 +589,8 @@ footer {{
     font-family: inherit;
     color: var(--text-secondary);
 }}
-.filter-btn:hover {{ background: var(--bg-hover); color: var(--text); }}
-.filter-btn.active {{ border-color: var(--accent); color: var(--accent); background: var(--accent-light); }}
+.filter-btn:hover {{ border-style: solid; background: var(--bg-hover); color: var(--text); }}
+.filter-btn.active {{ border-style: solid; border-color: var(--accent); color: var(--accent); background: var(--accent-light); font-weight: 600; }}
 /* Smooth hall content transitions */
 .hall-content {{
     animation: fadeIn 0.2s ease-in;
