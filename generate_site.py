@@ -38,22 +38,21 @@ MEAL_NAMES_CN = {
 
 TRAIT_DISPLAY = {
     # trait: (emoji, cn_label, en_label, css_class)
-    "Vegan": ("🌱", "纯素", "Vegan", "vegan"),
-    "Vegetarian": ("🥬", "素食", "Vegetarian", "vegetarian"),
-    "Gluten Free": ("🌾", "无麸质", "GF", "gluten-free"),
-    "Halal": ("☪️", "清真", "Halal", "halal"),
-    "Kosher": ("✡️", "犹太洁食", "Kosher", "kosher"),
-    "Spicy": ("🌶️", "辣", "Spicy", "spicy"),
-    # Carbon footprint — rendered as dot indicator
-    "Carbon Footprint Low": ("🌿", "低碳", "Low CO₂", "carbon-low"),
-    "Carbon Footprint Medium": ("", "", "", "carbon-med"),
-    "Carbon Footprint High": ("🔥", "高碳", "High CO₂", "carbon-high"),
-    # Nutrient density — rendered as dot indicator
-    "Nutrient Dense High": ("⭐", "高营养", "Nutritious", "nutri-high"),
-    "Nutrient Dense Medium High": ("⭐", "高营养", "Nutritious", "nutri-medhigh"),
-    "Nutrient Dense Medium": ("", "", "", "nutri-med"),
-    "Nutrient Dense Low Medium": ("", "", "", "nutri-lowmed"),
-    "Nutrient Dense Low": ("", "", "", "nutri-low"),
+    # trait: (label, css_class)
+    "Vegan": ("V", "vegan"),
+    "Vegetarian": ("VG", "vegetarian"),
+    "Gluten Free": ("GF", "gluten-free"),
+    "Halal": ("H", "halal"),
+    "Kosher": ("K", "kosher"),
+    "Spicy": ("Spicy", "spicy"),
+    "Carbon Footprint Low": ("Low CO₂", "carbon-low"),
+    "Carbon Footprint Medium": ("", "carbon-med"),
+    "Carbon Footprint High": ("High CO₂", "carbon-high"),
+    "Nutrient Dense High": ("Nutritious", "nutri-high"),
+    "Nutrient Dense Medium High": ("Nutritious", "nutri-medhigh"),
+    "Nutrient Dense Medium": ("", "nutri-med"),
+    "Nutrient Dense Low Medium": ("", "nutri-lowmed"),
+    "Nutrient Dense Low": ("", "nutri-low"),
 }
 
 STATION_NAMES_CN = {
@@ -258,19 +257,13 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             info = TRAIT_DISPLAY.get(trait)
                             if not info:
                                 continue
-                            emoji, cn, en, css_class = info
-                            if not emoji:
+                            label, css_class = info
+                            if not label:
                                 continue
-                            traits_html += (
-                                f'<span class="trait-badge {css_class}">'
-                                f'{emoji}'
-                                f'<span class="cn">{cn}</span>'
-                                f'<span class="en">{en}</span>'
-                                f'</span>'
-                            )
+                            traits_html += f'<span class="trait-badge {css_class}">{label}</span>'
 
                         trait_data = " ".join(
-                            TRAIT_DISPLAY[t][3] if t in TRAIT_DISPLAY else t.lower().replace(" ", "-")
+                            TRAIT_DISPLAY[t][1] if t in TRAIT_DISPLAY else t.lower().replace(" ", "-")
                             for t in item.get("traits", [])
                         )
                         items_wrap = f'<span class="item-traits">{traits_html}</span>' if traits_html else ''
@@ -336,50 +329,52 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root {{
-    --bg: #ffffff;
-    --bg-card: #f8f9fa;
-    --bg-hover: #e9ecef;
-    --text: #212529;
-    --text-secondary: #6c757d;
-    --border: #dee2e6;
-    --accent: #0d6efd;
-    --accent-light: #e7f1ff;
-    --shadow: 0 1px 3px rgba(0,0,0,0.08);
-    --radius: 8px;
+    --bg: hsl(0 0% 100%);
+    --bg-card: hsl(0 0% 97%);
+    --bg-hover: hsl(0 0% 93%);
+    --text: hsl(0 0% 9%);
+    --text-secondary: hsl(0 0% 45%);
+    --border: hsl(0 0% 90%);
+    --accent: hsl(222 47% 31%);
+    --accent-light: hsl(222 47% 95%);
+    --shadow: 0 1px 2px rgba(0,0,0,0.05);
+    --radius: 6px;
 }}
 @media (prefers-color-scheme: dark) {{
     :root:not(.light-theme) {{
-        --bg: #1a1a2e;
-        --bg-card: #16213e;
-        --bg-hover: #1a2744;
-        --text: #e4e6eb;
-        --text-secondary: #8b949e;
-        --border: #30363d;
-        --accent: #58a6ff;
-        --accent-light: #1c2d41;
-        --shadow: 0 1px 3px rgba(0,0,0,0.3);
+        --bg: hsl(222 47% 7%);
+        --bg-card: hsl(222 47% 11%);
+        --bg-hover: hsl(222 30% 16%);
+        --text: hsl(0 0% 93%);
+        --text-secondary: hsl(0 0% 55%);
+        --border: hsl(222 15% 20%);
+        --accent: hsl(217 92% 76%);
+        --accent-light: hsl(222 47% 15%);
+        --shadow: 0 1px 2px rgba(0,0,0,0.2);
     }}
 }}
 .dark-theme {{
-    --bg: #1a1a2e;
-    --bg-card: #16213e;
-    --bg-hover: #1a2744;
-    --text: #e4e6eb;
-    --text-secondary: #8b949e;
-    --border: #30363d;
-    --accent: #58a6ff;
-    --accent-light: #1c2d41;
-    --shadow: 0 1px 3px rgba(0,0,0,0.3);
+    --bg: hsl(222 47% 7%);
+    --bg-card: hsl(222 47% 11%);
+    --bg-hover: hsl(222 30% 16%);
+    --text: hsl(0 0% 93%);
+    --text-secondary: hsl(0 0% 55%);
+    --border: hsl(222 15% 20%);
+    --accent: hsl(217 92% 76%);
+    --accent-light: hsl(222 47% 15%);
+    --shadow: 0 1px 2px rgba(0,0,0,0.2);
 }}
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
 body {{
-    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Noto Sans SC', sans-serif;
     background: var(--bg);
     color: var(--text);
-    line-height: 1.6;
-    max-width: 900px;
+    line-height: 1.5;
+    max-width: 860px;
     margin: 0 auto;
     padding: 16px;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
 }}
 header {{
     text-align: center;
@@ -406,10 +401,10 @@ header h1 {{
     align-items: center;
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 20px;
+    border-radius: 9999px;
     padding: 2px;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 12px;
     user-select: none;
     transition: background 0.2s;
 }}
@@ -511,17 +506,50 @@ header h1 {{
 }}
 .item-traits {{
     display: inline-flex;
-    gap: 1px;
+    gap: 3px;
     flex-shrink: 0;
     white-space: nowrap;
+    align-items: center;
 }}
 .trait-badge {{
-    font-size: 0.75rem;
+    font-size: 10px;
+    font-weight: 500;
     line-height: 1;
+    padding: 2px 5px;
+    border-radius: 4px;
+    letter-spacing: 0.01em;
 }}
-.trait-badge .cn,
-.trait-badge .en {{
-    display: none;
+.trait-badge.vegan {{ background: hsl(142 72% 94%); color: hsl(142 72% 29%); }}
+.trait-badge.vegetarian {{ background: hsl(173 58% 92%); color: hsl(173 58% 28%); }}
+.trait-badge.gluten-free {{ background: hsl(43 96% 92%); color: hsl(43 96% 30%); }}
+.trait-badge.halal {{ background: hsl(262 60% 93%); color: hsl(262 60% 35%); }}
+.trait-badge.kosher {{ background: hsl(220 60% 93%); color: hsl(220 60% 35%); }}
+.trait-badge.spicy {{ background: hsl(0 72% 93%); color: hsl(0 72% 35%); }}
+.trait-badge.carbon-low {{ background: hsl(152 60% 92%); color: hsl(152 60% 28%); }}
+.trait-badge.carbon-high {{ background: hsl(25 95% 92%); color: hsl(25 95% 30%); }}
+.trait-badge.nutri-high,
+.trait-badge.nutri-medhigh {{ background: hsl(48 96% 91%); color: hsl(48 80% 30%); }}
+.dark-theme .trait-badge.vegan {{ background: hsl(142 30% 16%); color: hsl(142 50% 65%); }}
+.dark-theme .trait-badge.vegetarian {{ background: hsl(173 25% 16%); color: hsl(173 40% 60%); }}
+.dark-theme .trait-badge.gluten-free {{ background: hsl(43 30% 15%); color: hsl(43 60% 60%); }}
+.dark-theme .trait-badge.halal {{ background: hsl(262 25% 17%); color: hsl(262 40% 70%); }}
+.dark-theme .trait-badge.kosher {{ background: hsl(220 25% 17%); color: hsl(220 40% 70%); }}
+.dark-theme .trait-badge.spicy {{ background: hsl(0 30% 16%); color: hsl(0 50% 65%); }}
+.dark-theme .trait-badge.carbon-low {{ background: hsl(152 25% 15%); color: hsl(152 40% 60%); }}
+.dark-theme .trait-badge.carbon-high {{ background: hsl(25 30% 15%); color: hsl(25 60% 60%); }}
+.dark-theme .trait-badge.nutri-high,
+.dark-theme .trait-badge.nutri-medhigh {{ background: hsl(48 30% 15%); color: hsl(48 50% 60%); }}
+@media (prefers-color-scheme: dark) {{
+    :root:not(.light-theme) .trait-badge.vegan {{ background: hsl(142 30% 16%); color: hsl(142 50% 65%); }}
+    :root:not(.light-theme) .trait-badge.vegetarian {{ background: hsl(173 25% 16%); color: hsl(173 40% 60%); }}
+    :root:not(.light-theme) .trait-badge.gluten-free {{ background: hsl(43 30% 15%); color: hsl(43 60% 60%); }}
+    :root:not(.light-theme) .trait-badge.halal {{ background: hsl(262 25% 17%); color: hsl(262 40% 70%); }}
+    :root:not(.light-theme) .trait-badge.kosher {{ background: hsl(220 25% 17%); color: hsl(220 40% 70%); }}
+    :root:not(.light-theme) .trait-badge.spicy {{ background: hsl(0 30% 16%); color: hsl(0 50% 65%); }}
+    :root:not(.light-theme) .trait-badge.carbon-low {{ background: hsl(152 25% 15%); color: hsl(152 40% 60%); }}
+    :root:not(.light-theme) .trait-badge.carbon-high {{ background: hsl(25 30% 15%); color: hsl(25 60% 60%); }}
+    :root:not(.light-theme) .trait-badge.nutri-high,
+    :root:not(.light-theme) .trait-badge.nutri-medhigh {{ background: hsl(48 30% 15%); color: hsl(48 50% 60%); }}
 }}
 .no-menu {{
     text-align: center;
@@ -543,25 +571,26 @@ footer {{
 .filter-bar {{
     display: flex;
     justify-content: center;
-    gap: 3px;
+    gap: 4px;
     flex-wrap: wrap;
+    margin-bottom: 4px;
 }}
 .filter-btn {{
-    background: none;
-    border: 1.5px solid transparent;
-    padding: 2px 8px;
-    border-radius: 12px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 3px 10px;
+    border-radius: 9999px;
     cursor: pointer;
-    font-size: 0.75rem;
+    font-size: 11px;
+    font-weight: 500;
     line-height: 1.4;
     transition: all 0.15s;
-    opacity: 0.5;
     white-space: nowrap;
     font-family: inherit;
     color: var(--text-secondary);
 }}
-.filter-btn:hover {{ opacity: 0.8; background: var(--bg-hover); }}
-.filter-btn.active {{ opacity: 1; border-color: var(--accent); color: var(--accent); background: var(--accent-light); }}
+.filter-btn:hover {{ background: var(--bg-hover); color: var(--text); }}
+.filter-btn.active {{ border-color: var(--accent); color: var(--accent); background: var(--accent-light); }}
 /* Smooth hall content transitions */
 .hall-content {{
     animation: fadeIn 0.2s ease-in;
@@ -634,14 +663,14 @@ footer {{
         </div>
     </div>
     <div class="filter-bar">
-        <button class="filter-btn" data-filter="vegan" onclick="toggleFilter(this)">🌱 Vegan</button>
-        <button class="filter-btn" data-filter="vegetarian" onclick="toggleFilter(this)">🥬 Veg</button>
-        <button class="filter-btn" data-filter="gluten-free" onclick="toggleFilter(this)">🌾 GF</button>
-        <button class="filter-btn" data-filter="halal" onclick="toggleFilter(this)">☪️ Halal</button>
-        <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)">✡️ Kosher</button>
-        <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">🌿 Low CO₂</button>
-        <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)">🔥 High CO₂</button>
-        <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)">⭐ Nutritious</button>
+        <button class="filter-btn" data-filter="vegan" onclick="toggleFilter(this)">Vegan</button>
+        <button class="filter-btn" data-filter="vegetarian" onclick="toggleFilter(this)">Vegetarian</button>
+        <button class="filter-btn" data-filter="gluten-free" onclick="toggleFilter(this)">Gluten Free</button>
+        <button class="filter-btn" data-filter="halal" onclick="toggleFilter(this)">Halal</button>
+        <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)">Kosher</button>
+        <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">Low CO₂</button>
+        <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)">High CO₂</button>
+        <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)">Nutritious</button>
     </div>
 </header>
 
@@ -654,8 +683,7 @@ footer {{
 </main>
 
 <footer>
-    <span class="cn">最后更新: {now}</span>
-    <span class="en">Last updated: {now}</span>
+    Last updated: {now}
 </footer>
 
 <script>
