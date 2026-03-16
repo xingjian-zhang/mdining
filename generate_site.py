@@ -446,6 +446,9 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
     --shadow: 0 1px 2px rgba(0,0,0,0.2);
 }}
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+*, *::before, *::after {{
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}}
 body {{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Noto Sans SC', sans-serif;
     background: var(--bg);
