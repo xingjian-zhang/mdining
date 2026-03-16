@@ -751,10 +751,14 @@ footer {{
     .controls {{ flex-wrap: wrap; justify-content: center; }}
     .hall-tab {{ padding: 4px 8px; font-size: 0.75rem; }}
     .hall-tab .en {{ font-size: 0.65em; }}
-    .menu-item {{ padding: 2px 6px; gap: 2px; flex-wrap: wrap; }}
-    .item-name {{ font-size: 0.82rem; flex-basis: 100%; }}
+    .menu-item {{ padding: 2px 6px; gap: 3px; }}
+    .item-name {{ font-size: 0.82rem; }}
     .item-name .en {{ font-size: 0.75rem; }}
-    .item-traits {{ flex-wrap: wrap; margin-left: 0; }}
+    .trait-badge.carbon-low,
+    .trait-badge.carbon-high,
+    .trait-badge.nutri-high,
+    .trait-badge.nutri-medhigh,
+    .trait-badge.rare {{ display: none; }}
     .station-name {{ font-size: 0.8rem; }}
     .meal-name {{ font-size: 1rem; }}
 }}
