@@ -15,6 +15,7 @@ import argparse
 import glob
 import json
 import os
+import re
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
@@ -83,17 +84,52 @@ MEAT_RULES = [
     ("Seafood", ["shrimp", "lobster", "crab", "clam", "mussel", "oyster", "scallop", "calamari"]),
 ]
 
+# Items where keyword match is a false positive (not actually that meat)
+MEAT_FALSE_POSITIVES = {
+    "hamburger buns", "steak fries", "steak sauce",
+}
+
+def _meat_keyword_match(name_lower: str, keyword: str) -> bool:
+    """Check if keyword matches meaningfully in the item name.
+
+    Matches whole words and compound words (e.g. 'fish' in 'catfish',
+    'burger' in 'cheeseburger', 'steak' in 'cheesesteak') but not
+    'ham' in 'hamburger' where the keyword is a prefix of a larger
+    unrelated word.
+    """
+    # Keywords that are too short and prone to prefix false-positives
+    # are checked with a suffix/whole-word pattern instead.
+    PREFIX_TRAPS = {"ham", "cod"}
+    if keyword in PREFIX_TRAPS:
+        # Must be a whole word: "ham" but not "hamburger"
+        return bool(re.search(r'\b' + re.escape(keyword) + r'\b', name_lower))
+    # For other keywords, allow suffix compounds (catfish, cheeseburger)
+    # but require word boundary at the end
+    return bool(re.search(re.escape(keyword) + r's?\b', name_lower))
+
 SITE_DIR = "site"
 
 
-def detect_meat_type(name: str) -> str | None:
-    """Detect meat type from item name using keyword rules."""
+def detect_meat_type(name: str, traits: list[str] | None = None) -> str | None:
+    """Detect meat type from item name using keyword rules.
+
+    Returns None if the item's API traits indicate Vegan/Vegetarian,
+    or if the name is a known false positive.
+    """
+    # Trust the API: vegan/vegetarian items are not meat
+    if traits:
+        for t in traits:
+            if t in ("Vegan", "Vegetarian"):
+                return None
     low = name.lower()
-    # Exclude false positives
+    # Explicit false-positive list
+    if low in MEAT_FALSE_POSITIVES:
+        return None
+    # Exclude compound-word false positives
     if "oyster cracker" in low or "oyster sauce" in low:
         return None
     for label, keywords in MEAT_RULES:
-        if any(kw in low for kw in keywords):
+        if any(_meat_keyword_match(low, kw) for kw in keywords):
             return label
     return None
 
@@ -303,7 +339,7 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             traits_html += f'<span class="trait-badge {css_class}">{label}</span>'
 
                         # Meat type badge
-                        meat_type = detect_meat_type(name_en)
+                        meat_type = detect_meat_type(name_en, item.get("traits", []))
                         if meat_type:
                             css = meat_type.lower()
                             traits_html += f'<span class="trait-badge meat-{css}">{meat_type}</span>'
