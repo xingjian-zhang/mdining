@@ -482,22 +482,20 @@ footer {
     <div class="filter-bar">
         <button class="filter-btn active" data-filter="all" onclick="clearFilters()">All</button>
         <span class="filter-sep"></span>
+        <button class="filter-btn" data-filter="meat" onclick="toggleFilter(this)">Has Meat</button>
+        <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">Low CO₂</button>
+        <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)">Nutritious</button>
+        <button class="filter-btn" data-filter="rare" onclick="toggleFilter(this)" title="Items that rarely appear on the menu">Rare</button>
+        <span class="filter-sep"></span>
+        <button class="filter-btn" onclick="toggleMoreFilters(this)">More ▾</button>
+    </div>
+    <div class="more-filters" id="more-filters">
         <button class="filter-btn" data-filter="vegan" onclick="toggleFilter(this)">Vegan</button>
         <button class="filter-btn" data-filter="vegetarian" onclick="toggleFilter(this)">Vegetarian</button>
         <button class="filter-btn" data-filter="gluten-free" onclick="toggleFilter(this)">Gluten Free</button>
         <button class="filter-btn" data-filter="halal" onclick="toggleFilter(this)">Halal</button>
         <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)">Kosher</button>
-        <span class="filter-sep"></span>
-        <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">Low CO₂</button>
-        <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)">Nutritious</button>
-        <span class="filter-sep"></span>
-        <button class="filter-btn" data-filter="rare" onclick="toggleFilter(this)" title="Items that rarely appear on the menu">Rare</button>
-        <button class="filter-btn" onclick="toggleMoreFilters(this)">More ▾</button>
-    </div>
-    <div class="more-filters" id="more-filters">
-        <button class="filter-btn" data-filter="meat" onclick="toggleFilter(this)">Has Meat</button>
         <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)">High CO₂</button>
-        <button class="filter-btn" data-filter="hide-common" onclick="toggleHideCommon(this)">Hide Common</button>
     </div>
 </header>
 
@@ -524,7 +522,7 @@ footer {
 </div>
 
 <footer>
-    Last updated: 2026-03-16 11:39
+    Last updated: 2026-03-16 11:42
 </footer>
 
 <div id="help" class="help-overlay" onclick="if(event.target===this)this.classList.remove('visible')">
@@ -533,7 +531,7 @@ footer {
     <h2>How to use</h2>
     <p>Browse menus for each dining hall using the tabs. Switch between meals with the toggle at the top.</p>
     <h2>Filter by diet</h2>
-    <p>Tap filter buttons to show only matching items. Filters are grouped: dietary restrictions, wellness, and discovery. Tap "More" for additional filters like Has Meat, High CO&#8322;, and Hide Common. You can combine multiple filters.</p>
+    <p>Tap filter buttons to show only matching items. Tap "More" for dietary restriction filters (Vegan, Vegetarian, Gluten Free, Halal, Kosher). You can combine multiple filters.</p>
     <h2>Labels</h2>
     <div class="badge-row">
         <span class="trait-badge vegan">V</span>
@@ -613,15 +611,13 @@ updateMealSlider();
 
 // Dietary filter toggles
 let activeFilters = new Set();
-let hideCommon = false;
 const allBtn = () => document.querySelector('.filter-btn[data-filter="all"]');
 function updateAllBtn() {
     const btn = allBtn();
-    if (btn) btn.classList.toggle('active', activeFilters.size === 0 && !hideCommon);
+    if (btn) btn.classList.toggle('active', activeFilters.size === 0);
 }
 function clearFilters() {
     activeFilters.clear();
-    hideCommon = false;
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     updateAllBtn();
     applyFilters();
@@ -644,21 +640,12 @@ function toggleFilter(btn) {
     updateAllBtn();
     applyFilters();
 }
-function toggleHideCommon(btn) {
-    hideCommon = !hideCommon;
-    btn.classList.toggle('active', hideCommon);
-    updateAllBtn();
-    applyFilters();
-}
 function applyFilters() {
     document.querySelectorAll('.menu-item').forEach(el => {
         const traits = el.dataset.traits || '';
         var hidden = false;
         if (activeFilters.size > 0) {
             hidden = ![...activeFilters].some(f => f.split(' ').some(sub => traits.includes(sub)));
-        }
-        if (!hidden && hideCommon && traits.includes('common')) {
-            hidden = true;
         }
         el.classList.toggle('filtered-out', hidden);
     });
