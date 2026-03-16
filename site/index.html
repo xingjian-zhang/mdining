@@ -404,17 +404,26 @@ footer {
     }
 }
 .help-btn {
-    background: none;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 50;
+    background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 9999px;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--text-secondary);
-    font-size: 11px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
     cursor: pointer;
     font-family: inherit;
-    padding: 3px 10px;
+    padding: 0;
     transition: all 0.15s;
-    white-space: nowrap;
+    box-shadow: var(--shadow);
 }
 .help-btn:hover { color: var(--text); border-color: var(--accent); }
 .help-overlay {
@@ -487,8 +496,8 @@ footer {
             <span class="toggle-option active" data-theme="light">☀️</span>
             <span class="toggle-option" data-theme="dark">🌙</span>
         </div>
-        <button class="help-btn" onclick="document.getElementById('help').classList.add('visible')" aria-label="Help">?</button>
     </div>
+    <button class="help-btn" onclick="document.getElementById('help').classList.add('visible')" aria-label="Help">?</button>
     <div class="filter-bar">
         <button class="filter-btn active" data-filter="all" onclick="clearFilters()">All</button>
         <span class="filter-sep"></span>
@@ -532,7 +541,7 @@ footer {
 </div>
 
 <footer>
-    Last updated: 2026-03-16 11:46
+    Last updated: 2026-03-16 11:53
 </footer>
 
 <div id="help" class="help-overlay" onclick="if(event.target===this)this.classList.remove('visible')">
