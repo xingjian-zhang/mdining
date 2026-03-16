@@ -957,6 +957,9 @@ footer {{
         <span class="trait-badge rare">Rare</span>
     </div>
     <div class="badge-desc">Items that rarely appear on the menu (fewer than 2 times in the past 2 weeks). Don't miss these!</div>
+    <h2>About</h2>
+    <p>Not affiliated with Michigan Dining. Menu data is scraped from the UMich dining API and may not always be accurate.</p>
+    <p><a href="https://github.com/xingjian-zhang/mdining" target="_blank" style="color: var(--accent);">GitHub</a></p>
 </div>
 </div>
 
