@@ -329,8 +329,23 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             trait_data += " common"
                         items_wrap = f'<span class="item-traits">{traits_html}</span>' if traits_html else ''
 
+                        # Build full-name tags for popover (css_class:Full Name)
+                        full_tags = []
+                        for trait in item.get("traits", []):
+                            info = TRAIT_DISPLAY.get(trait)
+                            if not info or not info[0]:
+                                continue
+                            full_name = trait if trait in ("Vegan", "Vegetarian", "Halal", "Kosher", "Spicy", "Gluten Free") else info[0]
+                            full_tags.append(f"{info[1]}:{full_name}")
+                        if meat_type:
+                            full_tags.append(f"meat-{meat_type.lower()}:{meat_type}")
+                        if is_rare:
+                            full_tags.append("rare:Rare")
+
                         # Build data attributes for popover
                         stat_attrs = ""
+                        if full_tags:
+                            stat_attrs += f' data-tags="{"|".join(full_tags)}"'
                         if st:
                             stat_attrs += f' data-freq="{st.get("count", 0)}"'
                             stat_attrs += f' data-last="{st.get("last_seen", "")}"'
@@ -750,6 +765,16 @@ footer {{
 .item-popover.visible {{
     display: block;
 }}
+.popover-tags {{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 6px;
+}}
+.popover-tags .trait-badge {{
+    font-size: 11px;
+    padding: 2px 8px;
+}}
 .popover-content .popover-row {{
     white-space: nowrap;
 }}
@@ -1068,12 +1093,23 @@ updateThemeSlider();
     }}
 
     function buildContent(el) {{
+        var tags = el.dataset.tags || '';
         var freq = el.dataset.freq;
-        if (!freq) return '';
+        var rows = [];
+
+        // Tag pills row
+        if (tags) {{
+            var pills = tags.split('|').map(function(t) {{
+                var parts = t.split(':');
+                return '<span class="trait-badge ' + parts[0] + '">' + parts[1] + '</span>';
+            }}).join(' ');
+            rows.push('<div class="popover-tags">' + pills + '</div>');
+        }}
+
+        if (!freq) return rows.join('');
         var days = el.dataset.days || '14';
         var last = el.dataset.last || '';
         var halls = el.dataset.halls ? el.dataset.halls.split(',') : [];
-        var rows = [];
 
         // Frequency row
         rows.push('<div class="popover-row">' + freq + ' times in ' + days + ' days</div>');
