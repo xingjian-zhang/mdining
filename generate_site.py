@@ -16,7 +16,6 @@ import glob
 import json
 import os
 import sys
-from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
@@ -150,16 +149,29 @@ def load_all_data_files(data_dir: str = "data") -> list[list[dict]]:
     return all_days
 
 
-def compute_item_frequency(all_days: list[list[dict]]) -> Counter:
-    """Count how many times each item appears across all saved daily data."""
-    counter = Counter()
+def compute_item_stats(all_days: list[list[dict]]) -> dict[str, dict]:
+    """Compute per-item stats (count, last_seen, halls) from saved daily data."""
+    stats: dict[str, dict] = {}
     for day_menus in all_days:
+        if not day_menus:
+            continue
+        day_date = day_menus[0].get("date", "")
         for hall_menu in day_menus:
+            hall = hall_menu.get("hall", "")
             for meal_stations in hall_menu.get("meals", {}).values():
                 for items in meal_stations.values():
                     for item in items:
-                        counter[item["name"]] += 1
-    return counter
+                        name = item["name"]
+                        if name not in stats:
+                            stats[name] = {"count": 0, "last_seen": "", "halls": set()}
+                        stats[name]["count"] += 1
+                        if day_date > stats[name]["last_seen"]:
+                            stats[name]["last_seen"] = day_date
+                        stats[name]["halls"].add(hall)
+    # Convert sets to sorted lists for JSON-friendliness
+    for v in stats.values():
+        v["halls"] = sorted(v["halls"])
+    return stats
 
 
 def translate_names(names: list[str]) -> dict[str, str]:
@@ -242,7 +254,8 @@ def format_hall_name(slug: str) -> str:
 
 
 def render_html(all_menus: list[dict], translations: dict[str, str],
-                menu_date: str, item_freq: Counter | None = None) -> str:
+                menu_date: str, item_stats: dict | None = None,
+                num_days: int = 0) -> str:
     """Render all menu data into a self-contained HTML page."""
     date_display = datetime.strptime(menu_date, "%Y-%m-%d").strftime("%A, %B %-d, %Y")
     now = datetime.now(ZoneInfo("America/Detroit")).strftime("%Y-%m-%d %H:%M")
@@ -295,10 +308,12 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             css = meat_type.lower()
                             traits_html += f'<span class="trait-badge meat-{css}">{meat_type}</span>'
 
-                        # Mark rare items (appeared < 2 times in last 14 days)
-                        is_rare = (item_freq is not None
-                                   and len(item_freq) > 0
-                                   and item_freq.get(name_en, 0) < 2)
+                        # Look up item stats for popover and rare/common badges
+                        st = (item_stats or {}).get(name_en, {})
+                        has_stats = item_stats is not None and len(item_stats) > 0
+                        is_rare = has_stats and st.get("count", 0) < 2
+                        is_common = (has_stats and num_days > 0
+                                     and st.get("count", 0) / num_days >= 0.6)
                         if is_rare:
                             traits_html += '<span class="trait-badge rare">Rare</span>'
 
@@ -306,11 +321,24 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             TRAIT_DISPLAY[t][1] if t in TRAIT_DISPLAY else t.lower().replace(" ", "-")
                             for t in item.get("traits", [])
                         )
+                        if meat_type:
+                            trait_data += f" meat meat-{meat_type.lower()}"
                         if is_rare:
                             trait_data += " rare"
+                        if is_common:
+                            trait_data += " common"
                         items_wrap = f'<span class="item-traits">{traits_html}</span>' if traits_html else ''
+
+                        # Build data attributes for popover
+                        stat_attrs = ""
+                        if st:
+                            stat_attrs += f' data-freq="{st.get("count", 0)}"'
+                            stat_attrs += f' data-last="{st.get("last_seen", "")}"'
+                            stat_attrs += f' data-halls="{",".join(st.get("halls", []))}"'
+                            stat_attrs += f' data-days="{num_days}"'
+
                         items_html += (
-                            f'<div class="menu-item" data-traits="{trait_data}">'
+                            f'<div class="menu-item" data-traits="{trait_data}"{stat_attrs}>'
                             f'<span class="item-name">'
                             f'<span class="cn">{name_cn}</span>'
                             f'<span class="en">{name_en}</span>'
@@ -609,9 +637,17 @@ footer {{
 .filter-bar {{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 4px;
     flex-wrap: wrap;
     margin-bottom: 4px;
+}}
+.filter-sep {{
+    width: 1px;
+    height: 16px;
+    background: var(--border);
+    margin: 0 2px;
+    flex-shrink: 0;
 }}
 .filter-btn {{
     background: transparent;
@@ -629,6 +665,15 @@ footer {{
 }}
 .filter-btn:hover {{ border-style: solid; background: var(--bg-hover); color: var(--text); }}
 .filter-btn.active {{ border-style: solid; border-color: var(--accent); color: var(--accent); background: var(--accent-light); font-weight: 600; }}
+.filter-btn[title] {{ cursor: help; }}
+.more-filters {{
+    display: none;
+    justify-content: center;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+}}
+.more-filters.visible {{ display: flex; }}
 /* Smooth hall content transitions */
 .hall-content {{
     animation: fadeIn 0.2s ease-in;
@@ -659,7 +704,7 @@ footer {{
     .meal-name {{ font-size: 1rem; }}
 }}
 @media print {{
-    .controls, .toggle-btn, .filter-bar, .hall-tabs {{ display: none; }}
+    .controls, .toggle-btn, .filter-bar, .more-filters, .hall-tabs {{ display: none; }}
     .hall-content {{
         display: block !important;
         break-inside: avoid-page;
@@ -685,6 +730,42 @@ footer {{
 @media (prefers-color-scheme: dark) {{
     :root:not(.light-theme) .trait-badge.rare {{ background: hsl(280 25% 17%); color: hsl(280 40% 70%); }}
     :root:not(.light-theme) .trait-badge[class*="meat-"] {{ background: hsl(15 25% 16%); color: hsl(15 45% 65%); }}
+}}
+/* Item popover */
+.item-popover {{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    max-width: 280px;
+    pointer-events: none;
+    color: var(--text);
+}}
+.item-popover.visible {{
+    display: block;
+}}
+.popover-content .popover-row {{
+    white-space: nowrap;
+}}
+@media (max-width: 600px) {{
+    .item-popover {{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        max-width: 100%;
+        border-radius: 12px 12px 0 0;
+        pointer-events: auto;
+        padding: 16px 20px;
+        box-shadow: 0 -4px 24px rgba(0,0,0,0.15);
+    }}
 }}
 .help-btn {{
     background: none;
@@ -774,15 +855,23 @@ footer {{
     </div>
     <div class="filter-bar">
         <button class="filter-btn active" data-filter="all" onclick="clearFilters()">All</button>
+        <span class="filter-sep"></span>
         <button class="filter-btn" data-filter="vegan" onclick="toggleFilter(this)">Vegan</button>
         <button class="filter-btn" data-filter="vegetarian" onclick="toggleFilter(this)">Vegetarian</button>
         <button class="filter-btn" data-filter="gluten-free" onclick="toggleFilter(this)">Gluten Free</button>
         <button class="filter-btn" data-filter="halal" onclick="toggleFilter(this)">Halal</button>
         <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)">Kosher</button>
+        <span class="filter-sep"></span>
         <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">Low CO₂</button>
-        <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)">High CO₂</button>
         <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)">Nutritious</button>
-        <button class="filter-btn" data-filter="rare" onclick="toggleFilter(this)">Rare</button>
+        <span class="filter-sep"></span>
+        <button class="filter-btn" data-filter="rare" onclick="toggleFilter(this)" title="Items that rarely appear on the menu">Rare</button>
+        <button class="filter-btn" onclick="toggleMoreFilters(this)">More ▾</button>
+    </div>
+    <div class="more-filters" id="more-filters">
+        <button class="filter-btn" data-filter="meat" onclick="toggleFilter(this)">Has Meat</button>
+        <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)">High CO₂</button>
+        <button class="filter-btn" data-filter="hide-common" onclick="toggleHideCommon(this)">Hide Common</button>
     </div>
 </header>
 
@@ -794,6 +883,10 @@ footer {{
 {hall_contents_html}
 </main>
 
+<div id="item-popover" class="item-popover">
+    <div class="popover-content"></div>
+</div>
+
 <footer>
     Last updated: {now}
 </footer>
@@ -804,7 +897,7 @@ footer {{
     <h2>How to use</h2>
     <p>Browse menus for each dining hall using the tabs. Switch between meals with the toggle at the top.</p>
     <h2>Filter by diet</h2>
-    <p>Tap the filter buttons to show only items matching your diet. You can combine multiple filters.</p>
+    <p>Tap filter buttons to show only matching items. Filters are grouped: dietary restrictions, wellness, and discovery. Tap "More" for additional filters like Has Meat, High CO&#8322;, and Hide Common. You can combine multiple filters.</p>
     <h2>Labels</h2>
     <div class="badge-row">
         <span class="trait-badge vegan">V</span>
@@ -884,16 +977,24 @@ updateMealSlider();
 
 // Dietary filter toggles
 let activeFilters = new Set();
+let hideCommon = false;
 const allBtn = () => document.querySelector('.filter-btn[data-filter="all"]');
 function updateAllBtn() {{
     const btn = allBtn();
-    if (btn) btn.classList.toggle('active', activeFilters.size === 0);
+    if (btn) btn.classList.toggle('active', activeFilters.size === 0 && !hideCommon);
 }}
 function clearFilters() {{
     activeFilters.clear();
+    hideCommon = false;
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     updateAllBtn();
     applyFilters();
+}}
+function toggleMoreFilters(btn) {{
+    const panel = document.getElementById('more-filters');
+    const open = panel.classList.toggle('visible');
+    btn.textContent = open ? 'More ▴' : 'More ▾';
+    btn.classList.toggle('active', open);
 }}
 function toggleFilter(btn) {{
     const filter = btn.dataset.filter;
@@ -907,15 +1008,23 @@ function toggleFilter(btn) {{
     updateAllBtn();
     applyFilters();
 }}
+function toggleHideCommon(btn) {{
+    hideCommon = !hideCommon;
+    btn.classList.toggle('active', hideCommon);
+    updateAllBtn();
+    applyFilters();
+}}
 function applyFilters() {{
-    if (activeFilters.size === 0) {{
-        document.querySelectorAll('.menu-item').forEach(el => el.classList.remove('filtered-out'));
-        return;
-    }}
     document.querySelectorAll('.menu-item').forEach(el => {{
         const traits = el.dataset.traits || '';
-        const match = [...activeFilters].some(f => f.split(' ').some(sub => traits.includes(sub)));
-        el.classList.toggle('filtered-out', !match);
+        var hidden = false;
+        if (activeFilters.size > 0) {{
+            hidden = ![...activeFilters].some(f => f.split(' ').some(sub => traits.includes(sub)));
+        }}
+        if (!hidden && hideCommon && traits.includes('common')) {{
+            hidden = true;
+        }}
+        el.classList.toggle('filtered-out', hidden);
     }});
 }}
 
@@ -960,6 +1069,109 @@ if (document.documentElement.classList.contains('dark-theme') ||
 }}
 updateThemeSlider();
 
+// Item popover
+(function() {{
+    var popover = document.getElementById('item-popover');
+    var content = popover.querySelector('.popover-content');
+    var hoverTimer = null;
+    var isMobile = window.matchMedia('(max-width: 600px)').matches;
+
+    function formatHall(slug) {{
+        return slug.replace(/-/g, ' ').replace(/\\b\\w/g, function(c) {{ return c.toUpperCase(); }});
+    }}
+
+    function buildContent(el) {{
+        var freq = el.dataset.freq;
+        if (!freq) return '';
+        var days = el.dataset.days || '14';
+        var last = el.dataset.last || '';
+        var halls = el.dataset.halls ? el.dataset.halls.split(',') : [];
+        var rows = [];
+
+        // Frequency row
+        rows.push('<div class="popover-row">' + freq + ' times in ' + days + ' days</div>');
+
+        // Last seen row (skip if today)
+        if (last) {{
+            var today = new Date();
+            today.setHours(0,0,0,0);
+            var parts = last.split('-');
+            var lastDate = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+            var diff = Math.round((today - lastDate) / 86400000);
+            if (diff > 0) {{
+                rows.push('<div class="popover-row">Last seen ' + diff + ' day' + (diff > 1 ? 's' : '') + ' ago</div>');
+            }}
+        }}
+
+        // Hall exclusivity row
+        if (halls.length === 1) {{
+            var hallEn = formatHall(halls[0]);
+            rows.push('<div class="popover-row">Only at ' + hallEn + '</div>');
+        }}
+
+        return rows.join('');
+    }}
+
+    function showPopover(el) {{
+        var html = buildContent(el);
+        if (!html) return;
+        content.innerHTML = html;
+        popover.classList.add('visible');
+        if (!isMobile) {{
+            var rect = el.getBoundingClientRect();
+            var top = rect.bottom + window.scrollY + 4;
+            var left = rect.left + window.scrollX;
+            // Flip above if near bottom
+            if (rect.bottom + 120 > window.innerHeight) {{
+                top = rect.top + window.scrollY - popover.offsetHeight - 4;
+            }}
+            popover.style.top = top + 'px';
+            popover.style.left = Math.max(4, Math.min(left, window.innerWidth - 290)) + 'px';
+        }}
+    }}
+
+    function hidePopover() {{
+        popover.classList.remove('visible');
+    }}
+
+    var main = document.querySelector('main');
+
+    if (isMobile) {{
+        // Tap to show, tap elsewhere to dismiss
+        main.addEventListener('click', function(e) {{
+            var item = e.target.closest('.menu-item');
+            if (item) {{
+                e.preventDefault();
+                hidePopover();
+                showPopover(item);
+            }}
+        }});
+        document.addEventListener('click', function(e) {{
+            if (!e.target.closest('.menu-item') && !e.target.closest('.item-popover')) {{
+                hidePopover();
+            }}
+        }});
+    }} else {{
+        // Desktop: mouseenter/mouseleave with debounce
+        main.addEventListener('mouseenter', function(e) {{
+            var item = e.target.closest('.menu-item');
+            if (!item) return;
+            clearTimeout(hoverTimer);
+            hoverTimer = setTimeout(function() {{
+                showPopover(item);
+            }}, 200);
+        }}, true);
+        main.addEventListener('mouseleave', function(e) {{
+            var item = e.target.closest('.menu-item');
+            if (!item) return;
+            clearTimeout(hoverTimer);
+            hidePopover();
+        }}, true);
+    }}
+
+    // Dismiss on scroll
+    window.addEventListener('scroll', hidePopover, {{passive: true}});
+}})();
 
 </script>
 </body>
@@ -1006,25 +1218,23 @@ def main():
         else:
             translations = {}
 
-    # Compute item frequency from historical data (last 14 days)
+    # Compute item stats from historical data (last k days)
     all_days = load_all_data_files("data")
-    item_freq = None
+    item_stats = None
+    num_days = 0
     if len(all_days) >= 3:
-        # Only use last 14 days of data
-        cutoff = (datetime.now(ZoneInfo("America/Detroit"))
-                  - timedelta(days=14)).strftime("%Y-%m-%d")
-        recent_days = [
-            day for day in all_days
-            if day and day[0].get("date", "") >= cutoff
-        ]
-        item_freq = compute_item_frequency(recent_days) if recent_days else None
-        if item_freq:
-            rare_count = sum(1 for c in item_freq.values() if c < 2)
-            print(f"  Item frequency: {len(item_freq)} items tracked ({rare_count} rare) over {len(recent_days)} days")
+        k = min(10, len(all_days))
+        recent_days = all_days[-k:]
+        num_days = len(recent_days)
+        item_stats = compute_item_stats(recent_days) if recent_days else None
+        if item_stats:
+            rare_count = sum(1 for v in item_stats.values() if v["count"] < 2)
+            print(f"  Item stats: {len(item_stats)} items tracked ({rare_count} rare) over {num_days} days")
 
     # Render HTML
     print("Generating HTML...")
-    html = render_html(all_menus, translations, menu_date, item_freq=item_freq)
+    html = render_html(all_menus, translations, menu_date,
+                       item_stats=item_stats, num_days=num_days)
 
     os.makedirs(args.output, exist_ok=True)
     output_path = os.path.join(args.output, "index.html")
