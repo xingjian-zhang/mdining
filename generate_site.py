@@ -857,7 +857,6 @@ footer {{
         <button class="filter-btn active" data-filter="all" onclick="clearFilters()">All</button>
         <span class="filter-sep"></span>
         <button class="filter-btn" data-filter="meat" onclick="toggleFilter(this)">Has Meat</button>
-        <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">Low CO₂</button>
         <button class="filter-btn" data-filter="nutri-high nutri-medhigh" onclick="toggleFilter(this)">Nutritious</button>
         <button class="filter-btn" data-filter="rare" onclick="toggleFilter(this)" title="Items that rarely appear on the menu">Rare</button>
         <span class="filter-sep"></span>
@@ -869,6 +868,7 @@ footer {{
         <button class="filter-btn" data-filter="gluten-free" onclick="toggleFilter(this)">Gluten Free</button>
         <button class="filter-btn" data-filter="halal" onclick="toggleFilter(this)">Halal</button>
         <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)">Kosher</button>
+        <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">Low CO₂</button>
         <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)">High CO₂</button>
     </div>
 </header>
