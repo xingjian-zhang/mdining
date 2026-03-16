@@ -871,7 +871,7 @@ footer {{
 </head>
 <body>
 <header>
-    <h1>Michigan Dining Menus</h1>
+    <h1>Michigan Dining Menus <span style="font-size:0.45em;font-weight:400;color:var(--text-secondary);vertical-align:middle">(unofficial)</span></h1>
     <div class="date-display">{date_display}</div>
     <div class="controls">
         <div class="toggle-switch" id="meal-toggle">
@@ -920,7 +920,8 @@ footer {{
 </div>
 
 <footer>
-    Last updated: {now}
+    Last updated: {now}<br>
+    <span style="font-size:0.85em">Unofficial &middot; Not affiliated with U&#8209;M &middot; <a href="https://github.com/xingjian-zhang/mdining" target="_blank" style="color:var(--text-secondary)">GitHub</a></span>
 </footer>
 
 <div id="help" class="help-overlay" onclick="if(event.target===this)this.classList.remove('visible')">
@@ -959,6 +960,7 @@ footer {{
     <div class="badge-desc">Items that rarely appear on the menu (fewer than 2 times in the past 2 weeks). Don't miss these!</div>
     <h2>About</h2>
     <p>Not affiliated with Michigan Dining. Menu data is scraped from the UMich dining website and may not always be accurate.</p>
+    <p>If you represent the University of Michigan and have concerns, please <a href="https://github.com/xingjian-zhang/mdining/issues" target="_blank" style="color: var(--accent);">open an issue on GitHub</a>.</p>
     <p><a href="https://github.com/xingjian-zhang/mdining" target="_blank" style="color: var(--accent);">GitHub</a></p>
 </div>
 </div>
