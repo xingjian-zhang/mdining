@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mdining-2026-03-16';
+const CACHE_NAME = 'mdining-2026-03-17';
 const URLS_TO_CACHE = ['./', 'index.html'];
 
 self.addEventListener('install', function(e) {
