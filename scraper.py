@@ -138,6 +138,24 @@ def fetch_menu(hall: str = "bursley", menu_date: str | None = None) -> dict:
     return {"hall": hall, "date": menu_date, "meals": meals}
 
 
+ALLERGEN_CLASS_MAP = {
+    "eggs": "Eggs",
+    "milk": "Milk",
+    "oats": "Oats",
+    "peanuts": "Peanuts",
+    "sesame-seed": "Sesame",
+    "soy": "Soy",
+    "tree-nuts": "Tree Nuts",
+    "wheat_barley_rye": "Wheat",
+    "fish": "Fish",
+    "shellfish": "Shellfish",
+    "corn": "Corn",
+}
+
+# CSS classes that look like allergens but are meat markers, not allergens
+ALLERGEN_SKIP = {"beef", "pork", "chicken", "turkey", "lamb"}
+
+
 def parse_item(li) -> dict | None:
     """Parse a single menu item <li> element."""
     name_el = li.select_one(".item-name")
@@ -149,11 +167,21 @@ def parse_item(li) -> dict | None:
     # Traits (dietary tags)
     traits = [t.get_text(strip=True) for t in li.select(".traits li")]
 
-    # Allergens
-    allergens = [a.get_text(strip=True) for a in li.select(".allergens li")]
+    # Allergens from CSS classes (e.g., allergen-eggs, allergen-milk)
+    allergens = []
+    for cls in li.get("class", []):
+        if cls.startswith("allergen-"):
+            key = cls[len("allergen-"):]
+            if key in ALLERGEN_SKIP:
+                continue
+            label = ALLERGEN_CLASS_MAP.get(key, key.replace("-", " ").replace("_", " ").title())
+            allergens.append(label)
 
-    # Nutrition facts
-    nutrition = parse_nutrition(li)
+    # Nutrition facts from next sibling <div class="nutrition">
+    nutrition = None
+    next_el = li.find_next_sibling()
+    if next_el and next_el.name == "div" and "nutrition" in (next_el.get("class") or []):
+        nutrition = parse_nutrition(next_el)
 
     item = {"name": name}
     if traits:

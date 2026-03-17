@@ -1,0 +1,17 @@
+{
+  "name": "Michigan Dining Menus",
+  "short_name": "MDining",
+  "description": "Daily Michigan Dining menus with Chinese translations",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a365d",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>\ud83c\udf7d\ufe0f</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

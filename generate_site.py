@@ -410,6 +410,28 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             stat_attrs += f' data-halls="{",".join(st.get("halls", []))}"'
                             stat_attrs += f' data-days="{num_days}"'
 
+                        # Allergen data for filtering and popover
+                        allergens = item.get("allergens", [])
+                        if allergens:
+                            stat_attrs += f' data-allergens="{",".join(allergens)}"'
+
+                        # Nutrition data for popover
+                        nutrition = item.get("nutrition", {})
+                        if nutrition:
+                            nut_parts = []
+                            cal = nutrition.get("calories", "")
+                            if cal:
+                                nut_parts.append(f"cal:{cal}")
+                            for key, label in [("protein", "protein"), ("total_fat", "fat"), ("total_carbohydrate", "carbs")]:
+                                val = nutrition.get(key, "")
+                                if val:
+                                    nut_parts.append(f"{label}:{val}")
+                            serving = nutrition.get("serving_size", "")
+                            if serving:
+                                nut_parts.append(f"serving:{serving}")
+                            if nut_parts:
+                                stat_attrs += f' data-nutrition="{"|".join(nut_parts)}"'
+
                         rate_html = ('<span class="rate-group">'
                                      '<span class="rate-btn rate-up">'
                                      '<svg width="10" height="10" viewBox="0 0 10 10"><path d="M5 2L9 7H1Z" fill="currentColor"/></svg>'
@@ -579,6 +601,11 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
 <meta name="theme-color" content="#0d6efd" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="MDining">
 <title>Michigan Dining Menus</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1050,6 +1077,88 @@ footer {{
     font-family: inherit;
 }}
 .help-close:hover {{ color: var(--text); }}
+/* Allergen exclude filter buttons */
+.allergen-filters {{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}}
+.allergen-filters .filter-label {{
+    font-size: 10px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-right: 2px;
+    white-space: nowrap;
+}}
+.filter-btn.allergen-exclude.active {{
+    border-color: hsl(0 60% 50%);
+    color: hsl(0 60% 45%);
+    background: hsl(0 60% 96%);
+}}
+.dark-theme .filter-btn.allergen-exclude.active {{
+    border-color: hsl(0 40% 55%);
+    color: hsl(0 45% 70%);
+    background: hsl(0 30% 16%);
+}}
+@media (prefers-color-scheme: dark) {{
+    :root:not(.light-theme) .filter-btn.allergen-exclude.active {{
+        border-color: hsl(0 40% 55%);
+        color: hsl(0 45% 70%);
+        background: hsl(0 30% 16%);
+    }}
+}}
+/* Popover allergen pills */
+.popover-allergens {{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 6px;
+}}
+.popover-allergens .allergen-pill {{
+    font-size: 10px;
+    font-weight: 500;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: hsl(25 80% 93%);
+    color: hsl(25 60% 35%);
+}}
+.dark-theme .popover-allergens .allergen-pill {{
+    background: hsl(25 25% 16%);
+    color: hsl(25 50% 65%);
+}}
+@media (prefers-color-scheme: dark) {{
+    :root:not(.light-theme) .popover-allergens .allergen-pill {{
+        background: hsl(25 25% 16%);
+        color: hsl(25 50% 65%);
+    }}
+}}
+/* Popover nutrition row */
+.popover-nutrition {{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+    padding: 4px 0;
+    border-top: 1px solid var(--border);
+}}
+.popover-nutrition .nut-item {{
+    white-space: nowrap;
+}}
+.popover-nutrition .nut-val {{
+    font-weight: 600;
+    color: var(--text);
+}}
+.popover-nutrition .nut-serving {{
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    width: 100%;
+}}
 {firebase_css}</style>
 </head>
 <body>
@@ -1087,6 +1196,19 @@ footer {{
         <button class="filter-btn" data-filter="kosher" onclick="toggleFilter(this)">Kosher</button>
         <button class="filter-btn" data-filter="carbon-low" onclick="toggleFilter(this)">Low CO₂</button>
         <button class="filter-btn" data-filter="carbon-high" onclick="toggleFilter(this)">High CO₂</button>
+        <div class="allergen-filters" style="width:100%">
+            <span class="filter-label">Exclude:</span>
+            <button class="filter-btn allergen-exclude" data-allergen="Wheat" onclick="toggleAllergen(this)">Wheat</button>
+            <button class="filter-btn allergen-exclude" data-allergen="Milk" onclick="toggleAllergen(this)">Milk</button>
+            <button class="filter-btn allergen-exclude" data-allergen="Eggs" onclick="toggleAllergen(this)">Eggs</button>
+            <button class="filter-btn allergen-exclude" data-allergen="Soy" onclick="toggleAllergen(this)">Soy</button>
+            <button class="filter-btn allergen-exclude" data-allergen="Peanuts" onclick="toggleAllergen(this)">Peanuts</button>
+            <button class="filter-btn allergen-exclude" data-allergen="Tree Nuts" onclick="toggleAllergen(this)">Tree Nuts</button>
+            <button class="filter-btn allergen-exclude" data-allergen="Sesame" onclick="toggleAllergen(this)">Sesame</button>
+            <button class="filter-btn allergen-exclude" data-allergen="Oats" onclick="toggleAllergen(this)">Oats</button>
+            <button class="filter-btn allergen-exclude" data-allergen="Fish" onclick="toggleAllergen(this)">Fish</button>
+            <button class="filter-btn allergen-exclude" data-allergen="Shellfish" onclick="toggleAllergen(this)">Shellfish</button>
+        </div>
     </div>
 </header>
 
@@ -1141,6 +1263,10 @@ footer {{
         <span class="trait-badge rare">Rare</span>
     </div>
     <div class="badge-desc">Items that rarely appear on the menu (fewer than 2 times in the past 2 weeks). Don't miss these!</div>
+    <h2>Allergens</h2>
+    <p>Use the "Exclude" filters in the More panel to hide items containing specific allergens. Allergen data comes from Michigan Dining and may not cover all ingredients.</p>
+    <h2>Nutrition</h2>
+    <p>Hover (or tap) an item to see calories, protein, fat, and carbs in the popover.</p>
     <h2>About</h2>
     <p>Not affiliated with Michigan Dining. Menu data is scraped from the UMich dining website and may not always be accurate.</p>
     <p>If you represent the University of Michigan and have concerns, please <a href="https://github.com/xingjian-zhang/mdining/issues" target="_blank" style="color: var(--accent);">open an issue on GitHub</a>.</p>
@@ -1206,14 +1332,28 @@ function switchMeal(meal) {{
 
 // Dietary filter toggles
 let activeFilters = new Set();
+let excludedAllergens = new Set();
 const allBtn = () => document.querySelector('.filter-btn[data-filter="all"]');
 function updateAllBtn() {{
     const btn = allBtn();
-    if (btn) btn.classList.toggle('active', activeFilters.size === 0);
+    if (btn) btn.classList.toggle('active', activeFilters.size === 0 && excludedAllergens.size === 0);
 }}
 function clearFilters() {{
     activeFilters.clear();
+    excludedAllergens.clear();
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    updateAllBtn();
+    applyFilters();
+}}
+function toggleAllergen(btn) {{
+    const allergen = btn.dataset.allergen;
+    if (excludedAllergens.has(allergen)) {{
+        excludedAllergens.delete(allergen);
+        btn.classList.remove('active');
+    }} else {{
+        excludedAllergens.add(allergen);
+        btn.classList.add('active');
+    }}
     updateAllBtn();
     applyFilters();
 }}
@@ -1239,8 +1379,16 @@ function applyFilters() {{
     document.querySelectorAll('.menu-item').forEach(el => {{
         const traits = el.dataset.traits || '';
         var hidden = false;
+        // Inclusive trait filters (OR logic)
         if (activeFilters.size > 0) {{
             hidden = ![...activeFilters].some(f => f.split(' ').some(sub => traits.includes(sub)));
+        }}
+        // Allergen exclusion filters (AND logic - hide if item has ANY excluded allergen)
+        if (!hidden && excludedAllergens.size > 0) {{
+            const itemAllergens = el.dataset.allergens || '';
+            if (itemAllergens) {{
+                hidden = [...excludedAllergens].some(a => itemAllergens.split(',').includes(a));
+            }}
         }}
         el.classList.toggle('filtered-out', hidden);
     }});
@@ -1310,6 +1458,33 @@ updateThemeSlider();
                 return '<span class="trait-badge ' + parts[0] + '">' + parts[1] + '</span>';
             }}).join(' ');
             rows.push('<div class="popover-tags">' + pills + '</div>');
+        }}
+
+        // Allergen pills
+        var allergens = el.dataset.allergens || '';
+        if (allergens) {{
+            var pills = allergens.split(',').map(function(a) {{
+                return '<span class="allergen-pill">' + a + '</span>';
+            }}).join(' ');
+            rows.push('<div class="popover-allergens">' + pills + '</div>');
+        }}
+
+        // Nutrition info
+        var nutData = el.dataset.nutrition || '';
+        if (nutData) {{
+            var nutParts = {{}};
+            nutData.split('|').forEach(function(p) {{
+                var kv = p.split(':');
+                if (kv.length >= 2) nutParts[kv[0]] = kv.slice(1).join(':');
+            }});
+            var nutHtml = '<div class="popover-nutrition">';
+            if (nutParts.cal) nutHtml += '<span class="nut-item"><span class="nut-val">' + nutParts.cal + '</span> cal</span>';
+            if (nutParts.protein) nutHtml += '<span class="nut-item"><span class="nut-val">' + nutParts.protein + '</span> protein</span>';
+            if (nutParts.fat) nutHtml += '<span class="nut-item"><span class="nut-val">' + nutParts.fat + '</span> fat</span>';
+            if (nutParts.carbs) nutHtml += '<span class="nut-item"><span class="nut-val">' + nutParts.carbs + '</span> carbs</span>';
+            if (nutParts.serving) nutHtml += '<span class="nut-serving">' + nutParts.serving + '</span>';
+            nutHtml += '</div>';
+            rows.push(nutHtml);
         }}
 
         if (!freq) return rows.join('');
@@ -1403,6 +1578,12 @@ updateThemeSlider();
     window.addEventListener('scroll', hidePopover, {{passive: true}});
 }})();
 
+// PWA: register service worker
+if ('serviceWorker' in navigator) {{
+    navigator.serviceWorker.register('sw.js').catch(function() {{}});
+}}
+
+
 {firebase_js}
 </script>
 </body>
@@ -1472,6 +1653,143 @@ def main():
     output_path = os.path.join(args.output, "index.html")
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)
+
+    # PWA: manifest.json
+    manifest = {
+        "name": "Michigan Dining Menus",
+        "short_name": "MDining",
+        "description": "Daily Michigan Dining menus with Chinese translations",
+        "start_url": ".",
+        "display": "standalone",
+        "background_color": "#ffffff",
+        "theme_color": "#1a365d",
+        "icons": [
+            {
+                "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>",
+                "sizes": "any",
+                "type": "image/svg+xml",
+                "purpose": "any"
+            }
+        ]
+    }
+    manifest_path = os.path.join(args.output, "manifest.json")
+    with open(manifest_path, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, indent=2)
+
+    # PWA: service worker
+    sw_js = (
+        "const CACHE_NAME = 'mdining-" + menu_date + "';\n"
+        "const URLS_TO_CACHE = ['./', 'index.html'];\n"
+        "\n"
+        "self.addEventListener('install', function(e) {\n"
+        "  e.waitUntil(\n"
+        "    caches.open(CACHE_NAME).then(function(cache) {\n"
+        "      return cache.addAll(URLS_TO_CACHE);\n"
+        "    })\n"
+        "  );\n"
+        "  self.skipWaiting();\n"
+        "});\n"
+        "\n"
+        "self.addEventListener('activate', function(e) {\n"
+        "  e.waitUntil(\n"
+        "    caches.keys().then(function(names) {\n"
+        "      return Promise.all(\n"
+        "        names.filter(function(n) { return n !== CACHE_NAME; })\n"
+        "             .map(function(n) { return caches.delete(n); })\n"
+        "      );\n"
+        "    })\n"
+        "  );\n"
+        "  self.clients.claim();\n"
+        "});\n"
+        "\n"
+        "self.addEventListener('fetch', function(e) {\n"
+        "  e.respondWith(\n"
+        "    fetch(e.request).then(function(response) {\n"
+        "      var clone = response.clone();\n"
+        "      caches.open(CACHE_NAME).then(function(cache) {\n"
+        "        cache.put(e.request, clone);\n"
+        "      });\n"
+        "      return response;\n"
+        "    }).catch(function() {\n"
+        "      return caches.match(e.request);\n"
+        "    })\n"
+        "  );\n"
+        "});\n"
+    )
+    sw_path = os.path.join(args.output, "sw.js")
+    with open(sw_path, "w", encoding="utf-8") as f:
+        f.write(sw_js)
+
+    # LLM-friendly: today.json (copy of today's menu data)
+    import shutil
+    today_json_path = os.path.join(args.output, "today.json")
+    shutil.copy2(data_path, today_json_path)
+
+    # LLM-friendly: llms.txt
+    site_base = "https://xingjianz.com/mdining"
+    llms_txt = f"""# Michigan Dining Menus — LLM Access
+
+> Unofficial daily menus for University of Michigan dining halls.
+> Updated daily at ~5 AM ET via GitHub Actions.
+
+## Quick Access
+
+- Today's menu (JSON): {site_base}/today.json
+- Website: {site_base}/
+
+## today.json Schema
+
+The file is a JSON array of hall objects:
+
+```
+[
+  {{
+    "hall": "bursley",          // one of: bursley, east-quad, mosher-jordan, south-quad, twigs-at-oxford
+    "date": "YYYY-MM-DD",
+    "meals": {{
+      "breakfast|lunch|dinner": {{
+        "Station Name": [
+          {{
+            "name": "Item Name",
+            "traits": ["Vegan", "Gluten Free", ...],   // dietary tags from UMich
+            "allergens": ["Wheat", "Milk", ...],        // food allergens
+            "nutrition": {{                              // per-serving nutrition
+              "serving_size": "8 oz Cup (227g)",
+              "calories": 164,
+              "total_fat": "3g",
+              "protein": "6g",
+              "total_carbohydrate": "29g",
+              ...
+            }}
+          }}
+        ]
+      }}
+    }}
+  }}
+]
+```
+
+## Trait Values
+
+Dietary: Vegan, Vegetarian, Gluten Free, Halal, Kosher, Spicy
+Carbon: Carbon Footprint Low, Carbon Footprint Medium, Carbon Footprint High
+Nutrition: Nutrient Dense High, Nutrient Dense Medium High, Nutrient Dense Medium, Nutrient Dense Low Medium, Nutrient Dense Low
+
+## Allergen Values
+
+Wheat, Milk, Eggs, Soy, Peanuts, Tree Nuts, Sesame, Oats, Fish, Shellfish, Corn
+
+## Dining Halls
+
+- bursley (Bursley Dining Hall)
+- east-quad (East Quad Dining Hall)
+- mosher-jordan (Mosher-Jordan Dining Hall)
+- south-quad (South Quad Dining Hall)
+- twigs-at-oxford (Twigs at Oxford)
+"""
+    llms_path = os.path.join(args.output, "llms.txt")
+    with open(llms_path, "w", encoding="utf-8") as f:
+        f.write(llms_txt)
 
     print(f"Done! Output: {output_path} ({len(html):,} bytes)")
 

@@ -1,0 +1,59 @@
+# Michigan Dining Menus — LLM Access
+
+> Unofficial daily menus for University of Michigan dining halls.
+> Updated daily at ~5 AM ET via GitHub Actions.
+
+## Quick Access
+
+- Today's menu (JSON): https://xingjianz.com/mdining/today.json
+- Website: https://xingjianz.com/mdining/
+
+## today.json Schema
+
+The file is a JSON array of hall objects:
+
+```
+[
+  {
+    "hall": "bursley",          // one of: bursley, east-quad, mosher-jordan, south-quad, twigs-at-oxford
+    "date": "YYYY-MM-DD",
+    "meals": {
+      "breakfast|lunch|dinner": {
+        "Station Name": [
+          {
+            "name": "Item Name",
+            "traits": ["Vegan", "Gluten Free", ...],   // dietary tags from UMich
+            "allergens": ["Wheat", "Milk", ...],        // food allergens
+            "nutrition": {                              // per-serving nutrition
+              "serving_size": "8 oz Cup (227g)",
+              "calories": 164,
+              "total_fat": "3g",
+              "protein": "6g",
+              "total_carbohydrate": "29g",
+              ...
+            }
+          }
+        ]
+      }
+    }
+  }
+]
+```
+
+## Trait Values
+
+Dietary: Vegan, Vegetarian, Gluten Free, Halal, Kosher, Spicy
+Carbon: Carbon Footprint Low, Carbon Footprint Medium, Carbon Footprint High
+Nutrition: Nutrient Dense High, Nutrient Dense Medium High, Nutrient Dense Medium, Nutrient Dense Low Medium, Nutrient Dense Low
+
+## Allergen Values
+
+Wheat, Milk, Eggs, Soy, Peanuts, Tree Nuts, Sesame, Oats, Fish, Shellfish, Corn
+
+## Dining Halls
+
+- bursley (Bursley Dining Hall)
+- east-quad (East Quad Dining Hall)
+- mosher-jordan (Mosher-Jordan Dining Hall)
+- south-quad (South Quad Dining Hall)
+- twigs-at-oxford (Twigs at Oxford)
