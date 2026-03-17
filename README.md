@@ -1,79 +1,64 @@
 # mdining
 
-CLI tools for checking University of Michigan dining hall menus from the terminal.
+Bilingual (Chinese/English) menu website for University of Michigan dining halls. Updated daily and deployed to GitHub Pages.
+
+**Live site: [xingjianz.com/mdining](https://xingjianz.com/mdining/)**
 
 ## Features
 
-- View menus for any dining hall and date
-- Compare menus across all halls side-by-side
-- Dietary filters: vegan, vegetarian, gluten-free, halal
-- Calorie counts and nutrition info
-- Chinese translation of menu items (via `claude` CLI)
-- JSON output for scripting
-- Short aliases for hall names
+### Website
+- Bilingual menus — Chinese/English toggle for all dish names
+- All 5 dining halls in one view with meal tabs (breakfast/lunch/dinner)
+- Auto-selects current meal based on time of day (ET)
+- Allergen filtering (wheat, milk, eggs, soy, peanuts, tree nuts, sesame, etc.)
+- Dietary badges: vegan, vegetarian, gluten-free, halal, kosher, spicy
+- Nutrition info popovers per item
+- Dish ratings (Firebase-powered upvote/downvote)
+- Google Maps embed for each dining hall location
+- Historical stats with Chart.js visualizations
+- Light/dark theme
+- PWA support — installable on mobile
+- LLM-friendly JSON endpoint at [`/mdining/today.json`](https://xingjianz.com/mdining/today.json)
 
-## Requirements
+### CLI Tools
+- `menu.py` — View a single hall's menu
+- `compare.py` — Compare menus across all halls side-by-side
+- `scraper.py` — Raw JSON scraper
 
-- Python 3.10+
-- [requests](https://pypi.org/project/requests/)
-- [beautifulsoup4](https://pypi.org/project/beautifulsoup4/)
-- (Optional) [Claude CLI](https://github.com/anthropics/claude-code) for `--cn` translation
+## Setup
 
-## Usage
+**Requirements:** Python 3.10+
 
-### `menu.py` — Single hall menu
+```sh
+pip install requests beautifulsoup4 deep-translator
+```
+
+### Generate the website
+
+```sh
+python3 generate_site.py                # Full build (fetches menus, translates, outputs site/index.html)
+python3 generate_site.py --no-translate # Skip translation (faster, for testing)
+python3 generate_site.py --date 2026-03-15  # Specific date
+```
+
+Optional environment variables:
+| Variable | Purpose |
+|----------|---------|
+| `FIREBASE_CONFIG` | JSON string with Firebase config for dish ratings |
+| `GOOGLE_MAPS_API_KEY` | Google Maps embed for hall locations |
+
+### CLI usage
 
 ```sh
 python menu.py                        # Bursley, today, all meals
-python menu.py dinner                 # Bursley, dinner only
-python menu.py -l south-quad          # South Quad, today
-python menu.py -l eq lunch            # East Quad, lunch
-python menu.py -d 2026-02-15          # Specific date
-python menu.py dinner -v              # Show calorie counts
-python menu.py --cn                   # Translate item names to Chinese
-python menu.py --json                 # Raw JSON output
+python menu.py dinner -l south-quad   # South Quad, dinner
+python menu.py -v --cn                # Verbose + Chinese translation
+
+python compare.py dinner --vegan      # Compare vegan dinner options across halls
+python compare.py lunch --gf -v       # Gluten-free lunch with calories
 ```
 
-Flags:
-| Flag | Description |
-|------|-------------|
-| `-l, --hall HALL` | Dining hall slug or alias (default: `bursley`) |
-| `-d, --date DATE` | Date in `YYYY-MM-DD` format (default: today) |
-| `-v, --verbose` | Show calorie counts |
-| `--cn` | Translate item names to Chinese |
-| `--json` | Output raw JSON |
-
-### `compare.py` — Multi-hall comparison
-
-```sh
-python compare.py                     # Auto-detect meal, all halls
-python compare.py dinner              # Compare dinner across all halls
-python compare.py lunch -v            # With calorie counts
-python compare.py dinner --vegan      # Only vegan items
-python compare.py --cn                # With Chinese translations
-```
-
-Flags:
-| Flag | Description |
-|------|-------------|
-| `-d, --date DATE` | Date in `YYYY-MM-DD` format (default: today) |
-| `-v, --verbose` | Show calorie counts |
-| `--vegan` | Filter to vegan items only |
-| `--vegetarian` | Filter to vegetarian items only |
-| `--gf` | Filter to gluten-free items only |
-| `--halal` | Filter to halal items only |
-| `--cn` | Translate item names to Chinese |
-
-### `scraper.py` — Raw JSON scraper
-
-```sh
-python scraper.py                             # Bursley, today
-python scraper.py --hall south-quad           # South Quad
-python scraper.py --date 2026-02-15 --meal dinner
-python scraper.py --compact                   # Names only, no nutrition
-```
-
-## Dining Halls & Aliases
+## Dining Halls
 
 | Hall | Alias |
 |------|-------|
@@ -83,12 +68,21 @@ python scraper.py --compact                   # Names only, no nutrition
 | `south-quad` | `sq` |
 | `twigs-at-oxford` | `twigs` |
 
-## Dietary Tag Legend
+## Deployment
 
-| Symbol | Meaning |
-|--------|---------|
-| V | Vegan |
-| VG | Vegetarian |
-| GF | Gluten Free |
-| H | Halal |
-| K | Kosher |
+GitHub Actions runs daily at 10:00 UTC (5 AM ET):
+1. Fetches menus from UMich dining
+2. Translates dish names to Chinese (cached in `site/translations_cache.json`)
+3. Generates static HTML
+4. Deploys to GitHub Pages
+5. Commits updated translation cache and daily data snapshot to `data/`
+
+## Architecture
+
+The website is a single self-contained HTML file generated by `generate_site.py`. The entire template (HTML, CSS, JS) lives as a Python f-string in `render_html()`. Translations happen at build time — no runtime API calls.
+
+See [`CLAUDE.md`](CLAUDE.md) for detailed architecture notes.
+
+---
+
+*Unofficial. Not affiliated with University of Michigan Dining. Data scraped from the public UMich dining website.*
