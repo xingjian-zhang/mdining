@@ -60,6 +60,10 @@ GitHub Actions (`.github/workflows/daily-menu.yml`):
 - Fetches menus, generates HTML, deploys to GitHub Pages
 - Commits updated translation cache and data files back to repo
 
+### Language Rule
+
+Chinese is only used in dish entry names (the `<span class="cn">` / `<span class="en">` pair on each menu item). Everything else on the site — UI labels, popovers, tooltips, help text, badges — must be purely English.
+
 ### Trait System
 
 Menu items have traits from the UMich API using long-form strings (e.g., `"Vegan"`, `"Gluten Free"`, `"Carbon Footprint Low"`, `"Nutrient Dense High"`). The `TRAIT_DISPLAY` dict maps these to `(label, css_class)` pairs for rendering.
