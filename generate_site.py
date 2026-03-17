@@ -31,10 +31,10 @@ from scraper import DINING_HALLS, fetch_menu
 #   2. Add a Web App, copy the config object
 #   3. Enable Realtime Database, set rules (see below)
 # Recommended security rules for "ratings" node:
-#   { "rules": { "ratings": { "$item": { "up": {
+#   { "rules": { "ratings": { "$item": { "$type": {
 #       ".read": true,
 #       ".write": true,
-#       ".validate": "newData.isNumber() && newData.val() >= 0"
+#       ".validate": "newData.isNumber() && newData.val() >= 0 && ($type === 'up' || $type === 'down')"
 #   }}}}}
 _fb_env = os.environ.get("FIREBASE_CONFIG", "{}")
 try:
@@ -407,7 +407,10 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             stat_attrs += f' data-halls="{",".join(st.get("halls", []))}"'
                             stat_attrs += f' data-days="{num_days}"'
 
-                        rate_html = '<span class="rate-btn">&#128077; <span class="rating-count"></span></span>' if firebase_config else ''
+                        rate_html = ('<span class="rate-group">'
+                                     '<span class="rate-btn rate-up">&#128077;<span class="rating-count"></span></span>'
+                                     '<span class="rate-btn rate-down">&#128078;<span class="rating-count"></span></span>'
+                                     '</span>') if firebase_config else ''
                         items_html += (
                             f'<div class="menu-item" data-traits="{trait_data}"{stat_attrs}>'
                             f'<span class="item-name">'
@@ -449,14 +452,27 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
     firebase_js = ""
     if firebase_config and firebase_config.get("databaseURL"):
         firebase_css = (
-            ".rate-btn { display: inline-flex; align-items: center; gap: 2px; "
-            "font-size: 11px; cursor: pointer; padding: 1px 6px; border-radius: 9999px; "
+            ".rate-group { display: inline-flex; gap: 2px; margin-left: auto; flex-shrink: 0; }\n"
+            ".rate-btn { display: inline-flex; align-items: center; gap: 1px; "
+            "font-size: 11px; cursor: pointer; padding: 1px 5px; border-radius: 9999px; "
             "background: transparent; border: 1px solid var(--border); color: var(--text-secondary); "
-            "user-select: none; transition: all 0.15s; flex-shrink: 0; line-height: 1.4; margin-left: auto; }\n"
+            "user-select: none; transition: all 0.15s; flex-shrink: 0; line-height: 1.4; }\n"
             ".rate-btn:hover { background: var(--bg-hover); color: var(--text); }\n"
-            ".rate-btn.voted { border-color: var(--accent); color: var(--accent); "
-            "background: var(--accent-light); }\n"
-            ".rating-count { font-size: 10px; min-width: 8px; text-align: center; }\n"
+            ".rate-up.voted { border-color: hsl(142 50% 45%); color: hsl(142 50% 45%); "
+            "background: hsl(142 50% 95%); }\n"
+            ".rate-down.voted { border-color: hsl(0 50% 50%); color: hsl(0 50% 50%); "
+            "background: hsl(0 50% 95%); }\n"
+            ".dark-theme .rate-up.voted { border-color: hsl(142 40% 55%); color: hsl(142 40% 55%); "
+            "background: hsl(142 25% 15%); }\n"
+            ".dark-theme .rate-down.voted { border-color: hsl(0 40% 60%); color: hsl(0 40% 60%); "
+            "background: hsl(0 25% 15%); }\n"
+            "@media (prefers-color-scheme: dark) {\n"
+            "  :root:not(.light-theme) .rate-up.voted { border-color: hsl(142 40% 55%); color: hsl(142 40% 55%); "
+            "background: hsl(142 25% 15%); }\n"
+            "  :root:not(.light-theme) .rate-down.voted { border-color: hsl(0 40% 60%); color: hsl(0 40% 60%); "
+            "background: hsl(0 25% 15%); }\n"
+            "}\n"
+            ".rating-count { font-size: 10px; min-width: 6px; text-align: center; }\n"
         )
         firebase_config_json = json.dumps(firebase_config)
         firebase_js = (
@@ -483,13 +499,19 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
             "    // Load all ratings once\n"
             "    db.ref('ratings').once('value').then(function(snap) {\n"
             "      var all = snap.val() || {};\n"
-            "      document.querySelectorAll('.rate-btn').forEach(function(btn) {\n"
-            "        var en = btn.parentElement.querySelector('.item-name .en');\n"
+            "      document.querySelectorAll('.rate-group').forEach(function(group) {\n"
+            "        var en = group.parentElement.querySelector('.item-name .en');\n"
             "        if (!en) return;\n"
             "        var key = itemKey(en.textContent.trim());\n"
-            "        var count = (all[key] && all[key].up) || 0;\n"
-            "        btn.querySelector('.rating-count').textContent = count || '';\n"
-            "        if (votes[key]) btn.classList.add('voted');\n"
+            "        var data = all[key] || {};\n"
+            "        var upBtn = group.querySelector('.rate-up');\n"
+            "        var downBtn = group.querySelector('.rate-down');\n"
+            "        var upCount = data.up || 0;\n"
+            "        var downCount = data.down || 0;\n"
+            "        upBtn.querySelector('.rating-count').textContent = upCount || '';\n"
+            "        downBtn.querySelector('.rating-count').textContent = downCount || '';\n"
+            "        if (votes[key] === 'up') upBtn.classList.add('voted');\n"
+            "        if (votes[key] === 'down') downBtn.classList.add('voted');\n"
             "      });\n"
             "    });\n"
             "    // Handle rating clicks\n"
@@ -498,22 +520,35 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
             "      if (!btn) return;\n"
             "      e.stopPropagation();\n"
             "      e.preventDefault();\n"
-            "      var en = btn.parentElement.querySelector('.item-name .en');\n"
+            "      var group = btn.closest('.rate-group');\n"
+            "      var en = group.parentElement.querySelector('.item-name .en');\n"
             "      if (!en) return;\n"
             "      var key = itemKey(en.textContent.trim());\n"
+            "      var isUp = btn.classList.contains('rate-up');\n"
+            "      var type = isUp ? 'up' : 'down';\n"
+            "      var other = isUp ? 'down' : 'up';\n"
+            "      var otherBtn = group.querySelector('.rate-' + other);\n"
             "      var countEl = btn.querySelector('.rating-count');\n"
+            "      var otherCountEl = otherBtn.querySelector('.rating-count');\n"
             "      var current = parseInt(countEl.textContent) || 0;\n"
-            "      if (votes[key]) {\n"
+            "      var otherCurrent = parseInt(otherCountEl.textContent) || 0;\n"
+            "      // If already voted this type, undo\n"
+            "      if (votes[key] === type) {\n"
             "        delete votes[key];\n"
             "        btn.classList.remove('voted');\n"
-            "        var nv = Math.max(0, current - 1);\n"
-            "        countEl.textContent = nv || '';\n"
-            "        db.ref('ratings/' + key + '/up').transaction(function(v) { return Math.max(0, (v || 0) - 1); });\n"
+            "        countEl.textContent = Math.max(0, current - 1) || '';\n"
+            "        db.ref('ratings/' + key + '/' + type).transaction(function(v) { return Math.max(0, (v || 0) - 1); });\n"
             "      } else {\n"
-            "        votes[key] = 1;\n"
+            "        // If voted the other type, undo that first\n"
+            "        if (votes[key] === other) {\n"
+            "          otherBtn.classList.remove('voted');\n"
+            "          otherCountEl.textContent = Math.max(0, otherCurrent - 1) || '';\n"
+            "          db.ref('ratings/' + key + '/' + other).transaction(function(v) { return Math.max(0, (v || 0) - 1); });\n"
+            "        }\n"
+            "        votes[key] = type;\n"
             "        btn.classList.add('voted');\n"
             "        countEl.textContent = current + 1;\n"
-            "        db.ref('ratings/' + key + '/up').transaction(function(v) { return (v || 0) + 1; });\n"
+            "        db.ref('ratings/' + key + '/' + type).transaction(function(v) { return (v || 0) + 1; });\n"
             "      }\n"
             "      localStorage.setItem('mdining_votes', JSON.stringify(votes));\n"
             "    });\n"
