@@ -322,56 +322,51 @@ def translate_with_cache(names: list[str], cache_path: str) -> dict[str, str]:
 
 
 def fetch_hall_reviews(api_key: str) -> dict[str, dict]:
-    """Fetch Google Maps reviews for all dining halls using the Places API.
+    """Fetch Google Maps reviews for all dining halls using the Places API (New).
 
+    Uses the v1 Text Search endpoint (POST) with field masks.
     Returns a dict mapping hall slug to review data:
     {hall: {"rating": float, "total_ratings": int, "reviews": [...]}}
     """
     if not api_key:
         return {}
 
+    url = "https://places.googleapis.com/v1/places:searchText"
+    headers = {
+        "Content-Type": "application/json",
+        "X-Goog-Api-Key": api_key,
+        "X-Goog-FieldMask": "places.rating,places.userRatingCount,places.reviews",
+    }
+
     results = {}
     for i, (hall, query) in enumerate(HALL_MAP_QUERIES.items()):
         if i > 0:
             time.sleep(0.5)  # Rate limit between halls
         try:
-            # Step 1: Find the place using text search
-            search_url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json"
-            resp = requests.get(search_url, params={
-                "input": query.replace("+", " "),
-                "inputtype": "textquery",
-                "fields": "place_id",
-                "key": api_key,
+            resp = requests.post(url, headers=headers, json={
+                "textQuery": query.replace("+", " "),
+                "pageSize": 1,
             }, timeout=10)
             resp.raise_for_status()
-            candidates = resp.json().get("candidates", [])
-            if not candidates:
-                print(f"  Warning: No Place ID found for {hall}", file=sys.stderr)
+            places = resp.json().get("places", [])
+            if not places:
+                print(f"  Warning: No place found for {hall}", file=sys.stderr)
                 continue
-            place_id = candidates[0]["place_id"]
-
-            # Step 2: Get place details with reviews
-            details_url = "https://maps.googleapis.com/maps/api/place/details/json"
-            resp = requests.get(details_url, params={
-                "place_id": place_id,
-                "fields": "rating,user_ratings_total,reviews",
-                "key": api_key,
-            }, timeout=10)
-            resp.raise_for_status()
-            result = resp.json().get("result", {})
+            place = places[0]
 
             reviews = []
-            for r in result.get("reviews", [])[:5]:
+            for r in place.get("reviews", [])[:5]:
+                author_attr = r.get("authorAttribution", {})
                 reviews.append({
-                    "author": r.get("author_name", "Anonymous"),
+                    "author": author_attr.get("displayName", "Anonymous"),
                     "rating": r.get("rating", 0),
-                    "text": r.get("text", ""),
-                    "time": r.get("relative_time_description", ""),
+                    "text": r.get("text", {}).get("text", ""),
+                    "time": r.get("relativePublishTimeDescription", ""),
                 })
 
             results[hall] = {
-                "rating": result.get("rating", 0),
-                "total_ratings": result.get("user_ratings_total", 0),
+                "rating": place.get("rating", 0),
+                "total_ratings": place.get("userRatingCount", 0),
                 "reviews": reviews,
                 "fetched": datetime.now().strftime("%Y-%m-%d"),
             }
