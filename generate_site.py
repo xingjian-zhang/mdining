@@ -1495,13 +1495,13 @@ updateThemeSlider();
         // Frequency row
         rows.push('<div class="popover-row">' + freq + ' times in ' + days + ' days</div>');
 
-        // Last seen row (skip if today)
+        // Last seen row (skip if same as menu date)
         if (last) {{
-            var today = new Date();
-            today.setHours(0,0,0,0);
+            var menuParts = '{menu_date}'.split('-');
+            var menuDay = new Date(parseInt(menuParts[0]), parseInt(menuParts[1]) - 1, parseInt(menuParts[2]));
             var parts = last.split('-');
             var lastDate = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
-            var diff = Math.round((today - lastDate) / 86400000);
+            var diff = Math.round((menuDay - lastDate) / 86400000);
             if (diff > 0) {{
                 rows.push('<div class="popover-row">Last seen ' + diff + ' day' + (diff > 1 ? 's' : '') + ' ago</div>');
             }}
