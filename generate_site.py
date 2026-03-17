@@ -13,6 +13,7 @@ Usage:
 
 import argparse
 import glob
+import html as html_mod
 import json
 import os
 import re
@@ -330,7 +331,9 @@ def fetch_hall_reviews(api_key: str) -> dict[str, dict]:
         return {}
 
     results = {}
-    for hall, query in HALL_MAP_QUERIES.items():
+    for i, (hall, query) in enumerate(HALL_MAP_QUERIES.items()):
+        if i > 0:
+            time.sleep(0.5)  # Rate limit between halls
         try:
             # Step 1: Find the place using text search
             search_url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json"
@@ -399,23 +402,23 @@ def save_reviews_cache(cache_path: str, cache: dict[str, dict]):
 def fetch_reviews_with_cache(api_key: str, cache_path: str) -> dict[str, dict]:
     """Fetch reviews using cache. Re-fetches if cache is older than 7 days."""
     cache = load_reviews_cache(cache_path)
-    today = datetime.now().strftime("%Y-%m-%d")
+    today_dt = datetime.strptime(datetime.now().strftime("%Y-%m-%d"), "%Y-%m-%d")
 
-    # Check if cache is fresh (less than 7 days old)
-    needs_refresh = False
-    if not cache:
-        needs_refresh = True
-    else:
-        for hall_data in cache.values():
+    # Find halls that are missing or stale (>= 7 days old)
+    stale_halls = []
+    for hall in HALL_MAP_QUERIES:
+        hall_data = cache.get(hall)
+        if not hall_data:
+            stale_halls.append(hall)
+        else:
             fetched = hall_data.get("fetched", "")
             if fetched:
-                age = (datetime.strptime(today, "%Y-%m-%d") - datetime.strptime(fetched, "%Y-%m-%d")).days
+                age = (today_dt - datetime.strptime(fetched, "%Y-%m-%d")).days
                 if age >= 7:
-                    needs_refresh = True
-                    break
+                    stale_halls.append(hall)
 
-    if needs_refresh and api_key:
-        print("  Fetching Google Maps reviews...")
+    if stale_halls and api_key:
+        print(f"  Fetching Google Maps reviews for {len(stale_halls)} halls...")
         new_reviews = fetch_hall_reviews(api_key)
         if new_reviews:
             cache.update(new_reviews)
@@ -424,7 +427,7 @@ def fetch_reviews_with_cache(api_key: str, cache_path: str) -> dict[str, dict]:
         else:
             print("  No new reviews fetched (API may be unavailable)")
     elif cache:
-        print(f"  Reviews: {len(cache)} halls cached")
+        print(f"  Reviews: {len(cache)} halls cached (all fresh)")
     else:
         print("  Reviews: skipped (no GOOGLE_MAPS_API_KEY)")
 
@@ -604,15 +607,11 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
         if review_data and review_data.get("rating"):
             rating = review_data["rating"]
             total = review_data.get("total_ratings", 0)
-            # Star display
-            full_stars = int(rating)
-            half_star = 1 if rating - full_stars >= 0.3 else 0
-            empty_stars = 5 - full_stars - half_star
+            # Star display (round to nearest integer)
+            filled = round(rating)
             stars_html = '<span class="review-stars">'
-            stars_html += "&#9733;" * full_stars
-            if half_star:
-                stars_html += "&#9733;"  # use full star for half (simpler)
-            stars_html += "&#9734;" * empty_stars
+            stars_html += "&#9733;" * filled
+            stars_html += "&#9734;" * (5 - filled)
             stars_html += "</span>"
 
             reviews_html += (
@@ -630,14 +629,12 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                 reviews_html += '<div class="review-list">'
                 for rev in reviews_list[:3]:
                     rev_stars = "&#9733;" * int(rev.get("rating", 0)) + "&#9734;" * (5 - int(rev.get("rating", 0)))
-                    author = rev.get("author", "Anonymous")
-                    text = rev.get("text", "")
-                    # Escape HTML in review text
-                    text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                    author = html_mod.escape(rev.get("author", "Anonymous"))
+                    text = html_mod.escape(rev.get("text", ""))
                     # Truncate long reviews
                     if len(text) > 200:
                         text = text[:200] + "..."
-                    time_ago = rev.get("time", "")
+                    time_ago = html_mod.escape(rev.get("time", ""))
                     reviews_html += (
                         f'<div class="review-item">'
                         f'<div class="review-author">'
