@@ -31,11 +31,13 @@ from scraper import DINING_HALLS, fetch_menu
 #   2. Add a Web App, copy the config object
 #   3. Enable Realtime Database, set rules (see below)
 # Recommended security rules for "ratings" node:
-#   { "rules": { "ratings": { "$item": { "votes": { "$uid": {
+#   { "rules": { "ratings": { "$item": {
 #       ".read": true,
-#       ".write": "$uid === auth.uid",
-#       ".validate": "newData.isString() && (newData.val() === 'up' || newData.val() === 'down')"
-#   }}}}}}
+#       "votes": { "$uid": {
+#           ".write": "$uid === auth.uid",
+#           ".validate": "newData.isString() && (newData.val() === 'up' || newData.val() === 'down')"
+#       }}
+#   }}}}
 # Also enable Anonymous Auth in Firebase Console → Authentication → Sign-in method.
 _fb_env = os.environ.get("FIREBASE_CONFIG", "{}")
 try:
@@ -504,15 +506,13 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
             "    var db = firebase.database();\n"
             "    return firebase.auth().signInAnonymously().then(function(cred) {\n"
             "      var uid = cred.user.uid;\n"
-            "      // Load all ratings once\n"
-            "      db.ref('ratings').once('value').then(function(snap) {\n"
-            "        var all = snap.val() || {};\n"
-            "        document.querySelectorAll('.rate-group').forEach(function(group) {\n"
-            "          var en = group.parentElement.querySelector('.item-name .en');\n"
-            "          if (!en) return;\n"
-            "          var key = itemKey(en.textContent.trim());\n"
-            "          var data = all[key] || {};\n"
-            "          var votes = data.votes || {};\n"
+            "      // Load ratings per item (can't read /ratings directly due to rules)\n"
+            "      document.querySelectorAll('.rate-group').forEach(function(group) {\n"
+            "        var en = group.parentElement.querySelector('.item-name .en');\n"
+            "        if (!en) return;\n"
+            "        var key = itemKey(en.textContent.trim());\n"
+            "        db.ref('ratings/' + key + '/votes').once('value').then(function(snap) {\n"
+            "          var votes = snap.val() || {};\n"
             "          var counts = countVotes(votes);\n"
             "          var upBtn = group.querySelector('.rate-up');\n"
             "          var downBtn = group.querySelector('.rate-down');\n"
