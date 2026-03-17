@@ -23,6 +23,26 @@ from zoneinfo import ZoneInfo
 
 from scraper import DINING_HALLS, fetch_menu
 
+# Firebase Realtime Database config for dish ratings (optional).
+# Set the FIREBASE_CONFIG env var as a JSON string, e.g.:
+#   export FIREBASE_CONFIG='{"apiKey":"...","authDomain":"...","databaseURL":"...","projectId":"..."}'
+# Or edit this dict directly. To set up:
+#   1. Create a Firebase project at https://console.firebase.google.com
+#   2. Add a Web App, copy the config object
+#   3. Enable Realtime Database, set rules (see below)
+# Recommended security rules for "ratings" node:
+#   { "rules": { "ratings": { "$item": { "votes": { "$uid": {
+#       ".read": true,
+#       ".write": "$uid === auth.uid",
+#       ".validate": "newData.isString() && (newData.val() === 'up' || newData.val() === 'down')"
+#   }}}}}}
+# Also enable Anonymous Auth in Firebase Console → Authentication → Sign-in method.
+_fb_env = os.environ.get("FIREBASE_CONFIG", "{}")
+try:
+    FIREBASE_CONFIG = json.loads(_fb_env) if _fb_env else {}
+except json.JSONDecodeError:
+    FIREBASE_CONFIG = {}
+
 # Chinese names for dining halls
 HALL_NAMES_CN = {
     "bursley": "伯斯利",
@@ -291,7 +311,7 @@ def format_hall_name(slug: str) -> str:
 
 def render_html(all_menus: list[dict], translations: dict[str, str],
                 menu_date: str, item_stats: dict | None = None,
-                num_days: int = 0) -> str:
+                num_days: int = 0, firebase_config: dict | None = None) -> str:
     """Render all menu data into a self-contained HTML page."""
     date_display = datetime.strptime(menu_date, "%Y-%m-%d").strftime("%A, %B %-d, %Y")
     now = datetime.now(ZoneInfo("America/Detroit")).strftime("%Y-%m-%d %H:%M")
@@ -388,6 +408,14 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             stat_attrs += f' data-halls="{",".join(st.get("halls", []))}"'
                             stat_attrs += f' data-days="{num_days}"'
 
+                        rate_html = ('<span class="rate-group">'
+                                     '<span class="rate-btn rate-up">'
+                                     '<svg width="10" height="10" viewBox="0 0 10 10"><path d="M5 2L9 7H1Z" fill="currentColor"/></svg>'
+                                     '<span class="rating-count"></span></span>'
+                                     '<span class="rate-btn rate-down">'
+                                     '<svg width="10" height="10" viewBox="0 0 10 10"><path d="M5 8L1 3H9Z" fill="currentColor"/></svg>'
+                                     '<span class="rating-count"></span></span>'
+                                     '</span>') if firebase_config else ''
                         items_html += (
                             f'<div class="menu-item" data-traits="{trait_data}"{stat_attrs}>'
                             f'<span class="item-name">'
@@ -395,6 +423,7 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             f'<span class="en">{name_en}</span>'
                             f'</span>'
                             f'{items_wrap}'
+                            f'{rate_html}'
                             f'</div>'
                         )
 
@@ -421,6 +450,116 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
             f'<div class="hall-content" data-hall="{hall}" data-hall-name="{hall_cn} {hall_en}" style="display:{display}">'
             f'{meals_html}'
             f'</div>\n'
+        )
+
+    # Build Firebase rating CSS and JS (empty strings if not configured)
+    firebase_css = ""
+    firebase_js = ""
+    if firebase_config and firebase_config.get("databaseURL"):
+        firebase_css = (
+            ".rate-group { display: inline-flex; gap: 3px; margin-left: auto; flex-shrink: 0; align-items: center; }\n"
+            ".rate-btn { display: inline-flex; align-items: center; gap: 2px; "
+            "font-size: 10px; font-weight: 500; cursor: pointer; padding: 2px 5px; border-radius: 4px; "
+            "background: transparent; color: var(--text-secondary); "
+            "user-select: none; transition: all 0.15s; line-height: 1; }\n"
+            ".rate-btn svg { display: block; }\n"
+            ".rate-btn:hover { background: var(--bg-hover); color: var(--text); }\n"
+            ".rate-up.voted { background: hsl(142 72% 94%); color: hsl(142 72% 29%); }\n"
+            ".rate-down.voted { background: hsl(0 72% 93%); color: hsl(0 72% 35%); }\n"
+            ".dark-theme .rate-up.voted { background: hsl(142 30% 16%); color: hsl(142 50% 65%); }\n"
+            ".dark-theme .rate-down.voted { background: hsl(0 30% 16%); color: hsl(0 50% 65%); }\n"
+            "@media (prefers-color-scheme: dark) {\n"
+            "  :root:not(.light-theme) .rate-up.voted { background: hsl(142 30% 16%); color: hsl(142 50% 65%); }\n"
+            "  :root:not(.light-theme) .rate-down.voted { background: hsl(0 30% 16%); color: hsl(0 50% 65%); }\n"
+            "}\n"
+            ".rating-count { font-size: 10px; min-width: 6px; text-align: center; }\n"
+        )
+        # Escape </script> and <!-- in config JSON to prevent XSS
+        firebase_config_json = json.dumps(firebase_config).replace("<", "\\u003c")
+        firebase_js = (
+            "// Dish rating system (Firebase)\n"
+            "(function() {\n"
+            "  var config = " + firebase_config_json + ";\n"
+            "  if (!config || !config.databaseURL) return;\n"
+            "  function loadScript(src) {\n"
+            "    return new Promise(function(resolve, reject) {\n"
+            "      var s = document.createElement('script');\n"
+            "      s.src = src; s.onload = resolve; s.onerror = reject;\n"
+            "      document.head.appendChild(s);\n"
+            "    });\n"
+            "  }\n"
+            "  function itemKey(name) {\n"
+            "    return name.replace(/[.#$\\[\\]\\/\\x00-\\x1f]/g, '_').substring(0, 128);\n"
+            "  }\n"
+            "  function countVotes(votes) {\n"
+            "    var up = 0, down = 0;\n"
+            "    if (votes) Object.values(votes).forEach(function(v) { if (v === 'up') up++; else if (v === 'down') down++; });\n"
+            "    return {up: up, down: down};\n"
+            "  }\n"
+            "  loadScript('https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js')\n"
+            "  .then(function() { return loadScript('https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js'); })\n"
+            "  .then(function() { return loadScript('https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js'); })\n"
+            "  .then(function() {\n"
+            "    firebase.initializeApp(config);\n"
+            "    var db = firebase.database();\n"
+            "    return firebase.auth().signInAnonymously().then(function(cred) {\n"
+            "      var uid = cred.user.uid;\n"
+            "      // Load all ratings once\n"
+            "      db.ref('ratings').once('value').then(function(snap) {\n"
+            "        var all = snap.val() || {};\n"
+            "        document.querySelectorAll('.rate-group').forEach(function(group) {\n"
+            "          var en = group.parentElement.querySelector('.item-name .en');\n"
+            "          if (!en) return;\n"
+            "          var key = itemKey(en.textContent.trim());\n"
+            "          var data = all[key] || {};\n"
+            "          var votes = data.votes || {};\n"
+            "          var counts = countVotes(votes);\n"
+            "          var upBtn = group.querySelector('.rate-up');\n"
+            "          var downBtn = group.querySelector('.rate-down');\n"
+            "          upBtn.querySelector('.rating-count').textContent = counts.up || '';\n"
+            "          downBtn.querySelector('.rating-count').textContent = counts.down || '';\n"
+            "          if (votes[uid] === 'up') upBtn.classList.add('voted');\n"
+            "          if (votes[uid] === 'down') downBtn.classList.add('voted');\n"
+            "        });\n"
+            "      });\n"
+            "      // Handle rating clicks\n"
+            "      document.addEventListener('click', function(e) {\n"
+            "        var btn = e.target.closest('.rate-btn');\n"
+            "        if (!btn) return;\n"
+            "        e.stopPropagation();\n"
+            "        e.preventDefault();\n"
+            "        var group = btn.closest('.rate-group');\n"
+            "        var en = group.parentElement.querySelector('.item-name .en');\n"
+            "        if (!en) return;\n"
+            "        var key = itemKey(en.textContent.trim());\n"
+            "        var isUp = btn.classList.contains('rate-up');\n"
+            "        var type = isUp ? 'up' : 'down';\n"
+            "        var other = isUp ? 'down' : 'up';\n"
+            "        var otherBtn = group.querySelector('.rate-' + other);\n"
+            "        var countEl = btn.querySelector('.rating-count');\n"
+            "        var otherCountEl = otherBtn.querySelector('.rating-count');\n"
+            "        var current = parseInt(countEl.textContent) || 0;\n"
+            "        var otherCurrent = parseInt(otherCountEl.textContent) || 0;\n"
+            "        var ref = db.ref('ratings/' + key + '/votes/' + uid);\n"
+            "        // If already voted this type, undo\n"
+            "        if (btn.classList.contains('voted')) {\n"
+            "          btn.classList.remove('voted');\n"
+            "          countEl.textContent = Math.max(0, current - 1) || '';\n"
+            "          ref.remove();\n"
+            "        } else {\n"
+            "          // If voted the other type, undo that first\n"
+            "          if (otherBtn.classList.contains('voted')) {\n"
+            "            otherBtn.classList.remove('voted');\n"
+            "            otherCountEl.textContent = Math.max(0, otherCurrent - 1) || '';\n"
+            "          }\n"
+            "          btn.classList.add('voted');\n"
+            "          countEl.textContent = current + 1;\n"
+            "          ref.set(type);\n"
+            "        }\n"
+            "      });\n"
+            "    });\n"
+            "  }).catch(function() { /* Firebase unavailable — buttons stay inert */ });\n"
+            "})();\n"
         )
 
     return f"""<!DOCTYPE html>
@@ -911,7 +1050,7 @@ footer {{
     font-family: inherit;
 }}
 .help-close:hover {{ color: var(--text); }}
-</style>
+{firebase_css}</style>
 </head>
 <body>
 <header>
@@ -1220,6 +1359,7 @@ updateThemeSlider();
     if (isMobile) {{
         // Tap to show, tap elsewhere to dismiss
         main.addEventListener('click', function(e) {{
+            if (e.target.closest('.rate-btn')) return;
             var item = e.target.closest('.menu-item');
             if (item) {{
                 e.preventDefault();
@@ -1254,6 +1394,7 @@ updateThemeSlider();
     window.addEventListener('scroll', hidePopover, {{passive: true}});
 }})();
 
+{firebase_js}
 </script>
 </body>
 </html>"""
@@ -1315,7 +1456,8 @@ def main():
     # Render HTML
     print("Generating HTML...")
     html = render_html(all_menus, translations, menu_date,
-                       item_stats=item_stats, num_days=num_days)
+                       item_stats=item_stats, num_days=num_days,
+                       firebase_config=FIREBASE_CONFIG)
 
     os.makedirs(args.output, exist_ok=True)
     output_path = os.path.join(args.output, "index.html")

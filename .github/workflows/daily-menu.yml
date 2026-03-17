@@ -40,6 +40,7 @@ jobs:
         run: python3 generate_site.py
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
 
       - name: Commit translation cache and dataset
         run: |
