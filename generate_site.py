@@ -1060,7 +1060,7 @@ footer {{
         <div class="toggle-switch" id="meal-toggle">
             <div class="toggle-slider" id="meal-slider"></div>
             <span class="toggle-option" data-meal="breakfast" onclick="switchMeal('breakfast')"><span class="cn">早餐</span><span class="en">Breakfast</span></span>
-            <span class="toggle-option active" data-meal="lunch" onclick="switchMeal('lunch')"><span class="cn">午餐</span><span class="en">Lunch</span></span>
+            <span class="toggle-option" data-meal="lunch" onclick="switchMeal('lunch')"><span class="cn">午餐</span><span class="en">Lunch</span></span>
             <span class="toggle-option" data-meal="dinner" onclick="switchMeal('dinner')"><span class="cn">晚餐</span><span class="en">Dinner</span></span>
         </div>
         <div class="toggle-switch" id="theme-toggle" onclick="toggleTheme()">
@@ -1189,11 +1189,20 @@ function switchMeal(meal) {{
     }});
     updateMealSlider();
 }}
-// Default to lunch on load
-document.querySelectorAll('.meal-section').forEach(el => {{
-    if (el.dataset.meal !== 'lunch') el.classList.add('meal-hidden');
-}});
-updateMealSlider();
+// Default meal based on current time (ET)
+(function() {{
+    var now = new Date();
+    // Convert to ET
+    var et = new Date(now.toLocaleString('en-US', {{timeZone: 'America/New_York'}}));
+    var h = et.getHours();
+    var meal = h < 11 ? 'breakfast' : h < 16 ? 'lunch' : 'dinner';
+    // Check the meal section actually exists (some meals may not be served)
+    var exists = document.querySelector('.meal-section[data-meal="' + meal + '"]');
+    if (!exists) meal = 'lunch';
+    exists = document.querySelector('.meal-section[data-meal="' + meal + '"]');
+    if (!exists) meal = document.querySelector('.meal-section') ? document.querySelector('.meal-section').dataset.meal : 'lunch';
+    switchMeal(meal);
+}})();
 
 // Dietary filter toggles
 let activeFilters = new Set();
