@@ -335,7 +335,7 @@ def fetch_hall_reviews(api_key: str) -> dict[str, dict]:
     headers = {
         "Content-Type": "application/json",
         "X-Goog-Api-Key": api_key,
-        "X-Goog-FieldMask": "places.rating,places.userRatingCount,places.reviews",
+        "X-Goog-FieldMask": "places.rating,places.userRatingCount,places.reviews.authorAttribution.displayName,places.reviews.rating,places.reviews.text,places.reviews.relativePublishTimeDescription,places.reviews.publishTime",
     }
 
     results = {}
@@ -354,15 +354,23 @@ def fetch_hall_reviews(api_key: str) -> dict[str, dict]:
                 continue
             place = places[0]
 
+            # Sort by publishTime (newest first), keep only reviews with text
+            raw_reviews = place.get("reviews", [])
+            raw_reviews.sort(key=lambda r: r.get("publishTime", ""), reverse=True)
             reviews = []
-            for r in place.get("reviews", [])[:5]:
+            for r in raw_reviews:
+                text = r.get("text", {}).get("text", "")
+                if not text:
+                    continue
                 author_attr = r.get("authorAttribution", {})
                 reviews.append({
                     "author": author_attr.get("displayName", "Anonymous"),
                     "rating": r.get("rating", 0),
-                    "text": r.get("text", {}).get("text", ""),
+                    "text": text,
                     "time": r.get("relativePublishTimeDescription", ""),
                 })
+                if len(reviews) >= 3:
+                    break
 
             results[hall] = {
                 "rating": place.get("rating", 0),
@@ -609,18 +617,20 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
             stars_html += "&#9734;" * (5 - filled)
             stars_html += "</span>"
 
+            google_maps_url = f'https://www.google.com/maps/search/?api=1&amp;query={map_query}'
             reviews_html += (
                 f'<div class="hall-reviews">'
                 f'<div class="review-summary">'
                 f'{stars_html}'
                 f'<span class="review-rating">{rating}</span>'
-                f'<span class="review-count">({total} reviews on Google)</span>'
+                f'<a class="review-count" href="{google_maps_url}" target="_blank" rel="noopener">{total} reviews on Google</a>'
                 f'</div>'
             )
 
-            # Individual reviews
+            # Top reviews
             reviews_list = review_data.get("reviews", [])
             if reviews_list:
+                reviews_html += '<div class="review-list-header">Top reviews</div>'
                 reviews_html += '<div class="review-list">'
                 for rev in reviews_list[:3]:
                     rev_stars = "&#9733;" * int(rev.get("rating", 0)) + "&#9734;" * (5 - int(rev.get("rating", 0)))
@@ -645,13 +655,7 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
             reviews_html += '</div>'
 
         hall_contents_html += (
-            f'<div class="hall-content" data-hall="{hall}" data-hall-name="{hall_cn} {hall_en}" data-map-query="{map_query}" style="display:{display}">'
-            f'<div class="hall-info-bar">'
-            f'<button class="map-btn" onclick="openMap(this.closest(\'.hall-content\').dataset.mapQuery, this.closest(\'.hall-content\').dataset.hallName)" aria-label="View on Google Maps">'
-            f'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>'
-            f' Map &amp; Reviews'
-            f'</button>'
-            f'</div>'
+            f'<div class="hall-content" data-hall="{hall}" data-hall-name="{hall_cn} {hall_en}" style="display:{display}">'
             f'{reviews_html}'
             f'{meals_html}'
             f'</div>\n'
@@ -1364,8 +1368,12 @@ footer {{
     font-size: 0.95rem;
 }}
 .review-count {{
-    color: var(--text-secondary);
+    color: var(--accent);
     font-size: 0.8rem;
+    text-decoration: none;
+}}
+.review-count:hover {{
+    text-decoration: underline;
 }}
 .review-list {{
     display: flex;
@@ -1404,109 +1412,11 @@ footer {{
     color: var(--text-secondary);
     line-height: 1.5;
 }}
-/* Google Maps button and modal */
-.hall-info-bar {{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 10px;
-}}
-.map-btn {{
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 4px 10px;
+.review-list-header {{
     font-size: 0.78rem;
-    color: var(--text-secondary);
-    cursor: pointer;
-    font-family: inherit;
-    transition: all 0.15s;
-}}
-.map-btn:hover {{
-    color: var(--accent);
-    border-color: var(--accent);
-    background: var(--accent-light);
-}}
-.map-modal {{
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.5);
-    z-index: 300;
-    justify-content: center;
-    align-items: center;
-}}
-.map-modal.visible {{
-    display: flex;
-}}
-.map-modal-card {{
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    width: 90%;
-    max-width: 700px;
-    max-height: 85vh;
-    overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: column;
-}}
-.map-modal-header {{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--border);
-}}
-.map-modal-header h3 {{
-    font-size: 0.95rem;
     font-weight: 600;
-}}
-.map-modal-close {{
-    background: none;
-    border: none;
-    font-size: 1.3rem;
-    cursor: pointer;
     color: var(--text-secondary);
-    font-family: inherit;
-    padding: 0 4px;
-}}
-.map-modal-close:hover {{ color: var(--text); }}
-.map-modal-body {{
-    flex: 1;
-    min-height: 0;
-}}
-.map-modal-body iframe {{
-    width: 100%;
-    height: 450px;
-    border: none;
-    display: block;
-}}
-.map-modal-footer {{
-    padding: 8px 16px;
-    border-top: 1px solid var(--border);
-    text-align: center;
-}}
-.map-modal-footer a {{
-    font-size: 0.8rem;
-    color: var(--accent);
-    text-decoration: none;
-}}
-.map-modal-footer a:hover {{ text-decoration: underline; }}
-@media (max-width: 600px) {{
-    .map-modal-card {{
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-        max-height: 100%;
-        border-radius: 0;
-    }}
-    .map-modal-body iframe {{
-        height: calc(100vh - 100px);
-    }}
+    margin-bottom: 4px;
 }}
 {firebase_css}</style>
 </head>
@@ -1623,43 +1533,7 @@ footer {{
 </div>
 </div>
 
-<div id="map-modal" class="map-modal" onclick="if(event.target===this)closeMap()">
-<div class="map-modal-card">
-    <div class="map-modal-header">
-        <h3 id="map-modal-title"></h3>
-        <button class="map-modal-close" onclick="closeMap()">&times;</button>
-    </div>
-    <div class="map-modal-body">
-        <iframe id="map-iframe" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-    </div>
-    <div class="map-modal-footer">
-        <a id="map-link" href="#" target="_blank" rel="noopener">Open in Google Maps for reviews &rarr;</a>
-    </div>
-</div>
-</div>
-
 <script>
-// Google Maps modal
-function openMap(query, hallName) {{
-    const modal = document.getElementById('map-modal');
-    const iframe = document.getElementById('map-iframe');
-    const title = document.getElementById('map-modal-title');
-    const link = document.getElementById('map-link');
-    title.textContent = hallName || 'Google Maps';
-    iframe.src = 'https://maps.google.com/maps?q=' + encodeURIComponent(query.replace(/\\+/g, ' ')) + '&output=embed';
-    link.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(query.replace(/\\+/g, ' '));
-    modal.classList.add('visible');
-    document.body.style.overflow = 'hidden';
-}}
-function closeMap() {{
-    const modal = document.getElementById('map-modal');
-    const iframe = document.getElementById('map-iframe');
-    modal.classList.remove('visible');
-    iframe.src = '';
-    document.body.style.overflow = '';
-}}
-document.addEventListener('keydown', e => {{ if (e.key === 'Escape' && document.getElementById('map-modal').classList.contains('visible')) closeMap(); }});
-
 // Hall tab switching with fade
 document.querySelectorAll('.hall-tab').forEach(tab => {{
     tab.addEventListener('click', () => {{

@@ -5,4 +5,5 @@ screenshot-*.png
 .playwright-mcp/
 .ralph/
 .ralphrc
+.env
 site/reviews_cache.json
