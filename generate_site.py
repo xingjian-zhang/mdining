@@ -23,6 +23,25 @@ from zoneinfo import ZoneInfo
 
 from scraper import DINING_HALLS, fetch_menu
 
+# Firebase Realtime Database config for dish ratings (optional).
+# Set the FIREBASE_CONFIG env var as a JSON string, e.g.:
+#   export FIREBASE_CONFIG='{"apiKey":"...","authDomain":"...","databaseURL":"...","projectId":"..."}'
+# Or edit this dict directly. To set up:
+#   1. Create a Firebase project at https://console.firebase.google.com
+#   2. Add a Web App, copy the config object
+#   3. Enable Realtime Database, set rules (see below)
+# Recommended security rules for "ratings" node:
+#   { "rules": { "ratings": { "$item": { "up": {
+#       ".read": true,
+#       ".write": true,
+#       ".validate": "newData.isNumber() && newData.val() >= 0"
+#   }}}}}
+_fb_env = os.environ.get("FIREBASE_CONFIG", "{}")
+try:
+    FIREBASE_CONFIG = json.loads(_fb_env) if _fb_env else {}
+except json.JSONDecodeError:
+    FIREBASE_CONFIG = {}
+
 # Chinese names for dining halls
 HALL_NAMES_CN = {
     "bursley": "伯斯利",
@@ -291,7 +310,7 @@ def format_hall_name(slug: str) -> str:
 
 def render_html(all_menus: list[dict], translations: dict[str, str],
                 menu_date: str, item_stats: dict | None = None,
-                num_days: int = 0) -> str:
+                num_days: int = 0, firebase_config: dict | None = None) -> str:
     """Render all menu data into a self-contained HTML page."""
     date_display = datetime.strptime(menu_date, "%Y-%m-%d").strftime("%A, %B %-d, %Y")
     now = datetime.now(ZoneInfo("America/Detroit")).strftime("%Y-%m-%d %H:%M")
@@ -388,6 +407,7 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             stat_attrs += f' data-halls="{",".join(st.get("halls", []))}"'
                             stat_attrs += f' data-days="{num_days}"'
 
+                        rate_html = '<span class="rate-btn">&#128077; <span class="rating-count"></span></span>' if firebase_config else ''
                         items_html += (
                             f'<div class="menu-item" data-traits="{trait_data}"{stat_attrs}>'
                             f'<span class="item-name">'
@@ -395,6 +415,7 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             f'<span class="en">{name_en}</span>'
                             f'</span>'
                             f'{items_wrap}'
+                            f'{rate_html}'
                             f'</div>'
                         )
 
@@ -421,6 +442,83 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
             f'<div class="hall-content" data-hall="{hall}" data-hall-name="{hall_cn} {hall_en}" style="display:{display}">'
             f'{meals_html}'
             f'</div>\n'
+        )
+
+    # Build Firebase rating CSS and JS (empty strings if not configured)
+    firebase_css = ""
+    firebase_js = ""
+    if firebase_config and firebase_config.get("databaseURL"):
+        firebase_css = (
+            ".rate-btn { display: inline-flex; align-items: center; gap: 2px; "
+            "font-size: 11px; cursor: pointer; padding: 1px 6px; border-radius: 9999px; "
+            "background: transparent; border: 1px solid var(--border); color: var(--text-secondary); "
+            "user-select: none; transition: all 0.15s; flex-shrink: 0; line-height: 1.4; margin-left: auto; }\n"
+            ".rate-btn:hover { background: var(--bg-hover); color: var(--text); }\n"
+            ".rate-btn.voted { border-color: var(--accent); color: var(--accent); "
+            "background: var(--accent-light); }\n"
+            ".rating-count { font-size: 10px; min-width: 8px; text-align: center; }\n"
+        )
+        firebase_config_json = json.dumps(firebase_config)
+        firebase_js = (
+            "// Dish rating system (Firebase)\n"
+            "(function() {\n"
+            "  var config = " + firebase_config_json + ";\n"
+            "  if (!config || !config.databaseURL) return;\n"
+            "  function loadScript(src) {\n"
+            "    return new Promise(function(resolve) {\n"
+            "      var s = document.createElement('script');\n"
+            "      s.src = src; s.onload = resolve;\n"
+            "      document.head.appendChild(s);\n"
+            "    });\n"
+            "  }\n"
+            "  function itemKey(name) {\n"
+            "    return name.replace(/[.#$\\[\\]\\/]/g, '_').substring(0, 128);\n"
+            "  }\n"
+            "  loadScript('https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js')\n"
+            "  .then(function() { return loadScript('https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js'); })\n"
+            "  .then(function() {\n"
+            "    firebase.initializeApp(config);\n"
+            "    var db = firebase.database();\n"
+            "    var votes = JSON.parse(localStorage.getItem('mdining_votes') || '{}');\n"
+            "    // Load all ratings once\n"
+            "    db.ref('ratings').once('value').then(function(snap) {\n"
+            "      var all = snap.val() || {};\n"
+            "      document.querySelectorAll('.rate-btn').forEach(function(btn) {\n"
+            "        var en = btn.parentElement.querySelector('.item-name .en');\n"
+            "        if (!en) return;\n"
+            "        var key = itemKey(en.textContent.trim());\n"
+            "        var count = (all[key] && all[key].up) || 0;\n"
+            "        btn.querySelector('.rating-count').textContent = count || '';\n"
+            "        if (votes[key]) btn.classList.add('voted');\n"
+            "      });\n"
+            "    });\n"
+            "    // Handle rating clicks\n"
+            "    document.addEventListener('click', function(e) {\n"
+            "      var btn = e.target.closest('.rate-btn');\n"
+            "      if (!btn) return;\n"
+            "      e.stopPropagation();\n"
+            "      e.preventDefault();\n"
+            "      var en = btn.parentElement.querySelector('.item-name .en');\n"
+            "      if (!en) return;\n"
+            "      var key = itemKey(en.textContent.trim());\n"
+            "      var countEl = btn.querySelector('.rating-count');\n"
+            "      var current = parseInt(countEl.textContent) || 0;\n"
+            "      if (votes[key]) {\n"
+            "        delete votes[key];\n"
+            "        btn.classList.remove('voted');\n"
+            "        var nv = Math.max(0, current - 1);\n"
+            "        countEl.textContent = nv || '';\n"
+            "        db.ref('ratings/' + key + '/up').transaction(function(v) { return Math.max(0, (v || 0) - 1); });\n"
+            "      } else {\n"
+            "        votes[key] = 1;\n"
+            "        btn.classList.add('voted');\n"
+            "        countEl.textContent = current + 1;\n"
+            "        db.ref('ratings/' + key + '/up').transaction(function(v) { return (v || 0) + 1; });\n"
+            "      }\n"
+            "      localStorage.setItem('mdining_votes', JSON.stringify(votes));\n"
+            "    });\n"
+            "  });\n"
+            "})();\n"
         )
 
     return f"""<!DOCTYPE html>
@@ -911,7 +1009,7 @@ footer {{
     font-family: inherit;
 }}
 .help-close:hover {{ color: var(--text); }}
-</style>
+{firebase_css}</style>
 </head>
 <body>
 <header>
@@ -1220,6 +1318,7 @@ updateThemeSlider();
     if (isMobile) {{
         // Tap to show, tap elsewhere to dismiss
         main.addEventListener('click', function(e) {{
+            if (e.target.closest('.rate-btn')) return;
             var item = e.target.closest('.menu-item');
             if (item) {{
                 e.preventDefault();
@@ -1254,6 +1353,7 @@ updateThemeSlider();
     window.addEventListener('scroll', hidePopover, {{passive: true}});
 }})();
 
+{firebase_js}
 </script>
 </body>
 </html>"""
@@ -1315,7 +1415,8 @@ def main():
     # Render HTML
     print("Generating HTML...")
     html = render_html(all_menus, translations, menu_date,
-                       item_stats=item_stats, num_days=num_days)
+                       item_stats=item_stats, num_days=num_days,
+                       firebase_config=FIREBASE_CONFIG)
 
     os.makedirs(args.output, exist_ok=True)
     output_path = os.path.join(args.output, "index.html")
