@@ -17,9 +17,12 @@ import json
 import os
 import re
 import sys
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
+
+import requests
 
 from scraper import DINING_HALLS, fetch_menu
 
@@ -60,6 +63,17 @@ MEAL_NAMES_CN = {
     "dinner": "晚餐",
     "brunch": "早午餐",
 }
+
+# Google Maps embed queries for each dining hall
+HALL_MAP_QUERIES = {
+    "bursley": "Bursley+Dining+Hall,+1931+Duffield+St,+Ann+Arbor,+MI+48109",
+    "east-quad": "East+Quad+Dining+Hall,+701+E+University,+Ann+Arbor,+MI+48109",
+    "mosher-jordan": "Mosher-Jordan+Dining+Hall,+200+Observatory,+Ann+Arbor,+MI+48109",
+    "south-quad": "South+Quad+Dining+Hall,+600+E+Madison,+Ann+Arbor,+MI+48109",
+    "twigs-at-oxford": "Twigs+at+Oxford,+619+Oxford+Rd,+Ann+Arbor,+MI+48109",
+}
+
+GOOGLE_MAPS_API_KEY = os.environ.get("GOOGLE_MAPS_API_KEY", "")
 
 TRAIT_DISPLAY = {
     # trait: (emoji, cn_label, en_label, css_class)
@@ -306,6 +320,117 @@ def translate_with_cache(names: list[str], cache_path: str) -> dict[str, str]:
     return cache
 
 
+def fetch_hall_reviews(api_key: str) -> dict[str, dict]:
+    """Fetch Google Maps reviews for all dining halls using the Places API.
+
+    Returns a dict mapping hall slug to review data:
+    {hall: {"rating": float, "total_ratings": int, "reviews": [...]}}
+    """
+    if not api_key:
+        return {}
+
+    results = {}
+    for hall, query in HALL_MAP_QUERIES.items():
+        try:
+            # Step 1: Find the place using text search
+            search_url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json"
+            resp = requests.get(search_url, params={
+                "input": query.replace("+", " "),
+                "inputtype": "textquery",
+                "fields": "place_id",
+                "key": api_key,
+            }, timeout=10)
+            resp.raise_for_status()
+            candidates = resp.json().get("candidates", [])
+            if not candidates:
+                print(f"  Warning: No Place ID found for {hall}", file=sys.stderr)
+                continue
+            place_id = candidates[0]["place_id"]
+
+            # Step 2: Get place details with reviews
+            details_url = "https://maps.googleapis.com/maps/api/place/details/json"
+            resp = requests.get(details_url, params={
+                "place_id": place_id,
+                "fields": "rating,user_ratings_total,reviews",
+                "key": api_key,
+            }, timeout=10)
+            resp.raise_for_status()
+            result = resp.json().get("result", {})
+
+            reviews = []
+            for r in result.get("reviews", [])[:5]:
+                reviews.append({
+                    "author": r.get("author_name", "Anonymous"),
+                    "rating": r.get("rating", 0),
+                    "text": r.get("text", ""),
+                    "time": r.get("relative_time_description", ""),
+                })
+
+            results[hall] = {
+                "rating": result.get("rating", 0),
+                "total_ratings": result.get("user_ratings_total", 0),
+                "reviews": reviews,
+                "fetched": datetime.now().strftime("%Y-%m-%d"),
+            }
+        except Exception as e:
+            print(f"  Warning: Failed to fetch reviews for {hall}: {e}", file=sys.stderr)
+
+    return results
+
+
+def load_reviews_cache(cache_path: str) -> dict[str, dict]:
+    """Load cached reviews from JSON file."""
+    if os.path.exists(cache_path):
+        try:
+            with open(cache_path) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            pass
+    return {}
+
+
+def save_reviews_cache(cache_path: str, cache: dict[str, dict]):
+    """Save reviews cache to JSON file."""
+    os.makedirs(os.path.dirname(cache_path) or ".", exist_ok=True)
+    with open(cache_path, "w") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+
+def fetch_reviews_with_cache(api_key: str, cache_path: str) -> dict[str, dict]:
+    """Fetch reviews using cache. Re-fetches if cache is older than 7 days."""
+    cache = load_reviews_cache(cache_path)
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    # Check if cache is fresh (less than 7 days old)
+    needs_refresh = False
+    if not cache:
+        needs_refresh = True
+    else:
+        for hall_data in cache.values():
+            fetched = hall_data.get("fetched", "")
+            if fetched:
+                age = (datetime.strptime(today, "%Y-%m-%d") - datetime.strptime(fetched, "%Y-%m-%d")).days
+                if age >= 7:
+                    needs_refresh = True
+                    break
+
+    if needs_refresh and api_key:
+        print("  Fetching Google Maps reviews...")
+        new_reviews = fetch_hall_reviews(api_key)
+        if new_reviews:
+            cache.update(new_reviews)
+            save_reviews_cache(cache_path, cache)
+            print(f"  Reviews fetched for {len(new_reviews)} halls")
+        else:
+            print("  No new reviews fetched (API may be unavailable)")
+    elif cache:
+        print(f"  Reviews: {len(cache)} halls cached")
+    else:
+        print("  Reviews: skipped (no GOOGLE_MAPS_API_KEY)")
+
+    return cache
+
+
 def format_hall_name(slug: str) -> str:
     """Format hall slug to display name."""
     return slug.replace("-", " ").title()
@@ -313,7 +438,8 @@ def format_hall_name(slug: str) -> str:
 
 def render_html(all_menus: list[dict], translations: dict[str, str],
                 menu_date: str, item_stats: dict | None = None,
-                num_days: int = 0, firebase_config: dict | None = None) -> str:
+                num_days: int = 0, firebase_config: dict | None = None,
+                hall_reviews: dict | None = None) -> str:
     """Render all menu data into a self-contained HTML page."""
     date_display = datetime.strptime(menu_date, "%Y-%m-%d").strftime("%A, %B %-d, %Y")
     now = datetime.now(ZoneInfo("America/Detroit")).strftime("%Y-%m-%d %H:%M")
@@ -470,8 +596,71 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                 )
 
         display = "block" if i == 0 else "none"
+        map_query = HALL_MAP_QUERIES.get(hall, hall_en + ",+Ann+Arbor,+MI")
+
+        # Build reviews HTML if available
+        reviews_html = ""
+        review_data = (hall_reviews or {}).get(hall, {})
+        if review_data and review_data.get("rating"):
+            rating = review_data["rating"]
+            total = review_data.get("total_ratings", 0)
+            # Star display
+            full_stars = int(rating)
+            half_star = 1 if rating - full_stars >= 0.3 else 0
+            empty_stars = 5 - full_stars - half_star
+            stars_html = '<span class="review-stars">'
+            stars_html += "&#9733;" * full_stars
+            if half_star:
+                stars_html += "&#9733;"  # use full star for half (simpler)
+            stars_html += "&#9734;" * empty_stars
+            stars_html += "</span>"
+
+            reviews_html += (
+                f'<div class="hall-reviews">'
+                f'<div class="review-summary">'
+                f'{stars_html}'
+                f'<span class="review-rating">{rating}</span>'
+                f'<span class="review-count">({total} reviews on Google)</span>'
+                f'</div>'
+            )
+
+            # Individual reviews
+            reviews_list = review_data.get("reviews", [])
+            if reviews_list:
+                reviews_html += '<div class="review-list">'
+                for rev in reviews_list[:3]:
+                    rev_stars = "&#9733;" * int(rev.get("rating", 0)) + "&#9734;" * (5 - int(rev.get("rating", 0)))
+                    author = rev.get("author", "Anonymous")
+                    text = rev.get("text", "")
+                    # Escape HTML in review text
+                    text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                    # Truncate long reviews
+                    if len(text) > 200:
+                        text = text[:200] + "..."
+                    time_ago = rev.get("time", "")
+                    reviews_html += (
+                        f'<div class="review-item">'
+                        f'<div class="review-author">'
+                        f'<span class="review-author-name">{author}</span>'
+                        f'<span class="review-stars-sm">{rev_stars}</span>'
+                        f'<span class="review-time">{time_ago}</span>'
+                        f'</div>'
+                        f'<div class="review-text">{text}</div>'
+                        f'</div>'
+                    )
+                reviews_html += '</div>'
+
+            reviews_html += '</div>'
+
         hall_contents_html += (
-            f'<div class="hall-content" data-hall="{hall}" data-hall-name="{hall_cn} {hall_en}" style="display:{display}">'
+            f'<div class="hall-content" data-hall="{hall}" data-hall-name="{hall_cn} {hall_en}" data-map-query="{map_query}" style="display:{display}">'
+            f'<div class="hall-info-bar">'
+            f'<button class="map-btn" onclick="openMap(this.closest(\'.hall-content\').dataset.mapQuery, this.closest(\'.hall-content\').dataset.hallName)" aria-label="View on Google Maps">'
+            f'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>'
+            f' Map &amp; Reviews'
+            f'</button>'
+            f'</div>'
+            f'{reviews_html}'
             f'{meals_html}'
             f'</div>\n'
         )
@@ -1159,6 +1348,174 @@ footer {{
     font-style: italic;
     width: 100%;
 }}
+/* Google Maps reviews */
+.hall-reviews {{
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    margin-bottom: 12px;
+}}
+.review-summary {{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}}
+.review-stars {{
+    color: hsl(43 96% 56%);
+    font-size: 1rem;
+    letter-spacing: -1px;
+}}
+.review-rating {{
+    font-weight: 700;
+    font-size: 0.95rem;
+}}
+.review-count {{
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}}
+.review-list {{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}}
+.review-item {{
+    padding: 8px 0;
+    border-top: 1px solid var(--border);
+}}
+.review-item:first-child {{
+    padding-top: 0;
+    border-top: none;
+}}
+.review-author {{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 2px;
+}}
+.review-author-name {{
+    font-weight: 600;
+    font-size: 0.82rem;
+}}
+.review-stars-sm {{
+    color: hsl(43 96% 56%);
+    font-size: 0.75rem;
+    letter-spacing: -1px;
+}}
+.review-time {{
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+}}
+.review-text {{
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}}
+/* Google Maps button and modal */
+.hall-info-bar {{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}}
+.map-btn {{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 4px 10px;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s;
+}}
+.map-btn:hover {{
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-light);
+}}
+.map-modal {{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 300;
+    justify-content: center;
+    align-items: center;
+}}
+.map-modal.visible {{
+    display: flex;
+}}
+.map-modal-card {{
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    width: 90%;
+    max-width: 700px;
+    max-height: 85vh;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}}
+.map-modal-header {{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+}}
+.map-modal-header h3 {{
+    font-size: 0.95rem;
+    font-weight: 600;
+}}
+.map-modal-close {{
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+    font-family: inherit;
+    padding: 0 4px;
+}}
+.map-modal-close:hover {{ color: var(--text); }}
+.map-modal-body {{
+    flex: 1;
+    min-height: 0;
+}}
+.map-modal-body iframe {{
+    width: 100%;
+    height: 450px;
+    border: none;
+    display: block;
+}}
+.map-modal-footer {{
+    padding: 8px 16px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}}
+.map-modal-footer a {{
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-decoration: none;
+}}
+.map-modal-footer a:hover {{ text-decoration: underline; }}
+@media (max-width: 600px) {{
+    .map-modal-card {{
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 0;
+    }}
+    .map-modal-body iframe {{
+        height: calc(100vh - 100px);
+    }}
+}}
 {firebase_css}</style>
 </head>
 <body>
@@ -1274,7 +1631,43 @@ footer {{
 </div>
 </div>
 
+<div id="map-modal" class="map-modal" onclick="if(event.target===this)closeMap()">
+<div class="map-modal-card">
+    <div class="map-modal-header">
+        <h3 id="map-modal-title"></h3>
+        <button class="map-modal-close" onclick="closeMap()">&times;</button>
+    </div>
+    <div class="map-modal-body">
+        <iframe id="map-iframe" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+    <div class="map-modal-footer">
+        <a id="map-link" href="#" target="_blank" rel="noopener">Open in Google Maps for reviews &rarr;</a>
+    </div>
+</div>
+</div>
+
 <script>
+// Google Maps modal
+function openMap(query, hallName) {{
+    const modal = document.getElementById('map-modal');
+    const iframe = document.getElementById('map-iframe');
+    const title = document.getElementById('map-modal-title');
+    const link = document.getElementById('map-link');
+    title.textContent = hallName || 'Google Maps';
+    iframe.src = 'https://maps.google.com/maps?q=' + encodeURIComponent(query.replace(/\\+/g, ' ')) + '&output=embed';
+    link.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(query.replace(/\\+/g, ' '));
+    modal.classList.add('visible');
+    document.body.style.overflow = 'hidden';
+}}
+function closeMap() {{
+    const modal = document.getElementById('map-modal');
+    const iframe = document.getElementById('map-iframe');
+    modal.classList.remove('visible');
+    iframe.src = '';
+    document.body.style.overflow = '';
+}}
+document.addEventListener('keydown', e => {{ if (e.key === 'Escape' && document.getElementById('map-modal').classList.contains('visible')) closeMap(); }});
+
 // Hall tab switching with fade
 document.querySelectorAll('.hall-tab').forEach(tab => {{
     tab.addEventListener('click', () => {{
@@ -1643,11 +2036,16 @@ def main():
             rare_count = sum(1 for v in item_stats.values() if v["count"] < 2)
             print(f"  Item stats: {len(item_stats)} items tracked ({rare_count} rare) over {num_days} days")
 
+    # Fetch Google Maps reviews (optional, requires GOOGLE_MAPS_API_KEY)
+    reviews_cache_path = os.path.join(args.output, "reviews_cache.json")
+    hall_reviews = fetch_reviews_with_cache(GOOGLE_MAPS_API_KEY, reviews_cache_path)
+
     # Render HTML
     print("Generating HTML...")
     html = render_html(all_menus, translations, menu_date,
                        item_stats=item_stats, num_days=num_days,
-                       firebase_config=FIREBASE_CONFIG)
+                       firebase_config=FIREBASE_CONFIG,
+                       hall_reviews=hall_reviews)
 
     os.makedirs(args.output, exist_ok=True)
     output_path = os.path.join(args.output, "index.html")
