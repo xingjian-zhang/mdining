@@ -408,8 +408,12 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                             stat_attrs += f' data-days="{num_days}"'
 
                         rate_html = ('<span class="rate-group">'
-                                     '<span class="rate-btn rate-up">&#128077;<span class="rating-count"></span></span>'
-                                     '<span class="rate-btn rate-down">&#128078;<span class="rating-count"></span></span>'
+                                     '<span class="rate-btn rate-up">'
+                                     '<svg width="10" height="10" viewBox="0 0 10 10"><path d="M5 2L9 7H1Z" fill="currentColor"/></svg>'
+                                     '<span class="rating-count"></span></span>'
+                                     '<span class="rate-btn rate-down">'
+                                     '<svg width="10" height="10" viewBox="0 0 10 10"><path d="M5 8L1 3H9Z" fill="currentColor"/></svg>'
+                                     '<span class="rating-count"></span></span>'
                                      '</span>') if firebase_config else ''
                         items_html += (
                             f'<div class="menu-item" data-traits="{trait_data}"{stat_attrs}>'
@@ -452,25 +456,20 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
     firebase_js = ""
     if firebase_config and firebase_config.get("databaseURL"):
         firebase_css = (
-            ".rate-group { display: inline-flex; gap: 2px; margin-left: auto; flex-shrink: 0; }\n"
-            ".rate-btn { display: inline-flex; align-items: center; gap: 1px; "
-            "font-size: 11px; cursor: pointer; padding: 1px 5px; border-radius: 9999px; "
-            "background: transparent; border: 1px solid var(--border); color: var(--text-secondary); "
-            "user-select: none; transition: all 0.15s; flex-shrink: 0; line-height: 1.4; }\n"
+            ".rate-group { display: inline-flex; gap: 3px; margin-left: auto; flex-shrink: 0; align-items: center; }\n"
+            ".rate-btn { display: inline-flex; align-items: center; gap: 2px; "
+            "font-size: 10px; font-weight: 500; cursor: pointer; padding: 2px 5px; border-radius: 4px; "
+            "background: transparent; color: var(--text-secondary); "
+            "user-select: none; transition: all 0.15s; line-height: 1; }\n"
+            ".rate-btn svg { display: block; }\n"
             ".rate-btn:hover { background: var(--bg-hover); color: var(--text); }\n"
-            ".rate-up.voted { border-color: hsl(142 50% 45%); color: hsl(142 50% 45%); "
-            "background: hsl(142 50% 95%); }\n"
-            ".rate-down.voted { border-color: hsl(0 50% 50%); color: hsl(0 50% 50%); "
-            "background: hsl(0 50% 95%); }\n"
-            ".dark-theme .rate-up.voted { border-color: hsl(142 40% 55%); color: hsl(142 40% 55%); "
-            "background: hsl(142 25% 15%); }\n"
-            ".dark-theme .rate-down.voted { border-color: hsl(0 40% 60%); color: hsl(0 40% 60%); "
-            "background: hsl(0 25% 15%); }\n"
+            ".rate-up.voted { background: hsl(142 72% 94%); color: hsl(142 72% 29%); }\n"
+            ".rate-down.voted { background: hsl(0 72% 93%); color: hsl(0 72% 35%); }\n"
+            ".dark-theme .rate-up.voted { background: hsl(142 30% 16%); color: hsl(142 50% 65%); }\n"
+            ".dark-theme .rate-down.voted { background: hsl(0 30% 16%); color: hsl(0 50% 65%); }\n"
             "@media (prefers-color-scheme: dark) {\n"
-            "  :root:not(.light-theme) .rate-up.voted { border-color: hsl(142 40% 55%); color: hsl(142 40% 55%); "
-            "background: hsl(142 25% 15%); }\n"
-            "  :root:not(.light-theme) .rate-down.voted { border-color: hsl(0 40% 60%); color: hsl(0 40% 60%); "
-            "background: hsl(0 25% 15%); }\n"
+            "  :root:not(.light-theme) .rate-up.voted { background: hsl(142 30% 16%); color: hsl(142 50% 65%); }\n"
+            "  :root:not(.light-theme) .rate-down.voted { background: hsl(0 30% 16%); color: hsl(0 50% 65%); }\n"
             "}\n"
             ".rating-count { font-size: 10px; min-width: 6px; text-align: center; }\n"
         )
