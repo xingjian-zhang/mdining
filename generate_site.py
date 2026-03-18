@@ -1565,9 +1565,7 @@ body[data-lang] .toggle-option .en {{ margin-left: 3px; font-size: 0.85em; }}
 #lang-select:hover {{ border-color: var(--accent); }}
 /* Insights section */
 .insights-section {{
-    border-top: 1px solid var(--border);
-    margin-top: 24px;
-    padding-top: 8px;
+    margin-top: 16px;
 }}
 .insights-content {{
     display: flex;
