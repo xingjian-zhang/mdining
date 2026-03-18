@@ -4,6 +4,8 @@ on:
   schedule:
     # 10:00 UTC = 5:00 AM ET / 6:00 AM EDT — before breakfast
     - cron: '0 10 * * *'
+  push:
+    branches: [main]
   workflow_dispatch: # Manual trigger
 
 permissions:
