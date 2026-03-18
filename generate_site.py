@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-Generate a static bilingual (Chinese/English) menu website for Michigan Dining.
+Generate a static multilingual menu website for Michigan Dining.
 
-Scrapes all dining halls, translates item names to Chinese, and outputs
+Scrapes all dining halls, translates item names to multiple languages, and outputs
 a single self-contained index.html with embedded CSS and minimal JS.
 
 Usage:
     python generate_site.py                # Generate site/index.html
     python generate_site.py --output out   # Custom output directory
-    python generate_site.py --no-translate # Skip Chinese translation
+    python generate_site.py --no-translate # Skip translation API calls
 """
 
 import argparse
@@ -49,20 +49,22 @@ try:
 except json.JSONDecodeError:
     FIREBASE_CONFIG = {}
 
-# Chinese names for dining halls
-HALL_NAMES_CN = {
-    "bursley": "伯斯利",
-    "east-quad": "东方庭院",
-    "mosher-jordan": "莫舍-乔丹",
-    "south-quad": "南方庭院",
-    "twigs-at-oxford": "牛津小枝",
+SUPPORTED_LANGUAGES = {
+    "zh-CN": {"name": "中文(简体)", "google_code": "zh-CN"},
+    "zh-TW": {"name": "中文(繁體)", "google_code": "zh-TW"},
+    "ko": {"name": "한국어", "google_code": "ko"},
+    "ja": {"name": "日本語", "google_code": "ja"},
+    "es": {"name": "Español", "google_code": "es"},
+    "pt": {"name": "Português", "google_code": "pt"},
 }
 
-MEAL_NAMES_CN = {
-    "breakfast": "早餐",
-    "lunch": "午餐",
-    "dinner": "晚餐",
-    "brunch": "早午餐",
+MEAL_NAMES = {
+    "zh-CN": {"breakfast": "早餐", "lunch": "午餐", "dinner": "晚餐", "brunch": "早午餐"},
+    "zh-TW": {"breakfast": "早餐", "lunch": "午餐", "dinner": "晚餐", "brunch": "早午餐"},
+    "ko": {"breakfast": "아침식사", "lunch": "점심식사", "dinner": "저녁식사", "brunch": "브런치"},
+    "ja": {"breakfast": "朝食", "lunch": "昼食", "dinner": "夕食", "brunch": "ブランチ"},
+    "es": {"breakfast": "Desayuno", "lunch": "Almuerzo", "dinner": "Cena", "brunch": "Brunch"},
+    "pt": {"breakfast": "Café da manhã", "lunch": "Almoço", "dinner": "Jantar", "brunch": "Brunch"},
 }
 
 # Google Maps embed queries for each dining hall
@@ -96,19 +98,6 @@ TRAIT_DISPLAY = {
 }
 
 
-ALLERGEN_NAMES_CN = {
-    "Wheat": "小麦",
-    "Soy": "大豆",
-    "Milk": "牛奶",
-    "Eggs": "鸡蛋",
-    "Fish": "鱼",
-    "Shellfish": "贝类",
-    "Tree Nuts": "坚果",
-    "Peanuts": "花生",
-    "Sesame": "芝麻",
-    "Gluten": "麸质",
-    "Corn": "玉米",
-}
 
 # Keyword rules for meat type detection (checked against lowercased item name)
 MEAT_RULES = [
@@ -247,8 +236,8 @@ def compute_item_stats(all_days: list[list[dict]]) -> dict[str, dict]:
     return stats
 
 
-def translate_names(names: list[str]) -> dict[str, str]:
-    """Translate item names to Chinese using Google Translate (free)."""
+def translate_names(names: list[str], target_lang: str) -> dict[str, str]:
+    """Translate item names to target language using Google Translate (free)."""
     if not names:
         return {}
 
@@ -258,7 +247,7 @@ def translate_names(names: list[str]) -> dict[str, str]:
         print("  Warning: deep-translator not installed, skipping translation", file=sys.stderr)
         return {}
 
-    translator = GoogleTranslator(source="en", target="zh-CN")
+    translator = GoogleTranslator(source="en", target=target_lang)
     translations = {}
     # Google Translate supports batch via translate_batch (max ~5000 chars)
     BATCH_SIZE = 50
@@ -268,55 +257,83 @@ def translate_names(names: list[str]) -> dict[str, str]:
             print(f"    Batch {i // BATCH_SIZE + 1}/{(len(names) + BATCH_SIZE - 1) // BATCH_SIZE}...")
         try:
             results = translator.translate_batch(batch)
-            for name, cn in zip(batch, results):
-                if cn:
-                    translations[name] = cn
+            for name, translated in zip(batch, results):
+                if translated:
+                    translations[name] = translated
         except Exception as e:
             print(f"  Warning: Translation batch failed ({e})", file=sys.stderr)
             # Fallback: translate one by one
             for name in batch:
                 try:
-                    cn = translator.translate(name)
-                    if cn:
-                        translations[name] = cn
+                    translated = translator.translate(name)
+                    if translated:
+                        translations[name] = translated
                 except Exception:
                     pass
 
     return translations
 
 
-def load_translation_cache(cache_path: str) -> dict[str, str]:
-    """Load cached translations from JSON file."""
+def load_translation_cache(cache_path: str) -> dict[str, dict[str, str]]:
+    """Load cached translations from JSON file.
+
+    Returns nested dict: {english_name: {lang_code: translation}}.
+    Migrates old flat format {english_name: chinese_translation} automatically.
+    """
     if os.path.exists(cache_path):
         try:
             with open(cache_path) as f:
-                return json.load(f)
+                data = json.load(f)
         except (json.JSONDecodeError, OSError):
-            pass
+            return {}
+        if not data:
+            return {}
+        # Migrate old flat format: if any value is a string, wrap in {"zh-CN": value}
+        first_val = next(iter(data.values()))
+        if isinstance(first_val, str):
+            migrated = {k: {"zh-CN": v} for k, v in data.items()}
+            save_translation_cache(cache_path, migrated)
+            return migrated
+        return data
     return {}
 
 
-def save_translation_cache(cache_path: str, cache: dict[str, str]):
+def save_translation_cache(cache_path: str, cache: dict[str, dict[str, str]]):
     """Save translations cache to JSON file."""
     os.makedirs(os.path.dirname(cache_path) or ".", exist_ok=True)
     with open(cache_path, "w") as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
 
-def translate_with_cache(names: list[str], cache_path: str) -> dict[str, str]:
-    """Translate names using cache, only calling API for new items."""
+def translate_with_cache(names: list[str], cache_path: str,
+                         languages: dict | None = None) -> dict[str, dict[str, str]]:
+    """Translate names into all supported languages using cache.
+
+    Returns nested dict: {english_name: {lang_code: translation}}.
+    """
+    if languages is None:
+        languages = SUPPORTED_LANGUAGES
     cache = load_translation_cache(cache_path)
 
-    # Find names not in cache
-    new_names = [n for n in names if n not in cache]
+    total_new = 0
+    for lang_code, lang_info in languages.items():
+        # Find names missing translation for this language
+        new_names = [n for n in names if lang_code not in cache.get(n, {})]
+        if not new_names:
+            continue
+        total_new += len(new_names)
+        print(f"  Translating {len(new_names)} items to {lang_info['name']}...")
+        new_translations = translate_names(new_names, lang_info["google_code"])
+        for name, translated in new_translations.items():
+            if name not in cache:
+                cache[name] = {}
+            cache[name][lang_code] = translated
 
-    if new_names:
-        print(f"  Translating {len(new_names)} new items ({len(names) - len(new_names)} cached)...")
-        new_translations = translate_names(new_names)
-        cache.update(new_translations)
+    if total_new:
         save_translation_cache(cache_path, cache)
+        print(f"  Translated {total_new} new item-language pairs.")
     else:
-        print(f"  All {len(names)} items found in cache.")
+        print(f"  All {len(names)} items cached for {len(languages)} languages.")
 
     return cache
 
@@ -442,7 +459,7 @@ def format_hall_name(slug: str) -> str:
     return slug.replace("-", " ").title()
 
 
-def render_html(all_menus: list[dict], translations: dict[str, str],
+def render_html(all_menus: list[dict], translations: dict[str, dict[str, str]],
                 menu_date: str, item_stats: dict | None = None,
                 num_days: int = 0, firebase_config: dict | None = None,
                 hall_reviews: dict | None = None) -> str:
@@ -456,7 +473,6 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
     for i, menu in enumerate(all_menus):
         hall = menu["hall"]
         hall_en = format_hall_name(hall)
-        hall_cn = HALL_NAMES_CN.get(hall, hall_en)
         active = " active" if i == 0 else ""
 
         hall_tabs_html += (
@@ -467,10 +483,9 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
 
         meals_html = ""
         if not menu["meals"]:
-            meals_html = '<div class="no-menu"><span class="cn">暂无菜单</span><span class="en">No menu available</span></div>'
+            meals_html = '<div class="no-menu">No menu available</div>'
         else:
             for meal_key, stations in menu["meals"].items():
-                meal_cn = MEAL_NAMES_CN.get(meal_key, meal_key.title())
                 meal_en = meal_key.title()
                 # Normalize brunch to lunch tab so it's visible on weekends
                 tab_key = "lunch" if meal_key == "brunch" else meal_key
@@ -480,7 +495,7 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                     items_html = ""
                     for item in items:
                         name_en = item["name"]
-                        name_cn = translations.get(name_en, name_en)
+                        item_translations = translations.get(name_en, {})
 
                         traits_html = ""
                         for trait in item.get("traits", []):
@@ -572,11 +587,16 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                                      '<svg width="10" height="10" viewBox="0 0 10 10"><path d="M5 8L1 3H9Z" fill="currentColor"/></svg>'
                                      '<span class="rating-count"></span></span>'
                                      '</span>') if firebase_config else ''
+                        lang_spans = ""
+                        for lang_code in SUPPORTED_LANGUAGES:
+                            translated = item_translations.get(lang_code, "")
+                            if translated:
+                                lang_spans += f'<span class="lang" data-lang="{lang_code}">{html_mod.escape(translated)}</span>'
                         items_html += (
                             f'<div class="menu-item" data-traits="{trait_data}"{stat_attrs}>'
                             f'<span class="item-name">'
-                            f'<span class="cn">{name_cn}</span>'
-                            f'<span class="en">{name_en}</span>'
+                            f'{lang_spans}'
+                            f'<span class="en">{html_mod.escape(name_en)}</span>'
                             f'</span>'
                             f'{items_wrap}'
                             f'{rate_html}'
@@ -591,10 +611,14 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
                         f'</div>'
                     )
 
+                meal_lang_spans = ""
+                for lang_code, lang_meals in MEAL_NAMES.items():
+                    meal_translated = lang_meals.get(meal_key, meal_en)
+                    meal_lang_spans += f'<span class="lang" data-lang="{lang_code}">{meal_translated}</span>'
                 meals_html += (
                     f'<div class="meal-section" data-meal="{tab_key}">'
                     f'<h3 class="meal-name">'
-                    f'<span class="cn">{meal_cn}</span>'
+                    f'{meal_lang_spans}'
                     f'<span class="en">{meal_en}</span>'
                     f'</h3>'
                     f'{stations_html}'
@@ -655,9 +679,9 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
             reviews_html += '</div>'
 
         hall_contents_html += (
-            f'<div class="hall-content" data-hall="{hall}" data-hall-name="{hall_cn} {hall_en}" style="display:{display}">'
-            f'{reviews_html}'
+            f'<div class="hall-content" data-hall="{hall}" data-hall-name="{hall_en}" style="display:{display}">'
             f'{meals_html}'
+            f'{reviews_html}'
             f'</div>\n'
         )
 
@@ -770,19 +794,18 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
         )
 
     return f"""<!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="密歇根大学餐厅每日菜单 - Michigan Dining daily menus in Chinese and English">
+<meta name="description" content="Michigan Dining daily menus with multilingual translations">
 <meta property="og:title" content="Michigan Dining Menus">
-<meta property="og:description" content="Daily updated Michigan Dining menus with Chinese translations">
+<meta property="og:description" content="Daily updated Michigan Dining menus with multilingual translations">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Michigan Dining Menus">
-<meta name="twitter:description" content="Daily updated Michigan Dining menus with Chinese translations">
+<meta name="twitter:description" content="Daily updated Michigan Dining menus with multilingual translations">
 <meta name="theme-color" content="#0d6efd" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
@@ -794,7 +817,7 @@ def render_html(all_menus: list[dict], translations: dict[str, str],
 <title>Michigan Dining Menus</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root {{
     --bg: hsl(0 0% 100%);
@@ -970,10 +993,9 @@ header h1 {{
 .item-name {{
     font-size: 0.9rem;
 }}
-.item-name .en {{
+body[data-lang] .item-name .en {{
     color: var(--text-secondary);
     font-size: 0.8rem;
-    margin-left: 4px;
 }}
 .item-traits {{
     display: inline-flex;
@@ -1090,21 +1112,26 @@ footer {{
 .menu-item.filtered-out {{
     display: none;
 }}
-/* Bilingual: Chinese primary, English secondary */
-.cn {{ display: inline; }}
-.en {{ display: inline; margin-left: 4px; }}
-.item-name .cn {{ display: inline; }}
-.item-name .en {{ display: inline; }}
-.meal-name .en {{ margin-left: 6px; font-size: 0.85em; color: var(--text-secondary); }}
+/* Multilingual: default English only, secondary language shown when selected */
+.lang {{ display: none; }}
+.en {{ display: inline; }}
+body[data-lang="zh-CN"] .lang[data-lang="zh-CN"],
+body[data-lang="zh-TW"] .lang[data-lang="zh-TW"],
+body[data-lang="ko"] .lang[data-lang="ko"],
+body[data-lang="ja"] .lang[data-lang="ja"],
+body[data-lang="es"] .lang[data-lang="es"],
+body[data-lang="pt"] .lang[data-lang="pt"] {{ display: inline; }}
+body[data-lang] .item-name .en {{ margin-left: 4px; }}
+body[data-lang] .meal-name .en {{ margin-left: 6px; font-size: 0.85em; color: var(--text-secondary); }}
+body[data-lang] .toggle-option .en {{ margin-left: 3px; font-size: 0.85em; }}
 @media (max-width: 600px) {{
     body {{ padding: 8px; }}
     header h1 {{ font-size: 1.1rem; }}
     .controls {{ flex-wrap: wrap; justify-content: center; }}
     .hall-tab {{ padding: 4px 8px; font-size: 0.75rem; }}
-    .hall-tab .en {{ font-size: 0.65em; }}
     .menu-item {{ padding: 2px 6px; gap: 3px; }}
     .item-name {{ font-size: 0.82rem; }}
-    .item-name .en {{ font-size: 0.75rem; }}
+    body[data-lang] .item-name .en {{ font-size: 0.75rem; }}
     .trait-badge.carbon-low,
     .trait-badge.carbon-high,
     .trait-badge.nutri-high,
@@ -1418,6 +1445,23 @@ footer {{
     color: var(--text-secondary);
     margin-bottom: 4px;
 }}
+#lang-select {{
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 9999px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-family: inherit;
+    color: var(--text);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%23999'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    padding-right: 22px;
+}}
+#lang-select:hover {{ border-color: var(--accent); }}
 {firebase_css}</style>
 </head>
 <body>
@@ -1427,15 +1471,19 @@ footer {{
     <div class="controls">
         <div class="toggle-switch" id="meal-toggle">
             <div class="toggle-slider" id="meal-slider"></div>
-            <span class="toggle-option" data-meal="breakfast" onclick="switchMeal('breakfast')"><span class="cn">早餐</span><span class="en">Breakfast</span></span>
-            <span class="toggle-option" data-meal="lunch" onclick="switchMeal('lunch')"><span class="cn">午餐</span><span class="en">Lunch</span></span>
-            <span class="toggle-option" data-meal="dinner" onclick="switchMeal('dinner')"><span class="cn">晚餐</span><span class="en">Dinner</span></span>
+            <span class="toggle-option" data-meal="breakfast" onclick="switchMeal('breakfast')">{''.join(f'<span class="lang" data-lang="{lc}">{MEAL_NAMES[lc]["breakfast"]}</span>' for lc in SUPPORTED_LANGUAGES)}<span class="en">Breakfast</span></span>
+            <span class="toggle-option" data-meal="lunch" onclick="switchMeal('lunch')">{''.join(f'<span class="lang" data-lang="{lc}">{MEAL_NAMES[lc]["lunch"]}</span>' for lc in SUPPORTED_LANGUAGES)}<span class="en">Lunch</span></span>
+            <span class="toggle-option" data-meal="dinner" onclick="switchMeal('dinner')">{''.join(f'<span class="lang" data-lang="{lc}">{MEAL_NAMES[lc]["dinner"]}</span>' for lc in SUPPORTED_LANGUAGES)}<span class="en">Dinner</span></span>
         </div>
         <div class="toggle-switch" id="theme-toggle" onclick="toggleTheme()">
             <div class="toggle-slider" id="theme-slider"></div>
             <span class="toggle-option active" data-theme="light">☀️</span>
             <span class="toggle-option" data-theme="dark">🌙</span>
         </div>
+        <select id="lang-select" onchange="switchLang(this.value)" aria-label="Language">
+            <option value="">English</option>
+            {''.join(f'<option value="{lc}">{info["name"]}</option>' for lc, info in SUPPORTED_LANGUAGES.items())}
+        </select>
     </div>
     <button class="help-btn" onclick="document.getElementById('help').classList.add('visible')" aria-label="Help">?</button>
     <div class="filter-bar">
@@ -1534,6 +1582,26 @@ footer {{
 </div>
 
 <script>
+// Language switching
+function switchLang(code) {{
+    if (code) {{
+        document.body.setAttribute('data-lang', code);
+    }} else {{
+        document.body.removeAttribute('data-lang');
+    }}
+    localStorage.setItem('mdining-lang', code || '');
+    // Recalculate meal toggle slider width after text change
+    updateMealSlider();
+}}
+(function() {{
+    var saved = localStorage.getItem('mdining-lang');
+    if (saved) {{
+        document.body.setAttribute('data-lang', saved);
+        var sel = document.getElementById('lang-select');
+        if (sel) sel.value = saved;
+    }}
+}})();
+
 // Hall tab switching with fade
 document.querySelectorAll('.hall-tab').forEach(tab => {{
     tab.addEventListener('click', () => {{
@@ -1853,7 +1921,7 @@ def main():
     parser = argparse.ArgumentParser(description="Generate Michigan Dining menu website")
     parser.add_argument("--output", default=SITE_DIR, help="Output directory (default: site)")
     parser.add_argument("--date", default=None, help="Menu date YYYY-MM-DD (default: today)")
-    parser.add_argument("--no-translate", action="store_true", help="Skip Chinese translation")
+    parser.add_argument("--no-translate", action="store_true", help="Skip translation API calls (use cache only)")
     args = parser.parse_args()
 
     menu_date = args.date or datetime.now(ZoneInfo("America/Detroit")).strftime("%Y-%m-%d")
@@ -1922,7 +1990,7 @@ def main():
     manifest = {
         "name": "Michigan Dining Menus",
         "short_name": "MDining",
-        "description": "Daily Michigan Dining menus with Chinese translations",
+        "description": "Daily Michigan Dining menus with multilingual translations",
         "start_url": ".",
         "display": "standalone",
         "background_color": "#ffffff",

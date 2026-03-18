@@ -1344,35 +1344,6 @@
         ],
         "Signature Blue": [
           {
-            "name": "Squash Borani w/ Toasted Pumpkin Seeds",
-            "traits": [
-              "Gluten Free",
-              "Nutrient Dense High",
-              "Vegetarian",
-              "Carbon Footprint Low"
-            ],
-            "allergens": [
-              "Milk"
-            ],
-            "nutrition": {
-              "serving_size": "2 oz (57g)",
-              "calories": 39,
-              "total_fat": "1g",
-              "saturated_fat": "0g",
-              "trans_fat": "0g",
-              "cholesterol": "3mg",
-              "sodium": "152mg",
-              "total_carbohydrate": "1g",
-              "dietary_fiber": "1g",
-              "sugars": "1g",
-              "protein": "3g",
-              "vitamin_a": "63%",
-              "vitamin_c": "11%",
-              "calcium": "8%",
-              "iron": "2%"
-            }
-          },
-          {
             "name": "Ghormeh Sabzi  (Herb & Mushroom Soup)",
             "traits": [
               "Gluten Free",
@@ -1486,29 +1457,29 @@
         ],
         "Halal": [
           {
-            "name": "Chicken Tinga",
+            "name": "Taco Beef",
             "traits": [
               "Gluten Free",
               "Halal",
-              "Nutrient Dense High",
-              "Carbon Footprint Low"
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
             ],
             "nutrition": {
               "serving_size": "1/4 Cup (57g)",
-              "calories": 72,
-              "total_fat": "4g",
-              "saturated_fat": "1g",
-              "trans_fat": "0g",
-              "cholesterol": "0mg",
-              "sodium": "135mg",
-              "total_carbohydrate": "1g",
+              "calories": 141,
+              "total_fat": "11g",
+              "saturated_fat": "4g",
+              "trans_fat": "1g",
+              "cholesterol": "37mg",
+              "sodium": "284mg",
+              "total_carbohydrate": "2g",
               "dietary_fiber": "0g",
               "sugars": "1g",
-              "protein": "8g",
-              "vitamin_a": "1%",
-              "vitamin_c": "2%",
-              "calcium": "1%",
-              "iron": "3%"
+              "protein": "9g",
+              "vitamin_a": "3%",
+              "vitamin_c": "3%",
+              "calcium": "2%",
+              "iron": "7%"
             }
           },
           {
@@ -1538,7 +1509,7 @@
             }
           },
           {
-            "name": "Homemade Refried Beans",
+            "name": "Refried Beans",
             "traits": [
               "Gluten Free",
               "Nutrient Dense High",
@@ -1546,21 +1517,21 @@
               "Carbon Footprint Low"
             ],
             "nutrition": {
-              "serving_size": "1/4 Cup (71g)",
-              "calories": 120,
-              "total_fat": "2g",
+              "serving_size": "1/4 Cup (57g)",
+              "calories": 49,
+              "total_fat": "1g",
               "saturated_fat": "0g",
               "trans_fat": "0g",
               "cholesterol": "0mg",
-              "sodium": "175mg",
-              "total_carbohydrate": "19g",
-              "dietary_fiber": "5g",
-              "sugars": "1g",
-              "protein": "6g",
-              "vitamin_a": "1%",
-              "vitamin_c": "3%",
-              "calcium": "3%",
-              "iron": "8%"
+              "sodium": "208mg",
+              "total_carbohydrate": "7g",
+              "dietary_fiber": "2g",
+              "sugars": "0g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "3%"
             }
           }
         ],
@@ -3032,6 +3003,32 @@
               "calcium": "5%",
               "iron": "12%"
             }
+          },
+          {
+            "name": "Brown Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (93g)",
+              "calories": 163,
+              "total_fat": "1g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "3mg",
+              "total_carbohydrate": "34g",
+              "dietary_fiber": "2g",
+              "sugars": "0g",
+              "protein": "4g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "4%"
+            }
           }
         ],
         "24 Carrots": [
@@ -3126,28 +3123,29 @@
         ],
         "Halal": [
           {
-            "name": "Grilled Chicken",
+            "name": "Blackened Chicken Thigh",
             "traits": [
               "Gluten Free",
               "Halal",
-              "Nutrient Dense High",
+              "Nutrient Dense Medium",
+              "Spicy",
               "Carbon Footprint Medium"
             ],
             "nutrition": {
-              "serving_size": "3 oz  (85g)",
-              "calories": 117,
-              "total_fat": "3g",
-              "saturated_fat": "0g",
+              "serving_size": "3 oz Piece (85g)",
+              "calories": 141,
+              "total_fat": "9g",
+              "saturated_fat": "3g",
               "trans_fat": "0g",
-              "cholesterol": "63mg",
-              "sodium": "80mg",
-              "total_carbohydrate": "0g",
+              "cholesterol": "0mg",
+              "sodium": "511mg",
+              "total_carbohydrate": "1g",
               "dietary_fiber": "0g",
               "sugars": "0g",
-              "protein": "21g",
-              "vitamin_a": "0%",
-              "vitamin_c": "0%",
-              "calcium": "0%",
+              "protein": "16g",
+              "vitamin_a": "2%",
+              "vitamin_c": "1%",
+              "calcium": "2%",
               "iron": "6%"
             }
           },
@@ -3178,7 +3176,7 @@
             }
           },
           {
-            "name": "Roasted Cauliflower",
+            "name": "Steamed Broccoli",
             "traits": [
               "Gluten Free",
               "Nutrient Dense High",
@@ -3186,47 +3184,21 @@
               "Carbon Footprint Low"
             ],
             "nutrition": {
-              "serving_size": "2 oz (57g)",
-              "calories": 16,
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 37,
               "total_fat": "0g",
               "saturated_fat": "0g",
               "trans_fat": "0g",
               "cholesterol": "0mg",
-              "sodium": "19mg",
-              "total_carbohydrate": "3g",
-              "dietary_fiber": "1g",
-              "sugars": "1g",
-              "protein": "1g",
-              "vitamin_a": "0%",
-              "vitamin_c": "44%",
-              "calcium": "1%",
-              "iron": "1%"
-            }
-          },
-          {
-            "name": "Maple Garlic Ginger Glaze",
-            "traits": [
-              "Gluten Free",
-              "Nutrient Dense Medium High",
-              "Vegan",
-              "Carbon Footprint Low"
-            ],
-            "nutrition": {
-              "serving_size": "2 oz Serving (57g)",
-              "calories": 71,
-              "total_fat": "0g",
-              "saturated_fat": "0g",
-              "trans_fat": "0g",
-              "cholesterol": "0mg",
-              "sodium": "125mg",
-              "total_carbohydrate": "18g",
-              "dietary_fiber": "0g",
-              "sugars": "14g",
-              "protein": "0g",
-              "vitamin_a": "4%",
-              "vitamin_c": "2%",
-              "calcium": "3%",
-              "iron": "1%"
+              "sodium": "36mg",
+              "total_carbohydrate": "7g",
+              "dietary_fiber": "3g",
+              "sugars": "2g",
+              "protein": "3g",
+              "vitamin_a": "13%",
+              "vitamin_c": "160%",
+              "calcium": "5%",
+              "iron": "4%"
             }
           }
         ],
@@ -3415,72 +3387,6 @@
               "vitamin_c": "8%",
               "calcium": "2%",
               "iron": "3%"
-            }
-          }
-        ],
-        "Deli": [
-          {
-            "name": "Chocolate Chunk Cookies",
-            "traits": [
-              "Nutrient Dense Low",
-              "Vegetarian",
-              "Carbon Footprint Low"
-            ],
-            "allergens": [
-              "Eggs",
-              "Milk",
-              "Soy",
-              "Wheat"
-            ],
-            "nutrition": {
-              "serving_size": "Cookie (35g)",
-              "calories": 152,
-              "total_fat": "7g",
-              "saturated_fat": "3g",
-              "trans_fat": "0g",
-              "cholesterol": "5mg",
-              "sodium": "117mg",
-              "total_carbohydrate": "21g",
-              "dietary_fiber": "1g",
-              "sugars": "13g",
-              "protein": "2g",
-              "vitamin_a": "4%",
-              "vitamin_c": "0%",
-              "calcium": "1%",
-              "iron": "6%"
-            }
-          }
-        ],
-        "Dessert": [
-          {
-            "name": "Chocolate Chunk Cookies",
-            "traits": [
-              "Nutrient Dense Low",
-              "Vegetarian",
-              "Carbon Footprint Low"
-            ],
-            "allergens": [
-              "Eggs",
-              "Milk",
-              "Soy",
-              "Wheat"
-            ],
-            "nutrition": {
-              "serving_size": "Cookie (35g)",
-              "calories": 152,
-              "total_fat": "7g",
-              "saturated_fat": "3g",
-              "trans_fat": "0g",
-              "cholesterol": "5mg",
-              "sodium": "117mg",
-              "total_carbohydrate": "21g",
-              "dietary_fiber": "1g",
-              "sugars": "13g",
-              "protein": "2g",
-              "vitamin_a": "4%",
-              "vitamin_c": "0%",
-              "calcium": "1%",
-              "iron": "6%"
             }
           }
         ],
@@ -4727,28 +4633,107 @@
         ],
         "World Palate Maize": [
           {
-            "name": "Corned Beef Brisket w/ Vegetables",
+            "name": "Boiled Potatoes",
             "traits": [
               "Gluten Free",
-              "Nutrient Dense Low",
-              "Carbon Footprint High"
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
             ],
             "nutrition": {
-              "serving_size": "12 Oz Serving (340g)",
-              "calories": 327,
-              "total_fat": "14g",
-              "saturated_fat": "5g",
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 99,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "Trans Fat",
+              "cholesterol": "0mg",
+              "sodium": "5mg",
+              "total_carbohydrate": "23g",
+              "dietary_fiber": "2g",
+              "sugars": "1g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "25%",
+              "calcium": "1%",
+              "iron": "2%"
+            }
+          },
+          {
+            "name": "Green Beans",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 43,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
               "trans_fat": "0g",
-              "cholesterol": "56mg",
-              "sodium": "1008mg",
-              "total_carbohydrate": "29g",
-              "dietary_fiber": "5g",
-              "sugars": "6g",
-              "protein": "19g",
-              "vitamin_a": "21%",
-              "vitamin_c": "122%",
+              "cholesterol": "0mg",
+              "sodium": "8mg",
+              "total_carbohydrate": "10g",
+              "dietary_fiber": "4g",
+              "sugars": "4g",
+              "protein": "3g",
+              "vitamin_a": "20%",
+              "vitamin_c": "25%",
               "calcium": "5%",
-              "iron": "12%"
+              "iron": "8%"
+            }
+          },
+          {
+            "name": "Carrot Coins",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 47,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "57mg",
+              "total_carbohydrate": "10g",
+              "dietary_fiber": "3g",
+              "sugars": "6g",
+              "protein": "1g",
+              "vitamin_a": "37%",
+              "vitamin_c": "8%",
+              "calcium": "2%",
+              "iron": "0%"
+            }
+          },
+          {
+            "name": "Cabbage Wedges",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 29,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "21mg",
+              "total_carbohydrate": "7g",
+              "dietary_fiber": "3g",
+              "sugars": "4g",
+              "protein": "2g",
+              "vitamin_a": "3%",
+              "vitamin_c": "70%",
+              "calcium": "5%",
+              "iron": "3%"
             }
           },
           {
@@ -5116,33 +5101,28 @@
             }
           },
           {
-            "name": "Chicken Drummies",
+            "name": "Mojo Grilled Chicken",
             "traits": [
-              "Nutrient Dense Low",
+              "Gluten Free",
+              "Nutrient Dense High",
               "Carbon Footprint Medium"
             ],
-            "allergens": [
-              "Eggs",
-              "Item Is Deep Fried",
-              "Soy",
-              "Wheat"
-            ],
             "nutrition": {
-              "serving_size": "3 Drummies (113g)",
-              "calories": 301,
-              "total_fat": "20g",
-              "saturated_fat": "5g",
+              "serving_size": "3 oz Serving (85g)",
+              "calories": 126,
+              "total_fat": "3g",
+              "saturated_fat": "1g",
               "trans_fat": "0g",
-              "cholesterol": "90mg",
-              "sodium": "686mg",
-              "total_carbohydrate": "5g",
+              "cholesterol": "59mg",
+              "sodium": "47mg",
+              "total_carbohydrate": "0g",
               "dietary_fiber": "0g",
               "sugars": "0g",
-              "protein": "22g",
-              "vitamin_a": "0%",
+              "protein": "23g",
+              "vitamin_a": "1%",
               "vitamin_c": "0%",
-              "calcium": "0%",
-              "iron": "4%"
+              "calcium": "1%",
+              "iron": "2%"
             }
           },
           {
@@ -5175,6 +5155,35 @@
               "vitamin_c": "0%",
               "calcium": "8%",
               "iron": "19%"
+            }
+          },
+          {
+            "name": "Seasoned Curly Fries",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Item Is Deep Fried",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 297,
+              "total_fat": "22g",
+              "saturated_fat": "2g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "480mg",
+              "total_carbohydrate": "27g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "3g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "3%"
             }
           },
           {
@@ -7196,29 +7205,29 @@
             }
           },
           {
-            "name": "Roasted Cauliflower",
+            "name": "Roasted Zucchini",
             "traits": [
               "Gluten Free",
-              "Nutrient Dense High",
+              "Nutrient Dense Medium",
               "Vegan",
               "Carbon Footprint Low"
             ],
             "nutrition": {
-              "serving_size": "2 oz (57g)",
-              "calories": 16,
-              "total_fat": "0g",
-              "saturated_fat": "0g",
+              "serving_size": "6 oz Serving (170g)",
+              "calories": 53,
+              "total_fat": "4g",
+              "saturated_fat": "1g",
               "trans_fat": "0g",
               "cholesterol": "0mg",
-              "sodium": "19mg",
-              "total_carbohydrate": "3g",
-              "dietary_fiber": "1g",
-              "sugars": "1g",
-              "protein": "1g",
-              "vitamin_a": "0%",
-              "vitamin_c": "44%",
-              "calcium": "1%",
-              "iron": "1%"
+              "sodium": "85mg",
+              "total_carbohydrate": "5g",
+              "dietary_fiber": "2g",
+              "sugars": "4g",
+              "protein": "2g",
+              "vitamin_a": "11%",
+              "vitamin_c": "46%",
+              "calcium": "2%",
+              "iron": "3%"
             }
           },
           {
@@ -7553,7 +7562,7 @@
             }
           },
           {
-            "name": "Criss Cross Fries",
+            "name": "French Fries",
             "traits": [
               "Nutrient Dense Low",
               "Vegan",
@@ -7564,13 +7573,13 @@
             ],
             "nutrition": {
               "serving_size": "1/2 Cup (113g)",
-              "calories": 272,
-              "total_fat": "20g",
-              "saturated_fat": "2g",
-              "trans_fat": "2g",
+              "calories": 186,
+              "total_fat": "10g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
               "cholesterol": "0mg",
-              "sodium": "27mg",
-              "total_carbohydrate": "23g",
+              "sodium": "470mg",
+              "total_carbohydrate": "25g",
               "dietary_fiber": "1g",
               "sugars": "1g",
               "protein": "1g",
@@ -7583,34 +7592,32 @@
         ],
         "Two Oceans": [
           {
-            "name": "Pork Lo Mein",
+            "name": "Chicken Lo Mein",
             "traits": [
+              "Halal",
               "Nutrient Dense Medium",
               "Carbon Footprint Low"
             ],
             "allergens": [
-              "Alcohol",
-              "Sesame",
-              "Shellfish",
               "Soy",
               "Wheat"
             ],
             "nutrition": {
-              "serving_size": "1/2 Cup (88g)",
-              "calories": 75,
-              "total_fat": "1g",
+              "serving_size": "4 oz Serving (113g)",
+              "calories": 198,
+              "total_fat": "4g",
               "saturated_fat": "0g",
               "trans_fat": "0g",
-              "cholesterol": "9mg",
-              "sodium": "660mg",
-              "total_carbohydrate": "9g",
-              "dietary_fiber": "1g",
+              "cholesterol": "16mg",
+              "sodium": "939mg",
+              "total_carbohydrate": "30g",
+              "dietary_fiber": "3g",
               "sugars": "2g",
-              "protein": "5g",
-              "vitamin_a": "12%",
-              "vitamin_c": "3%",
-              "calcium": "1%",
-              "iron": "3%"
+              "protein": "12g",
+              "vitamin_a": "8%",
+              "vitamin_c": "9%",
+              "calcium": "3%",
+              "iron": "9%"
             }
           },
           {

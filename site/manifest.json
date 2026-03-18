@@ -1,7 +1,7 @@
 {
   "name": "Michigan Dining Menus",
   "short_name": "MDining",
-  "description": "Daily Michigan Dining menus with Chinese translations",
+  "description": "Daily Michigan Dining menus with multilingual translations",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",

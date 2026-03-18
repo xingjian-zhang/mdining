@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Bilingual (Chinese/English) Michigan Dining menu website and CLI tools. The website is a static single-page app generated at build time and deployed to GitHub Pages.
+Multilingual Michigan Dining menu website and CLI tools. The website is a static single-page app generated at build time and deployed to GitHub Pages. Supports English plus 6 secondary languages (Simplified Chinese, Traditional Chinese, Korean, Japanese, Spanish, Portuguese) selectable via a dropdown.
 
 ## Key Commands
 
@@ -12,7 +12,7 @@ Bilingual (Chinese/English) Michigan Dining menu website and CLI tools. The webs
 # Generate the website (fetches live menu data, translates, outputs site/index.html)
 python3 generate_site.py
 
-# Skip translation (faster, for testing layout/JS changes)
+# Skip translation API calls (faster, uses cache only)
 python3 generate_site.py --no-translate
 
 # Generate for a specific date
@@ -43,8 +43,8 @@ scraper.py::fetch_menu()          # Scrapes UMich dining API for each hall
 
 - **Everything is in `generate_site.py`**: The entire HTML template (CSS, JS, structure) is a single Python f-string in `render_html()`. All changes to the website happen in this file.
 - **F-string brace escaping**: All JS `{` `}` in the template must be doubled to `{{` `}}` since it's inside an f-string. This is the most common source of bugs.
-- **Translations are build-time only**: No runtime API calls. Items are pre-translated and embedded as `<span class="cn">` / `<span class="en">` pairs. Language toggle is CSS-only.
-- **Translation cache**: `site/translations_cache.json` persists translations across builds. Only new items hit the Google Translate API.
+- **Translations are build-time only**: No runtime API calls. Items are pre-translated into all supported languages and embedded as `<span class="lang" data-lang="...">` / `<span class="en">` pairs. Language switching is CSS-only via `body[data-lang]`.
+- **Translation cache**: `site/translations_cache.json` persists translations across builds in nested format `{english_name: {lang_code: translation}}`. Only new item-language pairs hit the Google Translate API.
 - **Stats charts**: Chart.js (CDN) renders 3 charts from aggregated `data/*.json` files. Charts are lazily initialized when the Stats tab is first clicked.
 - **Theme**: Light/dark mode via CSS custom properties on `:root`. Charts call `updateChartTheme()` on toggle.
 
@@ -62,7 +62,7 @@ GitHub Actions (`.github/workflows/daily-menu.yml`):
 
 ### Language Rule
 
-Chinese is only used in dish entry names (the `<span class="cn">` / `<span class="en">` pair on each menu item). Everything else on the site — UI labels, popovers, tooltips, help text, badges — must be purely English.
+Secondary languages (zh-CN, zh-TW, ko, ja, es, pt) are only used in dish entry names and meal headings (the `<span class="lang" data-lang="...">` / `<span class="en">` pairs). Everything else on the site — UI labels, popovers, tooltips, help text, badges — must be purely English. The default view (no language selected) shows English only.
 
 ### Trait System
 
