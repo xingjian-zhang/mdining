@@ -1290,7 +1290,7 @@
             }
           },
           {
-            "name": "Advieh Rainbow Roasted Cauliflower",
+            "name": "Roasted Cauliflower",
             "traits": [
               "Gluten Free",
               "Nutrient Dense High",
@@ -1298,21 +1298,21 @@
               "Carbon Footprint Low"
             ],
             "nutrition": {
-              "serving_size": "4 Oz (113g)",
-              "calories": 86,
-              "total_fat": "7g",
-              "saturated_fat": "1g",
+              "serving_size": "2 oz (57g)",
+              "calories": 16,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
               "trans_fat": "0g",
               "cholesterol": "0mg",
-              "sodium": "168mg",
-              "total_carbohydrate": "5g",
-              "dietary_fiber": "2g",
-              "sugars": "2g",
-              "protein": "2g",
-              "vitamin_a": "1%",
-              "vitamin_c": "85%",
-              "calcium": "2%",
-              "iron": "3%"
+              "sodium": "19mg",
+              "total_carbohydrate": "3g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "44%",
+              "calcium": "1%",
+              "iron": "1%"
             }
           },
           {

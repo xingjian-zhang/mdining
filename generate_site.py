@@ -236,6 +236,101 @@ def compute_item_stats(all_days: list[list[dict]]) -> dict[str, dict]:
     return stats
 
 
+def compute_chart_data(all_menus: list[dict]) -> dict:
+    """Compute data for insights charts (scatter per hall per meal)."""
+    # Structure: {hall_slug: {meal_key: [points]}}
+    hall_scatter: dict[str, dict[str, list[dict]]] = {}
+
+    for menu in all_menus:
+        hall = menu["hall"]
+        if hall not in hall_scatter:
+            hall_scatter[hall] = {}
+        for meal_key, stations in menu.get("meals", {}).items():
+            # Normalize brunch to lunch (matches the meal toggle)
+            tab_key = "lunch" if meal_key == "brunch" else meal_key
+            if tab_key not in hall_scatter[hall]:
+                hall_scatter[hall][tab_key] = []
+            for items in stations.values():
+                for item in items:
+                    traits = item.get("traits", [])
+                    nutrition = item.get("nutrition", {})
+                    cal = nutrition.get("calories")
+                    protein_raw = nutrition.get("protein", "")
+                    if cal is not None and protein_raw:
+                        try:
+                            cal_val = int(str(cal).replace(",", ""))
+                            protein_val = float(str(protein_raw).replace("g", "").strip())
+                        except (ValueError, TypeError):
+                            continue
+                        if "Vegan" in traits:
+                            cat = "vegan"
+                        elif "Vegetarian" in traits:
+                            cat = "vegetarian"
+                        else:
+                            cat = "other"
+                        point = {
+                            "x": cal_val, "y": protein_val,
+                            "n": item["name"], "c": cat,
+                        }
+                        fat = nutrition.get("total_fat", "")
+                        carbs = nutrition.get("total_carbohydrate", "")
+                        serving = nutrition.get("serving_size", "")
+                        if fat:
+                            point["fat"] = str(fat)
+                        if carbs:
+                            point["carbs"] = str(carbs)
+                        if serving:
+                            point["srv"] = str(serving)
+                        display_traits = []
+                        for t in traits:
+                            info = TRAIT_DISPLAY.get(t)
+                            if info and info[0]:
+                                display_traits.append({"l": info[0], "cls": info[1]})
+                        if display_traits:
+                            point["t"] = display_traits
+                        hall_scatter[hall][tab_key].append(point)
+
+    # Flag ~10 landmark items per hall+meal for scatter labels
+    for hall in hall_scatter.values():
+        for points in hall.values():
+            if not points:
+                continue
+            labeled: set[int] = set()
+            labeled_names: set[str] = set()
+
+            def _add(idx: int) -> None:
+                if points[idx]["n"] not in labeled_names:
+                    labeled.add(idx)
+                    labeled_names.add(points[idx]["n"])
+
+            # Top 3 by protein
+            for i in sorted(range(len(points)), key=lambda i: points[i]["y"], reverse=True):
+                if len(labeled) >= 3:
+                    break
+                _add(i)
+            # Top 3 by calories
+            for i in sorted(range(len(points)), key=lambda i: points[i]["x"], reverse=True):
+                if len(labeled) >= 6:
+                    break
+                _add(i)
+            # Top 2 by protein/calorie ratio (min 5g protein)
+            eligible = [i for i in range(len(points)) if points[i]["y"] >= 5 and points[i]["x"] > 0]
+            for i in sorted(eligible, key=lambda i: points[i]["y"] / points[i]["x"], reverse=True):
+                if len(labeled) >= 8:
+                    break
+                _add(i)
+            # Top 2 by lowest calories (min 2g protein to skip condiments)
+            eligible = [i for i in range(len(points)) if points[i]["y"] >= 2]
+            for i in sorted(eligible, key=lambda i: points[i]["x"]):
+                if len(labeled) >= 10:
+                    break
+                _add(i)
+            for i in labeled:
+                points[i]["lbl"] = 1
+
+    return {"scatter": hall_scatter}
+
+
 def translate_names(names: list[str], target_lang: str) -> dict[str, str]:
     """Translate item names to target language using Google Translate (free)."""
     if not names:
@@ -466,6 +561,10 @@ def render_html(all_menus: list[dict], translations: dict[str, dict[str, str]],
     """Render all menu data into a self-contained HTML page."""
     date_display = datetime.strptime(menu_date, "%Y-%m-%d").strftime("%A, %B %-d, %Y")
     now = datetime.now(ZoneInfo("America/Detroit")).strftime("%Y-%m-%d %H:%M")
+
+    # Insights chart data
+    chart_data = compute_chart_data(all_menus)
+    chart_data_json = json.dumps(chart_data, ensure_ascii=False)
 
     # Build hall tabs and content
     hall_tabs_html = ""
@@ -818,6 +917,8 @@ def render_html(all_menus: list[dict], translations: dict[str, dict[str, str]],
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
 <style>
 :root {{
     --bg: hsl(0 0% 100%);
@@ -1462,6 +1563,43 @@ body[data-lang] .toggle-option .en {{ margin-left: 3px; font-size: 0.85em; }}
     padding-right: 22px;
 }}
 #lang-select:hover {{ border-color: var(--accent); }}
+/* Insights section */
+.insights-section {{
+    border-top: 1px solid var(--border);
+    margin-top: 24px;
+    padding-top: 8px;
+}}
+.insights-content {{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}}
+.chart-container {{
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+}}
+.chart-title {{
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}}
+.chart-subtitle {{
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}}
+.chart-wrapper {{
+    position: relative;
+    height: 350px;
+}}
+@media (max-width: 600px) {{
+    .chart-wrapper {{ height: 280px; }}
+}}
+@media print {{
+    .insights-section {{ display: none; }}
+}}
 {firebase_css}</style>
 </head>
 <body>
@@ -1526,6 +1664,17 @@ body[data-lang] .toggle-option .en {{ margin-left: 3px; font-size: 0.85em; }}
 <main>
 {hall_contents_html}
 </main>
+
+<script>var CHART_DATA = {chart_data_json};</script>
+<section class="insights-section">
+    <div class="insights-content" id="insights-content">
+        <div class="chart-container">
+            <div class="chart-title">Protein vs Calories</div>
+            <div class="chart-subtitle">Each dot is a menu item. Find high-protein, lower-calorie options in the upper left.</div>
+            <div class="chart-wrapper"><canvas id="scatter-chart"></canvas></div>
+        </div>
+    </div>
+</section>
 
 <div id="item-popover" class="item-popover">
     <div class="popover-content"></div>
@@ -1619,6 +1768,7 @@ document.querySelectorAll('.hall-tab').forEach(tab => {{
             }}
         }});
         applyFilters();
+        updateScatterChart();
     }});
 }});
 
@@ -1641,6 +1791,7 @@ function switchMeal(meal) {{
         }}
     }});
     updateMealSlider();
+    updateScatterChart();
 }}
 // Default meal based on current time (ET)
 (function() {{
@@ -1753,6 +1904,7 @@ function toggleTheme() {{
         themeState = isDark ? 0 : 1;
     }}
     updateThemeSlider();
+    updateInsightChartTheme();
 }}
 // Init theme slider based on current state
 if (document.documentElement.classList.contains('dark-theme') ||
@@ -1904,6 +2056,148 @@ updateThemeSlider();
     // Dismiss on scroll
     window.addEventListener('scroll', hidePopover, {{passive: true}});
 }})();
+
+// Insights charts
+var _scatterChart = null;
+function getActiveHall() {{
+    var tab = document.querySelector('.hall-tab.active');
+    return tab ? tab.dataset.hall : '';
+}}
+function getChartThemeColors() {{
+    var s = getComputedStyle(document.documentElement);
+    return {{
+        text: s.getPropertyValue('--text').trim() || '#171717',
+        textSec: s.getPropertyValue('--text-secondary').trim() || '#737373',
+        border: s.getPropertyValue('--border').trim() || '#e5e5e5',
+        bgCard: s.getPropertyValue('--bg-card').trim() || '#f7f7f7',
+    }};
+}}
+function getScatterDatasets(hallSlug, meal) {{
+    var hallData = (CHART_DATA.scatter || {{}})[hallSlug] || {{}};
+    var points = hallData[meal || activeMeal] || [];
+    var vegan = [], vegetarian = [], other = [];
+    points.forEach(function(p) {{
+        if (p.c === 'vegan') vegan.push(p);
+        else if (p.c === 'vegetarian') vegetarian.push(p);
+        else other.push(p);
+    }});
+    return [
+        {{ label: 'Vegan', data: vegan, backgroundColor: 'hsla(142,60%,45%,0.6)', pointRadius: 5, pointHoverRadius: 7 }},
+        {{ label: 'Vegetarian', data: vegetarian, backgroundColor: 'hsla(173,50%,45%,0.6)', pointRadius: 5, pointHoverRadius: 7 }},
+        {{ label: 'Other', data: other, backgroundColor: 'hsla(25,70%,55%,0.65)', pointRadius: 5, pointHoverRadius: 7 }},
+    ];
+}}
+function updateScatterChart() {{
+    if (!_scatterChart) return;
+    var ds = getScatterDatasets(getActiveHall());
+    _scatterChart.data.datasets.forEach(function(dataset, i) {{
+        dataset.data = ds[i].data;
+    }});
+    _scatterChart.update();
+}}
+function initInsightCharts() {{
+    if (typeof Chart === 'undefined') return;
+    if (typeof ChartDataLabels !== 'undefined') Chart.register(ChartDataLabels);
+    var d = CHART_DATA;
+    var tc = getChartThemeColors();
+
+    // Scatter: per-hall data
+    var scatterCtx = document.getElementById('scatter-chart');
+    _scatterChart = new Chart(scatterCtx, {{
+        type: 'scatter',
+        data: {{ datasets: getScatterDatasets(getActiveHall()) }},
+        options: {{
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {{
+                datalabels: {{
+                    display: function(ctx) {{ return ctx.dataset.data[ctx.dataIndex].lbl === 1; }},
+                    formatter: function(v) {{
+                        var n = v.n || '';
+                        return n.length > 20 ? n.substring(0, 18) + '...' : n;
+                    }},
+                    color: tc.textSec,
+                    font: {{ size: 10, weight: 500 }},
+                    anchor: 'end',
+                    align: 'top',
+                    offset: 2,
+                    clamp: true,
+                }},
+                tooltip: {{
+                    enabled: false,
+                    external: function(context) {{
+                        var el = document.getElementById('chart-tooltip');
+                        if (!el) {{
+                            el = document.createElement('div');
+                            el.id = 'chart-tooltip';
+                            el.className = 'item-popover';
+                            el.style.pointerEvents = 'none';
+                            el.style.position = 'absolute';
+                            el.style.zIndex = '100';
+                            document.body.appendChild(el);
+                        }}
+                        var tooltip = context.tooltip;
+                        if (tooltip.opacity === 0) {{ el.style.display = 'none'; return; }}
+                        var p = tooltip.dataPoints[0].raw;
+                        var html = '<div class="popover-content">';
+                        html += '<div style="font-weight:600;margin-bottom:4px">' + p.n + '</div>';
+                        if (p.t) {{
+                            html += '<div class="popover-tags">';
+                            p.t.forEach(function(tag) {{ html += '<span class="trait-badge ' + tag.cls + '">' + tag.l + '</span>'; }});
+                            html += '</div>';
+                        }}
+                        html += '<div class="popover-nutrition">';
+                        html += '<span class="nut-item"><span class="nut-val">' + p.x + '</span> cal</span>';
+                        html += '<span class="nut-item"><span class="nut-val">' + p.y + 'g</span> protein</span>';
+                        if (p.fat) html += '<span class="nut-item"><span class="nut-val">' + p.fat + '</span> fat</span>';
+                        if (p.carbs) html += '<span class="nut-item"><span class="nut-val">' + p.carbs + '</span> carbs</span>';
+                        if (p.srv) html += '<span class="nut-serving">' + p.srv + '</span>';
+                        html += '</div></div>';
+                        el.innerHTML = html;
+                        el.style.display = 'block';
+                        var canvas = context.chart.canvas;
+                        var rect = canvas.getBoundingClientRect();
+                        el.style.left = (rect.left + window.scrollX + tooltip.caretX) + 'px';
+                        el.style.top = (rect.top + window.scrollY + tooltip.caretY - el.offsetHeight - 8) + 'px';
+                    }},
+                }},
+                legend: {{ labels: {{ color: tc.textSec, usePointStyle: true, pointStyle: 'circle' }} }},
+            }},
+            scales: {{
+                x: {{ title: {{ display: true, text: 'Calories', color: tc.textSec }}, ticks: {{ color: tc.textSec }}, grid: {{ color: tc.border }} }},
+                y: {{ title: {{ display: true, text: 'Protein (g)', color: tc.textSec }}, ticks: {{ color: tc.textSec }}, grid: {{ color: tc.border }} }},
+            }},
+        }},
+    }});
+
+}}
+function updateInsightChartTheme() {{
+    if (!_scatterChart) return;
+    var tc = getChartThemeColors();
+    [_scatterChart].forEach(function(chart) {{
+        if (!chart) return;
+        chart.options.plugins.tooltip.backgroundColor = tc.bgCard;
+        chart.options.plugins.tooltip.titleColor = tc.text;
+        chart.options.plugins.tooltip.bodyColor = tc.text;
+        chart.options.plugins.tooltip.borderColor = tc.border;
+        chart.options.plugins.legend.labels.color = tc.textSec;
+        chart.options.scales.x.ticks.color = tc.textSec;
+        chart.options.scales.x.grid.color = tc.border;
+        chart.options.scales.y.ticks.color = tc.textSec;
+        chart.options.scales.y.grid.color = tc.border;
+        if (chart.options.scales.x.title) chart.options.scales.x.title.color = tc.textSec;
+        if (chart.options.scales.y.title) chart.options.scales.y.title.color = tc.textSec;
+        if (chart.options.plugins.datalabels && chart.options.plugins.datalabels.color) chart.options.plugins.datalabels.color = tc.textSec;
+        chart.update('none');
+    }});
+}}
+
+// Init insight charts once Chart.js is loaded (defer scripts)
+if (typeof Chart !== 'undefined') {{
+    initInsightCharts();
+}} else {{
+    window.addEventListener('load', function() {{ initInsightCharts(); }});
+}}
 
 // PWA: register service worker
 if ('serviceWorker' in navigator) {{
