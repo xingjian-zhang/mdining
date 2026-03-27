@@ -529,7 +529,7 @@
   },
   "Ruffles Potato Chips": {
     "zh-CN": "波浪薯片",
-    "zh-TW": "荷葉邊薯片",
+    "zh-TW": "波浪薯片",
     "ko": "러플 감자칩",
     "ja": "ラッフルズポテトチップス",
     "es": "Papas fritas Ruffles",
@@ -585,7 +585,7 @@
   },
   "Carolina Rub": {
     "zh-CN": "卡罗莱纳风味香料",
-    "zh-TW": "卡羅萊納魯布",
+    "zh-TW": "卡羅萊納風味香料",
     "ko": "캐롤라이나 럽",
     "ja": "カロライナラブ",
     "es": "Adobo estilo Carolina",
@@ -729,7 +729,7 @@
   },
   "Rainbow Sprinkles": {
     "zh-CN": "彩色糖针",
-    "zh-TW": "彩虹灑",
+    "zh-TW": "彩虹糖針",
     "ko": "무지개 스프링클스",
     "ja": "レインボースプリンクル",
     "es": "Chispas de colores",
@@ -889,7 +889,7 @@
   },
   "Maize and Blue Cookies": {
     "zh-CN": "密歇根蓝金饼干",
-    "zh-TW": "玉米和藍色餅乾",
+    "zh-TW": "密歇根藍金餅乾",
     "ko": "옥수수와 블루 쿠키",
     "ja": "メイズ＆ブルークッキー",
     "es": "Galletas maíz y azul",
@@ -1521,7 +1521,7 @@
   },
   "Halal Chicken Sausage Links": {
     "zh-CN": "清真鸡肉香肠串",
-    "zh-TW": "清真雞肉香腸鏈接",
+    "zh-TW": "清真雞肉香腸條",
     "ko": "할랄 치킨 소시지 링크",
     "ja": "ハラールチキンソーセージリンク",
     "es": "Salchichas de pollo halal",
@@ -1608,8 +1608,8 @@
     "pt": "Pizza em pão sírio de brócolis ao molho alfredo"
   },
   "Beef and Three Mushroom Goulash": {
-    "zh-CN": "牛肉和三蘑菇炖牛肉",
-    "zh-TW": "牛肉和三蘑菇燉牛肉",
+    "zh-CN": "牛肉三菇炖",
+    "zh-TW": "牛肉三菇燉",
     "ko": "쇠고기와 세 버섯 굴라시",
     "ja": "ビーフと三種のキノコグーラッシュ",
     "es": "Gulasch de carne y tres tipos de champiñones",
@@ -1665,7 +1665,7 @@
   },
   "Kettle Potato Chips": {
     "zh-CN": "厚切锅煮薯片",
-    "zh-TW": "水壺薯片",
+    "zh-TW": "厚切鍋煮薯片",
     "ko": "주전자 감자칩",
     "ja": "ケトルポテトチップス",
     "es": "Papas fritas estilo kettle",
@@ -1705,7 +1705,7 @@
   },
   "Caribbean Pink Beans with Plantains": {
     "zh-CN": "加勒比粉红豆配芭蕉",
-    "zh-TW": "加勒比海粉紅豆配車前草",
+    "zh-TW": "加勒比海粉紅豆配大蕉",
     "ko": "질경이를 곁들인 캐리비안 핑크빈",
     "ja": "カリビアンピンクビーンズとプランテン",
     "es": "Frijoles rosados caribeños con plátanos",
@@ -1856,8 +1856,8 @@
     "pt": "Quiche Lorraine"
   },
   "Honey Glazed Donuts": {
-    "zh-CN": "蜂蜜釉面甜甜圈",
-    "zh-TW": "蜂蜜釉面甜甜圈",
+    "zh-CN": "蜂蜜糖霜甜甜圈",
+    "zh-TW": "蜂蜜糖霜甜甜圈",
     "ko": "허니 글레이즈 도넛",
     "ja": "ハニーグレーズドドーナツ",
     "es": "Donas glaseadas con miel",
@@ -2256,8 +2256,8 @@
     "pt": "Batatas-doces assadas"
   },
   "Jalapeno Honey Glaze": {
-    "zh-CN": "墨西哥辣椒蜂蜜釉",
-    "zh-TW": "墨西哥辣椒蜂蜜釉",
+    "zh-CN": "墨西哥辣椒蜂蜜酱",
+    "zh-TW": "墨西哥辣椒蜂蜜醬",
     "ko": "할라피뇨 허니 글레이즈",
     "ja": "ハラペーニョハニーグレーズ",
     "es": "Glaseado de jalapeño y miel",
@@ -2689,7 +2689,7 @@
   },
   "Glazed Sour Cream Donut Holes": {
     "zh-CN": "糖霜酸奶油甜甜圈球",
-    "zh-TW": "釉面酸奶油甜甜圈孔",
+    "zh-TW": "糖霜酸奶油甜甜圈球",
     "ko": "글레이즈드 사워 크림 도넛 홀",
     "ja": "グレーズドサワークリームドーナツホール",
     "es": "Buñuelos glaseados de crema agria",
@@ -3088,7 +3088,7 @@
     "pt": "Pizza em pão sírio de cogumelos e espinafre"
   },
   "Turkey Burger on King's Hawaiian Bun": {
-    "zh-CN": "国王夏威夷面包上的土耳其汉堡",
+    "zh-CN": "火鸡汉堡配国王夏威夷面包",
     "zh-TW": "火雞漢堡佐國王夏威夷麵包",
     "ko": "킹스 하와이안 번의 칠면조 버거",
     "ja": "ターキーバーガー（キングスハワイアンバンズ）",
@@ -3144,16 +3144,16 @@
     "pt": "Pizza em pão sírio de frango parmesão"
   },
   "Roasted Potato Duo": {
-    "zh-CN": "烤土豆二人组",
-    "zh-TW": "烤馬鈴薯二人組",
+    "zh-CN": "双味烤土豆",
+    "zh-TW": "雙味烤馬鈴薯",
     "ko": "구운 감자 듀오",
     "ja": "ローストポテト デュオ",
     "es": "Dúo de papas asadas",
     "pt": "Duo de batatas assadas"
   },
   "Tofu and Three Mushroom Goulash": {
-    "zh-CN": "豆腐三蘑菇炖牛肉",
-    "zh-TW": "豆腐三蘑菇燉牛肉",
+    "zh-CN": "豆腐三菇炖",
+    "zh-TW": "豆腐三菇燉",
     "ko": "두부와 버섯 세 개 굴라시",
     "ja": "豆腐と三種のキノコグーラッシュ",
     "es": "Gulasch de tofu y tres tipos de champiñones",
@@ -3177,7 +3177,7 @@
   },
   "Zucchini and Summer Squash": {
     "zh-CN": "西葫芦和夏南瓜",
-    "zh-TW": "西葫蘆和西葫蘆",
+    "zh-TW": "櫛瓜和夏南瓜",
     "ko": "호박과 여름 스쿼시",
     "ja": "ズッキーニとサマースクワッシュ",
     "es": "Calabacín y calabaza de verano",
@@ -3416,7 +3416,7 @@
     "pt": "Molho agridoce"
   },
   "Garlic Peppercorn Chicken Thigh": {
-    "zh-CN": "大蒜 胡椒 鸡大腿",
+    "zh-CN": "蒜香胡椒鸡腿",
     "zh-TW": "蒜香胡椒雞腿",
     "ko": "마늘 후추콘 닭다리살",
     "ja": "ガーリックペッパーコーンチキンもも肉",
@@ -3424,7 +3424,7 @@
     "pt": "Coxa de frango com alho e pimenta-do-reino"
   },
   "Sauteed Napa Cabbage": {
-    "zh-CN": "炒纳帕卷心菜",
+    "zh-CN": "炒大白菜",
     "zh-TW": "炒大白菜",
     "ko": "나파 배추 볶음",
     "ja": "白菜のソテー",
@@ -3664,8 +3664,8 @@
     "pt": "Pizza Reuben"
   },
   "All-Purpose Red Rub": {
-    "zh-CN": "多用途红色擦剂",
-    "zh-TW": "多用途紅色擦劑",
+    "zh-CN": "多用途红色调味料",
+    "zh-TW": "多用途紅色調味料",
     "ko": "다목적 레드럽",
     "ja": "多目的レッドラブ",
     "es": "Adobo rojo multiusos",
@@ -3696,9 +3696,9 @@
     "pt": "Abóbora bolota assada com xarope de bordo"
   },
   "Maple Garlic Ginger Glaze": {
-    "zh-CN": "枫蒜姜釉",
+    "zh-CN": "枫糖蒜姜酱",
     "ko": "메이플 마늘 생강 글레이즈",
-    "zh-TW": "楓蒜薑釉",
+    "zh-TW": "楓糖蒜薑醬",
     "ja": "メープルガーリックジンジャーグレーズ",
     "es": "Glaseado de maple, ajo y jengibre",
     "pt": "Glaze de bordo, alho e gengibre"
@@ -3729,7 +3729,7 @@
   },
   "Corned Beef Hash": {
     "zh-CN": "咸牛肉土豆饼",
-    "zh-TW": "鹹牛肉哈希",
+    "zh-TW": "鹹牛肉薯餅",
     "ko": "콘비프 해시",
     "ja": "コンビーフハッシュ",
     "es": "Hash de corned beef",
@@ -3976,8 +3976,8 @@
     "pt": "Batatas com salsinha"
   },
   "Glazed Baby Carrots": {
-    "zh-CN": "釉面小胡萝卜",
-    "zh-TW": "釉面小胡蘿蔔",
+    "zh-CN": "蜜汁小胡萝卜",
+    "zh-TW": "蜜汁小胡蘿蔔",
     "ko": "윤기 나는 아기 당근",
     "ja": "グレーズドベビーにんじん",
     "es": "Zanahorias baby glaseadas",
@@ -4017,15 +4017,15 @@
   },
   "Fresh Whipped Potatoes": {
     "zh-CN": "新鲜奶油土豆泥",
-    "zh-TW": "新鮮的攪打土豆",
+    "zh-TW": "新鮮奶油馬鈴薯泥",
     "ko": "신선한 휘핑 감자",
     "ja": "フレッシュホイップポテト",
     "es": "Puré de papas fresco batido",
     "pt": "Purê de batatas fresco batido"
   },
   "Pork Sausage Links": {
-    "zh-CN": "猪肉香肠链接",
-    "zh-TW": "豬肉香腸連結",
+    "zh-CN": "猪肉香肠条",
+    "zh-TW": "豬肉香腸條",
     "ko": "돼지고기 소시지 링크",
     "ja": "ポークソーセージのリンク",
     "es": "Enlaces de salchicha de cerdo",
@@ -4048,8 +4048,8 @@
     "pt": "Bife de queijo vegano Philly"
   },
   "Sweet Potato Tots": {
-    "zh-CN": "红薯小孩",
-    "zh-TW": "地瓜小孩",
+    "zh-CN": "红薯小球",
+    "zh-TW": "地瓜小球",
     "ko": "고구마 토츠",
     "ja": "スイートポテトトッツ",
     "es": "Tots de camote",
@@ -4080,8 +4080,8 @@
     "pt": "Frango Brócolis Alfredo Pizza"
   },
   "Charred Jalapeno Ranch": {
-    "zh-CN": "烧焦的墨西哥辣椒牧场",
-    "zh-TW": "燒焦的墨西哥辣椒牧場",
+    "zh-CN": "炭烤墨西哥辣椒田园酱",
+    "zh-TW": "炭烤墨西哥辣椒田園醬",
     "ko": "까맣게 탄 할라피뇨 목장",
     "ja": "焦げたハラペーニョ牧場",
     "es": "Rancho de jalapeños carbonizados",
@@ -4168,8 +4168,8 @@
     "pt": "Scones variados"
   },
   "Shrimp Esquites": {
-    "zh-CN": "虾美人",
-    "zh-TW": "蝦美人",
+    "zh-CN": "虾味墨西哥玉米沙拉",
+    "zh-TW": "蝦味墨西哥玉米沙拉",
     "ko": "새우 에스콰이어",
     "ja": "シュリンプエスキート",
     "es": "esquites de camarones",
@@ -4184,8 +4184,8 @@
     "pt": "Cebola Vermelha Em Conserva"
   },
   "Vegan Bun Chay w/ Peanuts": {
-    "zh-CN": "纯素面包配花生",
-    "zh-TW": "純素麵包配花生",
+    "zh-CN": "纯素越南米粉配花生",
+    "zh-TW": "純素越南米粉配花生",
     "ko": "땅콩이 들어간 비건 번차이",
     "ja": "ピーナッツ入りビーガンバンチャイ",
     "es": "Bun Chay vegano con maní",
@@ -4208,8 +4208,8 @@
     "pt": "Alface romana e mistura de primavera"
   },
   "Southwestern Dry Rub": {
-    "zh-CN": "西南干擦",
-    "zh-TW": "西南幹擦",
+    "zh-CN": "西南风味干料",
+    "zh-TW": "西南風味乾調味料",
     "ko": "남서부 드라이럽",
     "ja": "サウスウェスタン ドライ ラブ",
     "es": "Frote seco del suroeste",
@@ -4304,8 +4304,8 @@
     "pt": "Salada de cenoura, laranja e rabanete"
   },
   "Gemelli with Alfredo Sauce": {
-    "zh-CN": "阿尔弗雷多酱双子座",
-    "zh-TW": "阿爾弗雷多醬雙子座",
+    "zh-CN": "双股麻花面配阿尔弗雷多酱",
+    "zh-TW": "雙股麻花麵配阿爾弗雷多醬",
     "ko": "알프레도 소스를 곁들인 제멜리",
     "ja": "ジェメッリ アルフレッドソース添え",
     "es": "Gemelli con Salsa Alfredo",
@@ -4360,16 +4360,16 @@
     "pt": "Bife de flanco estilo coreano"
   },
   "Cucumber Banchan": {
-    "zh-CN": "黄瓜班禅",
-    "zh-TW": "黃瓜班禪",
+    "zh-CN": "黄瓜韩式小菜",
+    "zh-TW": "黃瓜韓式小菜",
     "ko": "오이반찬",
     "ja": "キュウリバンチャン",
     "es": "Banchan de pepino",
     "pt": "Pepino Banchan"
   },
   "Kim Chi": {
-    "zh-CN": "金志",
-    "zh-TW": "金志",
+    "zh-CN": "韩式泡菜",
+    "zh-TW": "韓式泡菜",
     "ko": "김치",
     "ja": "キムチ",
     "es": "Kim Chi",
@@ -4400,8 +4400,8 @@
     "pt": "Coxinhas de Frango Teriyaki"
   },
   "Potato Crusted Whitefish": {
-    "zh-CN": "土豆皮白鱼",
-    "zh-TW": "馬鈴薯皮白魚",
+    "zh-CN": "土豆脆皮白鱼",
+    "zh-TW": "馬鈴薯脆皮白魚",
     "ko": "감자 껍질 흰살 생선",
     "ja": "ポテトをまぶした白身魚",
     "es": "Pescado blanco con costra de patatas",
@@ -4424,8 +4424,8 @@
     "pt": "Molho Pesto Cremoso"
   },
   "Huevos Rancheros": {
-    "zh-CN": "休沃斯牧场主",
-    "zh-TW": "休沃斯牧場主",
+    "zh-CN": "墨西哥农庄蛋",
+    "zh-TW": "墨西哥農莊蛋",
     "ko": "후에보스 란체로스",
     "ja": "ウエボス ランチェロス",
     "es": "Huevos Rancheros",
