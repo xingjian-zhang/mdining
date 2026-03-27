@@ -22,10 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -47,14 +47,20 @@ jobs:
 
       - name: Commit translation cache and dataset
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add site/translations_cache.json data/
-          git diff --cached --quiet || git commit -m "chore: update daily menu $(date +%Y-%m-%d)"
-          git push
+          DATA_FILE="data/$(date +%Y-%m-%d).json"
+          ITEM_COUNT=$(python3 -c "import json; d=json.load(open('$DATA_FILE')); print(sum(len(items) for h in d for meal in h.get('meals',{}).values() for items in meal.values() if isinstance(items,list)))")
+          if [ "$ITEM_COUNT" -lt 10 ]; then
+            echo "::warning::Only $ITEM_COUNT items found — skipping data commit to avoid polluting stats"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add site/translations_cache.json data/
+            git diff --cached --quiet || git commit -m "chore: update daily menu $(date +%Y-%m-%d)"
+            git push
+          fi
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: site
           retention-days: 30
@@ -68,4 +74,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
