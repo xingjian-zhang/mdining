@@ -2254,8 +2254,7 @@ def main():
     item_stats = None
     num_days = 0
     if len(all_days) >= 3:
-        k = min(10, len(all_days))
-        recent_days = all_days[-k:]
+        recent_days = all_days
         num_days = len(recent_days)
         item_stats = compute_item_stats(recent_days) if recent_days else None
         if item_stats:
