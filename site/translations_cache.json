@@ -4438,5 +4438,277 @@
     "ja": "ペッパーポットスープ",
     "es": "Sopa De Pimientos",
     "pt": "Sopa de Pimenta"
+  },
+  "Beef Chili": {
+    "zh-CN": "牛肉辣椒",
+    "zh-TW": "牛肉辣椒",
+    "ko": "쇠고기 칠리",
+    "ja": "ビーフチリ",
+    "es": "Chile De Res",
+    "pt": "Carne com pimentão"
+  },
+  "Seitan Bulgogi on a Steamed Bun": {
+    "zh-CN": "馒头面筋烤肉",
+    "zh-TW": "饅頭麵筋烤肉",
+    "ko": "찐빵 위에 세이탄 불고기",
+    "ja": "セイタンプルコギまんじゅう",
+    "es": "Seitan Bulgogi en pan al vapor",
+    "pt": "Seitan Bulgogi em um pão cozido no vapor"
+  },
+  "Napa Slaw": {
+    "zh-CN": "纳帕沙拉",
+    "zh-TW": "納帕沙拉",
+    "ko": "나파 슬로",
+    "ja": "ナパスロー",
+    "es": "Ensalada De Napa",
+    "pt": "Salada de Napa"
+  },
+  "Roasted Garlic Smashed Yukon Potatoes": {
+    "zh-CN": "烤蒜碎育空土豆",
+    "zh-TW": "烤大蒜育空土豆",
+    "ko": "구운 마늘 으깬 유콘 감자",
+    "ja": "ローストガーリックスマッシュユーコンポテト",
+    "es": "Patatas Yukon machacadas con ajo asado",
+    "pt": "Alho Assado Esmagado Batatas Yukon"
+  },
+  "Tempeh Teriyaki": {
+    "zh-CN": "豆豉照烧",
+    "zh-TW": "豆豉照燒",
+    "ko": "템페 데리야끼",
+    "ja": "テンペ照り焼き",
+    "es": "Tempeh teriyaki",
+    "pt": "Tempeh Teriyaki"
+  },
+  "BBQ Chicken": {
+    "zh-CN": "烤鸡",
+    "zh-TW": "烤雞",
+    "ko": "바비큐 치킨",
+    "ja": "バーベキューチキン",
+    "es": "Pollo Barbacoa",
+    "pt": "Frango de churrasco"
+  },
+  "Sweet Potato Salad": {
+    "zh-CN": "红薯沙拉",
+    "zh-TW": "地瓜沙拉",
+    "ko": "고구마 샐러드",
+    "ja": "スイートポテトサラダ",
+    "es": "Ensalada De Camote",
+    "pt": "Salada De Batata Doce"
+  },
+  "Chorizo, Pineapple & Guajillo Pambazo": {
+    "zh-CN": "香肠、菠萝和 Guajillo Pambazo",
+    "zh-TW": "香腸、鳳梨和 Guajillo Pambazo",
+    "ko": "초리조, 파인애플, 과히요 팜바조",
+    "ja": "チョリソ、パイナップル、グアヒージョ パンバソ",
+    "es": "Chorizo, Piña y Pambazo Guajillo",
+    "pt": "Chouriço, Abacaxi e Guajillo Pambazo"
+  },
+  "Peppermint White Chocolate Blondie": {
+    "zh-CN": "薄荷白巧克力金发女郎",
+    "zh-TW": "薄荷白巧克力金髮女郎",
+    "ko": "페퍼민트 화이트 초콜릿 블론디",
+    "ja": "ペパーミント ホワイトチョコレート ブロンディ",
+    "es": "Blondie de chocolate blanco y menta",
+    "pt": "Loiro de chocolate branco com hortelã-pimenta"
+  },
+  "Chocolate Coconut Cream Pie": {
+    "zh-CN": "巧克力椰子奶油派",
+    "zh-TW": "巧克力椰子奶油派",
+    "ko": "초콜릿 코코넛 크림 파이",
+    "ja": "チョコレートココナッツクリームパイ",
+    "es": "Pastel de crema de chocolate y coco",
+    "pt": "Torta De Creme De Coco De Chocolate"
+  },
+  "Charred Corn": {
+    "zh-CN": "烧焦的玉米",
+    "zh-TW": "燒焦的玉米",
+    "ko": "까맣게 탄 옥수수",
+    "ja": "焦げたコーン",
+    "es": "Maíz carbonizado",
+    "pt": "Milho carbonizado"
+  },
+  "Baked French Toast Sticks": {
+    "zh-CN": "烤法式吐司棒",
+    "zh-TW": "烤法式吐司棒",
+    "ko": "구운 프렌치 토스트 스틱",
+    "ja": "ベイクドフレンチトーストスティック",
+    "es": "Palitos de tostadas francesas al horno",
+    "pt": "Torradas Francesas Assadas"
+  },
+  "Mayan Ancient 4 Grain Salad": {
+    "zh-CN": "玛雅古代 4 谷物沙拉",
+    "zh-TW": "瑪雅古代 4 穀物沙拉",
+    "ko": "마야 고대 4가지 곡물 샐러드",
+    "ja": "マヤ古代四穀サラダ",
+    "es": "Ensalada Maya Antigua de 4 Granos",
+    "pt": "Salada Maia Antiga de 4 Grãos"
+  },
+  "Greek Flatbread Pizza": {
+    "zh-CN": "希腊扁面包披萨",
+    "zh-TW": "希臘扁麵包披薩",
+    "ko": "그리스식 플랫브레드 피자",
+    "ja": "ギリシャ風フラットブレッドピザ",
+    "es": "Pizza griega de pan plano",
+    "pt": "Pizza de pão sírio grego"
+  },
+  "Beef Pho with Rice Noodles": {
+    "zh-CN": "牛肉河粉米线",
+    "zh-TW": "牛肉河粉米線",
+    "ko": "쌀국수를 곁들인 쇠고기 포",
+    "ja": "牛肉のフォーとライスヌードル",
+    "es": "Pho de ternera con fideos de arroz",
+    "pt": "Carne Pho com Macarrão de Arroz"
+  },
+  "Street Taco Salad": {
+    "zh-CN": "街头炸玉米饼沙拉",
+    "zh-TW": "街頭玉米餅沙拉",
+    "ko": "스트리트 타코 샐러드",
+    "ja": "ストリートタコサラダ",
+    "es": "Ensalada de tacos callejeros",
+    "pt": "Salada de Taco de Rua"
+  },
+  "Cornbread Muffins": {
+    "zh-CN": "玉米面包松饼",
+    "zh-TW": "玉米麵包鬆餅",
+    "ko": "콘브레드 머핀",
+    "ja": "コーンブレッドマフィン",
+    "es": "Muffins de pan de maíz",
+    "pt": "Muffins de pão de milho"
+  },
+  "Halal Georgia BBQ Chicken": {
+    "zh-CN": "清真格鲁吉亚烧烤鸡",
+    "zh-TW": "清真格魯吉亞燒烤雞",
+    "ko": "할랄 조지아 BBQ 치킨",
+    "ja": "ハラール ジョージア BBQ チキン",
+    "es": "Pollo BBQ Halal Georgia",
+    "pt": "Frango Halal para Churrasco da Geórgia"
+  },
+  "Roasted Red Potatoes": {
+    "zh-CN": "烤红土豆",
+    "zh-TW": "烤紅薯",
+    "ko": "구운 빨간 감자",
+    "ja": "ローストレッドポテト",
+    "es": "Patatas Rojas Asadas",
+    "pt": "Batatas Vermelhas Assadas"
+  },
+  "Pickled Red Onion": {
+    "zh-CN": "腌红洋葱",
+    "zh-TW": "醃紅洋蔥",
+    "ko": "절인 적양파",
+    "ja": "赤玉ねぎのピクルス",
+    "es": "Cebolla Roja En Escabeche",
+    "pt": "Cebola Vermelha Em Conserva"
+  },
+  "Red Velvet Cake": {
+    "zh-CN": "红丝绒蛋糕",
+    "zh-TW": "紅絲絨蛋糕",
+    "ko": "레드벨벳 케이크",
+    "ja": "レッドベルベットケーキ",
+    "es": "Pastel de terciopelo rojo",
+    "pt": "Bolo De Veludo Vermelho"
+  },
+  "Broccoli Cheddar Soup": {
+    "zh-CN": "西兰花切达干酪汤",
+    "zh-TW": "綠花椰菜切達乾酪湯",
+    "ko": "브로콜리 체다 수프",
+    "ja": "ブロッコリーチェダースープ",
+    "es": "Sopa De Brócoli Y Cheddar",
+    "pt": "Sopa de brócolis e cheddar"
+  },
+  "Tempeh Bulgogi Steamed Bun": {
+    "zh-CN": "豆豉烤肉包子",
+    "zh-TW": "豆豉烤肉包子",
+    "ko": "템페불고기찐빵",
+    "ja": "テンペプルコギまんじゅう",
+    "es": "Bollo Tempeh Bulgogi Al Vapor",
+    "pt": "Pão Cozido Tempeh Bulgogi"
+  },
+  "Texas BBQ Ribs": {
+    "zh-CN": "德克萨斯烧烤排骨",
+    "zh-TW": "德州燒烤排骨",
+    "ko": "텍사스 바비큐 립",
+    "ja": "テキサスBBQリブ",
+    "es": "Costillas BBQ de Texas",
+    "pt": "Costelas de churrasco do Texas"
+  },
+  "Herb Baked Chicken": {
+    "zh-CN": "香草烤鸡",
+    "zh-TW": "香草烤雞",
+    "ko": "허브베이크드치킨",
+    "ja": "チキンのハーブ焼き",
+    "es": "Pollo Al Horno Con Hierbas",
+    "pt": "Frango Assado com Ervas"
+  },
+  "Chicken Alfredo Pasta": {
+    "zh-CN": "阿尔弗雷多鸡肉意大利面",
+    "zh-TW": "阿爾弗雷多雞肉義大利麵",
+    "ko": "치킨 알프레도 파스타",
+    "ja": "チキンアルフレッドパスタ",
+    "es": "Pasta Alfredo con Pollo",
+    "pt": "Macarrão Alfredo com Frango"
+  },
+  "Steamed Broccoli": {
+    "zh-CN": "蒸西兰花",
+    "zh-TW": "蒸花椰菜",
+    "ko": "찐 브로콜리",
+    "ja": "蒸しブロッコリー",
+    "es": "Brócoli al vapor",
+    "pt": "Brócolis cozido no vapor"
+  },
+  "Curry Fried Rice": {
+    "zh-CN": "咖喱炒饭",
+    "zh-TW": "咖哩炒飯",
+    "ko": "카레볶음밥",
+    "ja": "カレーチャーハン",
+    "es": "Arroz Frito Al Curry",
+    "pt": "Arroz Frito com Caril"
+  },
+  "Stir Fried Chicken": {
+    "zh-CN": "炒鸡",
+    "zh-TW": "炒雞",
+    "ko": "후라이드치킨 볶음",
+    "ja": "鶏肉の炒め物",
+    "es": "Pollo salteado",
+    "pt": "Mexa Frango Frito"
+  },
+  "Halal Chicken Tikka Masala": {
+    "zh-CN": "清真鸡丁卡玛沙拉",
+    "zh-TW": "清真雞丁卡瑪沙拉",
+    "ko": "할랄 치킨 티카 마살라",
+    "ja": "ハラールチキンティッカマサラ",
+    "es": "Pollo Halal Tikka Masala",
+    "pt": "Frango Halal Tikka Masala"
+  },
+  "Honey Mustard Potato Salad": {
+    "zh-CN": "蜂蜜芥末土豆沙拉",
+    "zh-TW": "蜂蜜芥末馬鈴薯沙拉",
+    "ko": "허니 머스타드 감자 샐러드",
+    "ja": "ハニーマスタードポテトサラダ",
+    "es": "Ensalada De Patatas Con Miel Y Mostaza",
+    "pt": "Salada de Batata com Mel e Mostarda"
+  },
+  "Wild Rice Blend": {
+    "zh-CN": "野生稻混合物",
+    "zh-TW": "野生稻混合物",
+    "ko": "야생 쌀 혼합",
+    "ja": "ワイルドライスブレンド",
+    "es": "Mezcla de arroz salvaje",
+    "pt": "Mistura de Arroz Selvagem"
+  },
+  "Marinated Tomatoes": {
+    "zh-CN": "腌制西红柿",
+    "zh-TW": "醃西紅柿",
+    "ko": "절인 토마토",
+    "ja": "トマトのマリネ",
+    "es": "Tomates Marinados",
+    "pt": "Tomates Marinados"
+  },
+  "Pita Wedges": {
+    "zh-CN": "皮塔饼楔子",
+    "zh-TW": "皮塔餅楔子",
+    "ko": "피타 웨지",
+    "ja": "ピタウェッジ",
+    "es": "Cuñas de pita",
+    "pt": "Fatias de Pita"
   }
 }
