@@ -4710,5 +4710,309 @@
     "ja": "ピタウェッジ",
     "es": "Cuñas de pita",
     "pt": "Fatias de Pita"
+  },
+  "Strawberry Pancakes": {
+    "zh-CN": "草莓煎饼",
+    "zh-TW": "草莓煎餅",
+    "ko": "딸기 팬케이크",
+    "ja": "ストロベリーパンケーキ",
+    "es": "Panqueques De Fresa",
+    "pt": "Panquecas De Morango"
+  },
+  "Nacho Corn Mexicali Soup": {
+    "zh-CN": "纳乔玉米墨西卡利汤",
+    "zh-TW": "納喬玉米墨西卡利湯",
+    "ko": "나초 옥수수 멕시칼리 수프",
+    "ja": "ナチョコーンメヒカリスープ",
+    "es": "Sopa Mexicali De Maíz Y Nachos",
+    "pt": "Sopa Mexicali de Milho Nacho"
+  },
+  "Corn Chips": {
+    "zh-CN": "玉米片",
+    "zh-TW": "玉米片",
+    "ko": "옥수수 칩",
+    "ja": "コーンチップス",
+    "es": "chips de maíz",
+    "pt": "Salgadinhos de Milho"
+  },
+  "Italian Chicken": {
+    "zh-CN": "意大利鸡",
+    "zh-TW": "義大利雞",
+    "ko": "이탈리안 치킨",
+    "ja": "イタリアンチキン",
+    "es": "Pollo Italiano",
+    "pt": "Frango Italiano"
+  },
+  "Vegan Eclair Cake": {
+    "zh-CN": "纯素闪电泡芙蛋糕",
+    "zh-TW": "純素閃電泡芙蛋糕",
+    "ko": "비건 에클레어 케이크",
+    "ja": "ヴィーガンエクレアケーキ",
+    "es": "Pastel de éclair vegano",
+    "pt": "Bolo Éclair Vegano"
+  },
+  "Strawberry Crumb Cake": {
+    "zh-CN": "草莓面包屑蛋糕",
+    "zh-TW": "草莓麵包屑蛋糕",
+    "ko": "딸기 부스러기 케이크",
+    "ja": "ストロベリークラムケーキ",
+    "es": "Pastel de migas de fresa",
+    "pt": "Bolo De Migalha De Morango"
+  },
+  "Pulled Sriracha Chicken": {
+    "zh-CN": "是拉差拉差鸡",
+    "zh-TW": "是拉差拉差雞",
+    "ko": "풀드 스리라차 치킨",
+    "ja": "プルド・シラチャー・チキン",
+    "es": "Pollo Sriracha Desmenuzado",
+    "pt": "Frango Sriracha puxado"
+  },
+  "Lamb Vindaloo": {
+    "zh-CN": "文达洛羊肉",
+    "zh-TW": "文達洛羊肉",
+    "ko": "양고기 빈달루",
+    "ja": "ラム・ヴィンダルー",
+    "es": "Cordero Vindaloo",
+    "pt": "Cordeiro Vindaloo"
+  },
+  "Meat Eaters Delight Pizza": {
+    "zh-CN": "肉食者喜欢披萨",
+    "zh-TW": "肉食者喜歡披薩",
+    "ko": "고기 먹는 사람 딜라이트 피자",
+    "ja": "肉を食べる人が喜ぶピザ",
+    "es": "Pizza delicia para los carnívoros",
+    "pt": "Comedores de carne deliciam pizza"
+  },
+  "Bacon Egg and Cheese Biscuit": {
+    "zh-CN": "培根鸡蛋芝士饼干",
+    "zh-TW": "培根蛋起司餅乾",
+    "ko": "베이컨 계란과 치즈 비스킷",
+    "ja": "ベーコンエッグとチーズのビスケット",
+    "es": "Galleta De Huevo Y Queso Con Tocino",
+    "pt": "Ovo com Bacon e Biscoito de Queijo"
+  },
+  "Tricolor Tortellini w/ Basil Pesto": {
+    "zh-CN": "三色饺子配罗勒香蒜酱",
+    "zh-TW": "三色餃子佐羅勒香蒜醬",
+    "ko": "바질 페스토를 곁들인 삼색 토르텔리니",
+    "ja": "トリコロールトルテッリーニ バジルペスト添え",
+    "es": "Tortellini Tricolor con Pesto de Albahaca",
+    "pt": "Tortellini Tricolor c/ Pesto de Manjericão"
+  },
+  "Charred Grape Tomatoes": {
+    "zh-CN": "烧焦的葡萄番茄",
+    "zh-TW": "燒焦的葡萄番茄",
+    "ko": "까맣게 탄 포도 토마토",
+    "ja": "焦げたグレープトマト",
+    "es": "Tomates Uva Carbonizados",
+    "pt": "Tomate Uva Carbonizado"
+  },
+  "White Bean Mint and Red Onion Salad": {
+    "zh-CN": "白豆薄荷红洋葱沙拉",
+    "zh-TW": "白豆薄荷紅洋蔥沙拉",
+    "ko": "흰 콩 민트와 적양파 샐러드",
+    "ja": "白インゲン豆ミントとレッドオニオンのサラダ",
+    "es": "Ensalada de frijoles blancos, menta y cebolla morada",
+    "pt": "Salada de Feijão Branco, Menta e Cebola Vermelha"
+  },
+  "Arugula": {
+    "zh-CN": "芝麻菜",
+    "zh-TW": "芝麻菜",
+    "ko": "아루굴라",
+    "ja": "ルッコラ",
+    "es": "Rúcula",
+    "pt": "Rúcula"
+  },
+  "Hamburger": {
+    "zh-CN": "汉堡包",
+    "zh-TW": "漢堡",
+    "ko": "햄버거",
+    "ja": "ハンバーガー",
+    "es": "Hamburguesa",
+    "pt": "Hamburger"
+  },
+  "Seafood Stew With Coconut": {
+    "zh-CN": "椰子炖海鲜",
+    "zh-TW": "椰子燉海鮮",
+    "ko": "코코넛을 곁들인 해산물 스튜",
+    "ja": "ココナッツ入りシーフードシチュー",
+    "es": "Guiso De Mariscos Con Coco",
+    "pt": "Ensopado De Frutos Do Mar Com Coco"
+  },
+  "Brazilian Kale": {
+    "zh-CN": "巴西羽衣甘蓝",
+    "zh-TW": "巴西羽衣甘藍",
+    "ko": "브라질 케일",
+    "ja": "ブラジル産ケール",
+    "es": "col rizada brasileña",
+    "pt": "Couve Brasileira"
+  },
+  "BBQ Pulled Eggplant": {
+    "zh-CN": "烧烤拉茄子",
+    "zh-TW": "燒烤拉茄子",
+    "ko": "BBQ 풀드 가지",
+    "ja": "BBQ引きナス",
+    "es": "Berenjena desmenuzada a la barbacoa",
+    "pt": "Berinjela puxada para churrasco"
+  },
+  "White Bean & Potato Hash": {
+    "zh-CN": "白豆土豆泥",
+    "zh-TW": "白豆馬鈴薯泥",
+    "ko": "흰 콩 & 감자 해시",
+    "ja": "白インゲンとポテトのハッシュ",
+    "es": "Hash de papa y frijoles blancos",
+    "pt": "Feijão Branco e Hash de Batata"
+  },
+  "Halal Sweet Moroccan Beef": {
+    "zh-CN": "清真甜摩洛哥牛肉",
+    "zh-TW": "清真甜摩洛哥牛肉",
+    "ko": "할랄 스위트 모로코 쇠고기",
+    "ja": "ハラールスイートモロッカンビーフ",
+    "es": "Ternera marroquí dulce halal",
+    "pt": "Carne Marroquina Doce Halal"
+  },
+  "Okra Stewed Tomatoes": {
+    "zh-CN": "秋葵炖西红柿",
+    "zh-TW": "秋葵燉西紅柿",
+    "ko": "오크라 조림 토마토",
+    "ja": "オクラのトマト煮",
+    "es": "Tomates Guisados ​​Con Okra",
+    "pt": "Tomate Estufado com Quiabo"
+  },
+  "Spaghetti Pasta": {
+    "zh-CN": "意大利面",
+    "zh-TW": "義大利麵",
+    "ko": "스파게티 파스타",
+    "ja": "スパゲッティパスタ",
+    "es": "Pasta De Espagueti",
+    "pt": "Macarrão Espaguete"
+  },
+  "Meat Sauce": {
+    "zh-CN": "肉酱",
+    "zh-TW": "肉醬",
+    "ko": "미트 소스",
+    "ja": "ミートソース",
+    "es": "Salsa De Carne",
+    "pt": "Molho de Carne"
+  },
+  "Sloppy Joe": {
+    "zh-CN": "邋遢乔",
+    "zh-TW": "邋遢喬",
+    "ko": "조잡한 조",
+    "ja": "スロッピー・ジョー",
+    "es": "Joe descuidado",
+    "pt": "Joe desleixado"
+  },
+  "Sweet & Spicy Pickle Chips": {
+    "zh-CN": "甜辣泡菜片",
+    "zh-TW": "甜辣泡菜片",
+    "ko": "달콤하고 매콤한 피클 칩",
+    "ja": "スイート&スパイシーピクルスチップス",
+    "es": "Chips de pepinillos dulces y picantes",
+    "pt": "Chips de picles doces e picantes"
+  },
+  "Garlic Peppercorn Roasted Gold Potatoes": {
+    "zh-CN": "大蒜胡椒烤金土豆",
+    "zh-TW": "大蒜胡椒烤金土豆",
+    "ko": "마늘 후추 열매 구운 금 감자",
+    "ja": "ガーリックペッパーコーンローストゴールドポテト",
+    "es": "Patatas doradas asadas con ajo, pimienta y granos",
+    "pt": "Alho Pimenta Batata Dourada Assada"
+  },
+  "Sauteed Arugula": {
+    "zh-CN": "炒芝麻菜",
+    "zh-TW": "炒芝麻菜",
+    "ko": "루꼴라 볶음",
+    "ja": "ルッコラのソテー",
+    "es": "Rúcula Salteada",
+    "pt": "Rúcula salteada"
+  },
+  "Cacciatore Sauce": {
+    "zh-CN": "卡恰托雷酱",
+    "zh-TW": "卡恰托雷醬",
+    "ko": "카치아토레 소스",
+    "ja": "カチャトーレソース",
+    "es": "Salsa Cacciatore",
+    "pt": "Molho Cacciatore"
+  },
+  "Tuscan Bean Soup": {
+    "zh-CN": "托斯卡纳豆汤",
+    "zh-TW": "托斯卡納豆湯",
+    "ko": "토스카나 콩 수프",
+    "ja": "トスカーナ豆のスープ",
+    "es": "Sopa De Frijoles Toscana",
+    "pt": "Sopa de Feijão Toscana"
+  },
+  "Zucchini & Summer Squash": {
+    "zh-CN": "西葫芦和西葫芦",
+    "zh-TW": "西葫蘆和西葫蘆",
+    "ko": "애호박 & 여름 스쿼시",
+    "ja": "ズッキーニと夏カボチャ",
+    "es": "Calabacín y calabaza de verano",
+    "pt": "Abobrinha e abóbora"
+  },
+  "Cracked Wheat Bread": {
+    "zh-CN": "裂纹小麦面包",
+    "zh-TW": "裂紋小麥麵包",
+    "ko": "갈라진 밀빵",
+    "ja": "ひび割れ小麦パン",
+    "es": "Pan de trigo partido",
+    "pt": "Pão De Trigo Rachado"
+  },
+  "Garbanzo Beans with Stewed Tomato": {
+    "zh-CN": "鹰嘴豆炖番茄",
+    "zh-TW": "鷹嘴豆燉番茄",
+    "ko": "토마토 조림을 곁들인 가르반조 콩",
+    "ja": "ひよこ豆のトマト煮込み",
+    "es": "Garbanzos con Tomate Guisado",
+    "pt": "Feijão Garbanzo com Tomate Estufado"
+  },
+  "Oven Browned Potatoes": {
+    "zh-CN": "烤箱烤土豆",
+    "zh-TW": "烤箱烤馬鈴薯",
+    "ko": "오븐에 구운 감자",
+    "ja": "オーブンでこんがりポテト",
+    "es": "Patatas Doradas Al Horno",
+    "pt": "Batatas Douradas no Forno"
+  },
+  "Mushroom and Kale Ragout": {
+    "zh-CN": "蘑菇羽衣甘蓝炖肉",
+    "zh-TW": "蘑菇羽衣甘藍燉肉",
+    "ko": "버섯과 케일 라구",
+    "ja": "マッシュルームとケールのラグー",
+    "es": "Ragú de champiñones y col rizada",
+    "pt": "Ragout de Cogumelos e Couve"
+  },
+  "Souvlaki Kebob": {
+    "zh-CN": "烤肉串",
+    "zh-TW": "烤肉串",
+    "ko": "수블라키 케밥",
+    "ja": "スブラキケバブ",
+    "es": "Souvlaki Kebob",
+    "pt": "Souvlaki Kebob"
+  },
+  "Yellow Rice": {
+    "zh-CN": "黄米",
+    "zh-TW": "黃米",
+    "ko": "노란쌀",
+    "ja": "イエローライス",
+    "es": "Arroz Amarillo",
+    "pt": "Arroz Amarelo"
+  },
+  "Herbed Rockfish Fillet": {
+    "zh-CN": "香草石斑鱼片",
+    "zh-TW": "香草石斑魚片",
+    "ko": "허브 볼락 필레",
+    "ja": "ハーブメバルの切り身",
+    "es": "Filete De Pescado De Roca Con Hierbas",
+    "pt": "Filé de Rockfish com Ervas"
+  },
+  "Yukon Gold Potatoes": {
+    "zh-CN": "育空黄金土豆",
+    "zh-TW": "育空黃金土豆",
+    "ko": "유콘 골드 감자",
+    "ja": "ユーコンゴールドポテト",
+    "es": "Patatas Yukon Gold",
+    "pt": "Batatas Yukon Douradas"
   }
 }
