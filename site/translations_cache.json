@@ -6638,5 +6638,325 @@
     "ja": "トマトバジルソース",
     "es": "Salsa De Tomate Y Albahaca",
     "pt": "Molho de tomate e manjericão"
+  },
+  "Lyonnaise Potatoes": {
+    "zh-CN": "里昂土豆",
+    "zh-TW": "里昂土豆",
+    "ko": "리옹 감자",
+    "ja": "リヨネーズポテト",
+    "es": "Patatas Lyonnesas",
+    "pt": "Batatas Lyonnaise"
+  },
+  "Cinnamon Pull Apart Bread": {
+    "zh-CN": "肉桂拉断面包",
+    "zh-TW": "肉桂拉斷麵包",
+    "ko": "시나몬 풀 어파트 브레드",
+    "ja": "シナモンプルアパートブレッド",
+    "es": "Pan de canela",
+    "pt": "Pão Desmontado De Canela"
+  },
+  "MSC Baked Cod": {
+    "zh-CN": "MSC 烤鳕鱼",
+    "zh-TW": "MSC 烤鱈魚",
+    "ko": "MSC 구운 대구",
+    "ja": "MSC 焼きタラ",
+    "es": "Bacalao al horno MSC",
+    "pt": "Bacalhau Assado MSC"
+  },
+  "Tikka Marinade": {
+    "zh-CN": "蒂卡腌料",
+    "zh-TW": "蒂卡醃料",
+    "ko": "티카 마리네이드",
+    "ja": "ティッカマリネ",
+    "es": "Adobo Tikka",
+    "pt": "Marinada Tikka"
+  },
+  "Pilau": {
+    "zh-CN": "皮劳",
+    "zh-TW": "皮勞",
+    "ko": "필라프",
+    "ja": "ピラウ",
+    "es": "Pilaú",
+    "pt": "Pilau"
+  },
+  "Paneer Tikka": {
+    "zh-CN": "芝士蒂卡",
+    "zh-TW": "起司蒂卡",
+    "ko": "파니르 티카",
+    "ja": "パニール ティッカ",
+    "es": "Paneer Tikka",
+    "pt": "Paneer Tikka"
+  },
+  "Vegan Quinoa Power Bowl": {
+    "zh-CN": "纯素藜麦能量碗",
+    "zh-TW": "純素藜麥能量碗",
+    "ko": "비건 퀴노아 파워볼",
+    "ja": "ビーガンキヌアパワーボウル",
+    "es": "Power Bowl de quinua vegana",
+    "pt": "Power Bowl de quinoa vegana"
+  },
+  "Pesto Chicken Pizza": {
+    "zh-CN": "香蒜鸡肉披萨",
+    "zh-TW": "香蒜雞肉披薩",
+    "ko": "페스토 치킨 피자",
+    "ja": "ペストチキンピザ",
+    "es": "Pizza de pollo al pesto",
+    "pt": "Pizza de frango com pesto"
+  },
+  "Peri Peri Fry Sauce": {
+    "zh-CN": "佩里佩里炸酱",
+    "zh-TW": "佩里佩里炸醬",
+    "ko": "페리페리튀김소스",
+    "ja": "ペリペリフライソース",
+    "es": "Salsa para freír peri peri",
+    "pt": "Molho Frito Peri Peri"
+  },
+  "Birthday Cake Bars": {
+    "zh-CN": "生日蛋糕棒",
+    "zh-TW": "生日蛋糕棒",
+    "ko": "생일 케이크 바",
+    "ja": "バースデーケーキバー",
+    "es": "Barras de pastel de cumpleaños",
+    "pt": "Barras de bolo de aniversário"
+  },
+  "Tofu Poke": {
+    "zh-CN": "豆腐戳",
+    "zh-TW": "豆腐戳",
+    "ko": "두부포케",
+    "ja": "豆腐ポキ",
+    "es": "Poke de tofu",
+    "pt": "Poke de tofu"
+  },
+  "Caribbean Chicken Thigh with Curry": {
+    "zh-CN": "加勒比咖喱鸡腿",
+    "zh-TW": "加勒比海咖哩雞腿",
+    "ko": "카레를 곁들인 캐리비안 닭다리살",
+    "ja": "カリビアンチキンもも肉のカレー添え",
+    "es": "Muslo de Pollo Caribeño con Curry",
+    "pt": "Coxa de Frango Caribenha com Curry"
+  },
+  "Peach Cobbler Pie": {
+    "zh-CN": "桃馅饼",
+    "zh-TW": "桃餡餅",
+    "ko": "복숭아 코블러 파이",
+    "ja": "ピーチコブラーパイ",
+    "es": "Pastel de zapatero de melocotón",
+    "pt": "Torta De Pêssego"
+  },
+  "Breakfast Fried Rice": {
+    "zh-CN": "早餐炒饭",
+    "zh-TW": "早餐炒飯",
+    "ko": "아침 볶음밥",
+    "ja": "朝食チャーハン",
+    "es": "Desayuno Arroz Frito",
+    "pt": "Arroz Frito Café Da Manhã"
+  },
+  "Vegetable Soup": {
+    "zh-CN": "蔬菜汤",
+    "zh-TW": "蔬菜湯",
+    "ko": "야채 수프",
+    "ja": "野菜スープ",
+    "es": "sopa de verduras",
+    "pt": "Sopa de Legumes"
+  },
+  "Paprika Roasted Potatoes": {
+    "zh-CN": "辣椒烤土豆",
+    "zh-TW": "辣椒烤土豆",
+    "ko": "파프리카 구운 감자",
+    "ja": "パプリカのローストポテト",
+    "es": "Patatas asadas con pimentón",
+    "pt": "Batatas Assadas com Páprica"
+  },
+  "Tofu Vietnamese Chili Stir Fry": {
+    "zh-CN": "豆腐越南辣椒炒",
+    "zh-TW": "豆腐越南辣椒炒",
+    "ko": "두부 베트남 고추볶음",
+    "ja": "豆腐のベトナムチリ炒め",
+    "es": "Salteado De Tofu Y Chile Vietnamita",
+    "pt": "Tofu vietnamita com pimentão frito"
+  },
+  "Pasilla Tortilla Casserole": {
+    "zh-CN": "帕西拉玉米饼砂锅",
+    "zh-TW": "帕西拉玉米餅砂鍋",
+    "ko": "파실라 토르티야 캐서롤",
+    "ja": "パシーラ トルティーヤ キャセロール",
+    "es": "Cazuela De Tortilla Pasilla",
+    "pt": "Caçarola de tortilha Pasilla"
+  },
+  "Mixed Pepper Flatbread Pizza": {
+    "zh-CN": "混合胡椒面包披萨",
+    "zh-TW": "綜合胡椒麵包披薩",
+    "ko": "믹스페퍼 플랫브레드 피자",
+    "ja": "ミックスペッパーのフラットブレッドピザ",
+    "es": "Pizza de pan plano con pimientos mixtos",
+    "pt": "Pizza de pão sírio com pimenta mista"
+  },
+  "Beef Teriyaki Rice Bowl": {
+    "zh-CN": "照烧牛肉盖饭",
+    "zh-TW": "照燒牛肉蓋飯",
+    "ko": "쇠고기 데리야끼 덮밥",
+    "ja": "牛照り焼き丼",
+    "es": "Tazón de arroz con carne teriyaki",
+    "pt": "Tigela de arroz com carne teriyaki"
+  },
+  "Chicken and Shrimp Pad Thai w/ Peanuts": {
+    "zh-CN": "泰式鸡肉虾仁炒河粉配花生",
+    "zh-TW": "泰式雞肉蝦仁炒河粉佐花生",
+    "ko": "땅콩을 곁들인 닭고기와 새우 팟타이",
+    "ja": "チキンとエビのパッタイ ピーナッツ添え",
+    "es": "Pad Thai de pollo y camarones con maní",
+    "pt": "Pad Thai de Frango e Camarão com Amendoim"
+  },
+  "Sausage Gravy": {
+    "zh-CN": "香肠肉汁",
+    "zh-TW": "香腸肉汁",
+    "ko": "소시지 그레이비",
+    "ja": "ソーセージグレービーソース",
+    "es": "Salsa De Salchicha",
+    "pt": "Molho de Salsicha"
+  },
+  "MSC Blackened Cod": {
+    "zh-CN": "MSC 黑鳕鱼",
+    "zh-TW": "MSC 黑鱈魚",
+    "ko": "MSC 흑대구",
+    "ja": "MSC 黒鱈",
+    "es": "MSC Bacalao Ennegrecido",
+    "pt": "Bacalhau Enegrecido MSC"
+  },
+  "Buttered Popcorn": {
+    "zh-CN": "黄油爆米花",
+    "zh-TW": "奶油爆米花",
+    "ko": "버터 팝콘",
+    "ja": "バターポップコーン",
+    "es": "Palomitas de maíz con mantequilla",
+    "pt": "Pipoca com manteiga"
+  },
+  "All Beef Hot Dog": {
+    "zh-CN": "全牛肉热狗",
+    "zh-TW": "全牛肉熱狗",
+    "ko": "올 비프 핫도그",
+    "ja": "オールビーフホットドッグ",
+    "es": "Hot Dog de carne entera",
+    "pt": "Cachorro-quente só de carne"
+  },
+  "Coney Island Sauce": {
+    "zh-CN": "康尼岛酱",
+    "zh-TW": "康尼島醬",
+    "ko": "코니아일랜드 소스",
+    "ja": "コニーアイランドソース",
+    "es": "Salsa Coney Island",
+    "pt": "Molho Coney Island"
+  },
+  "Cream of Mushroom Soup": {
+    "zh-CN": "奶油蘑菇汤",
+    "zh-TW": "奶油蘑菇湯",
+    "ko": "버섯 크림 수프",
+    "ja": "マッシュルームのクリームスープ",
+    "es": "Crema de Champiñones",
+    "pt": "Sopa Creme de Cogumelos"
+  },
+  "American BBQ Roasted Potatoes": {
+    "zh-CN": "美式烧烤烤土豆",
+    "zh-TW": "美式燒烤烤馬鈴薯",
+    "ko": "미국식 바비큐 구운 감자",
+    "ja": "アメリカンBBQローストポテト",
+    "es": "Patatas asadas a la barbacoa americana",
+    "pt": "Batatas Assadas com Churrasco Americano"
+  },
+  "Cilantro Chutney": {
+    "zh-CN": "香菜酸辣酱",
+    "zh-TW": "香菜酸辣醬",
+    "ko": "고수 처트니",
+    "ja": "コリアンダーチャツネ",
+    "es": "Chutney de cilantro",
+    "pt": "Chutney de coentro"
+  },
+  "Hard Boiled Eggs": {
+    "zh-CN": "煮鸡蛋",
+    "zh-TW": "煮雞蛋",
+    "ko": "완숙 계란",
+    "ja": "ゆで卵",
+    "es": "Huevos Duros",
+    "pt": "Ovos cozidos"
+  },
+  "Pretzel Bites": {
+    "zh-CN": "椒盐卷饼咬",
+    "zh-TW": "椒鹽捲餅咬",
+    "ko": "프레첼 바이트",
+    "ja": "プレッツェルバイツ",
+    "es": "Bocaditos de pretzel",
+    "pt": "Mordidas de pretzel"
+  },
+  "Vegan Nacho Cheese": {
+    "zh-CN": "纯素纳乔奶酪",
+    "zh-TW": "純素納喬起司",
+    "ko": "비건 나초 치즈",
+    "ja": "ビーガンナチョチーズ",
+    "es": "Queso Nacho Vegano",
+    "pt": "Queijo Nacho Vegano"
+  },
+  "Churros": {
+    "zh-CN": "油条",
+    "zh-TW": "油條",
+    "ko": "츄로스",
+    "ja": "チュロス",
+    "es": "Churros",
+    "pt": "Churros"
+  },
+  "Shrimp Scampi": {
+    "zh-CN": "虾海蜇",
+    "zh-TW": "蝦海蜇",
+    "ko": "새우 스캠피",
+    "ja": "シュリンプ・スカンピ",
+    "es": "Gambas al ajillo",
+    "pt": "Camarão Camarão"
+  },
+  "Basil Parmesan Orzo": {
+    "zh-CN": "巴兹尔帕尔玛干酪",
+    "zh-TW": "巴茲爾帕瑪乾酪",
+    "ko": "바질 파마산 오르조",
+    "ja": "バジル・パルメザン・オルソ",
+    "es": "Orzo de albahaca y parmesano",
+    "pt": "Manjericão Parmesão Orzo"
+  },
+  "Dearborn Bratwurst Sausage": {
+    "zh-CN": "迪尔伯恩多味香肠",
+    "zh-TW": "迪爾伯恩多味香腸",
+    "ko": "디어본 소세지 소시지",
+    "ja": "ディアボーン ブラートヴルスト ソーセージ",
+    "es": "Salchicha Bratwurst Dearborn",
+    "pt": "Salsicha Bratwurst Dearborn"
+  },
+  "Cheddar Cheese Sauce": {
+    "zh-CN": "切达奶酪酱",
+    "zh-TW": "切達起司醬",
+    "ko": "체다 치즈 소스",
+    "ja": "チェダーチーズソース",
+    "es": "Salsa De Queso Cheddar",
+    "pt": "Molho De Queijo Cheddar"
+  },
+  "Sliced Tomatoes": {
+    "zh-CN": "西红柿切片",
+    "zh-TW": "番茄切片",
+    "ko": "얇게 썬 토마토",
+    "ja": "スライストマト",
+    "es": "Tomates Rebanados",
+    "pt": "Tomates fatiados"
+  },
+  "Korean Style BBQ Tofu": {
+    "zh-CN": "韩式烧烤豆腐",
+    "zh-TW": "韓式燒烤豆腐",
+    "ko": "한국식 바베큐 두부",
+    "ja": "韓国風バーベキュー豆腐",
+    "es": "Tofu BBQ estilo coreano",
+    "pt": "Tofu para churrasco estilo coreano"
+  },
+  "Chicken Gnocchi Pasta Primavera": {
+    "zh-CN": "鸡肉面疙瘩春意大利面",
+    "zh-TW": "雞肉麵疙瘩春季義大利麵",
+    "ko": "치킨 뇨키 파스타 프리마베라",
+    "ja": "チキンニョッキのパスタプリマヴェーラ",
+    "es": "Pasta Primavera Con Ñoquis De Pollo",
+    "pt": "Nhoque de Frango Pasta Primavera"
   }
 }
