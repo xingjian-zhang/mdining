@@ -7134,5 +7134,227 @@
     "ja": "ハラールビーフナチョス",
     "es": "Nachos de carne halal",
     "pt": "Nachos de carne halal"
+  },
+  "Tofu Banh Mi Sandwich": {
+    "zh-CN": "豆腐三明治",
+    "zh-TW": "豆腐三明治",
+    "ko": "두부 반미 샌드위치",
+    "ja": "豆腐バインミーサンド",
+    "es": "Sándwich de tofu Banh Mi",
+    "pt": "Sanduíche de Tofu Banh Mi"
+  },
+  "Ciabatta Bread": {
+    "zh-CN": "夏巴塔面包",
+    "zh-TW": "夏巴塔麵包",
+    "ko": "치아바타 빵",
+    "ja": "チャバタパン",
+    "es": "Pan ciabatta",
+    "pt": "Pão Ciabatta"
+  },
+  "Apple Fruit Pizza": {
+    "zh-CN": "苹果水果披萨",
+    "zh-TW": "蘋果水果披薩",
+    "ko": "사과 과일 피자",
+    "ja": "アップルフルーツピザ",
+    "es": "Pizza de fruta y manzana",
+    "pt": "Pizza de frutas de maçã"
+  },
+  "Banana Bread": {
+    "zh-CN": "香蕉面包",
+    "zh-TW": "香蕉麵包",
+    "ko": "바나나빵",
+    "ja": "バナナブレッド",
+    "es": "Pan de plátano",
+    "pt": "Pão de banana"
+  },
+  "Halal Baked Spaghetti": {
+    "zh-CN": "清真烤意大利面",
+    "zh-TW": "清真烤義大利麵",
+    "ko": "할랄 구운 스파게티",
+    "ja": "ハラール焼きスパゲッティ",
+    "es": "Espaguetis al horno halal",
+    "pt": "Espaguete Assado Halal"
+  },
+  "Roast Beef": {
+    "zh-CN": "烤牛肉",
+    "zh-TW": "烤牛肉",
+    "ko": "로스트비프",
+    "ja": "ローストビーフ",
+    "es": "Rosbif",
+    "pt": "Carne assada"
+  },
+  "Seasoned Redskin Potatoes": {
+    "zh-CN": "调味红皮土豆",
+    "zh-TW": "調味紅皮土豆",
+    "ko": "양념한 레드스킨 감자",
+    "ja": "味付けレッドスキンポテト",
+    "es": "Patatas Redskin Sazonadas",
+    "pt": "Batatas Redskin Temperadas"
+  },
+  "Ruby Lentil Soup": {
+    "zh-CN": "红宝石扁豆汤",
+    "zh-TW": "紅寶石扁豆湯",
+    "ko": "루비 렌즈콩 수프",
+    "ja": "ルビーレンズ豆のスープ",
+    "es": "Sopa de lentejas rubí",
+    "pt": "Sopa de Lentilha Rubi"
+  },
+  "Black Bean Enchiladas": {
+    "zh-CN": "黑豆辣酱玉米饼馅",
+    "zh-TW": "黑豆辣醬玉米餅餡",
+    "ko": "검은콩 엔칠라다",
+    "ja": "黒豆のエンチラーダ",
+    "es": "Enchiladas de Frijoles Negros",
+    "pt": "Enchiladas de Feijão Preto"
+  },
+  "Flatbread Pizza Con Queso": {
+    "zh-CN": "薄饼披萨 Con Queso",
+    "zh-TW": "薄餅披薩 Con Queso",
+    "ko": "플랫브레드 피자 콘 케소",
+    "ja": "フラットブレッドピザ コンケソ",
+    "es": "Pizza De Pan Plano Con Queso",
+    "pt": "Pizza de pão achatado com queijo"
+  },
+  "Chili, Lime and Cilantro Chicken": {
+    "zh-CN": "辣椒、酸橙和香菜鸡",
+    "zh-TW": "辣椒、酸橙和香菜雞",
+    "ko": "칠리, 라임, 고수 치킨",
+    "ja": "チリ、ライム、コリアンダーチキン",
+    "es": "Pollo con chile, lima y cilantro",
+    "pt": "Frango com pimenta, limão e coentro"
+  },
+  "Honey Baked Spiral Ham": {
+    "zh-CN": "蜂蜜烤螺旋火腿",
+    "ko": "허니 베이크드 스파이럴 햄",
+    "ja": "スパイラルハムのはちみつ焼き",
+    "es": "Jamón Espiral Al Horno Con Miel",
+    "pt": "Presunto Espiral Assado com Mel"
+  },
+  "Au Gratin Potatoes": {
+    "zh-CN": "烤土豆",
+    "zh-TW": "烤馬鈴薯",
+    "ko": "오 그라탕 감자",
+    "ja": "グラタンポテト",
+    "es": "Patatas Gratinadas",
+    "pt": "Batatas gratinadas"
+  },
+  "Gumbo Z'Herbs": {
+    "zh-CN": "秋葵浓汤 Z'Herbs",
+    "zh-TW": "秋葵濃湯 Z'Herbs",
+    "ko": "검보 Z'허브",
+    "ja": "ガンボ ゼハーブス",
+    "es": "Gumbo Z'Hierbas",
+    "pt": "Gumbo Z'Ervas"
+  },
+  "Spicy Garlic-Lime Sauce": {
+    "zh-CN": "辣蒜酸橙酱",
+    "zh-TW": "辣蒜酸橙醬",
+    "ko": "매콤한 마늘-라임 소스",
+    "ja": "スパイシーガーリックライムソース",
+    "es": "Salsa picante de ajo y lima",
+    "pt": "Molho Picante de Alho e Limão"
+  },
+  "Singapore Noodles w/ Edamame": {
+    "zh-CN": "新加坡毛豆面",
+    "zh-TW": "新加坡毛豆麵",
+    "ko": "에다마메를 곁들인 싱가포르 국수",
+    "ja": "シンガポールヌードル 枝豆添え",
+    "es": "Fideos Singapur con Edamame",
+    "pt": "Macarrão de Singapura com Edamame"
+  },
+  "Roasted Leg Lamb w/North African Spices": {
+    "zh-CN": "北非香料烤羊腿",
+    "zh-TW": "北非香料烤羊腿",
+    "ko": "북아프리카 향신료를 곁들인 구운 양고기 다리",
+    "ja": "子羊脚のロースト 北アフリカ産スパイス添え",
+    "es": "Pierna De Cordero Asada Con Especias Del Norte De África",
+    "pt": "Pernil de Cordeiro Assado com Especiarias do Norte da África"
+  },
+  "Ham Baked": {
+    "zh-CN": "火腿烤",
+    "zh-TW": "火腿烤",
+    "ko": "햄 구운 것",
+    "ja": "ハム焼き",
+    "es": "Jamón Al Horno",
+    "pt": "Presunto Assado"
+  },
+  "Scalloped Potatoes": {
+    "zh-CN": "扇贝土豆",
+    "ko": "가리비 감자",
+    "ja": "ホタテジャガイモ",
+    "es": "Patatas gratinadas",
+    "pt": "Batatas Recortadas"
+  },
+  "Linguine Pasta": {
+    "zh-CN": "扁面条",
+    "zh-TW": "扁麵條",
+    "ko": "링귀니 파스타",
+    "ja": "リングイネパスタ",
+    "es": "Pasta Linguini",
+    "pt": "Macarrão Linguine"
+  },
+  "Eggplant &Tomato Casserole": {
+    "zh-CN": "茄子番茄砂锅",
+    "zh-TW": "茄子番茄砂鍋",
+    "ko": "가지&토마토 캐서롤",
+    "ja": "ナスとトマトのキャセロール",
+    "es": "Cazuela De Berenjenas Y Tomates",
+    "pt": "Caçarola de Berinjela e Tomate"
+  },
+  "Hot Halal Sliced Roast Beef": {
+    "zh-CN": "热清真烤牛肉片",
+    "zh-TW": "熱清真烤牛肉片",
+    "ko": "핫 할랄 슬라이스 로스트 비프",
+    "ja": "ハラールスライスローストビーフの熱々",
+    "es": "Carne asada en rodajas halal caliente",
+    "pt": "Rosbife Fatiado Halal Quente"
+  },
+  "Winter Vegetable Blend": {
+    "zh-CN": "冬季蔬菜混合物",
+    "zh-TW": "冬季蔬菜混合物",
+    "ko": "겨울 야채 블렌드",
+    "ja": "冬野菜ブレンド",
+    "es": "Mezcla de verduras de invierno",
+    "pt": "Mistura de vegetais de inverno"
+  },
+  "Pub Style Fish": {
+    "zh-CN": "酒吧风格的鱼",
+    "zh-TW": "酒吧風格的魚",
+    "ko": "펍 스타일 생선",
+    "ja": "パブスタイルフィッシュ",
+    "es": "Pescado estilo pub",
+    "pt": "Peixe Estilo Pub"
+  },
+  "General Tso Chicken": {
+    "zh-CN": "左宗棠鸡",
+    "zh-TW": "左宗棠雞",
+    "ko": "일반초치킨",
+    "ja": "一般的なツォチキン",
+    "es": "Pollo General Tso",
+    "pt": "Frango General Tso"
+  },
+  "Spicy Pork Quesadilla": {
+    "zh-CN": "辣猪肉玉米饼",
+    "zh-TW": "辣豬肉玉米餅",
+    "ko": "매콤한 돼지고기 케사디야",
+    "ja": "スパイシーポークケサディーヤ",
+    "es": "Quesadilla De Cerdo Picante",
+    "pt": "Quesadilla De Porco Picante"
+  },
+  "Vegetarian Baked Spaghetti": {
+    "zh-CN": "素食烤意大利面",
+    "zh-TW": "素食烤義大利麵",
+    "ko": "채식 구운 스파게티",
+    "ja": "ベジタリアン焼きスパゲッティ",
+    "es": "Espaguetis vegetarianos al horno",
+    "pt": "Espaguete Vegetariano Assado"
+  },
+  "Pulled Sriracha Chicken Slider": {
+    "zh-CN": "拉差是拉差鸡肉滑块",
+    "zh-TW": "拉差是拉差雞肉滑塊",
+    "ko": "풀드 스리라차 치킨 슬라이더",
+    "ja": "プルド・シラチャー・チキン・スライダー",
+    "es": "Deslizador de pollo Sriracha desmenuzado",
+    "pt": "Controle deslizante de frango Sriracha puxado"
   }
 }
