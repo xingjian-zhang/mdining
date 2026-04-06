@@ -7356,5 +7356,205 @@
     "ja": "プルド・シラチャー・チキン・スライダー",
     "es": "Deslizador de pollo Sriracha desmenuzado",
     "pt": "Controle deslizante de frango Sriracha puxado"
+  },
+  "Zucchini & Feta Quiche": {
+    "zh-CN": "西葫芦和羊乳酪乳蛋饼",
+    "zh-TW": "西葫蘆和羊乳酪乳蛋餅",
+    "ko": "애호박 & 페타 키쉬",
+    "ja": "ズッキーニとフェタチーズのキッシュ",
+    "es": "Quiche de calabacín y queso feta",
+    "pt": "Quiche de Abobrinha e Feta"
+  },
+  "3 Sisters Stew": {
+    "zh-CN": "三姐妹炖菜",
+    "zh-TW": "三姊妹燉菜",
+    "ko": "스튜 3자매",
+    "ja": "3姉妹のシチュー",
+    "es": "Guiso 3 Hermanas",
+    "pt": "Ensopado de 3 Irmãs"
+  },
+  "Corn Salsa with Tomatoes": {
+    "zh-CN": "玉米莎莎酱配西红柿",
+    "zh-TW": "玉米莎莎醬配番茄",
+    "ko": "토마토를 곁들인 옥수수 살사",
+    "ja": "トマト入りコーンサルサ",
+    "es": "Salsa De Maíz Con Tomates",
+    "pt": "Molho de Milho com Tomate"
+  },
+  "Ancho Rub": {
+    "zh-CN": "安乔擦",
+    "zh-TW": "安喬擦",
+    "ko": "안초 럽",
+    "ja": "アンチョラブ",
+    "es": "Frote ancho",
+    "pt": "Esfregar ancho"
+  },
+  "Greek Pizza": {
+    "zh-CN": "希腊披萨",
+    "zh-TW": "希臘披薩",
+    "ko": "그리스 피자",
+    "ja": "ギリシャ風ピザ",
+    "es": "pizza griega",
+    "pt": "Pizza Grega"
+  },
+  "Tomato Parmesan Pizza": {
+    "zh-CN": "番茄帕尔玛披萨",
+    "zh-TW": "番茄帕瑪披薩",
+    "ko": "토마토 파마산 피자",
+    "ja": "トマトパルメザンピザ",
+    "es": "Pizza De Tomate Y Parmesano",
+    "pt": "Pizza de tomate parmesão"
+  },
+  "Decadence Brownie": {
+    "zh-CN": "颓废布朗尼",
+    "zh-TW": "頹廢布朗尼",
+    "ko": "데카던스 브라우니",
+    "ja": "退廃ブラウニー",
+    "es": "Brownie decadente",
+    "pt": "Brownie de decadência"
+  },
+  "Quinoa and Wild Rice Salad": {
+    "zh-CN": "藜麦野米沙拉",
+    "zh-TW": "藜麥野米沙拉",
+    "ko": "퀴노아와 야생 쌀 샐러드",
+    "ja": "キヌアとワイルドライスのサラダ",
+    "es": "Ensalada de quinua y arroz salvaje",
+    "pt": "Salada de Quinoa e Arroz Selvagem"
+  },
+  "Watercress Pesto Sauce": {
+    "zh-CN": "西洋菜香蒜酱",
+    "zh-TW": "西洋菜香蒜醬",
+    "ko": "물냉이 페스토 소스",
+    "ja": "クレソンのペストソース",
+    "es": "Salsa Pesto De Berros",
+    "pt": "Molho Pesto De Agrião"
+  },
+  "Cavatappi with Mushroom Lentil Bolognese": {
+    "zh-CN": "卡瓦塔皮配蘑菇扁豆肉酱",
+    "zh-TW": "卡瓦塔皮佐蘑菇扁豆肉醬",
+    "ko": "버섯 렌즈콩 볼로네제를 곁들인 카바타피",
+    "ja": "カヴァタッピ マッシュルームレンズ豆のボロネーゼ添え",
+    "es": "Cavatappi con champiñones y lentejas a la boloñesa",
+    "pt": "Cavatappi com Cogumelos Lentilha à Bolonhesa"
+  },
+  "Shrimp & Maitake Mushroom Fajita Filling": {
+    "zh-CN": "虾舞茸蘑菇法吉塔馅料",
+    "zh-TW": "蝦舞茸蘑菇法吉塔餡料",
+    "ko": "새우 & 잎새버섯 화이타 필링",
+    "ja": "海老と舞茸のファヒータフィリング",
+    "es": "Relleno de fajita de camarones y champiñones maitake",
+    "pt": "Recheio de Fajita de Camarão e Cogumelo Maitake"
+  },
+  "Chocolate Chip Cheesecake": {
+    "zh-CN": "巧克力片芝士蛋糕",
+    "zh-TW": "巧克力片起司蛋糕",
+    "ko": "초콜릿 칩 치즈케이크",
+    "ja": "チョコチップチーズケーキ",
+    "es": "Tarta de queso con chispas de chocolate",
+    "pt": "Cheesecake de chocolate"
+  },
+  "Tofu and Basil Stir Fry": {
+    "zh-CN": "豆腐和罗勒炒",
+    "zh-TW": "豆腐和羅勒炒",
+    "ko": "두부와 바질 볶음",
+    "ja": "豆腐とバジルの炒め物",
+    "es": "Salteado de tofu y albahaca",
+    "pt": "Tofu e manjericão salteados"
+  },
+  "Mushroom Flatbread Pizza": {
+    "zh-CN": "蘑菇面包披萨",
+    "zh-TW": "蘑菇麵包披薩",
+    "ko": "버섯 플랫브레드 피자",
+    "ja": "マッシュルームのフラットブレッドピザ",
+    "es": "Pizza de pan plano con champiñones",
+    "pt": "Pizza de pão sírio com cogumelos"
+  },
+  "Apple Pecan Salad with Blue Cheese": {
+    "zh-CN": "苹果山核桃沙拉配蓝纹奶酪",
+    "zh-TW": "蘋果山核桃沙拉佐藍紋乳酪",
+    "ko": "블루 치즈를 곁들인 사과 피칸 샐러드",
+    "ja": "ブルーチーズ入りアップルピーカンサラダ",
+    "es": "Ensalada De Manzana Y Nueces Con Queso Azul",
+    "pt": "Salada de maçã e noz-pecã com queijo azul"
+  },
+  "Sweet Chili Sauce": {
+    "zh-CN": "甜辣酱",
+    "zh-TW": "甜辣醬",
+    "ko": "스위트 칠리 소스",
+    "ja": "スイートチリソース",
+    "es": "Salsa De Chile Dulce",
+    "pt": "Molho de pimenta doce"
+  },
+  "Sichuan Tempeh": {
+    "zh-CN": "四川豆豉",
+    "zh-TW": "四川豆豉",
+    "ko": "쓰촨 템페",
+    "ja": "四川テンペ",
+    "es": "Tempeh de Sichuan",
+    "pt": "Templo de Sichuan"
+  },
+  "Nashville Chicken Thigh Sandwich": {
+    "zh-CN": "纳什维尔鸡大腿三明治",
+    "zh-TW": "納許維爾雞大腿三明治",
+    "ko": "내슈빌 치킨 허벅지 샌드위치",
+    "ja": "ナッシュビルチキンももサンドイッチ",
+    "es": "Sándwich de muslo de pollo Nashville",
+    "pt": "Sanduíche de coxa de frango Nashville"
+  },
+  "Lemon Vinaigrette": {
+    "zh-CN": "柠檬油醋汁",
+    "zh-TW": "檸檬油醋汁",
+    "ko": "레몬 비네그레트",
+    "ja": "レモンビネグレット",
+    "es": "Vinagreta De Limón",
+    "pt": "Vinagrete de Limão"
+  },
+  "Balsamic Glaze": {
+    "zh-CN": "香醋釉",
+    "zh-TW": "香醋釉",
+    "ko": "발사믹 글레이즈",
+    "ja": "バルサミコグレーズ",
+    "es": "glaseado balsámico",
+    "pt": "Esmalte Balsâmico"
+  },
+  "Couscous with Parsley": {
+    "zh-CN": "欧芹蒸粗麦粉",
+    "zh-TW": "歐芹蒸粗麥粉",
+    "ko": "파슬리를 곁들인 쿠스쿠스",
+    "ja": "パセリ入りクスクス",
+    "es": "Cuscús con Perejil",
+    "pt": "Cuscuz com Salsa"
+  },
+  "Chili Lime Scallops": {
+    "zh-CN": "辣椒酸橙扇贝",
+    "zh-TW": "辣椒酸橙扇貝",
+    "ko": "칠리 라임 가리비",
+    "ja": "チリライムホタテ貝",
+    "es": "Vieiras con chile y lima",
+    "pt": "Vieiras com pimenta e limão"
+  },
+  "Mojito Tofu": {
+    "zh-CN": "莫吉托豆腐",
+    "zh-TW": "莫吉托豆腐",
+    "ko": "모히토 두부",
+    "ja": "モヒート豆腐",
+    "es": "mojito-tofu",
+    "pt": "MojitoTofu"
+  },
+  "Vegetable Pizza": {
+    "zh-CN": "蔬菜披萨",
+    "zh-TW": "蔬菜披薩",
+    "ko": "야채 피자",
+    "ja": "野菜ピザ",
+    "es": "pizza vegetal",
+    "pt": "Pizza Vegetal"
+  },
+  "Seafood Stew with Coconut": {
+    "zh-CN": "椰子炖海鲜",
+    "zh-TW": "椰子燉海鮮",
+    "ko": "코코넛을 곁들인 해산물 스튜",
+    "ja": "ココナッツ入りシーフードシチュー",
+    "es": "Guiso de Mariscos con Coco",
+    "pt": "Ensopado de Marisco com Coco"
   }
 }
