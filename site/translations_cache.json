@@ -7556,5 +7556,285 @@
     "ja": "ココナッツ入りシーフードシチュー",
     "es": "Guiso de Mariscos con Coco",
     "pt": "Ensopado de Marisco com Coco"
+  },
+  "Gallo Pinto Breakfast Power Bowl": {
+    "zh-CN": "加洛平托早餐强力碗",
+    "zh-TW": "加洛平托早餐強力碗",
+    "ko": "갈로 핀토 브렉퍼스트 파워볼",
+    "ja": "ガロピント ブレックファスト パワーボウル",
+    "es": "Tazón Power Bowl para desayuno Gallo Pinto",
+    "pt": "Tigela elétrica para café da manhã Gallo Pinto"
+  },
+  "Chicken Gumbo Soup": {
+    "zh-CN": "鸡肉浓汤",
+    "zh-TW": "雞肉濃湯",
+    "ko": "치킨 검보 수프",
+    "ja": "チキンガンボスープ",
+    "es": "Sopa De Gumbo De Pollo",
+    "pt": "Sopa De Gumbo De Frango"
+  },
+  "Moroccan Chorba Soup": {
+    "zh-CN": "摩洛哥乔巴汤",
+    "zh-TW": "摩洛哥喬巴湯",
+    "ko": "모로코 초르바 수프",
+    "ja": "モロッコ風チョルバスープ",
+    "es": "Sopa de chorba marroquí",
+    "pt": "Sopa Chorba Marroquina"
+  },
+  "Chicken Chipotle on Focaccia": {
+    "zh-CN": "鸡肉脆饼配佛卡夏面包",
+    "zh-TW": "雞肉脆餅配佛卡夏麵包",
+    "ko": "포카치아에 치킨 치폴레",
+    "ja": "フォカッチャにチキンのチポトレ",
+    "es": "Pollo Chipotle Sobre Focaccia",
+    "pt": "Chipotle de Frango com Focaccia"
+  },
+  "Chipotle Pepper Jack Cheese": {
+    "zh-CN": "墨西哥辣椒杰克奶酪",
+    "zh-TW": "墨西哥辣椒傑克起司",
+    "ko": "치폴레 페퍼 잭 치즈",
+    "ja": "チポトレペッパージャックチーズ",
+    "es": "Queso Chipotle Pimienta Jack",
+    "pt": "Queijo Chipotle Pimenta Jack"
+  },
+  "Chipotle Mayonnaise Dressing": {
+    "zh-CN": "墨西哥辣椒蛋黄酱酱",
+    "zh-TW": "墨西哥辣椒蛋黃醬醬",
+    "ko": "치폴레 마요네즈 드레싱",
+    "ja": "チポトレマヨネーズドレッシング",
+    "es": "Aderezo de mayonesa de chipotle",
+    "pt": "Molho de Maionese Chipotle"
+  },
+  "Arcadian Blend Lettuce": {
+    "zh-CN": "阿卡迪亚混合生菜",
+    "zh-TW": "阿卡迪亞混合生菜",
+    "ko": "아르카디안 블렌드 양상추",
+    "ja": "アルカディアンブレンドレタス",
+    "es": "Lechuga mezcla arcadiana",
+    "pt": "Alface Mistura Arcadiana"
+  },
+  "Pickled Vegetables": {
+    "zh-CN": "腌菜",
+    "zh-TW": "醃菜",
+    "ko": "절인 야채",
+    "ja": "漬物",
+    "es": "Verduras Encurtidas",
+    "pt": "Legumes em conserva"
+  },
+  "Broccoli Alfredo Pizza": {
+    "zh-CN": "西兰花阿尔弗雷多披萨",
+    "zh-TW": "西蘭花阿爾弗雷多披薩",
+    "ko": "브로콜리 알프레도 피자",
+    "ja": "ブロッコリーのアルフレッドピザ",
+    "es": "Pizza Alfredo con brócoli",
+    "pt": "Pizza Alfredo de Brócolis"
+  },
+  "Vegan Maitake Mushroom Gravy": {
+    "zh-CN": "纯素舞茸蘑菇肉汁",
+    "zh-TW": "純素舞茸蘑菇肉汁",
+    "ko": "비건 잎새버섯 그레이비",
+    "ja": "ビーガンまいたけマッシュルームグレービーソース",
+    "es": "Salsa Vegana De Hongos Maitake",
+    "pt": "Molho Vegano de Cogumelos Maitake"
+  },
+  "Red Curry Falafel": {
+    "zh-CN": "红咖喱沙拉三明治",
+    "zh-TW": "紅咖哩沙拉三明治",
+    "ko": "레드 카레 팔라펠",
+    "ja": "レッドカレーファラフェル",
+    "es": "Falafel al curry rojo",
+    "pt": "Falafel de curry vermelho"
+  },
+  "Beef & Black Turtle Bean Taco Filling": {
+    "zh-CN": "牛肉黑龟豆玉米卷馅料",
+    "zh-TW": "牛肉黑龜豆玉米捲餡料",
+    "ko": "쇠고기 및 검은 거북이 콩 타코 필링",
+    "ja": "ビーフ＆ブラックタートルビーンタコスフィリング",
+    "es": "Relleno de taco de frijoles y tortuga negra",
+    "pt": "Recheio de Taco de Carne e Feijão Tartaruga Preto"
+  },
+  "Mexican Salsa Quinoa": {
+    "zh-CN": "墨西哥莎莎藜麦",
+    "zh-TW": "墨西哥莎莎藜麥",
+    "ko": "멕시칸 살사 퀴노아",
+    "ja": "メキシコのサルサ・キヌア",
+    "es": "Salsa Mexicana De Quinua",
+    "pt": "Salsa Quinoa Mexicana"
+  },
+  "Passion Fruit Pound Cake": {
+    "zh-CN": "百香果磅蛋糕",
+    "zh-TW": "百香果磅蛋糕",
+    "ko": "패션푸르트 파운드 케이크",
+    "ja": "パッションフルーツのパウンドケーキ",
+    "es": "Bizcocho de maracuyá",
+    "pt": "Bolo De Maracujá"
+  },
+  "Singapore Noodles with Pork": {
+    "zh-CN": "新加坡猪肉面",
+    "zh-TW": "新加坡豬肉麵",
+    "ko": "돼지고기가 들어간 싱가포르 국수",
+    "ja": "豚肉入りシンガポールヌードル",
+    "es": "Fideos Singapur con Cerdo",
+    "pt": "Macarrão de Singapura com Carne de Porco"
+  },
+  "Spaghetti Squash with Bean Ragout": {
+    "zh-CN": "南瓜意大利面条配炖豆",
+    "zh-TW": "南瓜義大利麵配燉豆",
+    "ko": "콩 라구를 곁들인 스파게티 스쿼시",
+    "ja": "スパゲッティスカッシュと豆のラグー",
+    "es": "Calabaza Espagueti Con Ragú De Frijoles",
+    "pt": "Abóbora Espaguete com Ragu de Feijão"
+  },
+  "Balsamic Marinated Tempeh": {
+    "zh-CN": "香醋腌制豆豉",
+    "zh-TW": "香醋醃豆豉",
+    "ko": "발사믹 양념 템페",
+    "ja": "テンペのバルサミコマリネ",
+    "es": "Tempeh marinado con balsámico",
+    "pt": "Tempeh Marinado Balsâmico"
+  },
+  "Vegetable Fried Rice": {
+    "zh-CN": "蔬菜炒饭",
+    "zh-TW": "蔬菜炒飯",
+    "ko": "야채볶음밥",
+    "ja": "野菜チャーハン",
+    "es": "Arroz Frito Con Verduras",
+    "pt": "Arroz Frito com Legumes"
+  },
+  "Corn & Black Bean Salsa Flatbread Pizza": {
+    "zh-CN": "玉米黑豆莎莎面包披萨",
+    "zh-TW": "玉米黑豆莎莎麵包披薩",
+    "ko": "옥수수와 검은콩 살사 플랫브레드 피자",
+    "ja": "コーンと黒豆のサルサ フラットブレッドピザ",
+    "es": "Pizza de pan plano con salsa de maíz y frijoles negros",
+    "pt": "Pizza de pão achatado com molho de milho e feijão preto"
+  },
+  "Penne with Smoked Gouda Poblano Sauce": {
+    "zh-CN": "通心粉配烟熏豪达波布拉诺酱",
+    "zh-TW": "通心粉佐煙燻豪達波布拉諾醬",
+    "ko": "훈제 고다 포블라노 소스를 곁들인 펜네",
+    "ja": "ペンネ スモークゴーダポブラノソース添え",
+    "es": "Penne con Salsa Gouda Poblano Ahumada",
+    "pt": "Penne com Molho Gouda Poblano Defumado"
+  },
+  "Chicken Fajita Pizza": {
+    "zh-CN": "鸡肉法吉塔披萨",
+    "zh-TW": "雞肉法吉塔披薩",
+    "ko": "치킨 파히타 피자",
+    "ja": "チキンファヒータピザ",
+    "es": "Pizza de fajitas de pollo",
+    "pt": "Pizza de Fajita de Frango"
+  },
+  "Beef Pasilla Tortilla Casserole": {
+    "zh-CN": "牛肉帕西拉玉米饼砂锅",
+    "zh-TW": "牛肉帕西拉玉米餅砂鍋",
+    "ko": "쇠고기 파실라 토르티야 캐서롤",
+    "ja": "ビーフパシーラトルティーヤキャセロール",
+    "es": "Cazuela De Tortilla De Pasilla De Res",
+    "pt": "Caçarola de tortilla de carne Pasilla"
+  },
+  "Garlic Peppercorn Chicken Breast": {
+    "zh-CN": "大蒜 胡椒 鸡胸肉",
+    "zh-TW": "大蒜 胡椒 雞胸肉",
+    "ko": "마늘 후추콘 닭가슴살",
+    "ja": "ガーリックペッパーコーン鶏胸肉",
+    "es": "Pechuga De Pollo Con Ajo Y Pimienta",
+    "pt": "Alho Pimenta Peito De Frango"
+  },
+  "Vegetarian Mexican Pizza": {
+    "zh-CN": "素食墨西哥披萨",
+    "zh-TW": "素食墨西哥披薩",
+    "ko": "채식 멕시코 피자",
+    "ja": "ベジタリアンメキシカンピザ",
+    "es": "Pizza Mexicana Vegetariana",
+    "pt": "Pizza Mexicana Vegetariana"
+  },
+  "Butternut Squash Soup w/ Coconut Milk": {
+    "zh-CN": "胡桃南瓜椰奶汤",
+    "zh-TW": "胡桃南瓜椰奶湯",
+    "ko": "코코넛 밀크를 곁들인 버터넛 스쿼시 수프",
+    "ja": "ココナッツミルク入りバターナッツスカッシュスープ",
+    "es": "Sopa de calabaza con leche de coco",
+    "pt": "Sopa de abóbora com leite de coco"
+  },
+  "Pickled Onions": {
+    "zh-CN": "腌洋葱",
+    "zh-TW": "醃洋蔥",
+    "ko": "절인 양파",
+    "ja": "玉ねぎのピクルス",
+    "es": "Cebollas En Escabeche",
+    "pt": "Cebola em conserva"
+  },
+  "Mediterranean Salad": {
+    "zh-CN": "地中海沙拉",
+    "zh-TW": "地中海沙拉",
+    "ko": "지중해식 샐러드",
+    "ja": "地中海サラダ",
+    "es": "Ensalada Mediterránea",
+    "pt": "Salada Mediterrânea"
+  },
+  "Baby Kale Salad": {
+    "zh-CN": "婴儿羽衣甘蓝沙拉",
+    "zh-TW": "嬰兒羽衣甘藍沙拉",
+    "ko": "베이비 케일 샐러드",
+    "ja": "ベビーケールサラダ",
+    "es": "Ensalada De Col Rizada",
+    "pt": "Salada de Couve Bebê"
+  },
+  "Fried Chicken & Waffles w/Syrup": {
+    "zh-CN": "炸鸡和华夫饼配糖浆",
+    "zh-TW": "炸雞和華夫餅配糖漿",
+    "ko": "프라이드 치킨 & 와플 + 시럽",
+    "ja": "フライドチキン＆ワッフル シロップ添え",
+    "es": "Pollo Frito Y Waffles Con Almíbar",
+    "pt": "Frango Frito e Waffles com Xarope"
+  },
+  "Apple Compote": {
+    "zh-CN": "苹果蜜饯",
+    "zh-TW": "蘋果蜜餞",
+    "ko": "사과 설탕에 절인 과일",
+    "ja": "リンゴのコンポート",
+    "es": "Compota de manzana",
+    "pt": "Compota de maçã"
+  },
+  "Halal Turkey Chipotle on Focaccia": {
+    "zh-CN": "清真火鸡墨西哥辣椒配佛卡夏面包",
+    "zh-TW": "清真火雞墨西哥辣椒佐佛卡夏麵包",
+    "ko": "포카치아에 할랄 칠면조 치폴레",
+    "ja": "ハラール ターキー チポトレ オン フォカッチャ",
+    "es": "Chipotle de pavo halal sobre focaccia",
+    "pt": "Halal Chipotle de Peru em Focaccia"
+  },
+  "Tempeh Stir Fry w/ Cabbage and Pea Pod": {
+    "zh-CN": "豆豉炒白菜豌豆荚",
+    "zh-TW": "豆豉炒高麗菜豌豆莢",
+    "ko": "양배추와 완두콩 꼬투리를 곁들인 템페 볶음",
+    "ja": "キャベツとエンドウ豆のテンペ炒め",
+    "es": "Salteado de tempeh con repollo y vainas de guisantes",
+    "pt": "Tempeh Stir Fry com repolho e vagem de ervilha"
+  },
+  "Blackening Rub": {
+    "zh-CN": "黑化擦",
+    "zh-TW": "黑化擦",
+    "ko": "검게 변하는 문지름",
+    "ja": "黒ずみの摩擦",
+    "es": "Frote ennegrecido",
+    "pt": "Esfregar Enegrecimento"
+  },
+  "Blue Cheese Cream Sauce": {
+    "zh-CN": "蓝纹奶酪奶油酱",
+    "zh-TW": "藍紋乳酪奶油醬",
+    "ko": "블루치즈크림소스",
+    "ja": "ブルーチーズクリームソース",
+    "es": "Salsa Crema De Queso Azul",
+    "pt": "Molho Creme De Queijo Azul"
+  },
+  "Spicy Pinto Beans": {
+    "zh-CN": "辣斑豆",
+    "zh-TW": "辣斑豆",
+    "ko": "매운 핀토 콩",
+    "ja": "スパイシーピントビーンズ",
+    "es": "Frijoles Pintos Picantes",
+    "pt": "Feijão Picante"
   }
 }
