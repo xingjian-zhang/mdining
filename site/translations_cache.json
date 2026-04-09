@@ -8268,5 +8268,261 @@
     "ja": "アル・コレ",
     "es": "Alu Chole",
     "pt": "Alu Chole"
+  },
+  "Assorted Mini Dough Danish w/ Nuts": {
+    "zh-CN": "什锦迷你丹麦面团配坚果",
+    "zh-TW": "什錦迷你丹麥麵團配堅果",
+    "ko": "모듬 미니 도우 데니쉬(견과류 포함)",
+    "ja": "ミニ生地デニッシュ ナッツ入り盛り合わせ",
+    "es": "Danés Mini Masa Surtido c/ Nueces",
+    "pt": "Mini Massa Dinamarquesa Sortida c/ Nozes"
+  },
+  "Tex Mex Chili": {
+    "zh-CN": "德克萨斯墨西哥辣椒",
+    "zh-TW": "德州墨西哥辣椒",
+    "ko": "텍스멕스 칠리",
+    "ja": "テックスメックスチリ",
+    "es": "Chile Tex-Mex",
+    "pt": "Pimentão Tex Mex"
+  },
+  "BBQ Chicken Drumsticks": {
+    "zh-CN": "烧烤鸡腿",
+    "zh-TW": "燒烤雞腿",
+    "ko": "바비큐 치킨 드럼스틱",
+    "ja": "BBQチキンドラムスティック",
+    "es": "Muslos de pollo a la barbacoa",
+    "pt": "Coxinhas de frango para churrasco"
+  },
+  "Pretzel Bun": {
+    "zh-CN": "椒盐卷饼面包",
+    "zh-TW": "椒鹽捲餅麵包",
+    "ko": "프레첼 번",
+    "ja": "プレッツェルパン",
+    "es": "Pan Pretzel",
+    "pt": "Pão de Pretzel"
+  },
+  "Tandoori Chicken": {
+    "zh-CN": "唐杜里鸡",
+    "zh-TW": "唐杜里雞",
+    "ko": "탄두리 치킨",
+    "ja": "タンドリーチキン",
+    "es": "Pollo Tandoori",
+    "pt": "Frango Tandoori"
+  },
+  "BBQ Ham and Pineapple Pizza": {
+    "zh-CN": "烧烤火腿菠萝披萨",
+    "zh-TW": "燒烤火腿鳳梨披薩",
+    "ko": "바베큐 햄과 파인애플 피자",
+    "ja": "BBQハムとパイナップルのピザ",
+    "es": "Pizza de jamón BBQ y piña",
+    "pt": "Pizza de Presunto e Abacaxi para Churrasco"
+  },
+  "Orange Cardamom Vegan Cookies": {
+    "zh-CN": "橙色豆蔻纯素饼干",
+    "zh-TW": "橙色荳蔻純素餅乾",
+    "ko": "오렌지 카다몬 비건 쿠키",
+    "ja": "オレンジカルダモンのビーガンクッキー",
+    "es": "Galletas veganas de naranja y cardamomo",
+    "pt": "Cookies veganos de laranja e cardamomo"
+  },
+  "Chipotle Wet Rub": {
+    "zh-CN": "Chipotle 湿擦",
+    "zh-TW": "Chipotle 濕擦",
+    "ko": "치폴레 젖은 문지름",
+    "ja": "チポトレ ウェット ラビング",
+    "es": "Frote húmedo con chipotle",
+    "pt": "Esfoliação úmida com chipotle"
+  },
+  "Corn & Black Turtle Bean Salad": {
+    "zh-CN": "玉米黑龟豆沙拉",
+    "zh-TW": "玉米黑龜豆沙拉",
+    "ko": "옥수수와 검은 거북이 콩 샐러드",
+    "ja": "コーンとブラックタートルビーンズのサラダ",
+    "es": "Ensalada de maíz y frijoles tortuga negros",
+    "pt": "Salada de Milho e Feijão Tartaruga Preta"
+  },
+  "Lone Star Quinoa": {
+    "zh-CN": "孤星藜麦",
+    "zh-TW": "孤星藜麥",
+    "ko": "론스타 퀴노아",
+    "ja": "ローンスターキヌア",
+    "es": "Quinua Estrella Solitaria",
+    "pt": "Quinoa Estrela Solitária"
+  },
+  "Seitan": {
+    "zh-CN": "面筋",
+    "zh-TW": "麵筋",
+    "ko": "세이탄",
+    "ja": "セイタン",
+    "es": "seitán",
+    "pt": "Seitan"
+  },
+  "Vegetable Ramen with Peanut Sauce": {
+    "zh-CN": "花生酱蔬菜拉面",
+    "zh-TW": "花生醬蔬菜拉麵",
+    "ko": "땅콩소스를 곁들인 야채 라면",
+    "ja": "野菜ラーメン ピーナッツソース",
+    "es": "Ramen De Verduras Con Salsa De Maní",
+    "pt": "Ramen de Legumes com Molho de Amendoim"
+  },
+  "Chicken & Adzuki Bean Masala": {
+    "zh-CN": "鸡肉红豆玛莎拉",
+    "zh-TW": "雞肉紅豆瑪莎拉",
+    "ko": "치킨 & 아즈키 콩 마살라",
+    "ja": "チキン&アズキマサラ",
+    "es": "Masala de pollo y frijoles adzuki",
+    "pt": "Masala de Frango e Feijão Adzuki"
+  },
+  "Classic Chocolate Cake": {
+    "zh-CN": "经典巧克力蛋糕",
+    "zh-TW": "經典巧克力蛋糕",
+    "ko": "클래식 초콜릿 케이크",
+    "ja": "クラシックチョコレートケーキ",
+    "es": "Pastel de chocolate clásico",
+    "pt": "Bolo De Chocolate Clássico"
+  },
+  "Meatloaf Sandwich on Pretzel Bread": {
+    "zh-CN": "椒盐卷饼面包肉饼三明治",
+    "zh-TW": "椒鹽捲餅麵包肉餅三明治",
+    "ko": "프레첼 빵에 미트로프 샌드위치",
+    "ja": "プレッツェルパンのミートローフサンドイッチ",
+    "es": "Sándwich de pastel de carne sobre pan de pretzel",
+    "pt": "Sanduíche de bolo de carne no pão pretzel"
+  },
+  "Aloo Tikki": {
+    "zh-CN": "阿洛·蒂基",
+    "zh-TW": "阿洛·蒂基",
+    "ko": "알루 티키",
+    "ja": "アルー・ティッキ",
+    "es": "Aloo Tikki",
+    "pt": "Aloo Tikki"
+  },
+  "Tomato Cucumber and Jalapeno Raita": {
+    "zh-CN": "番茄黄瓜和墨西哥辣椒雷塔",
+    "zh-TW": "番茄黃瓜和墨西哥辣椒雷塔",
+    "ko": "토마토 오이와 할라피뇨 라이타",
+    "ja": "トマトキュウリとハラペーニョライタ",
+    "es": "Tomate Pepino Y Jalapeño Raita",
+    "pt": "Pepino de Tomate e Jalapeño Raita"
+  },
+  "Red Pepper Asparagus Cavatappi": {
+    "zh-CN": "红辣椒芦笋卡瓦塔皮",
+    "zh-TW": "紅辣椒蘆筍卡瓦塔皮",
+    "ko": "레드페퍼 아스파라거스 카바타피",
+    "ja": "レッドペッパーアスパラガスカヴァタッピ",
+    "es": "Pimiento Rojo Espárragos Cavatappi",
+    "pt": "Espargos Pimenta Vermelha Cavatappi"
+  },
+  "Basil Red Pepper Turkey Burger": {
+    "zh-CN": "罗勒红辣椒火鸡汉堡",
+    "zh-TW": "羅勒紅辣椒火雞肉漢堡",
+    "ko": "바질 레드 페퍼 터키 버거",
+    "ja": "バジルレッドペッパーターキーバーガー",
+    "es": "Hamburguesa De Pavo Y Pimiento Rojo Con Albahaca",
+    "pt": "Hambúrguer de peru com manjericão e pimenta vermelha"
+  },
+  "White Lamb Pasta Bake Halal": {
+    "zh-CN": "白羊肉意大利面烘焙清真",
+    "zh-TW": "白羊肉義大利麵烘焙清真",
+    "ko": "흰 양고기 파스타 베이크 할랄",
+    "ja": "ホワイトラムパスタベイクハラール",
+    "es": "Pasta De Cordero Blanco Horneada Halal",
+    "pt": "Macarrão de Cordeiro Branco Assado Halal"
+  },
+  "Caprese Salad w/ Grape Tomatoes": {
+    "zh-CN": "卡普雷塞沙拉配葡萄番茄",
+    "zh-TW": "卡普雷塞沙拉佐葡萄番茄",
+    "ko": "포도 토마토를 곁들인 카프레제 샐러드",
+    "ja": "カプレーゼサラダ グレープトマト添え",
+    "es": "Ensalada Caprese con Tomates Uva",
+    "pt": "Salada Caprese c/ Tomate Uva"
+  },
+  "Halal Grilled North African Chicken": {
+    "zh-CN": "清真烤北非鸡",
+    "zh-TW": "清真烤北非雞",
+    "ko": "할랄 그릴드 북아프리카 치킨",
+    "ja": "北アフリカ産チキンのハラールグリル",
+    "es": "Pollo norteafricano a la parrilla halal",
+    "pt": "Frango Halal Grelhado do Norte da África"
+  },
+  "West African Jollof Rice": {
+    "zh-CN": "西非乔洛夫·赖斯",
+    "zh-TW": "西非喬洛夫·賴斯",
+    "ko": "서아프리카 졸로프 라이스",
+    "ja": "西アフリカのジョロフ ライス",
+    "es": "Arroz Jollof de África Occidental",
+    "pt": "Arroz Jollof da África Ocidental"
+  },
+  "Chicken Cacciatore": {
+    "zh-CN": "鸡肉卡恰托雷",
+    "zh-TW": "雞肉卡恰托雷",
+    "ko": "치킨 카치아토레",
+    "ja": "チキンカチャトーレ",
+    "es": "Cacciatore De Pollo",
+    "pt": "Frango Cacciatore"
+  },
+  "Halal Beef Bulgogi": {
+    "zh-CN": "清真牛肉烤肉",
+    "zh-TW": "清真牛肉烤肉",
+    "ko": "할랄 쇠고기 불고기",
+    "ja": "ハラールビーフプルコギ",
+    "es": "Bulgogi de carne halal",
+    "pt": "Carne Halal Bulgogi"
+  },
+  "Vegetable Pakora": {
+    "zh-CN": "蔬菜百果菜",
+    "zh-TW": "蔬菜百果菜",
+    "ko": "야채 파코라",
+    "ja": "野菜パコラ",
+    "es": "Pakora de verduras",
+    "pt": "Pakora de legumes"
+  },
+  "Pork with Yu-Xiang Sauce": {
+    "zh-CN": "豫香肉丝",
+    "zh-TW": "豫香肉絲",
+    "ko": "위샹 소스를 곁들인 돼지고기",
+    "ja": "豚肉のユーシャンソース添え",
+    "es": "Cerdo con Salsa Yu-Xiang",
+    "pt": "Carne De Porco Com Molho Yu-Xiang"
+  },
+  "Tofu with Yu-Xiang Sauce": {
+    "zh-CN": "鱼香豆腐",
+    "zh-TW": "魚香豆腐",
+    "ko": "위샹 소스를 곁들인 두부",
+    "ja": "豆腐のユーシャンソース添え",
+    "es": "Tofu con salsa Yu-Xiang",
+    "pt": "Tofu com Molho Yu-Xiang"
+  },
+  "Parmesan Potato Soup": {
+    "zh-CN": "帕尔玛土豆汤",
+    "zh-TW": "帕瑪馬鈴薯湯",
+    "ko": "파마산 감자 수프",
+    "ja": "パルメザンポテトのスープ",
+    "es": "Sopa De Patatas Y Parmesano",
+    "pt": "Sopa de Batata Parmesão"
+  },
+  "Cheese Grits": {
+    "zh-CN": "奶酪粗粉",
+    "zh-TW": "起司粗粉",
+    "ko": "치즈 그리츠",
+    "ja": "チーズグリッツ",
+    "es": "sémola de queso",
+    "pt": "Grãos de Queijo"
+  },
+  "Lebanese Mujadara": {
+    "zh-CN": "黎巴嫩穆贾达拉",
+    "zh-TW": "黎巴嫩穆賈達拉",
+    "ko": "레바논 무자다라",
+    "ja": "レバノンのムジャダラ",
+    "es": "Mujadara libanesa",
+    "pt": "Mujadara libanesa"
+  },
+  "Vegetarian Calzone": {
+    "zh-CN": "素食馅饼",
+    "zh-TW": "素食餡餅",
+    "ko": "채식 칼조네",
+    "ja": "ベジタリアンカルツォーネ",
+    "es": "Calzone vegetariano",
+    "pt": "Calzone Vegetariano"
   }
 }
