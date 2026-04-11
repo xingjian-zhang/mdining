@@ -7228,7 +7228,8 @@
     "ko": "허니 베이크드 스파이럴 햄",
     "ja": "スパイラルハムのはちみつ焼き",
     "es": "Jamón Espiral Al Horno Con Miel",
-    "pt": "Presunto Espiral Assado com Mel"
+    "pt": "Presunto Espiral Assado com Mel",
+    "zh-TW": "蜂蜜烤螺旋火腿"
   },
   "Au Gratin Potatoes": {
     "zh-CN": "烤土豆",
@@ -8811,5 +8812,244 @@
     "ja": "チョコチップ",
     "es": "chispas de chocolate",
     "pt": "Lascas de Chocolate"
+  },
+  "Italian Wedding Soup": {
+    "zh-CN": "意大利婚礼汤",
+    "zh-TW": "義大利婚禮湯",
+    "ko": "이탈리아 웨딩 수프",
+    "ja": "イタリアのウェディングスープ",
+    "es": "Sopa de boda italiana",
+    "pt": "Sopa Italiana de Casamento"
+  },
+  "Seasoned Pinto Beans": {
+    "zh-CN": "调味花豆",
+    "zh-TW": "調味花豆",
+    "ko": "양념한 핀토콩",
+    "ja": "味付けピントビーンズ",
+    "es": "Frijoles Pintos Sazonados",
+    "pt": "Feijão Temperado"
+  },
+  "Vegetarian Breakfast Pizza": {
+    "zh-CN": "素食早餐披萨",
+    "zh-TW": "素食早餐披薩",
+    "ko": "채식 아침 식사 피자",
+    "ja": "ベジタリアンブレックファストピザ",
+    "es": "Pizza vegetariana para el desayuno",
+    "pt": "Pizza vegetariana para café da manhã"
+  },
+  "Platinum Blondies": {
+    "zh-CN": "白金金发女郎",
+    "zh-TW": "白金金髮女郎",
+    "ko": "플래티넘 블론디",
+    "ja": "プラチナブロンディーズ",
+    "es": "Rubias Platino",
+    "pt": "Loiras Platinadas"
+  },
+  "Herbed Provence Green Beans": {
+    "zh-CN": "普罗旺斯香草绿豆",
+    "zh-TW": "普羅旺斯香草綠豆",
+    "ko": "허브 프로방스 녹두",
+    "ja": "ハーブプロヴァンスインゲン",
+    "es": "Judías verdes provenzales con hierbas",
+    "pt": "Feijão verde provençal com ervas"
+  },
+  "Sun-Dried Tomato Cream Sauce": {
+    "zh-CN": "晒干番茄奶油酱",
+    "zh-TW": "曬乾番茄奶油醬",
+    "ko": "선드라이 토마토 크림 소스",
+    "ja": "サンドライトマトクリームソース",
+    "es": "Salsa Crema De Tomates Secados Al Sol",
+    "pt": "Molho Creme De Tomate Seco Ao Sol"
+  },
+  "Kale & Potato Enchilada Bake": {
+    "zh-CN": "羽衣甘蓝和土豆辣酱玉米饼馅烘烤",
+    "zh-TW": "羽衣甘藍和馬鈴薯辣醬玉米餅餡烘烤",
+    "ko": "케일 & 감자 엔칠라다 베이크",
+    "ja": "ケールとポテトのエンチラーダベイク",
+    "es": "Enchilada horneada de col rizada y papa",
+    "pt": "Enchilada de Couve e Batata Assada"
+  },
+  "Montreal Top Round Beef": {
+    "zh-CN": "蒙特利尔顶级圆牛肉",
+    "zh-TW": "蒙特婁頂級圓牛肉",
+    "ko": "몬트리올 탑 라운드 쇠고기",
+    "ja": "モントリオールトップラウンドビーフ",
+    "es": "Carne de res redonda superior de Montreal",
+    "pt": "Carne Redonda Top Montreal"
+  },
+  "Chicken Ranch Pizza with Bacon": {
+    "zh-CN": "培根鸡肉牧场披萨",
+    "zh-TW": "培根雞肉牧場披薩",
+    "ko": "베이컨을 곁들인 치킨 랜치 피자",
+    "ja": "ベーコン入りチキンランチピザ",
+    "es": "Pizza ranchera de pollo con tocino",
+    "pt": "Pizza Rancho de Frango com Bacon"
+  },
+  "King's Hawaiian Bulgogi Hoagie": {
+    "zh-CN": "国王夏威夷烤肉三明治",
+    "zh-TW": "國王夏威夷烤肉三明治",
+    "ko": "킹스 하와이안 불고기 호기",
+    "ja": "キングス・ハワイアン・プルコギ・ホーギー",
+    "es": "Hoagie Bulgogi hawaiano del rey",
+    "pt": "Bulgogi Hoagie havaiano do rei"
+  },
+  "Raspberry Cheesecake Brownie Bar": {
+    "zh-CN": "覆盆子芝士蛋糕布朗尼棒",
+    "zh-TW": "覆盆子起司蛋糕布朗尼棒",
+    "ko": "라즈베리 치즈케이크 브라우니 바",
+    "ja": "ラズベリーチーズケーキブラウニーバー",
+    "es": "Barra de brownie de tarta de queso y frambuesa",
+    "pt": "Barra de Brownie com Cheesecake de Framboesa"
+  },
+  "Lemon Gem Cookie": {
+    "zh-CN": "柠檬宝石饼干",
+    "zh-TW": "檸檬寶石餅乾",
+    "ko": "레몬 보석 쿠키",
+    "ja": "レモンジェムクッキー",
+    "es": "Galleta de gemas de limón",
+    "pt": "Biscoito Gema De Limão"
+  },
+  "Eggplant Zaalouk": {
+    "zh-CN": "茄子扎鲁克",
+    "zh-TW": "茄子札魯克",
+    "ko": "가지 잘루크",
+    "ja": "ナスのザアルーク",
+    "es": "Berenjena Zaalouk",
+    "pt": "Berinjela Zaalouk"
+  },
+  "Marinated Shaved Brussel Sprouts": {
+    "zh-CN": "腌制布鲁塞尔芽菜",
+    "zh-TW": "醃製布魯塞爾芽菜",
+    "ko": "절인 면도 브뤼셀 콩나물",
+    "ja": "削った芽キャベツのマリネ",
+    "es": "Coles de Bruselas afeitadas y marinadas",
+    "pt": "Couves de Bruxelas raspadas marinadas"
+  },
+  "Vegetarian Flatbread Breakfast Pizza": {
+    "zh-CN": "素食面包早餐披萨",
+    "zh-TW": "素食麵包早餐披薩",
+    "ko": "채식 플랫브레드 브렉퍼스트 피자",
+    "ja": "ベジタリアン フラットブレッド ブレックファスト ピザ",
+    "es": "Pizza de desayuno con pan plano vegetariano",
+    "pt": "Pizza Vegetariana de Café da Manhã com Pão Achatado"
+  },
+  "Buffalo Roasted Cauliflower": {
+    "zh-CN": "水牛烤花椰菜",
+    "zh-TW": "水牛烤花椰菜",
+    "ko": "버팔로 구운 콜리플라워",
+    "ja": "バッファローのローストカリフラワー",
+    "es": "Coliflor Asada Búfalo",
+    "pt": "Couve-flor Assada com Búfalo"
+  },
+  "Zesty Chicken Nachos": {
+    "zh-CN": "美味鸡肉玉米片",
+    "zh-TW": "美味雞肉玉米片",
+    "ko": "제스티 치킨 나초",
+    "ja": "ピリ辛チキンナチョス",
+    "es": "Nachos de pollo picantes",
+    "pt": "Nachos de frango picantes"
+  },
+  "Chicken Tinga Pizza": {
+    "zh-CN": "鸡肉廷加披萨",
+    "zh-TW": "雞肉廷加披薩",
+    "ko": "치킨 팅가 피자",
+    "ja": "チキンティンガピザ",
+    "es": "Pizza de tinga de pollo",
+    "pt": "Pizza de tinga de frango"
+  },
+  "Baked Boneless Ham": {
+    "zh-CN": "烤无骨火腿",
+    "zh-TW": "烤無骨火腿",
+    "ko": "구운 뼈없는 햄",
+    "ja": "焼きボンレスハム",
+    "es": "Jamón Deshuesado Al Horno",
+    "pt": "Presunto Desossado Assado"
+  },
+  "Chili Lime Kale": {
+    "zh-CN": "辣椒酸橙羽衣甘蓝",
+    "zh-TW": "辣椒酸橙羽衣甘藍",
+    "ko": "칠리 라임 케일",
+    "ja": "チリライムケール",
+    "es": "Col rizada con chile y lima",
+    "pt": "Couve com pimenta e limão"
+  },
+  "Vegetable Barley Soup": {
+    "zh-CN": "蔬菜薏米汤",
+    "zh-TW": "蔬菜薏米湯",
+    "ko": "야채보리국",
+    "ja": "野菜大麦スープ",
+    "es": "Sopa De Verduras Y Cebada",
+    "pt": "Sopa de Cevada Vegetal"
+  },
+  "Mixed Vegetables": {
+    "zh-CN": "混合蔬菜",
+    "zh-TW": "混合蔬菜",
+    "ko": "혼합 야채",
+    "ja": "野菜ミックス",
+    "es": "Verduras Mixtas",
+    "pt": "Legumes Mistos"
+  },
+  "Toasted Almond Couscous": {
+    "zh-CN": "烤杏仁蒸粗麦粉",
+    "zh-TW": "烤杏仁蒸粗麥粉",
+    "ko": "구운 아몬드 쿠스쿠스",
+    "ja": "トーストアーモンドクスクス",
+    "es": "Cuscús De Almendras Tostadas",
+    "pt": "Cuscuz De Amêndoa Torrada"
+  },
+  "German Sauerkraut": {
+    "zh-CN": "德国酸菜",
+    "zh-TW": "德國酸菜",
+    "ko": "독일식 사우어크라우트",
+    "ja": "ドイツのザワークラウト",
+    "es": "Chucrut alemán",
+    "pt": "Chucrute Alemão"
+  },
+  "Cornflake Chicken": {
+    "zh-CN": "玉米片鸡",
+    "zh-TW": "玉米片雞",
+    "ko": "콘플레이크 치킨",
+    "ja": "コーンフレークチキン",
+    "es": "Pollo con hojuelas de maíz",
+    "pt": "Frango Floco De Milho"
+  },
+  "Honey Hot Sauce": {
+    "zh-CN": "蜂蜜辣酱",
+    "ko": "허니 핫소스",
+    "ja": "ハニーホットソース",
+    "es": "Salsa Picante De Miel",
+    "pt": "Molho Picante De Mel"
+  },
+  "Sauerkraut": {
+    "zh-CN": "酸菜",
+    "zh-TW": "酸菜",
+    "ko": "소금에 절인 양배추",
+    "ja": "ザワークラウト",
+    "es": "Chucrut",
+    "pt": "Chucrute"
+  },
+  "Cracked Wheat Sandwich Loaf": {
+    "zh-CN": "裂纹小麦三明治面包",
+    "zh-TW": "裂痕小麥三明治麵包",
+    "ko": "깨진 밀 샌드위치 덩어리",
+    "ja": "ひび割れ小麦サンドイッチパン",
+    "es": "Pan sándwich de trigo partido",
+    "pt": "Sanduíche De Trigo Rachado"
+  },
+  "Cream Style Corn": {
+    "zh-CN": "奶油风格玉米",
+    "zh-TW": "奶油風格玉米",
+    "ko": "크림 스타일 옥수수",
+    "ja": "クリームスタイルコーン",
+    "es": "Maíz estilo crema",
+    "pt": "Milho Estilo Creme"
+  },
+  "Pork Vietnamese Chili Stir fry": {
+    "zh-CN": "越南辣椒炒猪肉",
+    "zh-TW": "越南辣椒炒豬肉",
+    "ko": "돼지고기 베트남 고추볶음",
+    "ja": "豚肉のベトナムチリ炒め",
+    "es": "Salteado De Chili Vietnamita De Cerdo",
+    "pt": "Carne De Porco Vietnamita Chili Frite"
   }
 }
