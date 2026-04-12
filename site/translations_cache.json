@@ -9051,5 +9051,261 @@
     "ja": "豚肉のベトナムチリ炒め",
     "es": "Salteado De Chili Vietnamita De Cerdo",
     "pt": "Carne De Porco Vietnamita Chili Frite"
+  },
+  "French Toast Strata w/ Strawberry": {
+    "zh-CN": "法式草莓吐司层",
+    "zh-TW": "法式草莓吐司層",
+    "ko": "딸기를 곁들인 프렌치 토스트 스트라타",
+    "ja": "フレンチトースト ストラータ with ストロベリー",
+    "es": "Strata de tostadas francesas con fresa",
+    "pt": "Strata de Rabanada c/ Morango"
+  },
+  "Roasted Tomato Soup with Fresh Basil": {
+    "zh-CN": "烤番茄汤配新鲜罗勒",
+    "zh-TW": "烤番茄湯佐新鮮羅勒",
+    "ko": "신선한 바질을 곁들인 구운 토마토 수프",
+    "ja": "ローストトマトスープ フレッシュバジル添え",
+    "es": "Sopa De Tomate Asado Con Albahaca Fresca",
+    "pt": "Sopa de Tomate Assado com Manjericão Fresco"
+  },
+  "Vegan Sloppy Joe": {
+    "zh-CN": "素食马虎乔",
+    "zh-TW": "素食馬虎喬",
+    "ko": "비건 슬로피 조",
+    "ja": "ビーガン・スロッピー・ジョー",
+    "es": "Joe descuidado vegano",
+    "pt": "Joe desleixado vegano"
+  },
+  "Chicken Tortilla Chili": {
+    "zh-CN": "鸡肉玉米饼辣椒",
+    "zh-TW": "雞肉玉米餅辣椒",
+    "ko": "치킨 토르티야 칠리",
+    "ja": "チキントルティーヤチリ",
+    "es": "Chile De Tortilla De Pollo",
+    "pt": "Tortilha de Frango com Pimentão"
+  },
+  "Blueberry Fruit Pizza": {
+    "zh-CN": "蓝莓水果披萨",
+    "zh-TW": "藍莓水果披薩",
+    "ko": "블루베리 과일 피자",
+    "ja": "ブルーベリーフルーツピザ",
+    "es": "Pizza de frutas y arándanos",
+    "pt": "Pizza de frutas com mirtilo"
+  },
+  "Scratch Lemon Poppy Seed Bread": {
+    "zh-CN": "刮刮柠檬罂粟籽面包",
+    "zh-TW": "刮檸檬罌粟籽麵包",
+    "ko": "스크래치 레몬 양귀비 씨 빵",
+    "ja": "スクラッチレモンポピーシードブレッド",
+    "es": "Pan rayado de limón y semillas de amapola",
+    "pt": "Pão de semente de papoula com limão e raspas"
+  },
+  "Raspberry Bars": {
+    "zh-CN": "覆盆子棒",
+    "zh-TW": "覆盆子棒",
+    "ko": "라즈베리 바",
+    "ja": "ラズベリーバー",
+    "es": "Barras de frambuesa",
+    "pt": "Barras de Framboesa"
+  },
+  "Beef Enchiladas": {
+    "zh-CN": "牛肉辣酱玉米饼馅",
+    "zh-TW": "牛肉辣醬玉米餅餡",
+    "ko": "쇠고기 엔칠라다",
+    "ja": "ビーフエンチラーダ",
+    "es": "Enchiladas De Carne",
+    "pt": "Enchiladas de carne"
+  },
+  "Tofu Hunan with Noodles": {
+    "zh-CN": "湖南豆腐面",
+    "zh-TW": "湖南豆腐麵",
+    "ko": "국수를 곁들인 두부 후난",
+    "ja": "湖南豆腐麺入り",
+    "es": "Tofu Hunan con fideos",
+    "pt": "Tofu Hunan com Macarrão"
+  },
+  "Mediterranean Yellow Rice": {
+    "zh-CN": "地中海黄米",
+    "zh-TW": "地中海黃米",
+    "ko": "지중해 노란 쌀",
+    "ja": "地中海の黄色いご飯",
+    "es": "Arroz Amarillo Mediterráneo",
+    "pt": "Arroz Amarelo Mediterrâneo"
+  },
+  "Cheesy Sausage & Egg Slider": {
+    "zh-CN": "奶酪香肠和鸡蛋滑块",
+    "zh-TW": "起司香腸和雞蛋滑塊",
+    "ko": "치즈 소시지 & 계란 슬라이더",
+    "ja": "チーズソーセージ＆エッグスライダー",
+    "es": "Control deslizante de huevo y salchicha con queso",
+    "pt": "Salsicha com queijo e controle deslizante de ovo"
+  },
+  "East Carolina Slaw": {
+    "zh-CN": "东卡罗来纳州沙拉",
+    "zh-TW": "東卡羅來納州沙拉",
+    "ko": "이스트 캐롤라이나 슬로",
+    "ja": "イーストカロライナスロー",
+    "es": "Ensalada de col de Carolina del Este",
+    "pt": "Salada da Carolina do Leste"
+  },
+  "Vegetable Quesadillas": {
+    "zh-CN": "蔬菜玉米饼",
+    "zh-TW": "蔬菜玉米餅",
+    "ko": "야채 케사디야",
+    "ja": "野菜のケサディーヤ",
+    "es": "Quesadillas De Verduras",
+    "pt": "Quesadillas de legumes"
+  },
+  "Mild Salsa": {
+    "zh-CN": "温和的萨尔萨舞",
+    "zh-TW": "溫和的薩爾薩舞",
+    "ko": "마일드 살사",
+    "ja": "マイルドサルサ",
+    "es": "Salsa Suave",
+    "pt": "Salsa Suave"
+  },
+  "Halal Mojo Grilled Chicken": {
+    "zh-CN": "清真魔力烤鸡",
+    "zh-TW": "清真魔力烤雞",
+    "ko": "할랄 모조 그릴드 치킨",
+    "ja": "ハラールモジョグリルチキン",
+    "es": "Pollo a la parrilla con mojo halal",
+    "pt": "Frango Grelhado Halal Mojo"
+  },
+  "Orange Slices": {
+    "zh-CN": "橙片",
+    "zh-TW": "橘子片",
+    "ko": "오렌지 조각",
+    "ja": "オレンジスライス",
+    "es": "Rodajas De Naranja",
+    "pt": "Fatias de Laranja"
+  },
+  "Cauliflower, Lentil, and Coconut Curry": {
+    "zh-CN": "花椰菜、扁豆和椰子咖喱",
+    "zh-TW": "花椰菜、扁豆和椰子咖哩",
+    "ko": "콜리플라워, 렌즈콩, 코코넛 카레",
+    "ja": "カリフラワー、レンズ豆、ココナッツのカレー",
+    "es": "Curry de coliflor, lentejas y coco",
+    "pt": "Couve-flor, lentilha e curry de coco"
+  },
+  "Halal Mojito Chicken": {
+    "zh-CN": "清真莫吉托鸡",
+    "zh-TW": "清真莫吉托雞",
+    "ko": "할랄 모히토 치킨",
+    "ja": "ハラールモヒートチキン",
+    "es": "Pollo Mojito Halal",
+    "pt": "Frango Mojito Halal"
+  },
+  "Pasta with Tomato Basil Sauce": {
+    "zh-CN": "番茄罗勒酱意大利面",
+    "zh-TW": "番茄羅勒醬義大利麵",
+    "ko": "토마토 바질 소스 파스타",
+    "ja": "トマトバジルソースのパスタ",
+    "es": "Pasta Con Salsa De Tomate Y Albahaca",
+    "pt": "Macarrão com Molho de Tomate e Manjericão"
+  },
+  "Grilled Chicken Thigh": {
+    "zh-CN": "烤鸡大腿",
+    "zh-TW": "烤雞大腿",
+    "ko": "구운 닭다리살",
+    "ja": "鶏もも肉のグリル",
+    "es": "Muslo De Pollo A La Parrilla",
+    "pt": "Coxa de Frango Grelhado"
+  },
+  "Cobb Salad": {
+    "zh-CN": "科布沙拉",
+    "zh-TW": "科布沙拉",
+    "ko": "콥 샐러드",
+    "ja": "コブサラダ",
+    "es": "Ensalada Cobb",
+    "pt": "Salada Cobb"
+  },
+  "Pork Hunan with Noodles": {
+    "zh-CN": "湖南猪肉面",
+    "zh-TW": "湖南豬肉麵",
+    "ko": "국수를 곁들인 돼지고기 후난",
+    "ja": "湖南豚の麺入り",
+    "es": "Hunan De Cerdo Con Fideos",
+    "pt": "Carne De Porco Hunan Com Macarrão"
+  },
+  "Mojito Chicken Thigh": {
+    "zh-CN": "莫吉托鸡大腿",
+    "zh-TW": "莫吉托雞大腿",
+    "ko": "모히토 닭다리살",
+    "ja": "モヒートチキンもも肉",
+    "es": "Muslo De Pollo Mojito",
+    "pt": "Coxa de Frango Mojito"
+  },
+  "Multigrain Salad": {
+    "zh-CN": "杂粮沙拉",
+    "zh-TW": "雜糧沙拉",
+    "ko": "잡곡 샐러드",
+    "ja": "雑穀サラダ",
+    "es": "Ensalada Multicereales",
+    "pt": "Salada Multigrãos"
+  },
+  "Mediterranean Farro": {
+    "zh-CN": "地中海法罗",
+    "zh-TW": "地中海法羅",
+    "ko": "지중해 파로",
+    "ja": "地中海のファロ",
+    "es": "farro mediterráneo",
+    "pt": "Farro Mediterrâneo"
+  },
+  "Onion Olive & Caper Relish": {
+    "zh-CN": "洋葱、橄榄和刺山柑调味品",
+    "zh-TW": "洋蔥、橄欖和酸豆調味品",
+    "ko": "양파 올리브 & 케이퍼 렐리시",
+    "ja": "オニオンオリーブ＆ケイパーレリッシュ",
+    "es": "Aderezo de cebolla, aceitunas y alcaparras",
+    "pt": "Relish de cebola, azeitona e alcaparras"
+  },
+  "Chicken Tostada": {
+    "zh-CN": "鸡肉托斯塔达",
+    "zh-TW": "雞肉托斯塔達",
+    "ko": "치킨 토스타다",
+    "ja": "チキントスターダ",
+    "es": "Tostada De Pollo",
+    "pt": "Tostada de Frango"
+  },
+  "Tofu Mojito": {
+    "zh-CN": "豆腐莫吉托",
+    "zh-TW": "豆腐莫吉托",
+    "ko": "두부 모히토",
+    "ja": "豆腐モヒート",
+    "es": "Mojito de tofu",
+    "pt": "Mojito de tofu"
+  },
+  "Tofu Hunan with Rice": {
+    "zh-CN": "湘豆腐饭",
+    "zh-TW": "湘豆腐飯",
+    "ko": "두부 후난 밥",
+    "ja": "湖南豆腐ご飯添え",
+    "es": "Tofu Hunan con Arroz",
+    "pt": "Tofu Hunan com Arroz"
+  },
+  "Pork Hunan with Rice": {
+    "zh-CN": "湖南猪肉饭",
+    "zh-TW": "湖南豬肉飯",
+    "ko": "돼지고기 후난밥",
+    "ja": "湖南豚のご飯添え",
+    "es": "Hunan De Cerdo Con Arroz",
+    "pt": "Carne De Porco Hunan Com Arroz"
+  },
+  "Chicken Curry": {
+    "zh-CN": "咖喱鸡",
+    "zh-TW": "咖哩雞",
+    "ko": "치킨 카레",
+    "ja": "チキンカレー",
+    "es": "pollo al curry",
+    "pt": "Caril de Frango"
+  },
+  "Cheesy Meatball Slider": {
+    "zh-CN": "芝士肉丸滑块",
+    "zh-TW": "芝士肉丸滑塊",
+    "ko": "치즈볼 슬라이더",
+    "ja": "チーズミートボールスライダー",
+    "es": "Control deslizante de albóndigas con queso",
+    "pt": "Controle deslizante de almôndega com queijo"
   }
 }
