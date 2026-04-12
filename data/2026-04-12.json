@@ -5410,29 +5410,29 @@
             }
           },
           {
-            "name": "Zucchini and Summer Squash",
+            "name": "Spinach Saute",
             "traits": [
               "Gluten Free",
-              "Nutrient Dense Medium",
+              "Nutrient Dense High",
               "Vegan",
               "Carbon Footprint Low"
             ],
             "nutrition": {
-              "serving_size": "3 oz serving (85g)",
-              "calories": 41,
-              "total_fat": "3g",
+              "serving_size": "1/2 Serving (43g)",
+              "calories": 23,
+              "total_fat": "2g",
               "saturated_fat": "0g",
               "trans_fat": "0g",
               "cholesterol": "0mg",
-              "sodium": "64mg",
-              "total_carbohydrate": "3g",
+              "sodium": "85mg",
+              "total_carbohydrate": "1g",
               "dietary_fiber": "1g",
-              "sugars": "2g",
+              "sugars": "0g",
               "protein": "1g",
-              "vitamin_a": "5%",
-              "vitamin_c": "25%",
-              "calcium": "1%",
-              "iron": "2%"
+              "vitamin_a": "74%",
+              "vitamin_c": "19%",
+              "calcium": "4%",
+              "iron": "6%"
             }
           },
           {
@@ -5741,6 +5741,36 @@
               "vitamin_a": "6%",
               "vitamin_c": "0%",
               "calcium": "3%",
+              "iron": "3%"
+            }
+          },
+          {
+            "name": "Raspberry Bars",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Oats",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Pieces (48g)",
+              "calories": 192,
+              "total_fat": "8g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "129mg",
+              "total_carbohydrate": "29g",
+              "dietary_fiber": "1g",
+              "sugars": "16g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
               "iron": "3%"
             }
           },
