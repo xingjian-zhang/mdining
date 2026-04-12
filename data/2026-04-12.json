@@ -1104,6 +1104,34 @@
             }
           },
           {
+            "name": "Small Flour Tortillas",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Tortilla (23g)",
+              "calories": 67,
+              "total_fat": "2g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "127mg",
+              "total_carbohydrate": "11g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "2%",
+              "iron": "4%"
+            }
+          },
+          {
             "name": "Fresh Pico De Gallo",
             "traits": [
               "Gluten Free",
@@ -3781,11 +3809,11 @@
             }
           },
           {
-            "name": "Tiramisu Cake",
+            "name": "Chocolate Chunk Cookies",
             "traits": [
               "Nutrient Dense Low",
               "Vegetarian",
-              "Carbon Footprint Medium"
+              "Carbon Footprint Low"
             ],
             "allergens": [
               "Eggs",
@@ -3794,113 +3822,21 @@
               "Wheat"
             ],
             "nutrition": {
-              "serving_size": "Piece (91g)",
-              "calories": 329,
-              "total_fat": "23g",
-              "saturated_fat": "12g",
+              "serving_size": "Cookie (35g)",
+              "calories": 152,
+              "total_fat": "7g",
+              "saturated_fat": "3g",
               "trans_fat": "0g",
-              "cholesterol": "92mg",
-              "sodium": "250mg",
-              "total_carbohydrate": "26g",
-              "dietary_fiber": "0g",
-              "sugars": "17g",
-              "protein": "3g",
-              "vitamin_a": "1%",
-              "vitamin_c": "0%",
-              "calcium": "5%",
-              "iron": "4%"
-            }
-          },
-          {
-            "name": "Lemon Gem Cookie",
-            "traits": [
-              "Nutrient Dense Low Medium",
-              "Vegan",
-              "Carbon Footprint Low"
-            ],
-            "allergens": [
-              "Oats",
-              "Soy",
-              "Wheat"
-            ],
-            "nutrition": {
-              "serving_size": "Cookie (32g)",
-              "calories": 111,
-              "total_fat": "3g",
-              "saturated_fat": "1g",
-              "trans_fat": "0g",
-              "cholesterol": "0mg",
-              "sodium": "163mg",
+              "cholesterol": "5mg",
+              "sodium": "117mg",
               "total_carbohydrate": "21g",
               "dietary_fiber": "1g",
-              "sugars": "11g",
+              "sugars": "13g",
               "protein": "2g",
-              "vitamin_a": "0%",
+              "vitamin_a": "4%",
               "vitamin_c": "0%",
-              "calcium": "4%",
-              "iron": "4%"
-            }
-          },
-          {
-            "name": "Scratch Lemon Poppy Seed Bread",
-            "traits": [
-              "Nutrient Dense Low Medium",
-              "Vegetarian",
-              "Carbon Footprint Low"
-            ],
-            "allergens": [
-              "Alcohol",
-              "Eggs",
-              "Milk",
-              "Wheat"
-            ],
-            "nutrition": {
-              "serving_size": "Pieces (61g)",
-              "calories": 213,
-              "total_fat": "8g",
-              "saturated_fat": "1g",
-              "trans_fat": "0g",
-              "cholesterol": "21mg",
-              "sodium": "253mg",
-              "total_carbohydrate": "32g",
-              "dietary_fiber": "1g",
-              "sugars": "17g",
-              "protein": "4g",
-              "vitamin_a": "0%",
-              "vitamin_c": "1%",
-              "calcium": "8%",
+              "calcium": "1%",
               "iron": "6%"
-            }
-          },
-          {
-            "name": "Platinum Blondies",
-            "traits": [
-              "Nutrient Dense Low",
-              "Vegetarian",
-              "Carbon Footprint Low"
-            ],
-            "allergens": [
-              "Eggs",
-              "Milk",
-              "Soy",
-              "Wheat"
-            ],
-            "nutrition": {
-              "serving_size": "Pieces (56g)",
-              "calories": 235,
-              "total_fat": "10g",
-              "saturated_fat": "6g",
-              "trans_fat": "0g",
-              "cholesterol": "36mg",
-              "sodium": "152mg",
-              "total_carbohydrate": "35g",
-              "dietary_fiber": "1g",
-              "sugars": "23g",
-              "protein": "3g",
-              "vitamin_a": "5%",
-              "vitamin_c": "0%",
-              "calcium": "2%",
-              "iron": "7%"
             }
           },
           {
@@ -3935,37 +3871,6 @@
             }
           },
           {
-            "name": "Chocolate Chunk Cookies",
-            "traits": [
-              "Nutrient Dense Low",
-              "Vegetarian",
-              "Carbon Footprint Low"
-            ],
-            "allergens": [
-              "Eggs",
-              "Milk",
-              "Soy",
-              "Wheat"
-            ],
-            "nutrition": {
-              "serving_size": "Cookie (35g)",
-              "calories": 152,
-              "total_fat": "7g",
-              "saturated_fat": "3g",
-              "trans_fat": "0g",
-              "cholesterol": "5mg",
-              "sodium": "117mg",
-              "total_carbohydrate": "21g",
-              "dietary_fiber": "1g",
-              "sugars": "13g",
-              "protein": "2g",
-              "vitamin_a": "4%",
-              "vitamin_c": "0%",
-              "calcium": "1%",
-              "iron": "6%"
-            }
-          },
-          {
             "name": "Raspberry Bars",
             "traits": [
               "Nutrient Dense Low",
@@ -3993,6 +3898,67 @@
               "vitamin_c": "0%",
               "calcium": "0%",
               "iron": "3%"
+            }
+          },
+          {
+            "name": "Lemon Gem Cookie",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Oats",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Cookie (32g)",
+              "calories": 111,
+              "total_fat": "3g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "163mg",
+              "total_carbohydrate": "21g",
+              "dietary_fiber": "1g",
+              "sugars": "11g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "4%",
+              "iron": "4%"
+            }
+          },
+          {
+            "name": "Platinum Blondies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Pieces (56g)",
+              "calories": 235,
+              "total_fat": "10g",
+              "saturated_fat": "6g",
+              "trans_fat": "0g",
+              "cholesterol": "36mg",
+              "sodium": "152mg",
+              "total_carbohydrate": "35g",
+              "dietary_fiber": "1g",
+              "sugars": "23g",
+              "protein": "3g",
+              "vitamin_a": "5%",
+              "vitamin_c": "0%",
+              "calcium": "2%",
+              "iron": "7%"
             }
           }
         ]
@@ -9066,29 +9032,55 @@
             }
           },
           {
-            "name": "Herb Baked Chicken",
+            "name": "BBQ Chicken Drumsticks",
             "traits": [
               "Gluten Free",
               "Halal",
-              "Nutrient Dense High",
-              "Carbon Footprint Medium"
+              "Nutrient Dense Low",
+              "Carbon Footprint Low"
             ],
             "nutrition": {
-              "serving_size": "4 oz Serving (99g)",
-              "calories": 155,
+              "serving_size": "2 Drumsticks (181g)",
+              "calories": 302,
               "total_fat": "10g",
-              "saturated_fat": "3g",
+              "saturated_fat": "0g",
               "trans_fat": "0g",
-              "cholesterol": "0mg",
-              "sodium": "184mg",
-              "total_carbohydrate": "0g",
+              "cholesterol": "198mg",
+              "sodium": "520mg",
+              "total_carbohydrate": "12g",
               "dietary_fiber": "0g",
-              "sugars": "0g",
-              "protein": "16g",
+              "sugars": "11g",
+              "protein": "37g",
               "vitamin_a": "0%",
-              "vitamin_c": "2%",
+              "vitamin_c": "1%",
               "calcium": "2%",
-              "iron": "5%"
+              "iron": "8%"
+            }
+          },
+          {
+            "name": "Chicken Thigh Vindaloo",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense Medium High",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "4 oz Serving (113g)",
+              "calories": 248,
+              "total_fat": "16g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "120mg",
+              "sodium": "536mg",
+              "total_carbohydrate": "5g",
+              "dietary_fiber": "1g",
+              "sugars": "3g",
+              "protein": "21g",
+              "vitamin_a": "1%",
+              "vitamin_c": "0%",
+              "calcium": "2%",
+              "iron": "9%"
             }
           },
           {
@@ -9236,37 +9228,6 @@
         ],
         "MBakery": [
           {
-            "name": "Platinum Blondies",
-            "traits": [
-              "Nutrient Dense Low",
-              "Vegetarian",
-              "Carbon Footprint Low"
-            ],
-            "allergens": [
-              "Eggs",
-              "Milk",
-              "Soy",
-              "Wheat"
-            ],
-            "nutrition": {
-              "serving_size": "Pieces (56g)",
-              "calories": 235,
-              "total_fat": "10g",
-              "saturated_fat": "6g",
-              "trans_fat": "0g",
-              "cholesterol": "36mg",
-              "sodium": "152mg",
-              "total_carbohydrate": "35g",
-              "dietary_fiber": "1g",
-              "sugars": "23g",
-              "protein": "3g",
-              "vitamin_a": "5%",
-              "vitamin_c": "0%",
-              "calcium": "2%",
-              "iron": "7%"
-            }
-          },
-          {
             "name": "Lemon Gem Cookie",
             "traits": [
               "Nutrient Dense Low Medium",
@@ -9294,6 +9255,37 @@
               "vitamin_c": "0%",
               "calcium": "4%",
               "iron": "4%"
+            }
+          },
+          {
+            "name": "Maize and Blue Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Cookie (35g)",
+              "calories": 152,
+              "total_fat": "7g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "10mg",
+              "sodium": "117mg",
+              "total_carbohydrate": "22g",
+              "dietary_fiber": "0g",
+              "sugars": "14g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "3%"
             }
           },
           {
