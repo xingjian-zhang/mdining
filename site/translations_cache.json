@@ -9307,5 +9307,93 @@
     "ja": "チーズミートボールスライダー",
     "es": "Control deslizante de albóndigas con queso",
     "pt": "Controle deslizante de almôndega com queijo"
+  },
+  "Thai Sesame Noodles w/ Peanuts": {
+    "zh-CN": "泰式花生芝麻面",
+    "zh-TW": "泰式花生芝麻麵",
+    "ko": "땅콩이 들어간 태국 참깨 국수",
+    "ja": "タイのピーナッツ入りセサミヌードル",
+    "es": "Fideos tailandeses de sésamo con maní",
+    "pt": "Macarrão Tailandês De Gergelim Com Amendoim"
+  },
+  "Quinoa Tabbouleh Salad": {
+    "zh-CN": "藜麦塔博勒沙拉",
+    "zh-TW": "藜麥塔博勒沙拉",
+    "ko": "퀴노아 타불레 샐러드",
+    "ja": "キヌアタブレサラダ",
+    "es": "Ensalada De Tabulé De Quinua",
+    "pt": "Salada de Tabule de Quinoa"
+  },
+  "Fried Pita Chips": {
+    "zh-CN": "炸皮塔饼片",
+    "zh-TW": "炸皮塔餅片",
+    "ko": "튀긴 피타 칩",
+    "ja": "揚げピタチップス",
+    "es": "Chips de pita fritos",
+    "pt": "Batatas fritas"
+  },
+  "Cool Ranch Seasoning": {
+    "zh-CN": "酷牧场调味料",
+    "zh-TW": "酷牧場調味料",
+    "ko": "쿨 랜치 시즈닝",
+    "ja": "クールランチシーズニング",
+    "es": "Condimento ranchero fresco",
+    "pt": "Tempero Rancho Legal"
+  },
+  "Moroccan Lamb Tangia": {
+    "zh-CN": "摩洛哥坦吉亚羊肉",
+    "zh-TW": "摩洛哥坦吉亞羊肉",
+    "ko": "모로코 양고기 탕지아",
+    "ja": "モロッコ産ラムタンギア",
+    "es": "Tangia de cordero marroquí",
+    "pt": "Tangia de Cordeiro Marroquino"
+  },
+  "Shredded Beef Taco": {
+    "zh-CN": "牛肉丝玉米卷",
+    "zh-TW": "牛肉絲玉米卷",
+    "ko": "잘게 썬 쇠고기 타코",
+    "ja": "細切りビーフタコス",
+    "es": "Taco de carne deshebrada",
+    "pt": "Taco de carne desfiada"
+  },
+  "Balsamic Vinaigrette": {
+    "zh-CN": "香醋",
+    "zh-TW": "香醋",
+    "ko": "발사믹 비네그레트",
+    "ja": "バルサミコビネグレット",
+    "es": "Vinagreta Balsámica",
+    "pt": "Vinagrete Balsâmico"
+  },
+  "Crispy Veggie Patty": {
+    "zh-CN": "脆皮蔬菜馅饼",
+    "zh-TW": "脆皮蔬菜餡餅",
+    "ko": "바삭한 야채 패티",
+    "ja": "クリスピーベジパティ",
+    "es": "Empanada De Verduras Crujientes",
+    "pt": "Patty Vegetariano Crocante"
+  },
+  "Chocolate Chip Cookies": {
+    "zh-CN": "巧克力饼干",
+    "zh-TW": "巧克力餅乾",
+    "ko": "초콜릿 칩 쿠키",
+    "ja": "チョコチップクッキー",
+    "es": "Galletas con chispas de chocolate",
+    "pt": "Biscoitos de chocolate"
+  },
+  "Pickled Cucumber": {
+    "zh-CN": "腌黄瓜",
+    "zh-TW": "醃黃瓜",
+    "ko": "절인 오이",
+    "ja": "キュウリのピクルス",
+    "es": "Pepino Encurtido",
+    "pt": "Pepino em Conserva"
+  },
+  "Cauliflower Quinoa Veggie Patty": {
+    "zh-CN": "花椰菜藜麦蔬菜馅饼",
+    "zh-TW": "花椰菜藜麥蔬菜餡餅",
+    "ko": "콜리플라워 퀴노아 야채 패티",
+    "ja": "カリフラワー キヌア ベジパティ",
+    "es": "Empanada vegetariana de coliflor, quinua",
+    "pt": "Hambúrguer Vegetal de Quinoa e Couve Flor"
   }
 }
