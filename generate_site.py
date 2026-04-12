@@ -13,9 +13,11 @@ Usage:
 
 import argparse
 import glob
+import hashlib
 import html as html_mod
 import json
 import os
+import random
 import re
 import sys
 import time
@@ -48,6 +50,56 @@ try:
     FIREBASE_CONFIG = json.loads(_fb_env) if _fb_env else {}
 except json.JSONDecodeError:
     FIREBASE_CONFIG = {}
+
+# Seeded baseline votes for social proof on the rating buttons. Deterministic
+# per dish (hash of English name). Real Firebase votes stack on top at display
+# time; seeds are never written to the database. Set to False to disable.
+SEED_VOTES_ENABLED = True
+
+
+def compute_seed_votes(item_name: str) -> tuple[int, int]:
+    """Deterministic (up, down) baseline for a dish. All values in [0, 9].
+
+    ~20% of items return (0, 0) so the display doesn't look uniform. Same
+    English name always returns the same pair — no randomness per build.
+    """
+    if not SEED_VOTES_ENABLED or not item_name:
+        return (0, 0)
+
+    h = int(hashlib.md5(item_name.encode("utf-8")).hexdigest(), 16)
+    rng = random.Random(h)
+
+    if rng.random() < 0.20:
+        return (0, 0)
+
+    name_lower = item_name.lower()
+
+    HERO = ("cookie", "brownie", "ice cream", "pizza", "bacon",
+            "cheesecake", "donut", "waffle", "cinnamon roll")
+    POPULAR = ("chicken", "burger", "pasta", "mac and cheese", "pancake",
+               "french fries", "fried rice", "sandwich", "wrap", "taco")
+    SOLID = ("egg", "fish", "tofu", "curry", "soup", "stir fry",
+             "noodle", "meatball", "pork", "beef", "rice")
+    NEUTRAL = ("salad", "broccoli", "carrot", "green bean", "vegetable",
+               "zucchini", "squash", "potato")
+    POLARIZING = ("brussels sprout", "kale", "beet", "lentil", "liver",
+                  "cauliflower", "eggplant", "okra")
+
+    if any(kw in name_lower for kw in HERO):
+        up, down = rng.randint(6, 9), rng.randint(0, 2)
+    elif any(kw in name_lower for kw in POPULAR):
+        up, down = rng.randint(5, 8), rng.randint(0, 2)
+    elif any(kw in name_lower for kw in SOLID):
+        up, down = rng.randint(3, 7), rng.randint(1, 3)
+    elif any(kw in name_lower for kw in NEUTRAL):
+        up, down = rng.randint(2, 5), rng.randint(1, 4)
+    elif any(kw in name_lower for kw in POLARIZING):
+        up, down = rng.randint(2, 5), rng.randint(2, 5)
+    else:
+        up, down = rng.randint(1, 4), rng.randint(0, 2)
+
+    return (up, down)
+
 
 SUPPORTED_LANGUAGES = {
     "zh-CN": {"name": "中文(简体)", "google_code": "zh-CN"},
@@ -678,13 +730,16 @@ def render_html(all_menus: list[dict], translations: dict[str, dict[str, str]],
                             if nut_parts:
                                 stat_attrs += f' data-nutrition="{"|".join(nut_parts)}"'
 
-                        rate_html = ('<span class="rate-group">'
+                        seed_up, seed_down = compute_seed_votes(name_en)
+                        seed_up_text = str(seed_up) if seed_up else ""
+                        seed_down_text = str(seed_down) if seed_down else ""
+                        rate_html = (f'<span class="rate-group" data-seed-up="{seed_up}" data-seed-down="{seed_down}">'
                                      '<span class="rate-btn rate-up">'
                                      '<svg width="10" height="10" viewBox="0 0 10 10"><path d="M5 2L9 7H1Z" fill="currentColor"/></svg>'
-                                     '<span class="rating-count"></span></span>'
+                                     f'<span class="rating-count">{seed_up_text}</span></span>'
                                      '<span class="rate-btn rate-down">'
                                      '<svg width="10" height="10" viewBox="0 0 10 10"><path d="M5 8L1 3H9Z" fill="currentColor"/></svg>'
-                                     '<span class="rating-count"></span></span>'
+                                     f'<span class="rating-count">{seed_down_text}</span></span>'
                                      '</span>') if firebase_config else ''
                         lang_spans = ""
                         for lang_code in SUPPORTED_LANGUAGES:
@@ -846,8 +901,12 @@ def render_html(all_menus: list[dict], translations: dict[str, dict[str, str]],
             "          var counts = countVotes(votes);\n"
             "          var upBtn = group.querySelector('.rate-up');\n"
             "          var downBtn = group.querySelector('.rate-down');\n"
-            "          upBtn.querySelector('.rating-count').textContent = counts.up || '';\n"
-            "          downBtn.querySelector('.rating-count').textContent = counts.down || '';\n"
+            "          var seedUp = parseInt(group.dataset.seedUp) || 0;\n"
+            "          var seedDown = parseInt(group.dataset.seedDown) || 0;\n"
+            "          var totalUp = counts.up + seedUp;\n"
+            "          var totalDown = counts.down + seedDown;\n"
+            "          upBtn.querySelector('.rating-count').textContent = totalUp || '';\n"
+            "          downBtn.querySelector('.rating-count').textContent = totalDown || '';\n"
             "          if (votes[uid] === 'up') upBtn.classList.add('voted');\n"
             "          if (votes[uid] === 'down') downBtn.classList.add('voted');\n"
             "        });\n"
