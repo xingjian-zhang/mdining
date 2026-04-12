@@ -1,13 +1,13 @@
 # mdining
 
-Bilingual (Chinese/English) menu website for University of Michigan dining halls. Updated daily and deployed to GitHub Pages.
+Multilingual menu website for University of Michigan dining halls. English plus 6 secondary languages, updated daily and deployed to GitHub Pages.
 
 **Live site: [xingjianz.com/mdining](https://xingjianz.com/mdining/)**
 
 ## Features
 
 ### Website
-- Bilingual menus — Chinese/English toggle for all dish names
+- Multilingual dish names — dropdown toggle for 6 languages: 中文 (简体), 中文 (繁體), 한국어, 日本語, Español, Português
 - All 5 dining halls in one view with meal tabs (breakfast/lunch/dinner)
 - Auto-selects current meal based on time of day (ET)
 - Allergen filtering (wheat, milk, eggs, soy, peanuts, tree nuts, sesame, etc.)
@@ -15,10 +15,11 @@ Bilingual (Chinese/English) menu website for University of Michigan dining halls
 - Nutrition info popovers per item
 - Dish ratings (Firebase-powered upvote/downvote)
 - Google Maps embed for each dining hall location
-- Historical stats with Chart.js visualizations
+- Historical stats with Chart.js — per-hall trait breakdowns, allergen frequency, and a protein vs calories scatter plot
 - Light/dark theme
 - PWA support — installable on mobile
-- LLM-friendly JSON endpoint at [`/mdining/today.json`](https://xingjianz.com/mdining/today.json)
+- LLM-friendly endpoints — today's menu as JSON at [`/mdining/today.json`](https://xingjianz.com/mdining/today.json), plus an [`llms.txt`](https://xingjianz.com/mdining/llms.txt) schema doc following the llms.txt convention
+- Daily menu archive — every day's scraped menu committed to [`data/`](data/) as JSON (24+ days of history and growing)
 
 ### CLI Tools
 - `menu.py` — View a single hall's menu
@@ -72,7 +73,7 @@ python compare.py lunch --gf -v       # Gluten-free lunch with calories
 
 GitHub Actions runs daily at 10:00 UTC (5 AM ET):
 1. Fetches menus from UMich dining
-2. Translates dish names to Chinese (cached in `site/translations_cache.json`)
+2. Translates dish names to 6 languages (cached in `site/translations_cache.json`)
 3. Generates static HTML
 4. Deploys to GitHub Pages
 5. Commits updated translation cache and daily data snapshot to `data/`
