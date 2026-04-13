@@ -9395,5 +9395,213 @@
     "ja": "カリフラワー キヌア ベジパティ",
     "es": "Empanada vegetariana de coliflor, quinua",
     "pt": "Hambúrguer Vegetal de Quinoa e Couve Flor"
+  },
+  "Spicy Potato Curry with Coconut Milk": {
+    "zh-CN": "椰奶辣土豆咖喱",
+    "zh-TW": "椰奶辣馬鈴薯咖哩",
+    "ko": "코코넛 밀크를 곁들인 매콤한 감자 카레",
+    "ja": "ココナッツミルクのスパイシーポテトカレー",
+    "es": "Curry De Patata Picante Con Leche De Coco",
+    "pt": "Curry de Batata Picante com Leite de Coco"
+  },
+  "Seafood Primavera": {
+    "zh-CN": "海鲜春",
+    "zh-TW": "海鮮春",
+    "ko": "해산물 프리마베라",
+    "ja": "シーフード プリマベーラ",
+    "es": "Primavera de Mariscos",
+    "pt": "Frutos do Mar Primavera"
+  },
+  "Spinach Feta Pizza": {
+    "zh-CN": "菠菜羊乳酪披萨",
+    "zh-TW": "菠菜羊乳酪披薩",
+    "ko": "시금치 페타 피자",
+    "ja": "ほうれん草のフェタピザ",
+    "es": "Pizza de espinacas y queso feta",
+    "pt": "Pizza Feta de Espinafre"
+  },
+  "Chipotle Mayo Turkey Burger": {
+    "zh-CN": "Chipotle 蛋黄酱火鸡汉堡",
+    "zh-TW": "Chipotle 蛋黃醬火雞漢堡",
+    "ko": "치폴레 마요 터키 버거",
+    "ja": "チポトレマヨターキーバーガー",
+    "es": "Hamburguesa De Pavo Con Chipotle Y Mayo",
+    "pt": "Hambúrguer de Peru Chipotle Mayo"
+  },
+  "New England Blueberry Buckle": {
+    "zh-CN": "新英格兰蓝莓扣",
+    "zh-TW": "新英格蘭藍莓扣",
+    "ko": "뉴잉글랜드 블루베리 버클",
+    "ja": "ニューイングランド ブルーベリー バックル",
+    "es": "Hebilla de arándanos de Nueva Inglaterra",
+    "pt": "Fivela de mirtilo da Nova Inglaterra"
+  },
+  "Chocolate Cobbler": {
+    "zh-CN": "巧克力馅饼",
+    "zh-TW": "巧克力餡餅",
+    "ko": "초콜릿 코블러",
+    "ja": "チョコレートコブラー",
+    "es": "Zapatero de chocolate",
+    "pt": "Sapateiro de chocolate"
+  },
+  "Vegetable Stroganoff": {
+    "zh-CN": "蔬菜沙拉酱",
+    "zh-TW": "蔬菜沙拉醬",
+    "ko": "야채 스트로가노프",
+    "ja": "野菜ストロガノフ",
+    "es": "Strogonoff de verduras",
+    "pt": "Strogonoff de legumes"
+  },
+  "MSC Grilled Cod Fish Taco": {
+    "zh-CN": "MSC 烤鳕鱼玉米卷",
+    "zh-TW": "MSC 烤鱈魚玉米卷",
+    "ko": "MSC 구운 대구 생선 타코",
+    "ja": "MSC グリルタラフィッシュタコス",
+    "es": "Taco de bacalao a la parrilla MSC",
+    "pt": "Taco de Bacalhau Grelhado MSC"
+  },
+  "Ube Coconut Cheesecake": {
+    "zh-CN": "宇部椰子芝士蛋糕",
+    "zh-TW": "宇部椰子起司蛋糕",
+    "ko": "우베 코코넛 치즈케이크",
+    "ja": "宇部ココナッツチーズケーキ",
+    "es": "Tarta de queso con coco y ube",
+    "pt": "Cheesecake de Coco Ube"
+  },
+  "Grilled Buffalo Chicken Pita": {
+    "zh-CN": "烤水牛鸡肉皮塔饼",
+    "zh-TW": "烤水牛城雞肉皮塔餅",
+    "ko": "구운 버팔로 치킨 피타",
+    "ja": "グリルしたバッファローチキンのピタ",
+    "es": "Pita de pollo búfalo a la parrilla",
+    "pt": "Pita de frango com búfalo grelhado"
+  },
+  "Grilled Vegetable Pita": {
+    "zh-CN": "烤蔬菜皮塔饼",
+    "zh-TW": "烤蔬菜皮塔餅",
+    "ko": "구운 야채 피타",
+    "ja": "グリル野菜のピタ",
+    "es": "Pita de verduras a la parrilla",
+    "pt": "Pita Vegetal Grelhado"
+  },
+  "Tomato Parmesan Flatbread Pizza": {
+    "zh-CN": "番茄帕尔马干酪面包披萨",
+    "zh-TW": "番茄帕瑪森起司麵包披薩",
+    "ko": "토마토 파마산 플랫브레드 피자",
+    "ja": "トマトパルメザンチーズのフラットブレッドピザ",
+    "es": "Pizza de pan plano con tomate y parmesano",
+    "pt": "Pizza de pão sírio com tomate e parmesão"
+  },
+  "Roasted Cremini Mushrooms": {
+    "zh-CN": "烤奶油蘑菇",
+    "zh-TW": "烤奶油蘑菇",
+    "ko": "구운 크레미니 버섯",
+    "ja": "ローストクレミニマッシュルーム",
+    "es": "Champiñones Cremini Asados",
+    "pt": "Cogumelos Cremini Assados"
+  },
+  "Roasted Pepper Jam": {
+    "zh-CN": "烤辣椒酱",
+    "zh-TW": "烤辣椒醬",
+    "ko": "구운 고추잼",
+    "ja": "ローストペッパージャム",
+    "es": "Mermelada de pimientos asados",
+    "pt": "Geléia de Pimenta Assada"
+  },
+  "Strawberry Sauce": {
+    "zh-CN": "草莓酱",
+    "zh-TW": "草莓醬",
+    "ko": "딸기 소스",
+    "ja": "ストロベリーソース",
+    "es": "Salsa De Fresa",
+    "pt": "Molho De Morango"
+  },
+  "Whipped Topping": {
+    "zh-CN": "鲜奶油",
+    "zh-TW": "鮮奶油",
+    "ko": "휘핑크림 토핑",
+    "ja": "ホイップトッピング",
+    "es": "cobertura batida",
+    "pt": "Cobertura Batida"
+  },
+  "Hot Open-Faced Turkey Sandwich": {
+    "zh-CN": "热开面火鸡三明治",
+    "zh-TW": "熱開面火雞三明治",
+    "ko": "핫 오픈형 칠면조 샌드위치",
+    "ja": "温かいオープンフェイスターキーサンドイッチ",
+    "es": "Sándwich de pavo abierto caliente",
+    "pt": "Sanduíche Quente De Peru Aberto"
+  },
+  "Sichuan Chicken": {
+    "zh-CN": "川鸡",
+    "zh-TW": "川雞",
+    "ko": "사천 치킨",
+    "ja": "四川チキン",
+    "es": "Pollo de Sichuan",
+    "pt": "Frango Sichuan"
+  },
+  "Sichuan Tofu": {
+    "zh-CN": "四川豆腐",
+    "zh-TW": "四川豆腐",
+    "ko": "사천두부",
+    "ja": "四川豆腐",
+    "es": "Tofu de Sichuan",
+    "pt": "Tofu de Sichuan"
+  },
+  "Southwest Chicken Flatbread Pizza": {
+    "zh-CN": "西南鸡肉大饼披萨",
+    "zh-TW": "西南雞肉大餅披薩",
+    "ko": "사우스웨스트 치킨 플랫브레드 피자",
+    "ja": "サウスウェストチキンのフラットブレッドピザ",
+    "es": "Pizza de pan plano con pollo al suroeste",
+    "pt": "Pizza de pão achatado de frango do sudoeste"
+  },
+  "Halal Chicken Curry with Cashews": {
+    "zh-CN": "清真腰果咖喱鸡",
+    "zh-TW": "清真腰果咖哩雞",
+    "ko": "캐슈넛을 곁들인 할랄 치킨 카레",
+    "ja": "カシューナッツ入りハラールチキンカレー",
+    "es": "Pollo al curry halal con anacardos",
+    "pt": "Curry Halal de Frango com Castanha de Caju"
+  },
+  "Seafood Roll": {
+    "zh-CN": "海鲜卷",
+    "zh-TW": "海鮮捲",
+    "ko": "해산물 롤",
+    "ja": "シーフードロール",
+    "es": "Rollo de Mariscos",
+    "pt": "Rolinho de Frutos do Mar"
+  },
+  "Tempeh Triangles w/ Brown Rice": {
+    "zh-CN": "三角豆豉配糙米",
+    "zh-TW": "三角豆豉配糙米",
+    "ko": "현미를 곁들인 템페 트라이앵글",
+    "ja": "テンペ三角玄米添え",
+    "es": "Triángulos de tempeh con arroz integral",
+    "pt": "Triângulos Tempeh com Arroz Integral"
+  },
+  "Shaved Brussel Sprouts": {
+    "zh-CN": "切碎的抱子甘蓝",
+    "zh-TW": "切碎的抱子甘藍",
+    "ko": "면도한 브뤼셀 콩나물",
+    "ja": "剃った芽キャベツ",
+    "es": "Coles de Bruselas afeitadas",
+    "pt": "Couves de Bruxelas raspadas"
+  },
+  "Quiche Florentine": {
+    "zh-CN": "佛罗伦萨乳蛋饼",
+    "zh-TW": "佛羅倫斯乳蛋餅",
+    "ko": "키쉬 피렌체",
+    "ja": "キッシュ フィレンツェ",
+    "es": "Quiche florentina",
+    "pt": "Quiche Florentina"
+  },
+  "French Cut Green Beans": {
+    "zh-CN": "法式切青豆",
+    "zh-TW": "法式切青豆",
+    "ko": "프렌치 컷 녹두",
+    "ja": "フレンチカットインゲン",
+    "es": "Judías verdes cortadas a la francesa",
+    "pt": "Feijão Verde Cortado Francês"
   }
 }
