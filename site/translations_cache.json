@@ -9603,5 +9603,202 @@
     "ja": "フレンチカットインゲン",
     "es": "Judías verdes cortadas a la francesa",
     "pt": "Feijão Verde Cortado Francês"
+  },
+  "Seafood & Andouille Jambalaya": {
+    "zh-CN": "海鲜和香肠什锦饭",
+    "zh-TW": "海鮮和香腸什錦飯",
+    "ko": "해산물 및 안두이유 잠발라야",
+    "ja": "シーフード＆アンドゥイユ ジャンバラヤ",
+    "es": "Mariscos y Andouille Jambalaya",
+    "pt": "Frutos do mar e Andouille Jambalaya"
+  },
+  "Southwest Stuffed Peppers": {
+    "zh-CN": "西南酿辣椒",
+    "zh-TW": "西南釀辣椒",
+    "ko": "사우스웨스트 박제 고추",
+    "ja": "サウスウェストピーマンのぬいぐるみ",
+    "es": "Pimientos Rellenos Del Suroeste",
+    "pt": "Pimentões Recheados do Sudoeste"
+  },
+  "Halal Turkey Chipotle on Ciabatta": {
+    "zh-CN": "恰巴塔 (Ciabatta) 清真火鸡墨西哥辣椒",
+    "zh-TW": "恰巴塔 (Ciabatta) 清真火雞墨西哥辣椒",
+    "ko": "치아바타의 할랄 칠면조 치폴레",
+    "ja": "ハラール ターキー チポトレ オン チャバタ",
+    "es": "Chipotle de pavo halal en chapata",
+    "pt": "Chipotle de peru Halal em Ciabatta"
+  },
+  "Dill Pickle Spears": {
+    "zh-CN": "莳萝泡菜矛",
+    "zh-TW": "蒔蘿泡菜矛",
+    "ko": "딜 피클 스피어",
+    "ja": "ディルピクルスピア",
+    "es": "Lanzas de pepinillo encurtido",
+    "pt": "Lanças de picles de endro"
+  },
+  "BLT Pizza": {
+    "zh-CN": "培根生菜番茄披萨",
+    "zh-TW": "培根生菜番茄披薩",
+    "ko": "BLT 피자",
+    "ja": "BLTピザ",
+    "es": "Pizza BLT",
+    "pt": "Pizzaria BLT"
+  },
+  "Vegan Chocolate Chip Cookie Bar": {
+    "zh-CN": "纯素巧克力曲奇饼棒",
+    "zh-TW": "純素巧克力餅乾棒",
+    "ko": "비건 초콜릿 칩 쿠키 바",
+    "ja": "ビーガンチョコチップクッキーバー",
+    "es": "Barra de galleta vegana con chispas de chocolate",
+    "pt": "Barra de biscoitos de chocolate veganos"
+  },
+  "Vegan Pot Pie": {
+    "zh-CN": "素食馅饼",
+    "zh-TW": "素食餡餅",
+    "ko": "비건 팟 파이",
+    "ja": "ビーガンポットパイ",
+    "es": "Pastel de olla vegano",
+    "pt": "Torta Vegana"
+  },
+  "Braised Chicken w/ Moroccan Spices": {
+    "zh-CN": "摩洛哥香料焖鸡",
+    "zh-TW": "摩洛哥香料燜雞",
+    "ko": "모로코 향신료를 곁들인 닭고기 조림",
+    "ja": "鶏肉のモロッコ風スパイス煮込み",
+    "es": "Pollo Estofado Con Especias Marroquíes",
+    "pt": "Frango Assado com Especiarias Marroquinas"
+  },
+  "Green Harissa Sauce": {
+    "zh-CN": "绿色哈里萨辣酱",
+    "zh-TW": "綠色哈里薩辣醬",
+    "ko": "그린 하리사 소스",
+    "ja": "グリーンハリッサソース",
+    "es": "Salsa Harissa Verde",
+    "pt": "Molho Verde Harissa"
+  },
+  "Raspberry Cream Pie": {
+    "zh-CN": "覆盆子奶油派",
+    "zh-TW": "覆盆子奶油派",
+    "ko": "라즈베리 크림 파이",
+    "ja": "ラズベリークリームパイ",
+    "es": "Pastel De Crema De Frambuesa",
+    "pt": "Torta De Creme De Framboesa"
+  },
+  "Vegetable Pot Pie": {
+    "zh-CN": "蔬菜锅饼",
+    "ko": "야채 냄비 파이",
+    "ja": "ベジタブルポットパイ",
+    "es": "Pastel de verduras",
+    "pt": "Torta De Legumes"
+  },
+  "Hot and Sour Beef Stir Fry w/ Noodles": {
+    "zh-CN": "酸辣牛肉炒面",
+    "zh-TW": "酸辣牛肉炒麵",
+    "ko": "국수를 곁들인 뜨겁고 신 쇠고기 볶음",
+    "ja": "牛肉の酸っぱい炒め物と麺",
+    "es": "Salteado de carne agridulce con fideos",
+    "pt": "Carne Frita Quente e Azeda com Macarrão"
+  },
+  "Thai Hot & Sour Edamame w/ Noodles": {
+    "zh-CN": "泰式酸辣毛豆面条",
+    "zh-TW": "泰式酸辣毛豆麵條",
+    "ko": "태국식 뜨겁고 신맛이 나는 에다마메(국수 포함)",
+    "ja": "タイ風ホット＆サワー枝豆 麺入り",
+    "es": "Edamame tailandés picante y amargo con fideos",
+    "pt": "Edamame tailandês quente e azedo com macarrão"
+  },
+  "Carnitas-Style Chicken": {
+    "zh-CN": "肉丝鸡",
+    "zh-TW": "肉絲雞",
+    "ko": "카르니타스 스타일 치킨",
+    "ja": "カルニタス風チキン",
+    "es": "Pollo Estilo Carnitas",
+    "pt": "Frango Estilo Carnitas"
+  },
+  "Seasoned Green Beans": {
+    "zh-CN": "调味青豆",
+    "zh-TW": "調味青豆",
+    "ko": "양념 녹두",
+    "ja": "味付けインゲン",
+    "es": "Judías verdes sazonadas",
+    "pt": "Feijão Verde Temperado"
+  },
+  "Garlic Peppercorn Roasted Red Potatoes": {
+    "zh-CN": "大蒜胡椒烤红土豆",
+    "zh-TW": "大蒜胡椒烤紅土豆",
+    "ko": "마늘 후추 열매 구운 붉은 감자",
+    "ja": "ガーリックペッパーコーンローストレッドポテト",
+    "es": "Patatas Rojas Asadas Con Ajo Y Pimienta",
+    "pt": "Alho Pimenta Batata Vermelha Assada"
+  },
+  "Corned Beef Sandwich": {
+    "zh-CN": "咸牛肉三明治",
+    "zh-TW": "鹹牛肉三明治",
+    "ko": "콘비프 샌드위치",
+    "ja": "コンビーフサンドイッチ",
+    "es": "Sándwich de carne en conserva",
+    "pt": "Sanduíche de carne enlatada"
+  },
+  "Redskin Potato Salad": {
+    "zh-CN": "红皮土豆沙拉",
+    "zh-TW": "紅皮馬鈴薯沙拉",
+    "ko": "레드스킨 감자 샐러드",
+    "ja": "レッドスキンポテトサラダ",
+    "es": "Ensalada de patatas de piel roja",
+    "pt": "Salada de Batata Redskin"
+  },
+  "Jerk Tempeh": {
+    "zh-CN": "豆豉肉干",
+    "zh-TW": "豆豉肉乾",
+    "ko": "저크 템페",
+    "ja": "ジャークテンペ",
+    "es": "Tempeh idiota",
+    "pt": "Idiota Tempeh"
+  },
+  "Tangy Citrus Noodles": {
+    "zh-CN": "浓郁的柑橘面条",
+    "zh-TW": "濃鬱的柑橘麵條",
+    "ko": "톡 쏘는 감귤 국수",
+    "ja": "ピリッとしたシトラスヌードル",
+    "es": "Fideos cítricos picantes",
+    "pt": "Macarrão Cítrico Picante"
+  },
+  "BBQ Baked Beans": {
+    "zh-CN": "烧烤焗豆",
+    "zh-TW": "烤肉焗豆",
+    "ko": "바비큐 구운 콩",
+    "ja": "BBQベイクドビーンズ",
+    "es": "Frijoles Horneados A La Barbacoa",
+    "pt": "Feijão Assado para Churrasco"
+  },
+  "Tofu Fried Rice": {
+    "zh-CN": "豆腐炒饭",
+    "zh-TW": "豆腐炒飯",
+    "ko": "두부볶음밥",
+    "ja": "豆腐チャーハン",
+    "es": "Arroz Frito Con Tofu",
+    "pt": "Arroz Frito com Tofu"
+  },
+  "Chickpea Falafel": {
+    "zh-CN": "鹰嘴豆沙拉三明治",
+    "zh-TW": "鷹嘴豆沙拉三明治",
+    "ko": "병아리콩 팔라펠",
+    "ja": "ひよこ豆のファラフェル",
+    "es": "Falafel de garbanzos",
+    "pt": "Falafel de grão de bico"
+  },
+  "Gluten Free Corn Pasta": {
+    "zh-CN": "无麸质玉米面食",
+    "ko": "글루텐 프리 옥수수 파스타",
+    "ja": "グルテンフリーのコーンパスタ",
+    "es": "Pasta de maíz sin gluten",
+    "pt": "Macarrão de Milho Sem Glúten"
+  },
+  "Salisbury Steak": {
+    "zh-CN": "索尔兹伯里牛排",
+    "ko": "솔즈베리 스테이크",
+    "ja": "ソールズベリーステーキ",
+    "es": "Filete Salisbury",
+    "pt": "Bife Salisbury"
   }
 }
