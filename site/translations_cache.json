@@ -10831,5 +10831,141 @@
     "ja": "出来たてのポップコーン",
     "es": "Palomitas de maíz recién hechas",
     "pt": "Pipoca fresca estourada"
+  },
+  "Thousand Island Salad Dressing": {
+    "zh-CN": "千岛沙拉酱",
+    "zh-TW": "千島沙拉醬",
+    "ko": "사우전드 아일랜드 샐러드 드레싱",
+    "ja": "サウザンアイランドサラダドレッシング",
+    "es": "Aderezo para ensalada de las mil islas",
+    "pt": "Molho para Salada Mil Ilhas"
+  },
+  "Southwest Corn Cakes": {
+    "zh-CN": "西南玉米饼",
+    "zh-TW": "西南玉米餅",
+    "ko": "남서부 옥수수 케이크",
+    "ja": "サウスウェストコーンケーキ",
+    "es": "Tortas de maíz del suroeste",
+    "pt": "Bolos de milho do sudoeste"
+  },
+  "Frijoles de la Olla": {
+    "zh-CN": "菜豆",
+    "zh-TW": "花椰菜",
+    "ko": "프리홀스 데 라 올라",
+    "ja": "フリホレス デ ラ オジャ",
+    "es": "Frijoles de la Olla",
+    "pt": "Frijoles de la Olla"
+  },
+  "Chili, Lime and Cilantro Chicken Thighs": {
+    "zh-CN": "辣椒、青柠和香菜鸡大腿",
+    "zh-TW": "辣椒、青檸和香菜雞大腿",
+    "ko": "칠리, 라임, 고수 닭 허벅지살",
+    "ja": "チリ、ライム、コリアンダーの鶏もも肉",
+    "es": "Muslos de pollo con chile, lima y cilantro",
+    "pt": "Coxas de frango com pimenta, limão e coentro"
+  },
+  "Artichoke Vegetable Pizza": {
+    "zh-CN": "朝鲜蓟蔬菜披萨",
+    "zh-TW": "朝鮮薊蔬菜披薩",
+    "ko": "아티초크 야채 피자",
+    "ja": "アーティチョークの野菜ピザ",
+    "es": "Pizza De Alcachofas Y Verduras",
+    "pt": "Pizza De Vegetais De Alcachofra"
+  },
+  "M & M Brownies with Nuts": {
+    "zh-CN": "M & M 坚果布朗尼",
+    "zh-TW": "M & M 堅果布朗尼",
+    "ko": "견과류가 들어간 M & M 브라우니",
+    "ja": "M&M ナッツ入りブラウニー",
+    "es": "Brownies M&M con Nueces",
+    "pt": "Brownies M&M com Nozes"
+  },
+  "Charred Street Corn Tots": {
+    "zh-CN": "烧焦的街玉米小孩",
+    "zh-TW": "燒焦的街玉米小孩",
+    "ko": "까맣게 탄 거리 옥수수 토츠",
+    "ja": "チャード・ストリート・コーン・トッツ",
+    "es": "Tots de maíz callejero carbonizados",
+    "pt": "Bolinhos de milho de rua carbonizados"
+  },
+  "Falafel Balls": {
+    "zh-CN": "沙拉三明治球",
+    "zh-TW": "沙拉三明治球",
+    "ko": "팔라펠 공",
+    "ja": "ファラフェルボール",
+    "es": "Bolas de falafel",
+    "pt": "Bolas de Falafel"
+  },
+  "Roasted Garlic Hummus": {
+    "zh-CN": "烤大蒜鹰嘴豆泥",
+    "zh-TW": "烤大蒜鷹嘴豆泥",
+    "ko": "구운 마늘 후무스",
+    "ja": "ローストガーリックフムス",
+    "es": "Hummus de ajo asado",
+    "pt": "Hummus de alho assado"
+  },
+  "S'mores Cake": {
+    "zh-CN": "羊肚菌蛋糕",
+    "zh-TW": "羊肚菌蛋糕",
+    "ko": "스모어 케이크",
+    "ja": "スモアケーキ",
+    "es": "Pastel de S'mores",
+    "pt": "Bolo S'mores"
+  },
+  "Stir Fried Cabbage": {
+    "zh-CN": "炒白菜",
+    "zh-TW": "炒白菜",
+    "ko": "양배추볶음",
+    "ja": "キャベツ炒め",
+    "es": "Repollo salteado",
+    "pt": "Repolho Frito Mexido"
+  },
+  "Chicken Vegetable Soup": {
+    "zh-CN": "鸡肉蔬菜汤",
+    "zh-TW": "雞肉蔬菜湯",
+    "ko": "닭고기 야채 수프",
+    "ja": "チキン野菜スープ",
+    "es": "Sopa De Pollo Y Verduras",
+    "pt": "Sopa de legumes com frango"
+  },
+  "Goat Cheese and Onion Grilled Cheese": {
+    "zh-CN": "山羊奶酪和洋葱烤奶酪",
+    "zh-TW": "山羊起司和洋蔥烤起司",
+    "ko": "염소 치즈와 양파 구이 치즈",
+    "ja": "ヤギチーズとオニオンのグリルチーズ",
+    "es": "Queso Asado De Queso De Cabra Y Cebolla",
+    "pt": "Queijo de Cabra e Queijo Grelhado com Cebola"
+  },
+  "Honey Glazed Carrots": {
+    "zh-CN": "蜜汁胡萝卜",
+    "zh-TW": "蜜汁胡蘿蔔",
+    "ko": "허니 글레이즈 당근",
+    "ja": "ニンジンのハニーグレーズ",
+    "es": "Zanahorias Glaseadas Con Miel",
+    "pt": "Cenouras Glaceadas com Mel"
+  },
+  "Baked Pita Chips": {
+    "zh-CN": "烤皮塔饼片",
+    "zh-TW": "烤皮塔餅片",
+    "ko": "구운 피타 칩",
+    "ja": "焼きピタチップス",
+    "es": "Chips de pita al horno",
+    "pt": "Batatas fritas assadas"
+  },
+  "Couscous Cakes": {
+    "zh-CN": "蒸粗麦粉蛋糕",
+    "zh-TW": "蒸粗麥粉蛋糕",
+    "ko": "쿠스쿠스 케이크",
+    "ja": "クスクスケーキ",
+    "es": "Tortas De Cuscús",
+    "pt": "Bolos De Cuscuz"
+  },
+  "Roasted Vegetables": {
+    "zh-CN": "烤蔬菜",
+    "zh-TW": "烤蔬菜",
+    "ko": "구운 야채",
+    "ja": "焼き野菜",
+    "es": "Verduras Asadas",
+    "pt": "Legumes Assados"
   }
 }
