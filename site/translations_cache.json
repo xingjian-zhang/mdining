@@ -10967,5 +10967,109 @@
     "ja": "焼き野菜",
     "es": "Verduras Asadas",
     "pt": "Legumes Assados"
+  },
+  "Joyua's Chumbo Chili w/Shrimp": {
+    "zh-CN": "Joyua's Chumbo 辣椒配虾",
+    "zh-TW": "Joyua's Chumbo 辣椒配蝦",
+    "ko": "조유아 새우가 들어간 춤보칠리",
+    "ja": "ジョユアのチュンボチリ エビ入り",
+    "es": "Chile Chumbo con Camarones de Joyua",
+    "pt": "Chumbo Chili de Joyua com camarão"
+  },
+  "Salted Caramel Bars": {
+    "zh-CN": "咸焦糖棒",
+    "zh-TW": "鹹焦糖棒",
+    "ko": "솔티드 카라멜 바",
+    "ja": "塩キャラメルバー",
+    "es": "Barras de caramelo salado",
+    "pt": "Barras de Caramelo Salgado"
+  },
+  "Avocado Bacon Pizza": {
+    "zh-CN": "鳄梨培根披萨",
+    "zh-TW": "酪梨培根披薩",
+    "ko": "아보카도 베이컨 피자",
+    "ja": "アボカドベーコンピザ",
+    "es": "Pizza de aguacate y tocino",
+    "pt": "Pizza de Bacon com Abacate"
+  },
+  "King's Hawaiian Dubai Pistachio Tiramisu": {
+    "zh-CN": "国王夏威夷迪拜开心果提拉米苏",
+    "zh-TW": "國王夏威夷杜拜開心果提拉米蘇",
+    "ko": "킹스 하와이안 두바이 피스타치오 티라미수",
+    "ja": "キングス ハワイアン ドバイ ピスタチオ ティラミス",
+    "es": "Tiramisú de pistacho King's Hawaiian Dubai",
+    "pt": "King's Hawaiian Dubai Pistache Tiramisu"
+  },
+  "Elvis Cake w/ Peanut Butter Buttercream": {
+    "zh-CN": "猫王蛋糕配花生酱奶油",
+    "zh-TW": "貓王蛋糕佐花生醬奶油",
+    "ko": "땅콩버터 버터크림을 곁들인 엘비스 케이크",
+    "ja": "エルビスケーキ ピーナッツバターバタークリーム添え",
+    "es": "Pastel de Elvis con crema de mantequilla de maní",
+    "pt": "Bolo Elvis com Creme de Manteiga de Amendoim"
+  },
+  "Bacon Egg and Cheese Croissant": {
+    "zh-CN": "培根鸡蛋和奶酪牛角面包",
+    "zh-TW": "培根蛋和起司牛角麵包",
+    "ko": "베이컨 계란과 치즈 크로와상",
+    "ja": "ベーコンエッグとチーズクロワッサン",
+    "es": "Croissant De Huevo Y Queso Con Tocino",
+    "pt": "Croissant de ovo e queijo com bacon"
+  },
+  "Vegan Crispy Tenders": {
+    "zh-CN": "纯素脆皮招标",
+    "zh-TW": "純素脆皮招標",
+    "ko": "비건 크리스피 텐더",
+    "ja": "ビーガンクリスピーテンダー",
+    "es": "Licitaciones crujientes veganas",
+    "pt": "Propostas Crocantes Veganas"
+  },
+  "Cauliflower Au Gratin": {
+    "zh-CN": "焗烤花椰菜",
+    "zh-TW": "烤花椰菜",
+    "ko": "콜리플라워 오 그라탕",
+    "ja": "カリフラワーのグラタン",
+    "es": "Coliflor gratinada",
+    "pt": "Couve-flor gratinada"
+  },
+  "Asian Garlic Tofu": {
+    "zh-CN": "亚洲蒜豆腐",
+    "zh-TW": "亞洲蒜豆腐",
+    "ko": "아시아 마늘 두부",
+    "ja": "アジアンガーリック豆腐",
+    "es": "Tofu asiático con ajo",
+    "pt": "Tofu de alho asiático"
+  },
+  "Mushroom Ramen": {
+    "zh-CN": "蘑菇拉面",
+    "zh-TW": "蘑菇拉麵",
+    "ko": "버섯라면",
+    "ja": "きのこラーメン",
+    "es": "Ramen de champiñones",
+    "pt": "Ramen de Cogumelo"
+  },
+  "Bamboo Shoots": {
+    "zh-CN": "竹笋",
+    "zh-TW": "竹筍",
+    "ko": "죽순",
+    "ja": "タケノコ",
+    "es": "Brotes de bambú",
+    "pt": "Brotos de Bambu"
+  },
+  "Baby Corn": {
+    "zh-CN": "玉米宝宝",
+    "zh-TW": "玉米寶寶",
+    "ko": "베이비콘",
+    "ja": "ベビーコーン",
+    "es": "maíz tierno",
+    "pt": "Milho bebê"
+  },
+  "Beef Tamale Pie": {
+    "zh-CN": "牛肉玉米粉蒸肉馅饼",
+    "zh-TW": "牛肉玉米粉蒸肉餡餅",
+    "ko": "쇠고기 타말레 파이",
+    "ja": "ビーフタマーレパイ",
+    "es": "Pastel de tamal de res",
+    "pt": "Torta de Tamale de Carne"
   }
 }
