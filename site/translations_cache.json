@@ -11240,5 +11240,181 @@
     "ja": "ローストユーコンポテト",
     "es": "Patatas Yukón Asadas",
     "pt": "Batatas Yukon Assadas"
+  },
+  "Shrimp Vietnamese Chili Stir Fry": {
+    "zh-CN": "虾越南辣椒炒",
+    "zh-TW": "蝦越南辣椒炒",
+    "ko": "새우 베트남 칠리 볶음",
+    "ja": "エビのベトナムチリ炒め",
+    "es": "Salteado De Camarones Con Chile Vietnamita",
+    "pt": "Camarão Vietnamita com Pimentão Frito"
+  },
+  "Roasted Garlic Pizza": {
+    "zh-CN": "烤大蒜披萨",
+    "zh-TW": "烤大蒜披薩",
+    "ko": "구운 마늘 피자",
+    "ja": "ローストガーリックピザ",
+    "es": "Pizza de ajo asado",
+    "pt": "Pizza de Alho Assado"
+  },
+  "Pistachio Cookie Bars": {
+    "zh-CN": "开心果饼干棒",
+    "zh-TW": "開心果餅乾棒",
+    "ko": "피스타치오 쿠키 바",
+    "ja": "ピスタチオクッキーバー",
+    "es": "Barras de galletas de pistacho",
+    "pt": "Barras de biscoitos de pistache"
+  },
+  "Vegan Palmier Cookies": {
+    "zh-CN": "纯素棕榈饼干",
+    "zh-TW": "純素棕櫚餅乾",
+    "ko": "비건 팔미에 쿠키",
+    "ja": "ビーガンパルミエクッキー",
+    "es": "Galletas Palmier Veganas",
+    "pt": "Biscoitos Palmier Veganos"
+  },
+  "Sauteed Shrimp": {
+    "zh-CN": "炒虾",
+    "zh-TW": "炒蝦",
+    "ko": "새우볶음",
+    "ja": "エビのソテー",
+    "es": "Camarones Salteados",
+    "pt": "Camarão Refogado"
+  },
+  "Cajun Seasoning Spice": {
+    "zh-CN": "卡真调味香料",
+    "zh-TW": "卡真調味香料",
+    "ko": "케이준 시즈닝 스파이스",
+    "ja": "ケイジャンシーズニングスパイス",
+    "es": "Especias de condimento cajún",
+    "pt": "Tempero Cajun Tempero"
+  },
+  "Raspberry Swirl Cheesecake": {
+    "zh-CN": "覆盆子漩涡芝士蛋糕",
+    "zh-TW": "覆盆子漩渦起司蛋糕",
+    "ko": "라즈베리 소용돌이 치즈케이크",
+    "ja": "ラズベリースワールチーズケーキ",
+    "es": "Tarta de queso con remolino de frambuesa",
+    "pt": "Cheesecake de Framboesa"
+  },
+  "Fall Harvest Soup": {
+    "zh-CN": "秋收汤",
+    "zh-TW": "秋收湯",
+    "ko": "가을 수확 수프",
+    "ja": "秋の収穫スープ",
+    "es": "Sopa de cosecha de otoño",
+    "pt": "Sopa de colheita de outono"
+  },
+  "Bulgogi Hoagie": {
+    "zh-CN": "烤肉三明治",
+    "zh-TW": "烤肉三明治",
+    "ko": "불고기 호기",
+    "ja": "プルコギホーギー",
+    "es": "Bulgogi Hoagie",
+    "pt": "Bulgogi Hoagie"
+  },
+  "Sesame Ginger Slaw": {
+    "zh-CN": "芝麻姜丝沙拉",
+    "zh-TW": "芝麻薑絲沙拉",
+    "ko": "참깨 생강 양배추",
+    "ja": "セサミジンジャースロー",
+    "es": "Ensalada De Jengibre Y Sésamo",
+    "pt": "Salada de Gergelim e Gengibre"
+  },
+  "Vegetable Kofta w/ Cashews and Coconut": {
+    "zh-CN": "蔬菜科夫塔配腰果和椰子",
+    "zh-TW": "蔬菜科夫塔配腰果和椰子",
+    "ko": "캐슈넛과 코코넛을 곁들인 야채 코프타",
+    "ja": "野菜のコフタ カシューナッツとココナッツ添え",
+    "es": "Kofta de Verduras con Anacardos y Coco",
+    "pt": "Kofta Vegetal c/ Castanha de Caju e Coco"
+  },
+  "Mongolian Tofu with Fried Noodles": {
+    "zh-CN": "蒙古豆腐炒面",
+    "zh-TW": "蒙古豆腐炒麵",
+    "ko": "볶음면을 곁들인 몽골리안 두부",
+    "ja": "蒙古豆腐焼きそば",
+    "es": "Tofu mongol con fideos fritos",
+    "pt": "Tofu Mongol com Macarrão Frito"
+  },
+  "Roasted Delicata Squash": {
+    "zh-CN": "烤熟食南瓜",
+    "zh-TW": "烤熟食南瓜",
+    "ko": "구운 델리카타 스쿼시",
+    "ja": "ローストデリカタスカッシュ",
+    "es": "Calabaza Delicata Asada",
+    "pt": "Abóbora Delicata Assada"
+  },
+  "Fresh Raspberry": {
+    "zh-CN": "新鲜覆盆子",
+    "zh-TW": "新鮮覆盆子",
+    "ko": "신선한 라즈베리",
+    "ja": "フレッシュラズベリー",
+    "es": "frambuesa fresca",
+    "pt": "Framboesa Fresca"
+  },
+  "Chicken Bulgogi Hoagie": {
+    "zh-CN": "鸡肉烤肉三明治",
+    "zh-TW": "雞肉烤肉三明治",
+    "ko": "치킨불고기 호기",
+    "ja": "チキンプルコギホーギー",
+    "es": "Hoagie Bulgogi De Pollo",
+    "pt": "Frango Bulgogi Hoagie"
+  },
+  "Shrimp & Scallop Red Curry": {
+    "zh-CN": "虾扇贝红咖喱",
+    "zh-TW": "蝦扇貝紅咖哩",
+    "ko": "새우 & 가리비 레드 카레",
+    "ja": "エビとホタテのレッドカレー",
+    "es": "Curry Rojo De Camarones Y Vieiras",
+    "pt": "Caril Vermelho de Camarão e Vieiras"
+  },
+  "Chicken Vietnamese Chili Stir Fry": {
+    "zh-CN": "鸡肉越南辣椒炒",
+    "zh-TW": "雞肉越南辣椒炒",
+    "ko": "치킨 베트남 고추볶음",
+    "ja": "チキンベトナムチリ炒め",
+    "es": "Pollo Salteado De Chile Vietnamita",
+    "pt": "Frango vietnamita com pimentão frito"
+  },
+  "Teriyaki Chicken Thighs": {
+    "zh-CN": "照烧鸡大腿",
+    "zh-TW": "照燒雞大腿",
+    "ko": "데리야끼 닭다리살",
+    "ja": "照り焼き鶏もも肉",
+    "es": "Muslos De Pollo Teriyaki",
+    "pt": "Coxas de Frango Teriyaki"
+  },
+  "Vegetable Stir Fry": {
+    "zh-CN": "蔬菜炒",
+    "zh-TW": "蔬菜炒",
+    "ko": "야채볶음",
+    "ja": "野菜炒め",
+    "es": "Salteado De Verduras",
+    "pt": "Legumes salteados"
+  },
+  "Herb Baked Chicken Thighs": {
+    "zh-CN": "香草烤鸡大腿",
+    "zh-TW": "香草烤雞大腿",
+    "ko": "허브 구운 닭다리살",
+    "ja": "鶏もも肉のハーブ焼き",
+    "es": "Muslos de pollo al horno con hierbas",
+    "pt": "Coxas de Frango Assadas com Ervas"
+  },
+  "Basil Garlic Tofu": {
+    "zh-CN": "罗勒蒜豆腐",
+    "zh-TW": "羅勒蒜豆腐",
+    "ko": "바질마늘두부",
+    "ja": "バジルガーリック豆腐",
+    "es": "Tofu con albahaca y ajo",
+    "pt": "Manjericão Alho Tofu"
+  },
+  "Chicken Pot Pie": {
+    "zh-CN": "鸡肉馅饼",
+    "zh-TW": "雞肉餡餅",
+    "ko": "치킨 팟 파이",
+    "ja": "チキンポットパイ",
+    "es": "Pastel De Pollo",
+    "pt": "Torta De Frango"
   }
 }
