@@ -11552,5 +11552,205 @@
     "ja": "チキンバインミー",
     "es": "Pollo Banh Mi",
     "pt": "Frango Banh Mi"
+  },
+  "Shrimp Bisque": {
+    "zh-CN": "虾浓汤",
+    "zh-TW": "蝦濃湯",
+    "ko": "새우 비스크",
+    "ja": "エビのビスク",
+    "es": "Bisque De Camarones",
+    "pt": "Bisque de Camarão"
+  },
+  "Teriyaki Chicken with Vegetables": {
+    "zh-CN": "照烧蔬菜鸡肉",
+    "zh-TW": "照燒蔬菜雞肉",
+    "ko": "야채를 곁들인 데리야끼 치킨",
+    "ja": "照り焼きチキンと野菜添え",
+    "es": "Pollo Teriyaki con Verduras",
+    "pt": "Frango Teriyaki com Legumes"
+  },
+  "Vegan Cornbread": {
+    "zh-CN": "纯素玉米面包",
+    "zh-TW": "純素玉米麵包",
+    "ko": "비건 콘브레드",
+    "ja": "ビーガンコーンブレッド",
+    "es": "Pan de maíz vegano",
+    "pt": "Pão de Milho Vegano"
+  },
+  "Grape Tomatoes & Basil": {
+    "zh-CN": "葡萄番茄和罗勒",
+    "zh-TW": "葡萄番茄和羅勒",
+    "ko": "포도 토마토 & 바질",
+    "ja": "グレープトマト＆バジル",
+    "es": "Tomates Uva Y Albahaca",
+    "pt": "Tomate Uva e Manjericão"
+  },
+  "Italian Sausage on White Bun": {
+    "zh-CN": "白面包意大利香肠",
+    "zh-TW": "白麵包義大利香腸",
+    "ko": "흰 빵에 이탈리안 소시지",
+    "ja": "白いパンにイタリアン ソーセージ",
+    "es": "Salchicha Italiana En Pan Blanco",
+    "pt": "Salsicha Italiana No Pão Branco"
+  },
+  "Rajma": {
+    "zh-CN": "拉杰玛",
+    "zh-TW": "拉傑瑪",
+    "ko": "라지마",
+    "ja": "ラジマ",
+    "es": "Rajma",
+    "pt": "Rajma"
+  },
+  "Halal Baked Ziti": {
+    "zh-CN": "清真烤通心粉",
+    "zh-TW": "清真烤通心粉",
+    "ko": "할랄 구운 지티",
+    "ja": "ハラール焼きジティ",
+    "es": "Ziti al horno halal",
+    "pt": "Ziti Assado Halal"
+  },
+  "Vegan Chili Cornbread Pie": {
+    "zh-CN": "纯素辣椒玉米面包派",
+    "zh-TW": "純素辣椒玉米麵包派",
+    "ko": "비건 칠리 콘브레드 파이",
+    "ja": "ビーガンチリコーンブレッドパイ",
+    "es": "Pastel de pan de maíz con chile vegano",
+    "pt": "Torta de pão de milho vegana com pimenta"
+  },
+  "Tempeh, Lettuce & Tomato Sandwich": {
+    "zh-CN": "豆豉、生菜和番茄三明治",
+    "zh-TW": "豆豉、生菜和番茄三明治",
+    "ko": "템페, 양상추 & 토마토 샌드위치",
+    "ja": "テンペ、レタス、トマトのサンドイッチ",
+    "es": "Sándwich de tempeh, lechuga y tomate",
+    "pt": "Sanduíche de Tempeh, Alface e Tomate"
+  },
+  "Pea and Potato Curry": {
+    "zh-CN": "豌豆土豆咖喱",
+    "zh-TW": "豌豆馬鈴薯咖哩",
+    "ko": "완두콩과 감자 카레",
+    "ja": "エンドウ豆とジャガイモのカレー",
+    "es": "Curry de guisantes y patatas",
+    "pt": "Caril de Ervilha e Batata"
+  },
+  "Gemelli Pasta with Palomino Sauce": {
+    "zh-CN": "帕洛米诺酱双子意大利面",
+    "zh-TW": "帕洛米諾醬雙子義大利麵",
+    "ko": "팔로미노 소스를 곁들인 게멜리 파스타",
+    "ja": "ジェメッリパスタ パロミノソース添え",
+    "es": "Pasta Gemelli con Salsa Palomino",
+    "pt": "Macarrão Gemelli com Molho Palomino"
+  },
+  "Ranch Dip": {
+    "zh-CN": "牧场浸",
+    "zh-TW": "牧場浸",
+    "ko": "랜치 딥",
+    "ja": "ランチディップ",
+    "es": "Salsa ranchera",
+    "pt": "Molho Rancho"
+  },
+  "Fried Cauliflower Buffalo Bites": {
+    "zh-CN": "炸花椰菜水牛咬",
+    "zh-TW": "炸花椰菜水牛咬",
+    "ko": "튀긴 콜리플라워 버팔로 바이트",
+    "ja": "カリフラワーのフライドバッファローバイツ",
+    "es": "Bocaditos de búfalo y coliflor frita",
+    "pt": "Picadas de búfalo com couve-flor frita"
+  },
+  "Spaetzle": {
+    "zh-CN": "面疙瘩",
+    "zh-TW": "麵疙瘩",
+    "ko": "슈페츨레",
+    "ja": "シュペッツレ",
+    "es": "Spaetzle",
+    "pt": "Spaetzle"
+  },
+  "Blue Cheese & Bacon Pizza": {
+    "zh-CN": "蓝纹奶酪培根披萨",
+    "zh-TW": "藍紋起司培根披薩",
+    "ko": "블루 치즈 & 베이컨 피자",
+    "ja": "ブルーチーズとベーコンのピザ",
+    "es": "Pizza de queso azul y tocino",
+    "pt": "Pizza de Queijo Azul e Bacon"
+  },
+  "Turkey Hot Dog": {
+    "zh-CN": "火鸡热狗",
+    "zh-TW": "火雞熱狗",
+    "ko": "터키 핫도그",
+    "ja": "ターキーホットドッグ",
+    "es": "Perro Caliente De Pavo",
+    "pt": "Cachorro-quente de peru"
+  },
+  "Quinoa Stuffed Peppers": {
+    "zh-CN": "藜麦酿辣椒",
+    "zh-TW": "藜麥釀辣椒",
+    "ko": "퀴노아 박제 고추",
+    "ja": "キヌアのピーマン詰め",
+    "es": "Pimientos Rellenos De Quinua",
+    "pt": "Pimentos Recheados com Quinoa"
+  },
+  "Beef Mushroom Gravy": {
+    "zh-CN": "牛肉蘑菇汁",
+    "zh-TW": "牛肉蘑菇汁",
+    "ko": "쇠고기 버섯 그레이비",
+    "ja": "ビーフマッシュルームグレービーソース",
+    "es": "Salsa De Carne Y Champiñones",
+    "pt": "Molho De Cogumelo De Carne"
+  },
+  "Beef Stew": {
+    "zh-CN": "炖牛肉",
+    "zh-TW": "燉牛肉",
+    "ko": "쇠고기 스튜",
+    "ja": "ビーフシチュー",
+    "es": "Estofado De Carne",
+    "pt": "Ensopado de Carne"
+  },
+  "Potato, Lentil, and Coconut Curry": {
+    "zh-CN": "土豆、扁豆和椰子咖喱",
+    "zh-TW": "馬鈴薯、扁豆和椰子咖哩",
+    "ko": "감자, 렌즈콩, 코코넛 카레",
+    "ja": "ジャガイモ、レンズ豆、ココナッツのカレー",
+    "es": "Curry de patatas, lentejas y coco",
+    "pt": "Caril de batata, lentilha e coco"
+  },
+  "Taco Al Pastor": {
+    "zh-CN": "塔科·艾尔·帕斯特",
+    "zh-TW": "塔科·艾爾·帕斯特",
+    "ko": "타코 알 파스토르",
+    "ja": "タコ・アル・パストール",
+    "es": "Tacos Al Pastor",
+    "pt": "Taco Al Pastor"
+  },
+  "Grilled Cactus Paddle Salad": {
+    "zh-CN": "烤仙人掌桨沙拉",
+    "zh-TW": "烤仙人掌槳沙拉",
+    "ko": "구운 선인장 패들 샐러드",
+    "ja": "グリルサボテンパドルサラダ",
+    "es": "Ensalada De Paleta De Nopales A La Parrilla",
+    "pt": "Salada de Remo de Cacto Grelhado"
+  },
+  "Homemade White Corn Tortilla Chips": {
+    "zh-CN": "自制白玉米饼片",
+    "zh-TW": "自製白玉米片",
+    "ko": "집에서 만든 흰 옥수수 토르티야 칩",
+    "ja": "自家製ホワイトコーントルティーヤチップス",
+    "es": "Chips de tortilla de maíz blanco caseros",
+    "pt": "Chips de tortilla de milho branco caseiro"
+  },
+  "Salsa Ranchera": {
+    "zh-CN": "莎莎兰切拉",
+    "zh-TW": "莎莎蘭切拉",
+    "ko": "살사 란체라",
+    "ja": "サルサ ランチェラ",
+    "es": "Salsa Ranchera",
+    "pt": "Salsa ranchera"
+  },
+  "Homemade Guacamole": {
+    "zh-CN": "自制鳄梨酱",
+    "zh-TW": "自製酪梨醬",
+    "ko": "직접 만든 과카몰리",
+    "ja": "自家製ワカモレ",
+    "es": "Guacamole Casero",
+    "pt": "Guacamole Caseiro"
   }
 }
