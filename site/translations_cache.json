@@ -11752,5 +11752,173 @@
     "ja": "自家製ワカモレ",
     "es": "Guacamole Casero",
     "pt": "Guacamole Caseiro"
+  },
+  "Roasted Garlic Smashed Red Skin Potatoes": {
+    "zh-CN": "烤蒜碎红皮土豆",
+    "zh-TW": "烤大蒜紅皮土豆",
+    "ko": "구운 마늘 으깬 붉은 껍질 감자",
+    "ja": "ローストガーリックスマッシュレッドスキンポテト",
+    "es": "Patatas de piel roja trituradas con ajo asado",
+    "pt": "Alho Assado Esmagou Batatas Vermelhas"
+  },
+  "Fried Sauerkraut Cakes": {
+    "zh-CN": "酸菜饼",
+    "zh-TW": "酸菜餅",
+    "ko": "튀긴 사우어크라우트 케이크",
+    "ja": "揚げザワークラウトケーキ",
+    "es": "Pasteles De Chucrut Fritos",
+    "pt": "Bolos De Chucrute Frito"
+  },
+  "Savory Baked Tofu": {
+    "zh-CN": "香喷喷的烤豆腐",
+    "zh-TW": "香噴噴的烤豆腐",
+    "ko": "고소한 구운 두부",
+    "ja": "香ばしい焼き豆腐",
+    "es": "Tofu al horno salado",
+    "pt": "Tofu Assado Salgado"
+  },
+  "Mushroom Nimono": {
+    "zh-CN": "蘑菇仁物",
+    "zh-TW": "蘑菇仁物",
+    "ko": "버섯 니모노",
+    "ja": "きのこの煮物",
+    "es": "Nimono de setas",
+    "pt": "Cogumelo Nimono"
+  },
+  "Mushroom Chive Pizza": {
+    "zh-CN": "蘑菇韭菜披萨",
+    "zh-TW": "蘑菇韭菜披薩",
+    "ko": "버섯 골파 피자",
+    "ja": "キノコニラピザ",
+    "es": "Pizza de champiñones y cebollino",
+    "pt": "Pizza de cebolinha com cogumelos"
+  },
+  "Grilled Portabello Mushroom": {
+    "zh-CN": "烤波塔贝罗蘑菇",
+    "zh-TW": "烤波塔貝羅蘑菇",
+    "ko": "구운 포르타벨로 버섯",
+    "ja": "ポータベロ マッシュルームのグリル",
+    "es": "Champiñones Portabello A La Parrilla",
+    "pt": "Cogumelo Portabello Grelhado"
+  },
+  "Seitan Coconut Panang": {
+    "zh-CN": "面筋椰子帕南",
+    "zh-TW": "麵筋椰子帕南",
+    "ko": "세이탄 코코넛 파낭",
+    "ja": "セイタン ココナッツ パナン",
+    "es": "Panang de coco y seitán",
+    "pt": "Seitan Coco Panang"
+  },
+  "Chicken Fajita Meat": {
+    "zh-CN": "鸡肉法吉塔肉",
+    "zh-TW": "雞肉法吉塔肉",
+    "ko": "치킨 파히타 고기",
+    "ja": "チキンファヒータ肉",
+    "es": "Carne De Fajita De Pollo",
+    "pt": "Carne De Fajita De Frango"
+  },
+  "Picadillo ala Habanera": {
+    "zh-CN": "哈瓦那皮卡迪略",
+    "zh-TW": "哈瓦那皮卡迪略",
+    "ko": "피카딜로 알라 하바네라",
+    "ja": "ハバネラのピカディージョ",
+    "es": "Picadillo a la habanera",
+    "pt": "Picadillo à la Habanera"
+  },
+  "Beef Lasagna": {
+    "zh-CN": "牛肉千层面",
+    "zh-TW": "牛肉千層面",
+    "ko": "쇠고기 라자냐",
+    "ja": "ビーフラザニア",
+    "es": "Lasaña de ternera",
+    "pt": "Lasanha de Carne"
+  },
+  "Spicy Chicken Pasta": {
+    "zh-CN": "辣鸡肉意大利面",
+    "zh-TW": "辣雞肉義大利麵",
+    "ko": "매운 치킨 파스타",
+    "ja": "スパイシーチキンパスタ",
+    "es": "Pasta De Pollo Picante",
+    "pt": "Macarrão Picante de Frango"
+  },
+  "Brazilian Black Bean and Pork Stew": {
+    "zh-CN": "巴西黑豆猪肉炖菜",
+    "zh-TW": "巴西黑豆豬肉燉菜",
+    "ko": "브라질산 검은콩과 돼지고기 스튜",
+    "ja": "ブラジル産黒豆とポークのシチュー",
+    "es": "Estofado brasileño de frijoles negros y cerdo",
+    "pt": "Feijão Preto Brasileiro e Ensopado de Porco"
+  },
+  "Halal Lasagna Rollups with Meat Sauce": {
+    "zh-CN": "清真肉酱千层面卷",
+    "zh-TW": "清真肉醬千層麵卷",
+    "ko": "미트 소스를 곁들인 할랄 라자냐 롤업",
+    "ja": "ハラールラザニアロールアップ ミートソース添え",
+    "es": "Rollitos de lasaña halal con salsa de carne",
+    "pt": "Rolinhos de Lasanha Halal com Molho de Carne"
+  },
+  "Seasoned Quinoa": {
+    "zh-CN": "调味藜麦",
+    "zh-TW": "調味藜麥",
+    "ko": "양념 퀴노아",
+    "ja": "味付けキヌア",
+    "es": "Quinua Sazonada",
+    "pt": "Quinoa temperada"
+  },
+  "Chicken Gyro": {
+    "zh-CN": "鸡陀螺",
+    "zh-TW": "雞陀螺",
+    "ko": "치킨 자이로",
+    "ja": "チキンジャイロ",
+    "es": "Pollo Gyro",
+    "pt": "Giroscópio de frango"
+  },
+  "Roasted Buffalo Cauliflower Bites": {
+    "zh-CN": "烤水牛花椰菜片",
+    "zh-TW": "烤水牛花椰菜片",
+    "ko": "구운 버팔로 콜리플라워 바이트",
+    "ja": "ローストバッファローカリフラワーのひとくち",
+    "es": "Bocaditos de coliflor de búfalo asada",
+    "pt": "Picadas de couve-flor de búfalo assada"
+  },
+  "Indian Tandoori Style Chicken": {
+    "zh-CN": "印度坦杜里式鸡",
+    "zh-TW": "印度坦杜里式雞",
+    "ko": "인도 탄두리 스타일 치킨",
+    "ja": "インドのタンドリー風チキン",
+    "es": "Pollo estilo tandoori indio",
+    "pt": "Frango Estilo Tandoori Indiano"
+  },
+  "Mongolian Chicken w/ Fried Noodles": {
+    "zh-CN": "蒙古鸡炒面",
+    "zh-TW": "蒙古雞炒麵",
+    "ko": "몽골리안 치킨 + 볶음면",
+    "ja": "モンゴリアンチキン焼きそば添え",
+    "es": "Pollo mongol con fideos fritos",
+    "pt": "Frango Mongol com macarrão frito"
+  },
+  "Chipotle Kosher Roast Beef on Baguette": {
+    "zh-CN": "Chipotle 犹太洁食烤牛肉法棍",
+    "zh-TW": "Chipotle 猶太潔食烤牛肉法棍",
+    "ko": "바게트에 치폴레 코셔 로스트 비프",
+    "ja": "チポトレ コーシャー ローストビーフ バゲット添え",
+    "es": "Carne asada chipotle kosher en baguette",
+    "pt": "Rosbife Chipotle Kosher na Baguete"
+  },
+  "White Bean and Potato Hash": {
+    "zh-CN": "白豆土豆泥",
+    "zh-TW": "白豆馬鈴薯泥",
+    "ko": "흰 콩과 감자 해시",
+    "ja": "白インゲン豆とポテトのハッシュ",
+    "es": "Hash de patatas y frijoles blancos",
+    "pt": "Feijão Branco e Hash de Batata"
+  },
+  "Marinated Raw Vegetables": {
+    "zh-CN": "腌制生蔬菜",
+    "zh-TW": "醃製生蔬菜",
+    "ko": "절인 생야채",
+    "ja": "生野菜のマリネ",
+    "es": "Verduras Crudas Marinadas",
+    "pt": "Legumes Crus Marinados"
   }
 }
