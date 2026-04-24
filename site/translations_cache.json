@@ -11920,5 +11920,45 @@
     "ja": "生野菜のマリネ",
     "es": "Verduras Crudas Marinadas",
     "pt": "Legumes Crus Marinados"
+  },
+  "Refried Black Beans": {
+    "zh-CN": "炒黑豆",
+    "zh-TW": "炒黑豆",
+    "ko": "검은콩을 볶은 것",
+    "ja": "リフライドブラックビーンズ",
+    "es": "Frijoles Negros Refritos",
+    "pt": "Feijão Preto Refrito"
+  },
+  "Pierogi Bravas": {
+    "zh-CN": "皮耶罗吉·布拉瓦斯",
+    "zh-TW": "皮耶羅吉·布拉瓦斯",
+    "ko": "피에로기 브라바스",
+    "ja": "ピエロギ・ブラバス",
+    "es": "Pierogi Bravas",
+    "pt": "Pierogi Bravas"
+  },
+  "Empanadas": {
+    "zh-CN": "肉馅卷饼",
+    "zh-TW": "肉餡捲餅",
+    "ko": "엠빠나다",
+    "ja": "エンパナーダ",
+    "es": "Empanadas",
+    "pt": "Empanadas"
+  },
+  "Assorted Mini Danish w/ Nuts": {
+    "zh-CN": "迷你丹麦什锦坚果",
+    "zh-TW": "迷你丹麥什錦堅果",
+    "ko": "견과류가 들어간 미니 덴마크 모듬",
+    "ja": "ミニデニッシュ ナッツ添え",
+    "es": "Mini Danés Surtido con Nueces",
+    "pt": "Sortido Mini Dinamarquês c/ Nozes"
+  },
+  "Donburi Broth": {
+    "zh-CN": "盖饭汤",
+    "zh-TW": "蓋飯湯",
+    "ko": "돈부리육수",
+    "ja": "どんぶりつゆ",
+    "es": "Caldo Donburi",
+    "pt": "Caldo Donburi"
   }
 }
