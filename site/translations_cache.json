@@ -11960,5 +11960,21 @@
     "ja": "どんぶりつゆ",
     "es": "Caldo Donburi",
     "pt": "Caldo Donburi"
+  },
+  "Kielbasa Sausage Slider w/ Bacon Jam": {
+    "zh-CN": "基尔巴萨香肠滑块配培根果酱",
+    "zh-TW": "基爾巴薩香腸滑塊佐培根果醬",
+    "ko": "베이컨 잼을 곁들인 킬바사 소시지 슬라이더",
+    "ja": "キールバサ ソーセージ スライダー ベーコンジャム添え",
+    "es": "Deslizador de salchicha Kielbasa con mermelada de tocino",
+    "pt": "Slider de salsicha Kielbasa com geléia de bacon"
+  },
+  "BBQ Roast Beef": {
+    "zh-CN": "烧烤烤牛肉",
+    "zh-TW": "燒烤烤牛肉",
+    "ko": "바베큐 로스트 비프",
+    "ja": "BBQローストビーフ",
+    "es": "Carne Asada A La Barbacoa",
+    "pt": "Carne Assada para Churrasco"
   }
 }
