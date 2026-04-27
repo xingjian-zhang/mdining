@@ -11976,5 +11976,77 @@
     "ja": "BBQローストビーフ",
     "es": "Carne Asada A La Barbacoa",
     "pt": "Carne Assada para Churrasco"
+  },
+  "Chicken Parmesan Pizza": {
+    "zh-CN": "帕尔玛鸡肉披萨",
+    "zh-TW": "帕瑪雞肉披薩",
+    "ko": "치킨 파마산 피자",
+    "ja": "チキンパルメザンピザ",
+    "es": "Pizza de pollo y parmesano",
+    "pt": "Pizza de frango com parmesão"
+  },
+  "Lamb Picadillo ala Habanera": {
+    "zh-CN": "哈巴内拉羊肉皮卡迪略",
+    "zh-TW": "哈巴內拉羊肉皮卡迪略",
+    "ko": "양고기 피카디요 알라 하바네라",
+    "ja": "子羊のピカディージョ・アラ・ハバネラ",
+    "es": "Picadillo de Cordero a la Habanera",
+    "pt": "Cordeiro Picadillo à la Habanera"
+  },
+  "Cilantro Lime Crema": {
+    "zh-CN": "香菜酸橙克丽玛",
+    "zh-TW": "香菜萊姆克麗瑪",
+    "ko": "고수 라임 크레마",
+    "ja": "コリアンダー ライム クレマ",
+    "es": "Crema De Cilantro Y Lima",
+    "pt": "Creme de coentro e limão"
+  },
+  "Cinnamon Sugar Sweet Potatoes": {
+    "zh-CN": "肉桂糖红薯",
+    "zh-TW": "肉桂糖地瓜",
+    "ko": "계피 설탕 고구마",
+    "ja": "シナモンシュガースイートポテト",
+    "es": "Batatas con azúcar y canela",
+    "pt": "Batata doce com canela e açúcar"
+  },
+  "MSC Herbed Cod": {
+    "zh-CN": "MSC 香草鳕鱼",
+    "zh-TW": "MSC 香草鱈魚",
+    "ko": "MSC 허브 대구",
+    "ja": "MSCハーブタラ",
+    "es": "Bacalao con hierbas MSC",
+    "pt": "Bacalhau com Ervas MSC"
+  },
+  "Grits": {
+    "zh-CN": "粗玉米粉",
+    "zh-TW": "粗玉米粉",
+    "ko": "거칠게 탄 옥수수",
+    "ja": "グリッツ",
+    "es": "Sémola",
+    "pt": "Grãos"
+  },
+  "Turkey Chipotle on Baguette": {
+    "zh-CN": "法棍面包上的火鸡墨西哥辣椒",
+    "zh-TW": "法國麵包上的火雞墨西哥辣椒",
+    "ko": "바게트에 칠면조 치폴레",
+    "ja": "バゲットに乗った七面鳥のチポトレ",
+    "es": "Chipotle De Pavo En Baguette",
+    "pt": "Chipotle de peru na baguete"
+  },
+  "Tomato Cucumber Feta Olive Relish": {
+    "zh-CN": "番茄、黄瓜、羊乳酪、橄榄酱",
+    "zh-TW": "番茄、小黃瓜、羊乳酪、橄欖醬",
+    "ko": "토마토 오이 페타 올리브 렐리시",
+    "ja": "トマト、キュウリ、フェタチーズ、オリーブレリッシュ",
+    "es": "Condimento De Tomate, Pepino, Feta, Oliva",
+    "pt": "Tomate Pepino Feta Azeitona Relish"
+  },
+  "Tomato & Olive Sauce": {
+    "zh-CN": "番茄橄榄酱",
+    "zh-TW": "番茄橄欖醬",
+    "ko": "토마토 & 올리브 소스",
+    "ja": "トマト＆オリーブソース",
+    "es": "Salsa De Tomate Y Aceitunas",
+    "pt": "Molho de tomate e azeitona"
   }
 }
