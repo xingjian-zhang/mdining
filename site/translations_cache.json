@@ -12048,5 +12048,93 @@
     "ja": "トマト＆オリーブソース",
     "es": "Salsa De Tomate Y Aceitunas",
     "pt": "Molho de tomate e azeitona"
+  },
+  "Key Lime Pie": {
+    "zh-CN": "酸橙派",
+    "zh-TW": "酸橙派",
+    "ko": "키 라임 파이",
+    "ja": "キーライムパイ",
+    "es": "Pastel de lima",
+    "pt": "Torta De Limão"
+  },
+  "Rice Noodles": {
+    "zh-CN": "米粉",
+    "zh-TW": "米粉",
+    "ko": "쌀국수",
+    "ja": "ビーフン",
+    "es": "Fideos de arroz",
+    "pt": "Macarrão De Arroz"
+  },
+  "Dijon & Balsamic Grilled Tempeh": {
+    "zh-CN": "第戎香醋烤豆豉",
+    "zh-TW": "狄戎香醋烤豆豉",
+    "ko": "디종 & 발사믹 템페 구이",
+    "ja": "ディジョンとバルサミコのテンペ焼き",
+    "es": "Tempeh a la parrilla con Dijon y balsámico",
+    "pt": "Tempeh Grelhado Dijon e Balsâmico"
+  },
+  "Rice Noodles w/ Beef & Vegetables": {
+    "zh-CN": "牛肉蔬菜米粉",
+    "zh-TW": "牛肉蔬菜米粉",
+    "ko": "쇠고기와 야채를 곁들인 쌀국수",
+    "ja": "牛肉と野菜のライスヌードル",
+    "es": "Fideos de arroz con carne y verduras",
+    "pt": "Macarrão de Arroz com Carne e Legumes"
+  },
+  "Moroccan BBQ Sauce": {
+    "zh-CN": "摩洛哥烧烤酱",
+    "zh-TW": "摩洛哥燒烤醬",
+    "ko": "모로코식 바베큐 소스",
+    "ja": "モロッコ風BBQソース",
+    "es": "Salsa BBQ Marroquí",
+    "pt": "Molho de churrasco marroquino"
+  },
+  "Swiss Steak Tempeh": {
+    "zh-CN": "瑞士牛排豆豉",
+    "zh-TW": "瑞士牛排豆豉",
+    "ko": "스위스 스테이크 템페",
+    "ja": "スイスステーキテンペ",
+    "es": "Tempeh de filete suizo",
+    "pt": "Bife Suíço Tempeh"
+  },
+  "Moroccan Chicken": {
+    "zh-CN": "摩洛哥鸡",
+    "zh-TW": "摩洛哥雞",
+    "ko": "모로코 치킨",
+    "ja": "モロッコチキン",
+    "es": "Pollo Marroquí",
+    "pt": "Frango Marroquino"
+  },
+  "Malaysian Vegetable Coconut Curry": {
+    "zh-CN": "马来西亚蔬菜椰子咖喱",
+    "zh-TW": "馬來西亞蔬菜椰子咖哩",
+    "ko": "말레이시아 야채 코코넛 카레",
+    "ja": "マレーシア野菜のココナッツカレー",
+    "es": "Curry de coco y verduras de Malasia",
+    "pt": "Caril de Coco Vegetal da Malásia"
+  },
+  "Korean Style Pork Loin": {
+    "zh-CN": "韩式猪腰肉",
+    "zh-TW": "韓式豬腰肉",
+    "ko": "한식 돼지고기 등심",
+    "ja": "韓国風豚ロース肉",
+    "es": "Lomo De Cerdo Estilo Coreano",
+    "pt": "Lombo de porco estilo coreano"
+  },
+  "Halal Chicken Quesadillas": {
+    "zh-CN": "清真鸡肉玉米饼",
+    "zh-TW": "清真雞肉玉米餅",
+    "ko": "할랄 치킨 케사디야",
+    "ja": "ハラールチキンケサディーヤ",
+    "es": "Quesadillas De Pollo Halal",
+    "pt": "Quesadillas de Frango Halal"
+  },
+  "Grilled Cheese Quesadillas": {
+    "zh-CN": "烤奶酪玉米饼",
+    "zh-TW": "烤起司玉米餅",
+    "ko": "구운 치즈 케사디야",
+    "ja": "グリルドチーズケサディーヤ",
+    "es": "Quesadillas De Queso Asado",
+    "pt": "Quesadillas De Queijo Grelhado"
   }
 }
