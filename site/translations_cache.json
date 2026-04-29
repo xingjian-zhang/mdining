@@ -12136,5 +12136,180 @@
     "ja": "グリルドチーズケサディーヤ",
     "es": "Quesadillas De Queso Asado",
     "pt": "Quesadillas De Queijo Grelhado"
+  },
+  "Apple Pandowdy": {
+    "zh-CN": "苹果潘多迪",
+    "zh-TW": "蘋果潘多迪",
+    "ko": "애플 판도우디",
+    "ja": "アップル・パンダウディ",
+    "es": "pan de manzana",
+    "pt": "Apple Pandowdy"
+  },
+  "Vernor's Pound Cake": {
+    "zh-CN": "弗诺的磅蛋糕",
+    "zh-TW": "弗諾的磅蛋糕",
+    "ko": "베르너의 파운드 케이크",
+    "ja": "ヴァーナーのパウンドケーキ",
+    "es": "Bizcocho de Vernor",
+    "pt": "Bolo de Libra de Vernor"
+  },
+  "Cream of Potato Soup": {
+    "zh-CN": "奶油土豆汤",
+    "zh-TW": "奶油馬鈴薯湯",
+    "ko": "감자 수프 크림",
+    "ja": "ポテトのクリームスープ",
+    "es": "Crema De Patata",
+    "pt": "Sopa Creme De Batata"
+  },
+  "Pacific Rim Salad": {
+    "zh-CN": "环太平洋沙拉",
+    "zh-TW": "環太平洋沙拉",
+    "ko": "퍼시픽 림 샐러드",
+    "ja": "パシフィック・リム・サラダ",
+    "es": "Ensalada de la Cuenca del Pacífico",
+    "pt": "Salada da Orla do Pacífico"
+  },
+  "Balsamic Glazed Chicken": {
+    "zh-CN": "香脂釉鸡",
+    "zh-TW": "香脂釉雞",
+    "ko": "발사믹 글레이즈드 치킨",
+    "ja": "バルサミコソースチキン",
+    "es": "Pollo Glaseado Con Balsámico",
+    "pt": "Frango com cobertura balsâmica"
+  },
+  "Miso Marinated Tofu w/ Kimchi Salad": {
+    "zh-CN": "味噌豆腐配泡菜沙拉",
+    "zh-TW": "味噌豆腐配泡菜沙拉",
+    "ko": "된장절임두부/김치샐러드",
+    "ja": "豆腐の味噌漬けとキムチサラダ",
+    "es": "Tofu marinado con miso y ensalada de kimchi",
+    "pt": "Tofu Marinado Miso com Salada Kimchi"
+  },
+  "Sundried Tomatoes Sauce": {
+    "zh-CN": "晒干番茄酱",
+    "zh-TW": "曬乾番茄醬",
+    "ko": "선드라이 토마토 소스",
+    "ja": "ドライトマトソース",
+    "es": "Salsa de tomates secos",
+    "pt": "Molho de tomate seco"
+  },
+  "Chipotle Chorizo Bowl with Mango": {
+    "zh-CN": "芒果墨西哥辣椒碗",
+    "zh-TW": "芒果墨西哥辣椒碗",
+    "ko": "망고를 곁들인 치폴레 초리조 볼",
+    "ja": "マンゴー入りチポトレチョリソーボウル",
+    "es": "Bowl de chorizo ​​chipotle con mango",
+    "pt": "Tigela de Chouriço Chipotle com Manga"
+  },
+  "Chicken and Basil Stir Fry": {
+    "zh-CN": "鸡肉和罗勒炒",
+    "zh-TW": "雞肉和羅勒炒",
+    "ko": "닭고기와 바질 볶음",
+    "ja": "鶏肉とバジル炒め",
+    "es": "Salteado De Pollo Y Albahaca",
+    "pt": "Frango e manjericão salteados"
+  },
+  "Baked Mostaccioli with Meat Sauce": {
+    "zh-CN": "肉酱烤莫斯塔乔利",
+    "zh-TW": "肉醬烤莫斯塔喬利",
+    "ko": "미트 소스를 곁들인 구운 모스타치올리",
+    "ja": "焼きモスタッチオーリのミートソース添え",
+    "es": "Mostaccioli al horno con salsa de carne",
+    "pt": "Mostaccioli Assado com Molho de Carne"
+  },
+  "Fried Chicken Wings": {
+    "zh-CN": "炸鸡翅",
+    "zh-TW": "炸雞翅",
+    "ko": "프라이드 치킨 윙",
+    "ja": "手羽先の唐揚げ",
+    "es": "Alitas De Pollo Fritas",
+    "pt": "Asas de Frango Frito"
+  },
+  "Baked Buttermilk Waffles": {
+    "zh-CN": "烤酪乳华夫饼",
+    "zh-TW": "烤酪乳華夫餅",
+    "ko": "구운 버터밀크 와플",
+    "ja": "焼きバターミルクワッフル",
+    "es": "Waffles de suero de leche al horno",
+    "pt": "Waffles de leitelho assados"
+  },
+  "Mongolian Beef with Fried Noodles": {
+    "zh-CN": "蒙古牛肉炒面",
+    "zh-TW": "蒙古牛肉炒麵",
+    "ko": "볶음면을 곁들인 몽골리안 비프",
+    "ja": "蒙古牛焼きそば",
+    "es": "Carne de res mongol con fideos fritos",
+    "pt": "Carne Mongol com Macarrão Frito"
+  },
+  "Bratwurst": {
+    "zh-CN": "腊肠",
+    "zh-TW": "臘腸",
+    "ko": "소세지",
+    "ja": "ブラートヴルスト",
+    "es": "Salchichas",
+    "pt": "Salsicha"
+  },
+  "German Potato Salad": {
+    "zh-CN": "德国土豆沙拉",
+    "zh-TW": "德國馬鈴薯沙拉",
+    "ko": "독일식 감자 샐러드",
+    "ja": "ジャーマンポテトサラダ",
+    "es": "Ensalada De Patata Alemana",
+    "pt": "Salada de Batata Alemã"
+  },
+  "Red Braised Cabbage with Bacon": {
+    "zh-CN": "培根红烧白菜",
+    "zh-TW": "培根紅燒白菜",
+    "ko": "베이컨을 곁들인 붉은 양배추 조림",
+    "ja": "赤キャベツのベーコン煮込み",
+    "es": "Repollo rojo estofado con tocino",
+    "pt": "Repolho Refogado Vermelho com Bacon"
+  },
+  "Parmesan Herb Grilled Chicken": {
+    "zh-CN": "帕尔玛香草烤鸡",
+    "zh-TW": "帕瑪香草烤雞",
+    "ko": "파마산 허브 구이 치킨",
+    "ja": "パルメザンチーズのハーブグリルチキン",
+    "es": "Pollo A La Parrilla Con Hierbas Parmesanas",
+    "pt": "Frango Grelhado com Ervas Parmesão"
+  },
+  "Cheese Ravioli a la Grecque": {
+    "zh-CN": "希腊奶酪馄饨",
+    "zh-TW": "希臘起司餛飩",
+    "ko": "치즈 라비올리 알라 그레크",
+    "ja": "チーズラビオリ・ア・ラ・グレック",
+    "es": "Ravioles de queso a la griega",
+    "pt": "Ravióli de queijo à la Grecque"
+  },
+  "Grilled Chicken Chimichurri": {
+    "zh-CN": "烤鸡 Chimichurri",
+    "zh-TW": "烤雞 Chimichurri",
+    "ko": "구운 닭고기 치미추리",
+    "ja": "グリルチキンチミチュリ",
+    "es": "Chimichurri De Pollo A La Parrilla",
+    "pt": "Frango Grelhado Chimichurri"
+  },
+  "Korean Chuck Eye": {
+    "zh-CN": "韩国恰克眼",
+    "zh-TW": "韓國恰克眼",
+    "ko": "한국형 척아이",
+    "ja": "韓国のチャックアイ",
+    "es": "ojo de chuck coreano",
+    "pt": "Olho de Chuck Coreano"
+  },
+  "Korean BBQ Tofu": {
+    "zh-CN": "韩式烧烤豆腐",
+    "ko": "한국식 바베큐 두부",
+    "ja": "韓国風バーベキュー豆腐",
+    "es": "Tofu BBQ Coreano",
+    "pt": "Tofu de churrasco coreano"
+  },
+  "Stir Fry Bok Choy Topping": {
+    "zh-CN": "炒白菜配料",
+    "zh-TW": "炒高麗菜配料",
+    "ko": "청경채 볶음 토핑",
+    "ja": "チンゲンサイ炒めトッピング",
+    "es": "Cobertura salteada de bok choy",
+    "pt": "Cobertura de Bok Choy salteada"
   }
 }
