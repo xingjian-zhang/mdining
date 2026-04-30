@@ -12311,5 +12311,77 @@
     "ja": "チンゲンサイ炒めトッピング",
     "es": "Cobertura salteada de bok choy",
     "pt": "Cobertura de Bok Choy salteada"
+  },
+  "Chocolate Cookie Torte": {
+    "zh-CN": "巧克力饼干果仁蛋糕",
+    "zh-TW": "巧克力餅乾果仁蛋糕",
+    "ko": "초콜릿 쿠키 토르테",
+    "ja": "チョコレートクッキートルテ",
+    "es": "Torta De Galletas De Chocolate",
+    "pt": "Torta De Biscoito De Chocolate"
+  },
+  "Deep Fried Pancake Bites": {
+    "zh-CN": "炸煎饼咬",
+    "zh-TW": "炸煎餅咬",
+    "ko": "튀긴 팬케이크 바이트",
+    "ja": "揚げたパンケーキのひと口",
+    "es": "Bocaditos de panqueques fritos",
+    "pt": "Mordidas de panqueca frita"
+  },
+  "Baked Plantains": {
+    "zh-CN": "烤车前草",
+    "zh-TW": "烤車前草",
+    "ko": "구운 질경이",
+    "ja": "焼きプランテン",
+    "es": "Plátanos Al Horno",
+    "pt": "Bananas assadas"
+  },
+  "Roasted Lemon Chicken Thigh w/ Zucchini": {
+    "zh-CN": "烤柠檬鸡大腿配西葫芦",
+    "zh-TW": "烤檸檬雞腿配西葫蘆",
+    "ko": "애호박을 곁들인 구운 레몬 닭다리살",
+    "ja": "鶏ももレモンのロースト ズッキーニ添え",
+    "es": "Muslo De Pollo Asado Al Limón Con Calabacín",
+    "pt": "Coxa de Frango Assada com Limão e Abobrinha"
+  },
+  "Minnesota Wild Rice Soup": {
+    "zh-CN": "明尼苏达野米汤",
+    "zh-TW": "明尼蘇達州野米湯",
+    "ko": "미네소타 야생 쌀 수프",
+    "ja": "ミネソタワイルドライススープ",
+    "es": "Sopa de arroz salvaje de Minnesota",
+    "pt": "Sopa de arroz selvagem de Minnesota"
+  },
+  "Penne Pasta with Meat Sauce": {
+    "zh-CN": "肉酱通心粉",
+    "zh-TW": "肉醬通心粉",
+    "ko": "미트 소스를 곁들인 펜네 파스타",
+    "ja": "ミートソースのペンネパスタ",
+    "es": "Pasta Penne con Salsa de Carne",
+    "pt": "Macarrão Penne com Molho de Carne"
+  },
+  "Chicken Piccata": {
+    "zh-CN": "鸡肉皮卡塔",
+    "zh-TW": "雞肉皮卡塔",
+    "ko": "치킨 피카타",
+    "ja": "チキンピカタ",
+    "es": "Piccata De Pollo",
+    "pt": "Piccata de Frango"
+  },
+  "Tofu Piccata": {
+    "zh-CN": "豆腐皮卡塔",
+    "zh-TW": "豆腐皮卡塔",
+    "ko": "두부피카타",
+    "ja": "豆腐ピカタ",
+    "es": "Tofu Piccata",
+    "pt": "Piccata de tofu"
+  },
+  "Chef's Choice Vegetable": {
+    "zh-CN": "厨师精选蔬菜",
+    "zh-TW": "主廚精選蔬菜",
+    "ko": "셰프가 선택한 야채",
+    "ja": "シェフのおまかせ野菜",
+    "es": "Verduras elegidas por el chef",
+    "pt": "Legumes escolhidos pelo chef"
   }
 }
