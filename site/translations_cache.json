@@ -12383,5 +12383,53 @@
     "ja": "シェフのおまかせ野菜",
     "es": "Verduras elegidas por el chef",
     "pt": "Legumes escolhidos pelo chef"
+  },
+  "MSC Lemon Baked Cod": {
+    "zh-CN": "MSC 柠檬烤鳕鱼",
+    "zh-TW": "MSC 檸檬烤鱈魚",
+    "ko": "MSC 레몬 구운 대구",
+    "ja": "MSC タラのレモン焼き",
+    "es": "MSC Bacalao al Limón",
+    "pt": "Bacalhau Assado com Limão MSC"
+  },
+  "Thai Hot and Sour Tofu with Noodles": {
+    "zh-CN": "泰式酸辣豆腐面",
+    "zh-TW": "泰式酸辣豆腐麵",
+    "ko": "국수를 곁들인 태국식 새콤달콤 두부",
+    "ja": "タイの酸辣豆腐と麺",
+    "es": "Tofu agridulce tailandés con fideos",
+    "pt": "Tofu picante e azedo tailandês com macarrão"
+  },
+  "Rice Krispie Treats": {
+    "zh-CN": "脆米花零食",
+    "zh-TW": "脆米花零食",
+    "ko": "라이스 크리스피 간식",
+    "ja": "ライスクリスピートリーツ",
+    "es": "Golosinas de arroz Krispie",
+    "pt": "Guloseimas de arroz Krispie"
+  },
+  "Sam's BBQ Ribs": {
+    "zh-CN": "山姆的烧烤排骨",
+    "zh-TW": "山姆的燒烤排骨",
+    "ko": "샘스 바비큐 립",
+    "ja": "サムズBBQリブ",
+    "es": "Costillas BBQ de Sam",
+    "pt": "Costelas de churrasco do Sam"
+  },
+  "Noodles w/ Vegetable Chile Sauce": {
+    "zh-CN": "蔬菜智利酱面条",
+    "zh-TW": "蔬菜智利醬麵條",
+    "ko": "야채 칠리 소스를 곁들인 국수",
+    "ja": "野菜チリソース麺",
+    "es": "Fideos con Salsa de Chile Vegetal",
+    "pt": "Macarrão c/ Molho Chileno de Legumes"
+  },
+  "Roasted Zucchini & Red Onion": {
+    "zh-CN": "烤西葫芦和红洋葱",
+    "zh-TW": "烤西葫蘆和紅洋蔥",
+    "ko": "구운 호박 & 적양파",
+    "ja": "ローストズッキーニとレッドオニオン",
+    "es": "Calabacín asado y cebolla morada",
+    "pt": "Abobrinha Assada e Cebola Roxa"
   }
 }
