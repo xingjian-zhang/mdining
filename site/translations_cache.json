@@ -12431,5 +12431,21 @@
     "ja": "ローストズッキーニとレッドオニオン",
     "es": "Calabacín asado y cebolla morada",
     "pt": "Abobrinha Assada e Cebola Roxa"
+  },
+  "Tofu Donburi Rice Bowl": {
+    "zh-CN": "豆腐盖饭",
+    "zh-TW": "豆腐蓋飯",
+    "ko": "두부 덮밥 덮밥",
+    "ja": "豆腐丼",
+    "es": "Tazón de arroz con tofu y donburi",
+    "pt": "Tigela de arroz Donburi com tofu"
+  },
+  "Raspberry Brownie Bar": {
+    "zh-CN": "覆盆子布朗尼棒",
+    "zh-TW": "覆盆子佈朗尼棒",
+    "ko": "라즈베리 브라우니 바",
+    "ja": "ラズベリーブラウニーバー",
+    "es": "Barra de brownie de frambuesa",
+    "pt": "Barra de Brownie de Framboesa"
   }
 }
