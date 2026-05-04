@@ -12463,5 +12463,85 @@
     "ja": "ハムのグリル",
     "es": "Jamón Asado",
     "pt": "Presunto Grelhado"
+  },
+  "Mango Chutney": {
+    "zh-CN": "芒果酸辣酱",
+    "zh-TW": "芒果酸辣醬",
+    "ko": "망고 처트니",
+    "ja": "マンゴーチャツネ",
+    "es": "Chutney de mango",
+    "pt": "Chutney de manga"
+  },
+  "Dal": {
+    "zh-CN": "达尔",
+    "zh-TW": "達爾",
+    "ko": "달",
+    "ja": "ダル",
+    "es": "Dal",
+    "pt": "Dal"
+  },
+  "Creamy Butternut Squash Lasagna": {
+    "zh-CN": "奶油胡桃南瓜烤宽面条",
+    "zh-TW": "奶油胡桃南瓜烤寬麵條",
+    "ko": "크리미 버터넛 스쿼시 라자냐",
+    "ja": "クリーミーバターナッツスカッシュラザニア",
+    "es": "Lasaña cremosa de calabaza",
+    "pt": "Lasanha Cremosa De Abóbora Butternut"
+  },
+  "Apple Cider Vinaigrette": {
+    "zh-CN": "苹果醋",
+    "zh-TW": "蘋果醋",
+    "ko": "애플 사이다 비네그레트",
+    "ja": "アップルサイダービネグレット",
+    "es": "Vinagreta De Sidra De Manzana",
+    "pt": "Vinagrete de cidra de maçã"
+  },
+  "Cookies and Cream Brownie": {
+    "zh-CN": "饼干和奶油布朗尼",
+    "zh-TW": "餅乾和奶油布朗尼",
+    "ko": "쿠키앤크림 브라우니",
+    "ja": "クッキー＆クリームブラウニー",
+    "es": "Brownie de galletas y crema",
+    "pt": "Brownie de Biscoitos e Creme"
+  },
+  "Thai Cucumber Salad": {
+    "zh-CN": "泰式黄瓜沙拉",
+    "zh-TW": "泰式黃瓜沙拉",
+    "ko": "태국 오이 샐러드",
+    "ja": "タイ風キュウリのサラダ",
+    "es": "Ensalada tailandesa de pepino",
+    "pt": "Salada Tailandesa de Pepino"
+  },
+  "Eggplant Parmesan": {
+    "zh-CN": "茄子帕尔马干酪",
+    "zh-TW": "茄子帕瑪森起司",
+    "ko": "가지 파마산 치즈",
+    "ja": "ナスのパルメザンチーズ",
+    "es": "berenjena a la parmesana",
+    "pt": "Berinjela Parmesão"
+  },
+  "Pineapple Cream Cake": {
+    "zh-CN": "菠萝奶油蛋糕",
+    "zh-TW": "鳳梨奶油蛋糕",
+    "ko": "파인애플 크림 케이크",
+    "ja": "パイナップルクリームケーキ",
+    "es": "Pastel De Crema De Piña",
+    "pt": "Bolo De Creme De Abacaxi"
+  },
+  "Cajun Seasoned Turkey Burger": {
+    "zh-CN": "卡津调味火鸡汉堡",
+    "zh-TW": "卡津調味火雞肉漢堡",
+    "ko": "케이준 양념 칠면조 버거",
+    "ja": "ケイジャン味のターキーバーガー",
+    "es": "Hamburguesa de pavo sazonada cajún",
+    "pt": "Hambúrguer de Peru Temperado Cajun"
+  },
+  "Chicken Paprikash": {
+    "zh-CN": "鸡肉辣椒粉",
+    "zh-TW": "雞肉辣椒粉",
+    "ko": "치킨 파프리카쉬",
+    "ja": "チキンパプリカッシュ",
+    "es": "Pimentón De Pollo",
+    "pt": "Paprikash de Frango"
   }
 }
