@@ -12543,5 +12543,45 @@
     "ja": "チキンパプリカッシュ",
     "es": "Pimentón De Pollo",
     "pt": "Paprikash de Frango"
+  },
+  "Rice with Green Chiles": {
+    "zh-CN": "青椒饭",
+    "zh-TW": "青椒飯",
+    "ko": "녹색 고추를 곁들인 밥",
+    "ja": "グリーンチリ入りライス",
+    "es": "Arroz con Chiles Verdes",
+    "pt": "Arroz com Pimentas Verdes"
+  },
+  "Grilled Vegetable Hummus Wrap": {
+    "zh-CN": "烤蔬菜鹰嘴豆泥卷",
+    "zh-TW": "烤蔬菜鷹嘴豆泥卷",
+    "ko": "구운 야채 후무스 랩",
+    "ja": "グリル野菜のフムスラップ",
+    "es": "Wrap de hummus de verduras a la parrilla",
+    "pt": "Envoltório de hummus de legumes grelhados"
+  },
+  "Buttered Noodles": {
+    "zh-CN": "黄油面",
+    "zh-TW": "奶油麵",
+    "ko": "버터 국수",
+    "ja": "バターヌードル",
+    "es": "Fideos con mantequilla",
+    "pt": "Macarrão com manteiga"
+  },
+  "Tres Leches Cake": {
+    "zh-CN": "三奶蛋糕",
+    "zh-TW": "三奶蛋糕",
+    "ko": "트레스 레체스 케이크",
+    "ja": "トレスレチェケーキ",
+    "es": "Pastel Tres Leches",
+    "pt": "Bolo Três Leches"
+  },
+  "Rice Noodles w/ Tofu & Vegetable": {
+    "zh-CN": "豆腐蔬菜米线",
+    "zh-TW": "豆腐蔬菜米線",
+    "ko": "두부와 야채를 넣은 쌀국수",
+    "ja": "豆腐と野菜のビーフン",
+    "es": "Fideos de arroz con tofu y vegetales",
+    "pt": "Macarrão de Arroz com Tofu e Vegetais"
   }
 }
