@@ -12583,5 +12583,37 @@
     "ja": "豆腐と野菜のビーフン",
     "es": "Fideos de arroz con tofu y vegetales",
     "pt": "Macarrão de Arroz com Tofu e Vegetais"
+  },
+  "Bulgogi Fries": {
+    "zh-CN": "烤肉薯条",
+    "zh-TW": "烤肉薯條",
+    "ko": "불고기튀김",
+    "ja": "プルコギフライ",
+    "es": "Papas fritas bulgogi",
+    "pt": "Batatas Fritas Bulgogi"
+  },
+  "Beef Hot Dog on Bun": {
+    "zh-CN": "牛肉热狗面包",
+    "zh-TW": "牛肉熱狗麵包",
+    "ko": "번에 쇠고기 핫도그",
+    "ja": "バンズのビーフホットドッグ",
+    "es": "Hot Dog de carne en pan",
+    "pt": "Cachorro Quente De Carne No Pão"
+  },
+  "Yankee Pot Roast": {
+    "zh-CN": "洋基锅烤肉",
+    "zh-TW": "洋基鍋烤肉",
+    "ko": "양키 포트 로스트",
+    "ja": "ヤンキーポットロースト",
+    "es": "Asado Yankee",
+    "pt": "Assado de Panela Yankee"
+  },
+  "Stromboli with Spinach & Peppers": {
+    "zh-CN": "斯特龙博利菠菜和辣椒",
+    "zh-TW": "斯特龍博利菠菜和辣椒",
+    "ko": "시금치와 고추를 곁들인 스트롬볼리",
+    "ja": "ストロンボリのほうれん草とピーマン添え",
+    "es": "Stromboli con espinacas y pimientos",
+    "pt": "Stromboli com espinafre e pimentão"
   }
 }
