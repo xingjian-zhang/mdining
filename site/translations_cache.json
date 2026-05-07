@@ -12615,5 +12615,77 @@
     "ja": "ストロンボリのほうれん草とピーマン添え",
     "es": "Stromboli con espinacas y pimientos",
     "pt": "Stromboli com espinafre e pimentão"
+  },
+  "Cake Donut": {
+    "zh-CN": "蛋糕甜甜圈",
+    "zh-TW": "蛋糕甜甜圈",
+    "ko": "케이크 도넛",
+    "ja": "ケーキドーナツ",
+    "es": "Pastel De Rosquilla",
+    "pt": "Bolo Rosquinha"
+  },
+  "Vegetable Chirashi": {
+    "zh-CN": "蔬菜散装",
+    "zh-TW": "蔬菜散裝",
+    "ko": "야채 지라시",
+    "ja": "野菜ちらし",
+    "es": "chirashi vegetal",
+    "pt": "Chirashi Vegetal"
+  },
+  "Colombian Spicy Vegetable Arepas": {
+    "zh-CN": "哥伦比亚辣蔬菜玉米饼",
+    "zh-TW": "哥倫比亞辣蔬菜玉米餅",
+    "ko": "콜롬비아 매운 야채 아레빠",
+    "ja": "コロンビアのスパイシー野菜アレパス",
+    "es": "Arepas colombianas de verduras picantes",
+    "pt": "Arepas de vegetais picantes colombianas"
+  },
+  "Chicken & Beef Meatballs": {
+    "zh-CN": "鸡肉牛肉丸",
+    "zh-TW": "雞肉牛肉丸",
+    "ko": "닭고기 및 쇠고기 미트볼",
+    "ja": "チキン＆ビーフミートボール",
+    "es": "Albóndigas De Pollo Y Carne",
+    "pt": "Almôndegas de frango e carne"
+  },
+  "Creamy Mushroom Sauce": {
+    "zh-CN": "奶油蘑菇酱",
+    "zh-TW": "奶油蘑菇醬",
+    "ko": "크림 버섯 소스",
+    "ja": "クリーミーマッシュルームソース",
+    "es": "Salsa Cremosa De Champiñones",
+    "pt": "Molho Cremoso De Cogumelos"
+  },
+  "Kalua Pork": {
+    "zh-CN": "卡鲁阿猪肉",
+    "zh-TW": "卡魯阿豬肉",
+    "ko": "칼루아 포크",
+    "ja": "カルアポーク",
+    "es": "Cerdo Kalúa",
+    "pt": "Carne De Porco Kalua"
+  },
+  "Sticky Rice": {
+    "zh-CN": "糯米",
+    "zh-TW": "糯米",
+    "ko": "찹쌀",
+    "ja": "もち米",
+    "es": "Arroz pegajoso",
+    "pt": "Arroz pegajoso"
+  },
+  "Crispy Leek Garnish": {
+    "zh-CN": "脆皮韭菜装饰",
+    "zh-TW": "脆皮韭菜裝飾",
+    "ko": "바삭바삭한 리크 장식",
+    "ja": "カリカリネギの付け合わせ",
+    "es": "Guarnición Crujiente De Puerros",
+    "pt": "Enfeite de alho-poró crocante"
+  },
+  "Braised Red Cabbage": {
+    "zh-CN": "红烧甘蓝",
+    "zh-TW": "紅燒甘藍",
+    "ko": "붉은 양배추 조림",
+    "ja": "赤キャベツの煮込み",
+    "es": "Repollo rojo estofado",
+    "pt": "Repolho Roxo Refogado"
   }
 }
