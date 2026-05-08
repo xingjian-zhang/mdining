@@ -12687,5 +12687,37 @@
     "ja": "赤キャベツの煮込み",
     "es": "Repollo rojo estofado",
     "pt": "Repolho Roxo Refogado"
+  },
+  "Margherita Sandwich": {
+    "zh-CN": "玛格丽特三明治",
+    "zh-TW": "瑪格麗特三明治",
+    "ko": "마르게리타 샌드위치",
+    "ja": "マルゲリータサンド",
+    "es": "Sándwich Margarita",
+    "pt": "Sanduíche Marguerita"
+  },
+  "Rotisserie Chicken Thigh": {
+    "zh-CN": "烤鸡大腿",
+    "zh-TW": "烤雞大腿",
+    "ko": "로티세리 닭다리살",
+    "ja": "ロティサリーチキンもも肉",
+    "es": "Muslo De Pollo Asado",
+    "pt": "Coxa de Frango Assada"
+  },
+  "Vegan Cinnamon Sugar Cookies Bars": {
+    "zh-CN": "纯素肉桂糖饼干棒",
+    "zh-TW": "純素肉桂糖餅乾棒",
+    "ko": "비건 시나몬 설탕 쿠키 바",
+    "ja": "ビーガン シナモン シュガー クッキー バー",
+    "es": "Barras veganas de galletas de azúcar y canela",
+    "pt": "Barras de biscoitos de açúcar e canela veganos"
+  },
+  "Brown Sugar and Sesame Glazed Salmon": {
+    "zh-CN": "红糖芝麻釉三文鱼",
+    "zh-TW": "紅糖芝麻釉鮭魚",
+    "ko": "흑설탕 참깨 글레이즈 연어",
+    "ja": "サーモンの黒糖胡麻添え",
+    "es": "Salmón Glaseado Con Azúcar Morena Y Sésamo",
+    "pt": "Salmão glaceado com açúcar mascavo e gergelim"
   }
 }
