@@ -12719,5 +12719,21 @@
     "ja": "サーモンの黒糖胡麻添え",
     "es": "Salmón Glaseado Con Azúcar Morena Y Sésamo",
     "pt": "Salmão glaceado com açúcar mascavo e gergelim"
+  },
+  "Provolone Crispy Veggie Patty Sandwich": {
+    "zh-CN": "波伏洛干酪脆皮蔬菜三明治",
+    "zh-TW": "波伏洛乾酪脆皮蔬菜三明治",
+    "ko": "프로볼로네 크리스피 베지 패티 샌드위치",
+    "ja": "プロヴォローネ クリスピーベジパティサンドイッチ",
+    "es": "Sándwich de hamburguesa vegetariana crujiente con queso provolone",
+    "pt": "Sanduíche de patty vegetariano crocante de provolone"
+  },
+  "Bumpy Cake": {
+    "zh-CN": "凹凸不平的蛋糕",
+    "zh-TW": "凹凸不平的蛋糕",
+    "ko": "울퉁불퉁한 케이크",
+    "ja": "でこぼこしたケーキ",
+    "es": "Pastel lleno de baches",
+    "pt": "Bolo acidentado"
   }
 }
