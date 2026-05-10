@@ -12735,5 +12735,37 @@
     "ja": "でこぼこしたケーキ",
     "es": "Pastel lleno de baches",
     "pt": "Bolo acidentado"
+  },
+  "Caramel Apple Cake": {
+    "zh-CN": "焦糖苹果蛋糕",
+    "zh-TW": "焦糖蘋果蛋糕",
+    "ko": "카라멜 사과 케이크",
+    "ja": "キャラメルアップルケーキ",
+    "es": "Pastel de manzana con caramelo",
+    "pt": "Bolo De Maçã Caramelo"
+  },
+  "Fajita Bowl": {
+    "zh-CN": "法吉塔碗",
+    "zh-TW": "法吉塔碗",
+    "ko": "화이타 보울",
+    "ja": "ファヒータボウル",
+    "es": "Tazón de fajitas",
+    "pt": "Tigela de fajita"
+  },
+  "Thai Tofu Noodle Bowl": {
+    "zh-CN": "泰式豆腐面碗",
+    "zh-TW": "泰式豆腐麵碗",
+    "ko": "태국식 두부 국수 그릇",
+    "ja": "タイ豆腐ヌードルボウル",
+    "es": "Tazón de fideos con tofu tailandés",
+    "pt": "Tigela de macarrão com tofu tailandês"
+  },
+  "Beef Vindaloo": {
+    "zh-CN": "咖喱牛肉",
+    "zh-TW": "咖哩牛肉",
+    "ko": "쇠고기 빈달루",
+    "ja": "ビーフビンダルー",
+    "es": "Vindaloo de ternera",
+    "pt": "Carne Vindaloo"
   }
 }
