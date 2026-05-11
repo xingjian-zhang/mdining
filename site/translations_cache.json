@@ -12767,5 +12767,69 @@
     "ja": "ビーフビンダルー",
     "es": "Vindaloo de ternera",
     "pt": "Carne Vindaloo"
+  },
+  "Chicken Sausage Gravy": {
+    "zh-CN": "鸡肉香肠肉汁",
+    "zh-TW": "雞肉香腸肉汁",
+    "ko": "치킨 소시지 그레이비",
+    "ja": "チキンソーセージグレービーソース",
+    "es": "Salsa De Salchicha De Pollo",
+    "pt": "Molho De Salsicha De Frango"
+  },
+  "Grilled Orange Chicken": {
+    "zh-CN": "烤橙鸡",
+    "zh-TW": "烤橙雞",
+    "ko": "구운 오렌지 치킨",
+    "ja": "オレンジチキンのグリル",
+    "es": "Pollo A La Naranja A La Parrilla",
+    "pt": "Frango Grelhado com Laranja"
+  },
+  "Panzanella Salad": {
+    "zh-CN": "面包沙拉",
+    "zh-TW": "麵包沙拉",
+    "ko": "판자넬라 샐러드",
+    "ja": "パンツァネッラサラダ",
+    "es": "Ensalada De Panzanella",
+    "pt": "Salada Panzanela"
+  },
+  "Dinner Roll": {
+    "zh-CN": "晚餐卷",
+    "zh-TW": "晚餐卷",
+    "ko": "디너롤",
+    "ja": "ディナーロール",
+    "es": "Panecillo",
+    "pt": "Rolinho de Jantar"
+  },
+  "Tofu Mediterranean Quinoa Bowl": {
+    "zh-CN": "豆腐地中海藜麦碗",
+    "zh-TW": "豆腐地中海藜麥碗",
+    "ko": "두부 지중해식 퀴노아 볼",
+    "ja": "豆腐地中海キヌアボウル",
+    "es": "Tazón de quinua y tofu mediterráneo",
+    "pt": "Tigela de quinoa mediterrânea de tofu"
+  },
+  "Minty Brownie": {
+    "zh-CN": "薄荷布朗尼",
+    "zh-TW": "薄荷布朗尼",
+    "ko": "민트 브라우니",
+    "ja": "ミンティブラウニー",
+    "es": "Brownie de menta",
+    "pt": "Brownie de menta"
+  },
+  "Smoked Chicken": {
+    "zh-CN": "熏鸡",
+    "zh-TW": "燻雞",
+    "ko": "훈제치킨",
+    "ja": "スモークチキン",
+    "es": "Pollo Ahumado",
+    "pt": "Frango Defumado"
+  },
+  "Yellow Rice Spice": {
+    "zh-CN": "黄米香料",
+    "zh-TW": "黃米香料",
+    "ko": "노란 쌀 향신료",
+    "ja": "イエローライススパイス",
+    "es": "Especias de arroz amarillo",
+    "pt": "Tempero de Arroz Amarelo"
   }
 }
