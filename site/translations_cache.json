@@ -12831,5 +12831,44 @@
     "ja": "イエローライススパイス",
     "es": "Especias de arroz amarillo",
     "pt": "Tempero de Arroz Amarelo"
+  },
+  "Potato Gnocchi with Basil Pesto": {
+    "zh-CN": "罗勒香蒜土豆汤圆",
+    "ko": "바질 페스토를 곁들인 감자 뇨키",
+    "ja": "ジャガイモのニョッキ バジルペスト添え",
+    "es": "Ñoquis De Patata Con Pesto De Albahaca",
+    "pt": "Nhoque de Batata com Pesto de Manjericão"
+  },
+  "Thai Style Fried Rice with Tofu": {
+    "zh-CN": "泰式豆腐炒饭",
+    "zh-TW": "泰式豆腐炒飯",
+    "ko": "두부를 곁들인 태국식 볶음밥",
+    "ja": "タイ風豆腐チャーハン",
+    "es": "Arroz frito estilo tailandés con tofu",
+    "pt": "Arroz Frito Estilo Tailandês com Tofu"
+  },
+  "Korean Seafood Pancake": {
+    "zh-CN": "韩式海鲜煎饼",
+    "zh-TW": "韓式海鮮煎餅",
+    "ko": "해물전병",
+    "ja": "韓国風シーフードチヂミ",
+    "es": "Panqueque De Mariscos Coreano",
+    "pt": "Panqueca Coreana de Frutos do Mar"
+  },
+  "Ponzu Dipping Sauce": {
+    "zh-CN": "橙子蘸酱",
+    "zh-TW": "柳橙沾醬",
+    "ko": "폰즈디핑소스",
+    "ja": "ポン酢",
+    "es": "Salsa Ponzu",
+    "pt": "Molho Ponzu"
+  },
+  "Sweet and Sour Chicken": {
+    "zh-CN": "糖醋鸡",
+    "zh-TW": "糖醋雞",
+    "ko": "탕수육",
+    "ja": "甘酸っぱいチキン",
+    "es": "Pollo agridulce",
+    "pt": "Frango agridoce"
   }
 }
