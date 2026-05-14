@@ -12870,5 +12870,45 @@
     "ja": "甘酸っぱいチキン",
     "es": "Pollo agridulce",
     "pt": "Frango agridoce"
+  },
+  "El Cubano Sandwich": {
+    "zh-CN": "古巴三明治",
+    "zh-TW": "古巴三明治",
+    "ko": "엘 쿠바노 샌드위치",
+    "ja": "エル・クバーノ・サンドイッチ",
+    "es": "Sándwich El Cubano",
+    "pt": "Sanduíche El Cubano"
+  },
+  "Mojo Grilled Chicken": {
+    "zh-CN": "魔力烤鸡",
+    "zh-TW": "魔力烤雞",
+    "ko": "모조 그릴드 치킨",
+    "ja": "モジョ グリルチキン",
+    "es": "Pollo Asado Al Mojo",
+    "pt": "Frango Grelhado Mojo"
+  },
+  "Chocolate Cookie Sandwich": {
+    "zh-CN": "巧克力饼干三明治",
+    "zh-TW": "巧克力餅乾三明治",
+    "ko": "초콜릿 쿠키 샌드위치",
+    "ja": "チョコレートクッキーサンド",
+    "es": "Sándwich de galleta de chocolate",
+    "pt": "Sanduíche De Biscoito De Chocolate"
+  },
+  "Halal Lemon Pepper Chicken Breast": {
+    "zh-CN": "清真柠檬胡椒鸡胸肉",
+    "zh-TW": "清真檸檬胡椒雞胸肉",
+    "ko": "할랄 레몬 후추 닭 가슴살",
+    "ja": "ハラール レモンペッパー鶏胸肉",
+    "es": "Pechuga De Pollo Halal Con Limón Y Pimienta",
+    "pt": "Peito de Frango Halal com Pimenta Limão"
+  },
+  "Banana Icebox Pudding": {
+    "zh-CN": "香蕉冰箱布丁",
+    "zh-TW": "香蕉冰箱布丁",
+    "ko": "바나나 아이스박스 푸딩",
+    "ja": "バナナアイスボックスプディング",
+    "es": "Pudín helado de plátano",
+    "pt": "Pudim De Banana Gelada"
   }
 }
