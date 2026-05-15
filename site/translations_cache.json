@@ -12910,5 +12910,53 @@
     "ja": "バナナアイスボックスプディング",
     "es": "Pudín helado de plátano",
     "pt": "Pudim De Banana Gelada"
+  },
+  "Black Bean Burger w/ Wheat Bun": {
+    "zh-CN": "黑豆汉堡配小麦面包",
+    "zh-TW": "黑豆漢堡配小麥麵包",
+    "ko": "밀빵을 곁들인 검은콩 버거",
+    "ja": "ブラックビーンバーガー 小麦パン添え",
+    "es": "Hamburguesa de Frijoles Negros con Pan de Trigo",
+    "pt": "Hambúrguer de Feijão Preto c/ Pão de Trigo"
+  },
+  "Pretzel Twists": {
+    "zh-CN": "椒盐卷饼麻花",
+    "zh-TW": "椒鹽捲餅麻花",
+    "ko": "프레첼 트위스트",
+    "ja": "プレッツェルツイスト",
+    "es": "Giros de pretzel",
+    "pt": "Torções de pretzel"
+  },
+  "Smores Bars": {
+    "zh-CN": "斯莫尔斯酒吧",
+    "zh-TW": "斯莫爾斯酒吧",
+    "ko": "스모어스 바",
+    "ja": "スモアバー",
+    "es": "Barras de humo",
+    "pt": "Barras Smores"
+  },
+  "Fried Plantains": {
+    "zh-CN": "炸车前草",
+    "zh-TW": "炸車前草",
+    "ko": "튀긴 질경이",
+    "ja": "揚げプランテン",
+    "es": "Plátanos Fritos",
+    "pt": "Bananas Fritas"
+  },
+  "Honey Mustard": {
+    "zh-CN": "蜂蜜芥末",
+    "zh-TW": "蜂蜜芥末",
+    "ko": "허니 머스타드",
+    "ja": "ハニーマスタード",
+    "es": "mostaza y miel",
+    "pt": "Mel Mostarda"
+  },
+  "Cookie Crumble Cheesecake": {
+    "zh-CN": "饼干碎芝士蛋糕",
+    "zh-TW": "餅乾碎起司蛋糕",
+    "ko": "쿠키 크럼블 치즈케이크",
+    "ja": "クッキークランブルチーズケーキ",
+    "es": "Tarta de queso con galleta crumble",
+    "pt": "Cheesecake Crumble De Biscoito"
   }
 }
