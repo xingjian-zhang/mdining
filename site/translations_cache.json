@@ -12958,5 +12958,29 @@
     "ja": "クッキークランブルチーズケーキ",
     "es": "Tarta de queso con galleta crumble",
     "pt": "Cheesecake Crumble De Biscoito"
+  },
+  "White Chocolate Raspberry Bread": {
+    "zh-CN": "白巧克力覆盆子面包",
+    "zh-TW": "白巧克力覆盆子麵包",
+    "ko": "화이트 초콜릿 라즈베리 빵",
+    "ja": "ホワイトチョコレートラズベリーブレッド",
+    "es": "Pan de frambuesa y chocolate blanco",
+    "pt": "Pão De Framboesa De Chocolate Branco"
+  },
+  "Hongos en Asado Norteno": {
+    "zh-CN": "洪戈斯·阿萨多·诺特诺",
+    "zh-TW": "洪戈斯·阿薩多·諾特諾",
+    "ko": "혼고스 엔 아사도 노르테노",
+    "ja": "ホンゴス アン アサード ノルテーノ",
+    "es": "Hongos en Asado Norteño",
+    "pt": "Hongos en Asado Norteno"
+  },
+  "Iced Apple Bar": {
+    "zh-CN": "冰苹果吧",
+    "zh-TW": "冰蘋果吧",
+    "ko": "아이스 애플바",
+    "ja": "アイスアップルバー",
+    "es": "Barra de manzana helada",
+    "pt": "Barra de maçã gelada"
   }
 }
