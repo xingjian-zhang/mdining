@@ -12982,5 +12982,21 @@
     "ja": "アイスアップルバー",
     "es": "Barra de manzana helada",
     "pt": "Barra de maçã gelada"
+  },
+  "Citrus, Spinach, & Quinoa Salad": {
+    "zh-CN": "柑橘、菠菜和藜麦沙拉",
+    "zh-TW": "柑橘、菠菜和藜麥沙拉",
+    "ko": "감귤류, 시금치, 퀴노아 샐러드",
+    "ja": "柑橘類、ほうれん草、キヌアのサラダ",
+    "es": "Ensalada de cítricos, espinacas y quinua",
+    "pt": "Salada de frutas cítricas, espinafre e quinoa"
+  },
+  "Rice w/ Black Bean Salsa": {
+    "zh-CN": "黑豆沙拉饭",
+    "zh-TW": "黑豆沙拉飯",
+    "ko": "검은콩 살사를 곁들인 밥",
+    "ja": "黒豆サルサライス添え",
+    "es": "Arroz con Salsa de Frijoles Negros",
+    "pt": "Arroz c/ Molho de Feijão Preto"
   }
 }
