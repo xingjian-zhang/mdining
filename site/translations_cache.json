@@ -13006,5 +13006,29 @@
     "ja": "チキン地中海キヌアボウル",
     "es": "Tazón De Pollo Y Quinoa Mediterránea",
     "pt": "Tigela de quinoa mediterrânea de frango"
+  },
+  "Pork Larb": {
+    "zh-CN": "猪油",
+    "zh-TW": "豬油",
+    "ko": "돼지갈비",
+    "ja": "ポークラーブ",
+    "es": "cerdo larb",
+    "pt": "Larbinho de porco"
+  },
+  "Leaf Lettuce": {
+    "zh-CN": "叶生菜",
+    "zh-TW": "葉生菜",
+    "ko": "잎상추",
+    "ja": "リーフレタス",
+    "es": "Lechuga de hoja",
+    "pt": "Alface"
+  },
+  "Mexican Chimichurri Tofu Power Bowl": {
+    "zh-CN": "墨西哥Chimichurri豆腐能量碗",
+    "zh-TW": "墨西哥Chimichurri豆腐能量碗",
+    "ko": "멕시칸 치미추리 두부 파워볼",
+    "ja": "メキシカンチミチュリ豆腐パワーボウル",
+    "es": "Power Bowl mexicano con chimichurri y tofu",
+    "pt": "Tigela Mexicana de Chimichurri Tofu"
   }
 }
