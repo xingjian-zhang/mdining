@@ -13046,5 +13046,37 @@
     "ja": "ごま豆腐枝豆丼",
     "es": "Tazón de edamame y tofu con sésamo",
     "pt": "Tigela de Edamame com Tofu e Gergelim"
+  },
+  "Meatball Sub": {
+    "zh-CN": "肉丸子",
+    "zh-TW": "肉丸子",
+    "ko": "미트볼 서브",
+    "ja": "ミートボールサブ",
+    "es": "Sub albóndigas",
+    "pt": "Submarino de almôndega"
+  },
+  "Black Bean Empanadas": {
+    "zh-CN": "黑豆肉馅卷饼",
+    "zh-TW": "黑豆肉餡捲餅",
+    "ko": "검은콩 엠빠나다",
+    "ja": "黒豆エンパナーダ",
+    "es": "Empanadas de Frijoles Negros",
+    "pt": "Empanadas de Feijão Preto"
+  },
+  "Chipotle Cream Sauce": {
+    "zh-CN": "墨西哥辣椒奶油酱",
+    "zh-TW": "墨西哥辣椒奶油醬",
+    "ko": "치폴레 크림 소스",
+    "ja": "チポトレクリームソース",
+    "es": "Salsa Crema De Chipotle",
+    "pt": "Molho de Creme Chipotle"
+  },
+  "North African Grilled Chicken Thighs": {
+    "zh-CN": "北非烤鸡大腿",
+    "zh-TW": "北非烤雞大腿",
+    "ko": "북아프리카 구운 닭 허벅지살",
+    "ja": "北アフリカ産鶏もも肉のグリル",
+    "es": "Muslos de pollo a la parrilla del norte de África",
+    "pt": "Coxas de Frango Grelhado do Norte da África"
   }
 }
