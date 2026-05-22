@@ -13078,5 +13078,21 @@
     "ja": "北アフリカ産鶏もも肉のグリル",
     "es": "Muslos de pollo a la parrilla del norte de África",
     "pt": "Coxas de Frango Grelhado do Norte da África"
+  },
+  "Chicken Popper Bowl": {
+    "zh-CN": "鸡肉爆米花碗",
+    "zh-TW": "雞肉爆米花碗",
+    "ko": "치킨 포퍼 볼",
+    "ja": "チキンポッパーボウル",
+    "es": "Tazón de pollo popper",
+    "pt": "Tigela de frango"
+  },
+  "Granola": {
+    "zh-CN": "格兰诺拉麦片",
+    "zh-TW": "格蘭諾拉麥片",
+    "ko": "그래놀라",
+    "ja": "グラノーラ",
+    "es": "granola",
+    "pt": "granola"
   }
 }
