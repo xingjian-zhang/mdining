@@ -13094,5 +13094,21 @@
     "ja": "グラノーラ",
     "es": "granola",
     "pt": "granola"
+  },
+  "Apple Cinnamon Bread": {
+    "zh-CN": "苹果肉桂面包",
+    "zh-TW": "蘋果肉桂麵包",
+    "ko": "애플 시나몬 빵",
+    "ja": "アップルシナモンブレッド",
+    "es": "Pan De Manzana Y Canela",
+    "pt": "Pão De Maçã E Canela"
+  },
+  "Classic Beef Stew": {
+    "zh-CN": "经典炖牛肉",
+    "zh-TW": "經典燉牛肉",
+    "ko": "클래식 쇠고기 스튜",
+    "ja": "クラシックビーフシチュー",
+    "es": "Estofado de ternera clásico",
+    "pt": "Ensopado de Carne Clássico"
   }
 }
