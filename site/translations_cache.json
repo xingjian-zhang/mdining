@@ -13110,5 +13110,45 @@
     "ja": "クラシックビーフシチュー",
     "es": "Estofado de ternera clásico",
     "pt": "Ensopado de Carne Clássico"
+  },
+  "Red Lentil Rice Pilaf": {
+    "zh-CN": "红扁豆饭抓饭",
+    "zh-TW": "紅扁豆飯抓飯",
+    "ko": "붉은 렌즈콩 라이스 필라프",
+    "ja": "赤レンズ豆のライスピラフ",
+    "es": "Pilaf de arroz con lentejas rojas",
+    "pt": "Arroz Pilaf De Lentilha Vermelha"
+  },
+  "Continental Breakfast": {
+    "zh-CN": "欧陆式早餐",
+    "zh-TW": "歐陸式早餐",
+    "ko": "유럽식 아침 식사",
+    "ja": "コンチネンタルブレックファスト",
+    "es": "Desayuno continental",
+    "pt": "Café da Manhã Continental"
+  },
+  "Cavatappi with Spinach, Peppers & Asiago": {
+    "zh-CN": "Cavatappi 配菠菜、辣椒和 Asiago",
+    "zh-TW": "Cavatappi 配菠菜、辣椒和 Asiago",
+    "ko": "시금치, 고추, 아시아고를 곁들인 카바타피",
+    "ja": "ほうれん草、ピーマン、アジアーゴのカヴァタッピ",
+    "es": "Cavatappi con espinacas, pimientos y asiago",
+    "pt": "Cavatappi com Espinafre, Pimentão e Asiago"
+  },
+  "Halal Chipotle Chicken": {
+    "zh-CN": "清真墨西哥辣椒鸡",
+    "zh-TW": "清真墨西哥辣椒雞",
+    "ko": "할랄 치폴레 치킨",
+    "ja": "ハラール チポトレ チキン",
+    "es": "Pollo Chipotle Halal",
+    "pt": "Frango Chipotle Halal"
+  },
+  "Grilled Pineapple": {
+    "zh-CN": "烤菠萝",
+    "zh-TW": "烤鳳梨",
+    "ko": "구운 파인애플",
+    "ja": "グリルパイナップル",
+    "es": "Piña Asada",
+    "pt": "Abacaxi Grelhado"
   }
 }
