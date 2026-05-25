@@ -13150,5 +13150,61 @@
     "ja": "グリルパイナップル",
     "es": "Piña Asada",
     "pt": "Abacaxi Grelhado"
+  },
+  "Cinnamon Sugar Breadsticks": {
+    "zh-CN": "肉桂糖面包棒",
+    "zh-TW": "肉桂糖麵包棒",
+    "ko": "계피 설탕 브레드스틱",
+    "ja": "シナモンシュガーブレッドスティック",
+    "es": "Palitos de pan con azúcar y canela",
+    "pt": "Palitinhos de Canela e Açúcar"
+  },
+  "Tex Mex Stuffed Potato Skins": {
+    "zh-CN": "德州墨西哥酿土豆皮",
+    "zh-TW": "德州墨西哥釀馬鈴薯皮",
+    "ko": "텍스멕스 속을 채운 감자 껍질",
+    "ja": "テックスメックスのジャガイモの皮の詰め物",
+    "es": "Pieles De Patata Rellenas Tex Mex",
+    "pt": "Cascas de batata recheadas Tex Mex"
+  },
+  "Palomino Sauce": {
+    "zh-CN": "巴洛米诺酱",
+    "zh-TW": "巴洛米諾醬",
+    "ko": "팔로미노 소스",
+    "ja": "パロミノソース",
+    "es": "Salsa Palomino",
+    "pt": "Molho Palomino"
+  },
+  "Sweet and Sour Chicken Stir Fry": {
+    "zh-CN": "糖醋鸡炒",
+    "zh-TW": "糖醋雞炒",
+    "ko": "탕수육 볶음",
+    "ja": "鶏肉の甘酢炒め",
+    "es": "Salteado De Pollo Agridulce",
+    "pt": "Frango Frito agridoce"
+  },
+  "Sweet and  Sour Tofu": {
+    "zh-CN": "糖醋豆腐",
+    "zh-TW": "糖醋豆腐",
+    "ko": "탕수육 두부",
+    "ja": "甘酢豆腐",
+    "es": "Tofu agridulce",
+    "pt": "Tofu agridoce"
+  },
+  "Crispy Sichuan Chicken": {
+    "zh-CN": "脆皮川鸡",
+    "zh-TW": "脆皮川雞",
+    "ko": "바삭한 사천 치킨",
+    "ja": "クリスピーチキン四川チキン",
+    "es": "Pollo Crujiente De Sichuan",
+    "pt": "Frango Sichuan Crocante"
+  },
+  "Halal Arroz con Pollo": {
+    "zh-CN": "清真阿罗兹康波罗",
+    "zh-TW": "清真阿羅茲康波羅",
+    "ko": "할랄 아로스 콘 폴로",
+    "ja": "ハラール アロス コン ポッロ",
+    "es": "Halal Arroz con Pollo",
+    "pt": "Halal Arroz com Pollo"
   }
 }
