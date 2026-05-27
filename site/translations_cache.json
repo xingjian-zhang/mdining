@@ -13206,5 +13206,53 @@
     "ja": "ハラール アロス コン ポッロ",
     "es": "Halal Arroz con Pollo",
     "pt": "Halal Arroz com Pollo"
+  },
+  "Caramel French Toast": {
+    "zh-CN": "焦糖法式吐司",
+    "zh-TW": "焦糖法式吐司",
+    "ko": "카라멜 프렌치 토스트",
+    "ja": "キャラメルフレンチトースト",
+    "es": "Tostada Francesa De Caramelo",
+    "pt": "Torrada Francesa de Caramelo"
+  },
+  "Vegan Ricotta": {
+    "zh-CN": "纯素乳清干酪",
+    "zh-TW": "純素乳清乾酪",
+    "ko": "비건 리코타",
+    "ja": "ビーガンリコッタチーズ",
+    "es": "Ricota vegana",
+    "pt": "Ricota Vegana"
+  },
+  "Turkey Picadillo ala Habanera": {
+    "zh-CN": "土耳其 皮卡迪略阿拉哈巴内拉",
+    "zh-TW": "土耳其 皮卡迪略阿拉哈巴內拉",
+    "ko": "터키 피카디요 알라 하바네라",
+    "ja": "トルコ ピカディージョ アラ ハバネラ",
+    "es": "Picadillo de pavo a la habanera",
+    "pt": "Peru Picadillo ala Habanera"
+  },
+  "Gochujang Shrimp Fried Rice": {
+    "zh-CN": "辣椒酱虾炒饭",
+    "zh-TW": "辣椒醬蝦炒飯",
+    "ko": "고추장 새우볶음밥",
+    "ja": "コチュジャン海老チャーハン",
+    "es": "Arroz frito con camarones y gochujang",
+    "pt": "Arroz Frito com Camarão Gochujang"
+  },
+  "Chicken Miso Rice Stick Noodle Bowl": {
+    "zh-CN": "鸡肉味噌米棒面碗",
+    "zh-TW": "雞肉味噌米棒麵碗",
+    "ko": "닭고기 된장찌개 국수 그릇",
+    "ja": "鶏味噌棒ラーメン丼",
+    "es": "Tazón de fideos con palitos de arroz y miso con pollo",
+    "pt": "Tigela de macarrão com frango e missô e arroz"
+  },
+  "Tofu Miso Rice Stick Noodle Bowl": {
+    "zh-CN": "豆腐味噌米棒面碗",
+    "zh-TW": "豆腐味噌米棒麵碗",
+    "ko": "두부 된장찌개 국수 그릇",
+    "ja": "豆腐味噌棒めん丼",
+    "es": "Tazón de fideos con palitos de arroz y miso y tofu",
+    "pt": "Tigela de macarrão com tofu miso e arroz"
   }
 }
