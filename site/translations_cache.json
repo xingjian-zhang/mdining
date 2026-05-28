@@ -13254,5 +13254,45 @@
     "ja": "豆腐味噌棒めん丼",
     "es": "Tazón de fideos con palitos de arroz y miso y tofu",
     "pt": "Tigela de macarrão com tofu miso e arroz"
+  },
+  "Poblano Smoke Gouda Cream Sauce": {
+    "zh-CN": "波布拉诺烟熏豪达奶油酱",
+    "zh-TW": "波布拉諾煙燻豪達奶油醬",
+    "ko": "포블라노 스모크 고다 크림 소스",
+    "ja": "ポブラノ スモークゴーダクリームソース",
+    "es": "Salsa Crema Gouda Ahumada Poblana",
+    "pt": "Molho Creme Gouda De Fumaça Poblano"
+  },
+  "Chicken Caesar Wrap": {
+    "zh-CN": "鸡肉凯撒卷",
+    "zh-TW": "雞肉凱薩卷",
+    "ko": "치킨 시저 랩",
+    "ja": "チキンシーザーラップ",
+    "es": "Wrap César De Pollo",
+    "pt": "Wrap César de Frango"
+  },
+  "Pad Kee Mao with Vegetables": {
+    "zh-CN": "蔬菜炒河粉",
+    "zh-TW": "蔬菜炒河粉",
+    "ko": "야채를 곁들인 팟 키 마오",
+    "ja": "パッキーマオと野菜添え",
+    "es": "Pad Kee Mao con Verduras",
+    "pt": "Pad Kee Mao com Legumes"
+  },
+  "BBQ Beef": {
+    "zh-CN": "烧烤牛肉",
+    "zh-TW": "燒烤牛肉",
+    "ko": "바베큐 쇠고기",
+    "ja": "バーベキュービーフ",
+    "es": "Carne De Res A La Barbacoa",
+    "pt": "Carne de churrasco"
+  },
+  "Halal Grilled Chicken Thigh": {
+    "zh-CN": "清真烤鸡腿",
+    "zh-TW": "清真烤雞腿",
+    "ko": "할랄 구운 닭다리살",
+    "ja": "ハラール鶏もも焼きグリル",
+    "es": "Muslo De Pollo A La Parrilla Halal",
+    "pt": "Coxa de Frango Grelhada Halal"
   }
 }
