@@ -13294,5 +13294,37 @@
     "ja": "ハラール鶏もも焼きグリル",
     "es": "Muslo De Pollo A La Parrilla Halal",
     "pt": "Coxa de Frango Grelhada Halal"
+  },
+  "Broccoli Tofu Stir Fry": {
+    "zh-CN": "西兰花豆腐炒",
+    "zh-TW": "西蘭花豆腐炒",
+    "ko": "브로콜리 두부볶음",
+    "ja": "ブロッコリー豆腐炒め",
+    "es": "Salteado De Brócoli Y Tofu",
+    "pt": "Brócolis Tofu Frito"
+  },
+  "Beef & Mushroom Blended Burger": {
+    "zh-CN": "牛肉蘑菇混合汉堡",
+    "zh-TW": "牛肉蘑菇混合漢堡",
+    "ko": "쇠고기 & 버섯 블렌디드 버거",
+    "ja": "ビーフ＆マッシュルームブレンドバーガー",
+    "es": "Hamburguesa mezclada de carne y champiñones",
+    "pt": "Hambúrguer Misturado de Carne e Cogumelos"
+  },
+  "Baked Spaghetti": {
+    "zh-CN": "烤意大利面",
+    "zh-TW": "烤義大利麵",
+    "ko": "구운 스파게티",
+    "ja": "焼きスパゲッティ",
+    "es": "Espaguetis al horno",
+    "pt": "Espaguete Assado"
+  },
+  "Fried Chicken": {
+    "zh-CN": "炸鸡",
+    "zh-TW": "炸雞",
+    "ko": "닭 튀김",
+    "ja": "フライドチキン",
+    "es": "Pollo frito",
+    "pt": "Frango frito"
   }
 }
