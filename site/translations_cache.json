@@ -13326,5 +13326,37 @@
     "ja": "フライドチキン",
     "es": "Pollo frito",
     "pt": "Frango frito"
+  },
+  "Sausage Chorizo": {
+    "zh-CN": "香肠香肠",
+    "zh-TW": "香腸香腸",
+    "ko": "소시지 초리조",
+    "ja": "ソーセージチョリソ",
+    "es": "Chorizo ​​De Salchicha",
+    "pt": "Chouriço De Salsicha"
+  },
+  "Old Bay Roasted Potatoes": {
+    "zh-CN": "老湾烤土豆",
+    "zh-TW": "老灣烤土豆",
+    "ko": "올드 베이 구운 감자",
+    "ja": "オールドベイ ローストポテト",
+    "es": "Patatas Asadas Old Bay",
+    "pt": "Batatas Assadas Old Bay"
+  },
+  "Turkey Sloppy Joe w/ White Bun": {
+    "zh-CN": "火鸡邋遢乔配白面包",
+    "zh-TW": "火雞邋遢喬配白麵包",
+    "ko": "칠면조 Sloppy Joe with White Bun",
+    "ja": "ターキー・スロッピー・ジョーと白いパン",
+    "es": "Pavo Sloppy Joe con pan blanco",
+    "pt": "Peru Sloppy Joe com Pão Branco"
+  },
+  "French Hoagie Roll": {
+    "zh-CN": "法式三明治卷",
+    "zh-TW": "法式三明治卷",
+    "ko": "프렌치 호기롤",
+    "ja": "フレンチホーギーロール",
+    "es": "Rollo De Hoagie Francés",
+    "pt": "Rolo Hoagie Francês"
   }
 }
