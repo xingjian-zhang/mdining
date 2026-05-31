@@ -13358,5 +13358,53 @@
     "ja": "フレンチホーギーロール",
     "es": "Rollo De Hoagie Francés",
     "pt": "Rolo Hoagie Francês"
+  },
+  "Bowtie Pasta Bandiera": {
+    "zh-CN": "领结面食 Bandiera",
+    "zh-TW": "領結麵食 Bandiera",
+    "ko": "보타이 파스타 반디에라",
+    "ja": "ボウタイパスタ バンディエラ",
+    "es": "Pajarita Pasta Bandiera",
+    "pt": "Bandiera de macarrão Bowtie"
+  },
+  "Lemon Glazed Grilled Tofu": {
+    "zh-CN": "柠檬釉烤豆腐",
+    "zh-TW": "檸檬釉烤豆腐",
+    "ko": "레몬 글레이즈 구운 두부",
+    "ja": "豆腐のレモン添え焼き",
+    "es": "Tofu a la parrilla glaseado con limón",
+    "pt": "Tofu Grelhado com Cobertura de Limão"
+  },
+  "Chicken with Sesame Noodles": {
+    "zh-CN": "鸡肉芝麻面",
+    "zh-TW": "雞肉芝麻麵",
+    "ko": "참깨국수 치킨",
+    "ja": "チキンのごまヌードル添え",
+    "es": "Pollo Con Fideos De Sésamo",
+    "pt": "Frango com Macarrão de Gergelim"
+  },
+  "Pak Bulgogi Tacos": {
+    "zh-CN": "朴烤肉玉米饼",
+    "zh-TW": "樸烤肉玉米餅",
+    "ko": "박불고기 타코",
+    "ja": "パクプルコギタコス",
+    "es": "Tacos Pak Bulgogi",
+    "pt": "Pak Bulgogi Tacos"
+  },
+  "Mushroom Bulgogi": {
+    "zh-CN": "蘑菇烤肉",
+    "zh-TW": "蘑菇烤肉",
+    "ko": "버섯불고기",
+    "ja": "きのこのプルコギ",
+    "es": "Bulgogi de hongos",
+    "pt": "Cogumelo Bulgogi"
+  },
+  "Grilled Flank Steak": {
+    "zh-CN": "烤侧腹牛排",
+    "zh-TW": "烤側腹牛排",
+    "ko": "구운 옆구리 스테이크",
+    "ja": "フランクステーキのグリル",
+    "es": "Filete De Flan A La Parrilla",
+    "pt": "Bife de Flanco Grelhado"
   }
 }
