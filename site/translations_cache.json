@@ -13406,5 +13406,37 @@
     "ja": "フランクステーキのグリル",
     "es": "Filete De Flan A La Parrilla",
     "pt": "Bife de Flanco Grelhado"
+  },
+  "Crumbled Feta Cheese": {
+    "zh-CN": "碎羊奶酪",
+    "zh-TW": "碎羊乳酪",
+    "ko": "부서진 페타 치즈",
+    "ja": "砕いたフェタチーズ",
+    "es": "Queso feta desmenuzado",
+    "pt": "Queijo Feta Esfarelado"
+  },
+  "Cheese Ravioli": {
+    "zh-CN": "芝士馄饨",
+    "zh-TW": "起司餛飩",
+    "ko": "치즈 라비올리",
+    "ja": "チーズラビオリ",
+    "es": "Raviolis De Queso",
+    "pt": "Ravióli de Queijo"
+  },
+  "Sesame Tofu": {
+    "zh-CN": "芝麻豆腐",
+    "zh-TW": "芝麻豆腐",
+    "ko": "참깨두부",
+    "ja": "胡麻豆腐",
+    "es": "Tofu de sésamo",
+    "pt": "Tofu de gergelim"
+  },
+  "Halal Blackened Chicken": {
+    "zh-CN": "清真黑鸡",
+    "zh-TW": "清真黑雞",
+    "ko": "할랄 흑치킨",
+    "ja": "ハラール黒鶏",
+    "es": "Pollo Ennegrecido Halal",
+    "pt": "Frango Enegrecido Halal"
   }
 }
