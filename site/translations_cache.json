@@ -13438,5 +13438,61 @@
     "ja": "ハラール黒鶏",
     "es": "Pollo Ennegrecido Halal",
     "pt": "Frango Enegrecido Halal"
+  },
+  "Applesauce": {
+    "zh-CN": "苹果酱",
+    "zh-TW": "蘋果醬",
+    "ko": "사과 소스",
+    "ja": "アップルソース",
+    "es": "Coba",
+    "pt": "Compota de maçã"
+  },
+  "Sliced Onions": {
+    "zh-CN": "洋葱片",
+    "zh-TW": "洋蔥片",
+    "ko": "얇게 썬 양파",
+    "ja": "玉ねぎのスライス",
+    "es": "Cebollas Rebanadas",
+    "pt": "Cebola Fatiada"
+  },
+  "Country Fried Apples": {
+    "zh-CN": "乡村炸苹果",
+    "zh-TW": "鄉村炸蘋果",
+    "ko": "컨트리 프라이드 사과",
+    "ja": "カントリーフライドアップル",
+    "es": "Manzanas Fritas Del Campo",
+    "pt": "Maçãs Fritas Country"
+  },
+  "Savory Rice": {
+    "zh-CN": "咸味米饭",
+    "zh-TW": "鹹味米飯",
+    "ko": "고소한 밥",
+    "ja": "セイボリーライス",
+    "es": "Arroz Salado",
+    "pt": "Arroz Salgado"
+  },
+  "Roasted Michigan Vegetables": {
+    "zh-CN": "烤密歇根蔬菜",
+    "zh-TW": "烤密西根蔬菜",
+    "ko": "구운 미시간 야채",
+    "ja": "ミシガン州野菜のロースト",
+    "es": "Verduras asadas de Michigan",
+    "pt": "Legumes Assados ​​​​de Michigan"
+  },
+  "Roasted Red Pepper Alfredo Sauce": {
+    "zh-CN": "烤红辣椒阿尔弗雷多酱",
+    "zh-TW": "烤紅辣椒阿爾弗雷多醬",
+    "ko": "구운 고추 알프레도 소스",
+    "ja": "ローストレッドペッパーのアルフレッドソース",
+    "es": "Salsa Alfredo De Pimiento Rojo Asado",
+    "pt": "Molho Alfredo De Pimentão Vermelho Assado"
+  },
+  "Spinach": {
+    "zh-CN": "菠菜",
+    "zh-TW": "菠菜",
+    "ko": "시금치",
+    "ja": "ほうれん草",
+    "es": "Espinaca",
+    "pt": "Espinafre"
   }
 }
