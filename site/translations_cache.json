@@ -13494,5 +13494,53 @@
     "ja": "ほうれん草",
     "es": "Espinaca",
     "pt": "Espinafre"
+  },
+  "Paneer Curry W/ Peas": {
+    "zh-CN": "芝士咖喱配豌豆",
+    "zh-TW": "起司咖哩配豌豆",
+    "ko": "완두콩을 곁들인 파니르 카레",
+    "ja": "エンドウ豆入りパニールカレー",
+    "es": "Paneer Curry Con Guisantes",
+    "pt": "Curry Paneer com Ervilhas"
+  },
+  "Cookie Crumble Buttermilk Pancakes": {
+    "zh-CN": "饼干碎酪乳煎饼",
+    "zh-TW": "餅乾碎酪乳煎餅",
+    "ko": "쿠키 크럼블 버터밀크 팬케이크",
+    "ja": "クッキークランブルバターミルクパンケーキ",
+    "es": "Panqueques de suero de leche con galleta crumble",
+    "pt": "Panquecas de leitelho com crumble de biscoito"
+  },
+  "Singapore Noodles with Tofu": {
+    "zh-CN": "新加坡豆腐面",
+    "zh-TW": "新加坡豆腐麵",
+    "ko": "두부를 곁들인 싱가포르 국수",
+    "ja": "豆腐入りシンガポールヌードル",
+    "es": "Fideos Singapur con Tofu",
+    "pt": "Macarrão de Singapura com Tofu"
+  },
+  "Aloo Gobi": {
+    "zh-CN": "阿鲁戈壁",
+    "zh-TW": "阿魯戈壁",
+    "ko": "알루 고비",
+    "ja": "アルー ゴビ",
+    "es": "Aloo Gobi",
+    "pt": "Aloo Gobi"
+  },
+  "Mushroom Sauce": {
+    "zh-CN": "蘑菇酱",
+    "zh-TW": "蘑菇醬",
+    "ko": "버섯 소스",
+    "ja": "マッシュルームソース",
+    "es": "Salsa De Champiñones",
+    "pt": "Molho de Cogumelos"
+  },
+  "Carrot Cake w/Cream Cheese Frosting": {
+    "zh-CN": "胡萝卜蛋糕配奶油芝士糖霜",
+    "zh-TW": "胡蘿蔔蛋糕佐奶油乳酪糖霜",
+    "ko": "크림치즈 프로스팅을 곁들인 당근 케이크",
+    "ja": "キャロットケーキ クリームチーズフロスティング添え",
+    "es": "Pastel de Zanahoria con Glaseado de Queso Crema",
+    "pt": "Bolo de cenoura com cobertura de cream cheese"
   }
 }
