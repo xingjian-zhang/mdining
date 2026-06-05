@@ -1,0 +1,4504 @@
+[
+  {
+    "hall": "bursley",
+    "date": "2026-06-05",
+    "meals": {
+      "dinner": {
+        "Soup": [
+          {
+            "name": "Turkey White Bean Chili",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 55,
+              "total_fat": "2g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "7mg",
+              "sodium": "230mg",
+              "total_carbohydrate": "9g",
+              "dietary_fiber": "3g",
+              "sugars": "2g",
+              "protein": "4g",
+              "vitamin_a": "9%",
+              "vitamin_c": "17%",
+              "calcium": "2%",
+              "iron": "6%"
+            }
+          },
+          {
+            "name": "Corn Chips",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1 oz Serving (28g)",
+              "calories": 162,
+              "total_fat": "10g",
+              "saturated_fat": "2g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "172mg",
+              "total_carbohydrate": "16g",
+              "dietary_fiber": "1g",
+              "sugars": "0g",
+              "protein": "2g",
+              "vitamin_a": "%",
+              "vitamin_c": "%",
+              "calcium": "3%",
+              "iron": "1%"
+            }
+          }
+        ],
+        "Signature Maize": [
+          {
+            "name": "Halal Fajita-Spiced Beef",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint High"
+            ],
+            "nutrition": {
+              "serving_size": "2 oz Serving (51g)",
+              "calories": 114,
+              "total_fat": "4g",
+              "saturated_fat": "2g",
+              "trans_fat": "0g",
+              "cholesterol": "39mg",
+              "sodium": "249mg",
+              "total_carbohydrate": "3g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "13g",
+              "vitamin_a": "5%",
+              "vitamin_c": "34%",
+              "calcium": "1%",
+              "iron": "25%"
+            }
+          },
+          {
+            "name": "Small Flour Tortillas",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Tortilla (23g)",
+              "calories": 67,
+              "total_fat": "2g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "127mg",
+              "total_carbohydrate": "11g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "2%",
+              "iron": "4%"
+            }
+          },
+          {
+            "name": "Yellow Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "4 oz Serving (113g)",
+              "calories": 127,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "193mg",
+              "total_carbohydrate": "28g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "3g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "6%"
+            }
+          }
+        ],
+        "Signature Blue": [
+          {
+            "name": "Chipotle Lime Portabellos",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Alcohol"
+            ],
+            "nutrition": {
+              "serving_size": "Mushroom (99g)",
+              "calories": 91,
+              "total_fat": "8g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "103mg",
+              "total_carbohydrate": "4g",
+              "dietary_fiber": "1g",
+              "sugars": "3g",
+              "protein": "2g",
+              "vitamin_a": "1%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "2%"
+            }
+          },
+          {
+            "name": "Sauteed Mixed Peppers & Onions",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1 oz Serving (28g)",
+              "calories": 12,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "1mg",
+              "total_carbohydrate": "2g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "0g",
+              "vitamin_a": "4%",
+              "vitamin_c": "20%",
+              "calcium": "0%",
+              "iron": "0%"
+            }
+          },
+          {
+            "name": "Small Flour Tortillas",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Tortilla (23g)",
+              "calories": 67,
+              "total_fat": "2g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "127mg",
+              "total_carbohydrate": "11g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "2%",
+              "iron": "4%"
+            }
+          },
+          {
+            "name": "Yellow Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "4 oz Serving (113g)",
+              "calories": 127,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "193mg",
+              "total_carbohydrate": "28g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "3g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "6%"
+            }
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "Cauliflower Chickpea Tacos",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Spicy",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1 Taco (181g)",
+              "calories": 164,
+              "total_fat": "6g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "229mg",
+              "total_carbohydrate": "24g",
+              "dietary_fiber": "7g",
+              "sugars": "3g",
+              "protein": "5g",
+              "vitamin_a": "13%",
+              "vitamin_c": "30%",
+              "calcium": "7%",
+              "iron": "14%"
+            }
+          },
+          {
+            "name": "Guacamole",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1 oz Serving (28g)",
+              "calories": 70,
+              "total_fat": "6g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "120mg",
+              "total_carbohydrate": "3g",
+              "dietary_fiber": "1g",
+              "sugars": "0g",
+              "protein": "0g",
+              "vitamin_a": "%",
+              "vitamin_c": "%",
+              "calcium": "0%",
+              "iron": "0%"
+            }
+          },
+          {
+            "name": "Cilantro Lime Brown Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (85g)",
+              "calories": 117,
+              "total_fat": "1g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "243mg",
+              "total_carbohydrate": "25g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "3g",
+              "vitamin_a": "1%",
+              "vitamin_c": "4%",
+              "calcium": "1%",
+              "iron": "4%"
+            }
+          }
+        ],
+        "Halal": [
+          {
+            "name": "BBQ Chicken Loin",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint Medium"
+            ],
+            "nutrition": {
+              "serving_size": "Piece (85g)",
+              "calories": 82,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "30mg",
+              "sodium": "194mg",
+              "total_carbohydrate": "4g",
+              "dietary_fiber": "0g",
+              "sugars": "4g",
+              "protein": "15g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "1%"
+            }
+          },
+          {
+            "name": "Pretzel Bun",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Bun (91g)",
+              "calories": 245,
+              "total_fat": "5g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "264mg",
+              "total_carbohydrate": "42g",
+              "dietary_fiber": "1g",
+              "sugars": "4g",
+              "protein": "7g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "9%",
+              "iron": "14%"
+            }
+          },
+          {
+            "name": "Creamy Coleslaw Salad",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 165,
+              "total_fat": "16g",
+              "saturated_fat": "2g",
+              "trans_fat": "0g",
+              "cholesterol": "8mg",
+              "sodium": "249mg",
+              "total_carbohydrate": "6g",
+              "dietary_fiber": "2g",
+              "sugars": "3g",
+              "protein": "1g",
+              "vitamin_a": "3%",
+              "vitamin_c": "51%",
+              "calcium": "3%",
+              "iron": "2%"
+            }
+          },
+          {
+            "name": "Ruffles Potato Chips",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1 oz Serving (28g)",
+              "calories": 160,
+              "total_fat": "10g",
+              "saturated_fat": "2g",
+              "trans_fat": "2g",
+              "cholesterol": "0mg",
+              "sodium": "150mg",
+              "total_carbohydrate": "15g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "6%"
+            }
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Cheese Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Slice (105g)",
+              "calories": 278,
+              "total_fat": "8g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "21mg",
+              "sodium": "540mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "12g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "15%"
+            }
+          },
+          {
+            "name": "Pepperoni Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Slice (113g)",
+              "calories": 306,
+              "total_fat": "10g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "28mg",
+              "sodium": "647mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "13g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "16%"
+            }
+          },
+          {
+            "name": "Garlic Cheese Bread",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Piece (70g)",
+              "calories": 227,
+              "total_fat": "9g",
+              "saturated_fat": "5g",
+              "trans_fat": "0g",
+              "cholesterol": "26mg",
+              "sodium": "386mg",
+              "total_carbohydrate": "22g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "9g",
+              "vitamin_a": "2%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "13%"
+            }
+          }
+        ],
+        "Wild Fire Maize": [
+          {
+            "name": "Homestyle Chicken Tenders",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Medium"
+            ],
+            "allergens": [
+              "Item Is Deep Fried",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "2 Pieces (85g)",
+              "calories": 215,
+              "total_fat": "13g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "26mg",
+              "sodium": "306mg",
+              "total_carbohydrate": "12g",
+              "dietary_fiber": "3g",
+              "sugars": "2g",
+              "protein": "12g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "5%"
+            }
+          },
+          {
+            "name": "French Fries",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Item Is Deep Fried"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 186,
+              "total_fat": "10g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "470mg",
+              "total_carbohydrate": "25g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "2%"
+            }
+          }
+        ],
+        "Deli": [
+          {
+            "name": "Sandwiches Made to Order"
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Cookie Crumble Cheesecake",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Pieces (74g)",
+              "calories": 271,
+              "total_fat": "16g",
+              "saturated_fat": "9g",
+              "trans_fat": "0g",
+              "cholesterol": "61mg",
+              "sodium": "200mg",
+              "total_carbohydrate": "30g",
+              "dietary_fiber": "1g",
+              "sugars": "21g",
+              "protein": "4g",
+              "vitamin_a": "1%",
+              "vitamin_c": "0%",
+              "calcium": "4%",
+              "iron": "6%"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "hall": "east-quad",
+    "date": "2026-06-05",
+    "meals": {
+      "breakfast": {
+        "Hot Cereal": [
+          {
+            "name": "Oatmeal",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Oats"
+            ],
+            "nutrition": {
+              "serving_size": "8 oz Cup (227g)",
+              "calories": 164,
+              "total_fat": "3g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "3mg",
+              "total_carbohydrate": "29g",
+              "dietary_fiber": "4g",
+              "sugars": "0g",
+              "protein": "6g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "2%",
+              "iron": "10%"
+            }
+          }
+        ],
+        "Toast": [
+          {
+            "name": "Scrambled Eggs",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Soy"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 cup Serving (84g)",
+              "calories": 163,
+              "total_fat": "12g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "336mg",
+              "sodium": "116mg",
+              "total_carbohydrate": "0g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "11g",
+              "vitamin_a": "7%",
+              "vitamin_c": "0%",
+              "calcium": "6%",
+              "iron": "9%"
+            }
+          },
+          {
+            "name": "Scrambled Tofu w/ Spinach",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Soy"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 74,
+              "total_fat": "3g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "470mg",
+              "total_carbohydrate": "6g",
+              "dietary_fiber": "2g",
+              "sugars": "3g",
+              "protein": "7g",
+              "vitamin_a": "36%",
+              "vitamin_c": "58%",
+              "calcium": "5%",
+              "iron": "7%"
+            }
+          },
+          {
+            "name": "Halal Chicken Sausage Links",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense Low",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "2 Links (72g)",
+              "calories": 120,
+              "total_fat": "7g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "80mg",
+              "sodium": "630mg",
+              "total_carbohydrate": "1g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "13g",
+              "vitamin_a": "%",
+              "vitamin_c": "%",
+              "calcium": "0%",
+              "iron": "2%"
+            }
+          },
+          {
+            "name": "Lyonnaise Potatoes",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (85g)",
+              "calories": 72,
+              "total_fat": "2g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "55mg",
+              "total_carbohydrate": "12g",
+              "dietary_fiber": "1g",
+              "sugars": "0g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "9%",
+              "calcium": "0%",
+              "iron": "1%"
+            }
+          },
+          {
+            "name": "Roasted Cauliflower",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "2 oz (57g)",
+              "calories": 16,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "19mg",
+              "total_carbohydrate": "3g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "44%",
+              "calcium": "1%",
+              "iron": "1%"
+            }
+          },
+          {
+            "name": "Caramel French Toast",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Sesame",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Serving (131g)",
+              "calories": 209,
+              "total_fat": "10g",
+              "saturated_fat": "5g",
+              "trans_fat": "0g",
+              "cholesterol": "149mg",
+              "sodium": "135mg",
+              "total_carbohydrate": "25g",
+              "dietary_fiber": "1g",
+              "sugars": "15g",
+              "protein": "6g",
+              "vitamin_a": "7%",
+              "vitamin_c": "21%",
+              "calcium": "6%",
+              "iron": "5%"
+            }
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Chocolate Chocolate Chip Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Muffin (54g)",
+              "calories": 176,
+              "total_fat": "8g",
+              "saturated_fat": "2g",
+              "trans_fat": "0g",
+              "cholesterol": "17mg",
+              "sodium": "172mg",
+              "total_carbohydrate": "24g",
+              "dietary_fiber": "1g",
+              "sugars": "15g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "5%"
+            }
+          },
+          {
+            "name": "Raspberry Bars",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Oats",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Pieces (48g)",
+              "calories": 192,
+              "total_fat": "8g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "129mg",
+              "total_carbohydrate": "29g",
+              "dietary_fiber": "1g",
+              "sugars": "16g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "3%"
+            }
+          }
+        ]
+      },
+      "lunch": {
+        "Signature Maize": [
+          {
+            "name": "Halal BBQ Chicken Thigh",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint Medium"
+            ],
+            "nutrition": {
+              "serving_size": "3 oz Piece (72g)",
+              "calories": 182,
+              "total_fat": "10g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "560mg",
+              "total_carbohydrate": "5g",
+              "dietary_fiber": "0g",
+              "sugars": "2g",
+              "protein": "15g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "2%",
+              "iron": "5%"
+            }
+          },
+          {
+            "name": "Paprika Roasted Potatoes",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "5 oz Serving (142g)",
+              "calories": 162,
+              "total_fat": "4g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "26mg",
+              "total_carbohydrate": "27g",
+              "dietary_fiber": "3g",
+              "sugars": "3g",
+              "protein": "3g",
+              "vitamin_a": "4%",
+              "vitamin_c": "36%",
+              "calcium": "0%",
+              "iron": "0%"
+            }
+          },
+          {
+            "name": "Wild Greens with Apples",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 59,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "157mg",
+              "total_carbohydrate": "13g",
+              "dietary_fiber": "3g",
+              "sugars": "9g",
+              "protein": "2g",
+              "vitamin_a": "34%",
+              "vitamin_c": "12%",
+              "calcium": "2%",
+              "iron": "7%"
+            }
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "Mushroom Ramen",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "6 oz serving  (170g)",
+              "calories": 108,
+              "total_fat": "1g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "630mg",
+              "total_carbohydrate": "23g",
+              "dietary_fiber": "2g",
+              "sugars": "4g",
+              "protein": "5g",
+              "vitamin_a": "6%",
+              "vitamin_c": "8%",
+              "calcium": "2%",
+              "iron": "5%"
+            }
+          },
+          {
+            "name": "Black Bean Burger w/ Wheat Bun",
+            "traits": [
+              "Nutrient Dense High",
+              "Spicy",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Sesame",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Sandwich (145g)",
+              "calories": 291,
+              "total_fat": "6g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "5mg",
+              "sodium": "511mg",
+              "total_carbohydrate": "42g",
+              "dietary_fiber": "9g",
+              "sugars": "5g",
+              "protein": "21g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "13%",
+              "iron": "15%"
+            }
+          },
+          {
+            "name": "Pretzel Twists",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "1 oz Serving (28g)",
+              "calories": 110,
+              "total_fat": "1g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "450mg",
+              "total_carbohydrate": "23g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "9%"
+            }
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Halal Georgia Reuben",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Sesame",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Sandwich (86g)",
+              "calories": 206,
+              "total_fat": "11g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "26mg",
+              "sodium": "478mg",
+              "total_carbohydrate": "14g",
+              "dietary_fiber": "1g",
+              "sugars": "2g",
+              "protein": "11g",
+              "vitamin_a": "4%",
+              "vitamin_c": "7%",
+              "calcium": "11%",
+              "iron": "3%"
+            }
+          },
+          {
+            "name": "Potato Salad",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 219,
+              "total_fat": "17g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "63mg",
+              "sodium": "276mg",
+              "total_carbohydrate": "15g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "3g",
+              "vitamin_a": "1%",
+              "vitamin_c": "16%",
+              "calcium": "2%",
+              "iron": "3%"
+            }
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Cheese Bread",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Piece (51g)",
+              "calories": 212,
+              "total_fat": "8g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "21mg",
+              "sodium": "389mg",
+              "total_carbohydrate": "22g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "9g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "13%"
+            }
+          },
+          {
+            "name": "Pepperoni Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Slice (113g)",
+              "calories": 306,
+              "total_fat": "10g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "28mg",
+              "sodium": "647mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "13g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "16%"
+            }
+          },
+          {
+            "name": "Cheese Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Slice (105g)",
+              "calories": 278,
+              "total_fat": "8g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "21mg",
+              "sodium": "540mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "12g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "15%"
+            }
+          }
+        ],
+        "Wild Fire Maize": [
+          {
+            "name": "French Fries",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Item Is Deep Fried"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 186,
+              "total_fat": "10g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "470mg",
+              "total_carbohydrate": "25g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "2%"
+            }
+          },
+          {
+            "name": "Coney Island Sauce",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint Medium"
+            ],
+            "nutrition": {
+              "serving_size": "1/4 Cup (57g)",
+              "calories": 47,
+              "total_fat": "2g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "6mg",
+              "sodium": "308mg",
+              "total_carbohydrate": "6g",
+              "dietary_fiber": "1g",
+              "sugars": "3g",
+              "protein": "3g",
+              "vitamin_a": "9%",
+              "vitamin_c": "6%",
+              "calcium": "1%",
+              "iron": "6%"
+            }
+          },
+          {
+            "name": "Nacho Cheese Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ],
+            "allergens": [
+              "Milk"
+            ],
+            "nutrition": {
+              "serving_size": "1/4 Cup (57g)",
+              "calories": 68,
+              "total_fat": "4g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "553mg",
+              "total_carbohydrate": "6g",
+              "dietary_fiber": "0g",
+              "sugars": "2g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "4%",
+              "calcium": "5%",
+              "iron": "0%"
+            }
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Chocolate Chunk Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Cookie (35g)",
+              "calories": 152,
+              "total_fat": "7g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "5mg",
+              "sodium": "117mg",
+              "total_carbohydrate": "21g",
+              "dietary_fiber": "1g",
+              "sugars": "13g",
+              "protein": "2g",
+              "vitamin_a": "4%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "6%"
+            }
+          },
+          {
+            "name": "Smores Bars",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Pieces (49g)",
+              "calories": 199,
+              "total_fat": "7g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "170mg",
+              "total_carbohydrate": "34g",
+              "dietary_fiber": "1g",
+              "sugars": "20g",
+              "protein": "1g",
+              "vitamin_a": "3%",
+              "vitamin_c": "6%",
+              "calcium": "5%",
+              "iron": "10%"
+            }
+          }
+        ]
+      },
+      "dinner": {
+        "Signature Maize": [
+          {
+            "name": "Japanese Pork Katsu Curry",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Carbon Footprint Medium"
+            ],
+            "allergens": [
+              "Eggs",
+              "Item Is Deep Fried",
+              "Milk",
+              "Soy",
+              "Tree Nuts",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Serving (233g)",
+              "calories": 396,
+              "total_fat": "16g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "99mg",
+              "sodium": "552mg",
+              "total_carbohydrate": "47g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "17g",
+              "vitamin_a": "3%",
+              "vitamin_c": "2%",
+              "calcium": "3%",
+              "iron": "14%"
+            }
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "Tofu Vietnamese Chili Stir Fry",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Sesame",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (119g)",
+              "calories": 116,
+              "total_fat": "6g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "1mg",
+              "sodium": "640mg",
+              "total_carbohydrate": "8g",
+              "dietary_fiber": "2g",
+              "sugars": "4g",
+              "protein": "9g",
+              "vitamin_a": "41%",
+              "vitamin_c": "32%",
+              "calcium": "8%",
+              "iron": "10%"
+            }
+          },
+          {
+            "name": "Long Grain Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (74g)",
+              "calories": 111,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "333mg",
+              "total_carbohydrate": "24g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "3g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "5%"
+            }
+          },
+          {
+            "name": "Black Bean Burger w/ Wheat Bun",
+            "traits": [
+              "Nutrient Dense High",
+              "Spicy",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Sesame",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Sandwich (145g)",
+              "calories": 291,
+              "total_fat": "6g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "5mg",
+              "sodium": "511mg",
+              "total_carbohydrate": "42g",
+              "dietary_fiber": "9g",
+              "sugars": "5g",
+              "protein": "21g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "13%",
+              "iron": "15%"
+            }
+          },
+          {
+            "name": "Potato Chips",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1 oz Serving (28g)",
+              "calories": 160,
+              "total_fat": "10g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "170mg",
+              "total_carbohydrate": "15g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "1%"
+            }
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Caribbean Chicken Thigh with Curry",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "4 oz Serving (113g)",
+              "calories": 90,
+              "total_fat": "2g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "28mg",
+              "sodium": "422mg",
+              "total_carbohydrate": "8g",
+              "dietary_fiber": "1g",
+              "sugars": "2g",
+              "protein": "12g",
+              "vitamin_a": "6%",
+              "vitamin_c": "9%",
+              "calcium": "1%",
+              "iron": "4%"
+            }
+          },
+          {
+            "name": "Jasmine Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 156,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "0mg",
+              "total_carbohydrate": "34g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "4g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "0%"
+            }
+          },
+          {
+            "name": "Caribbean Pink Beans with Plantains",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "3 oz Serving (85g)",
+              "calories": 56,
+              "total_fat": "1g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "289mg",
+              "total_carbohydrate": "11g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "3g",
+              "vitamin_a": "7%",
+              "vitamin_c": "19%",
+              "calcium": "2%",
+              "iron": "5%"
+            }
+          },
+          {
+            "name": "Cilantro",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "Tablespoon (14g)",
+              "calories": 3,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "7mg",
+              "total_carbohydrate": "1g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "0g",
+              "vitamin_a": "19%",
+              "vitamin_c": "6%",
+              "calcium": "1%",
+              "iron": "1%"
+            }
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Cheese Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Slice (105g)",
+              "calories": 278,
+              "total_fat": "8g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "21mg",
+              "sodium": "540mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "12g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "15%"
+            }
+          },
+          {
+            "name": "Cheese Bread",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Piece (51g)",
+              "calories": 212,
+              "total_fat": "8g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "21mg",
+              "sodium": "389mg",
+              "total_carbohydrate": "22g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "9g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "13%"
+            }
+          },
+          {
+            "name": "Pepperoni Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Slice (113g)",
+              "calories": 306,
+              "total_fat": "10g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "28mg",
+              "sodium": "647mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "13g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "16%"
+            }
+          }
+        ],
+        "Wild Fire Maize": [
+          {
+            "name": "Homestyle Chicken Tenders",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Medium"
+            ],
+            "allergens": [
+              "Item Is Deep Fried",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "2 Pieces (85g)",
+              "calories": 215,
+              "total_fat": "13g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "26mg",
+              "sodium": "306mg",
+              "total_carbohydrate": "12g",
+              "dietary_fiber": "3g",
+              "sugars": "2g",
+              "protein": "12g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "5%"
+            }
+          },
+          {
+            "name": "Honey Mustard Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Alcohol"
+            ],
+            "nutrition": {
+              "serving_size": "Tablespoon (14g)",
+              "calories": 20,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "119mg",
+              "total_carbohydrate": "4g",
+              "dietary_fiber": "0g",
+              "sugars": "3g",
+              "protein": "0g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "0%"
+            }
+          },
+          {
+            "name": "French Fries",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Item Is Deep Fried"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 186,
+              "total_fat": "10g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "470mg",
+              "total_carbohydrate": "25g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "2%"
+            }
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Chocolate Chunk Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Cookie (35g)",
+              "calories": 152,
+              "total_fat": "7g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "5mg",
+              "sodium": "117mg",
+              "total_carbohydrate": "21g",
+              "dietary_fiber": "1g",
+              "sugars": "13g",
+              "protein": "2g",
+              "vitamin_a": "4%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "6%"
+            }
+          },
+          {
+            "name": "Smores Bars",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Pieces (49g)",
+              "calories": 199,
+              "total_fat": "7g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "170mg",
+              "total_carbohydrate": "34g",
+              "dietary_fiber": "1g",
+              "sugars": "20g",
+              "protein": "1g",
+              "vitamin_a": "3%",
+              "vitamin_c": "6%",
+              "calcium": "5%",
+              "iron": "10%"
+            }
+          },
+          {
+            "name": "Cookie Crumble Cheesecake",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Pieces (74g)",
+              "calories": 271,
+              "total_fat": "16g",
+              "saturated_fat": "9g",
+              "trans_fat": "0g",
+              "cholesterol": "61mg",
+              "sodium": "200mg",
+              "total_carbohydrate": "30g",
+              "dietary_fiber": "1g",
+              "sugars": "21g",
+              "protein": "4g",
+              "vitamin_a": "1%",
+              "vitamin_c": "0%",
+              "calcium": "4%",
+              "iron": "6%"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "hall": "mosher-jordan",
+    "date": "2026-06-05",
+    "meals": {
+      "breakfast": {
+        "Hot Cereal": [
+          {
+            "name": "Oatmeal",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Oats"
+            ],
+            "nutrition": {
+              "serving_size": "Cup (227g)",
+              "calories": 164,
+              "total_fat": "3g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "3mg",
+              "total_carbohydrate": "29g",
+              "dietary_fiber": "4g",
+              "sugars": "0g",
+              "protein": "6g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "2%",
+              "iron": "10%"
+            }
+          }
+        ],
+        "Toast": [
+          {
+            "name": "Roasted Cauliflower",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "2 oz (57g)",
+              "calories": 16,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "19mg",
+              "total_carbohydrate": "3g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "44%",
+              "calcium": "1%",
+              "iron": "1%"
+            }
+          },
+          {
+            "name": "Bruschetta Tofu Scramble",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Soy"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 cup (95g)",
+              "calories": 134,
+              "total_fat": "8g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "369mg",
+              "total_carbohydrate": "7g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "11g",
+              "vitamin_a": "20%",
+              "vitamin_c": "15%",
+              "calcium": "8%",
+              "iron": "8%"
+            }
+          },
+          {
+            "name": "Deep Fried Hashbrowns",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Item Is Deep Fried"
+            ],
+            "nutrition": {
+              "serving_size": "Tritator (57g)",
+              "calories": 103,
+              "total_fat": "8g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "253mg",
+              "total_carbohydrate": "11g",
+              "dietary_fiber": "1g",
+              "sugars": "0g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "1%"
+            }
+          },
+          {
+            "name": "Scrambled Eggs",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Soy"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (84g)",
+              "calories": 163,
+              "total_fat": "12g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "336mg",
+              "sodium": "116mg",
+              "total_carbohydrate": "0g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "11g",
+              "vitamin_a": "7%",
+              "vitamin_c": "0%",
+              "calcium": "6%",
+              "iron": "9%"
+            }
+          },
+          {
+            "name": "Bacon",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "2 Slices (20g)",
+              "calories": 102,
+              "total_fat": "9g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "26mg",
+              "sodium": "319mg",
+              "total_carbohydrate": "0g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "6g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "0%"
+            }
+          },
+          {
+            "name": "Cinnamon Swirl French Toast",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "1 Slice (50g)",
+              "calories": 139,
+              "total_fat": "6g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "52mg",
+              "sodium": "131mg",
+              "total_carbohydrate": "17g",
+              "dietary_fiber": "1g",
+              "sugars": "5g",
+              "protein": "5g",
+              "vitamin_a": "1%",
+              "vitamin_c": "0%",
+              "calcium": "3%",
+              "iron": "6%"
+            }
+          },
+          {
+            "name": "Turkey Sausage Patty",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "Patty (45g)",
+              "calories": 74,
+              "total_fat": "5g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "28mg",
+              "sodium": "158mg",
+              "total_carbohydrate": "0g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "7g",
+              "vitamin_a": "1%",
+              "vitamin_c": "0%",
+              "calcium": "2%",
+              "iron": "2%"
+            }
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Chocolate Chocolate Chip Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Muffin (54g)",
+              "calories": 176,
+              "total_fat": "8g",
+              "saturated_fat": "2g",
+              "trans_fat": "0g",
+              "cholesterol": "17mg",
+              "sodium": "172mg",
+              "total_carbohydrate": "24g",
+              "dietary_fiber": "1g",
+              "sugars": "15g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "5%"
+            }
+          },
+          {
+            "name": "Lemon Poppyseed Muffins",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Muffin (54g)",
+              "calories": 181,
+              "total_fat": "9g",
+              "saturated_fat": "2g",
+              "trans_fat": "0g",
+              "cholesterol": "17mg",
+              "sodium": "138mg",
+              "total_carbohydrate": "23g",
+              "dietary_fiber": "1g",
+              "sugars": "13g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "4%",
+              "iron": "5%"
+            }
+          },
+          {
+            "name": "Vanilla Iced Donuts",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Donut (73g)",
+              "calories": 295,
+              "total_fat": "15g",
+              "saturated_fat": "8g",
+              "trans_fat": "0g",
+              "cholesterol": "15mg",
+              "sodium": "276mg",
+              "total_carbohydrate": "38g",
+              "dietary_fiber": "1g",
+              "sugars": "23g",
+              "protein": "3g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "2%",
+              "iron": "6%"
+            }
+          },
+          {
+            "name": "Rainbow Sprinkles",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Soy"
+            ],
+            "nutrition": {
+              "serving_size": "1 Tablespoon (7g)",
+              "calories": 34,
+              "total_fat": "1g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "1mg",
+              "total_carbohydrate": "6g",
+              "dietary_fiber": "0g",
+              "sugars": "3g",
+              "protein": "0g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "0%"
+            }
+          }
+        ]
+      },
+      "lunch": {
+        "Signature Maize": [
+          {
+            "name": "Baked Penne w/ Meatballs",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint Medium"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Cup (220g)",
+              "calories": 263,
+              "total_fat": "13g",
+              "saturated_fat": "5g",
+              "trans_fat": "0g",
+              "cholesterol": "37mg",
+              "sodium": "653mg",
+              "total_carbohydrate": "24g",
+              "dietary_fiber": "2g",
+              "sugars": "4g",
+              "protein": "13g",
+              "vitamin_a": "0%",
+              "vitamin_c": "1%",
+              "calcium": "13%",
+              "iron": "8%"
+            }
+          },
+          {
+            "name": "Garlic Bread",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Piece (40g)",
+              "calories": 139,
+              "total_fat": "8g",
+              "saturated_fat": "2g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "198mg",
+              "total_carbohydrate": "15g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "3g",
+              "vitamin_a": "%",
+              "vitamin_c": "%",
+              "calcium": "1%",
+              "iron": "6%"
+            }
+          },
+          {
+            "name": "Spinach Saute",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "Ounce (28g)",
+              "calories": 16,
+              "total_fat": "1g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "57mg",
+              "total_carbohydrate": "1g",
+              "dietary_fiber": "1g",
+              "sugars": "0g",
+              "protein": "1g",
+              "vitamin_a": "49%",
+              "vitamin_c": "12%",
+              "calcium": "3%",
+              "iron": "4%"
+            }
+          }
+        ],
+        "World Palate Maize": [
+          {
+            "name": "Carnitas-Style Chicken",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "3 oz Serving (85g)",
+              "calories": 87,
+              "total_fat": "4g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "49mg",
+              "sodium": "390mg",
+              "total_carbohydrate": "2g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "10g",
+              "vitamin_a": "3%",
+              "vitamin_c": "2%",
+              "calcium": "1%",
+              "iron": "2%"
+            }
+          },
+          {
+            "name": "Spicy Kidney Beans",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Spicy",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (103g)",
+              "calories": 62,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "113mg",
+              "total_carbohydrate": "16g",
+              "dietary_fiber": "8g",
+              "sugars": "1g",
+              "protein": "6g",
+              "vitamin_a": "1%",
+              "vitamin_c": "25%",
+              "calcium": "1%",
+              "iron": "7%"
+            }
+          },
+          {
+            "name": "White Corn Tortillas",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "Tortilla (25g)",
+              "calories": 55,
+              "total_fat": "1g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "8mg",
+              "total_carbohydrate": "12g",
+              "dietary_fiber": "2g",
+              "sugars": "0g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "3%"
+            }
+          },
+          {
+            "name": "Mexican Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "3 Oz Serving (85g)",
+              "calories": 204,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "135mg",
+              "total_carbohydrate": "44g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "5g",
+              "vitamin_a": "0%",
+              "vitamin_c": "6%",
+              "calcium": "0%",
+              "iron": "9%"
+            }
+          },
+          {
+            "name": "Cilantro",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "Tablespoon (14g)",
+              "calories": 3,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "7mg",
+              "total_carbohydrate": "1g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "0g",
+              "vitamin_a": "19%",
+              "vitamin_c": "6%",
+              "calcium": "1%",
+              "iron": "1%"
+            }
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "Fattoush Salad",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Oats",
+              "Sesame",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "3 oz serving (85g)",
+              "calories": 110,
+              "total_fat": "5g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "214mg",
+              "total_carbohydrate": "14g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "3g",
+              "vitamin_a": "35%",
+              "vitamin_c": "15%",
+              "calcium": "7%",
+              "iron": "6%"
+            }
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Baked Chicken",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense Low",
+              "Carbon Footprint Medium"
+            ],
+            "nutrition": {
+              "serving_size": "Piece (3.5 oz) (99g)",
+              "calories": 229,
+              "total_fat": "17g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "72mg",
+              "sodium": "491mg",
+              "total_carbohydrate": "0g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "18g",
+              "vitamin_a": "2%",
+              "vitamin_c": "2%",
+              "calcium": "1%",
+              "iron": "2%"
+            }
+          },
+          {
+            "name": "Garlicky Mashed Potatoes",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Milk"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 131,
+              "total_fat": "5g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "13mg",
+              "sodium": "205mg",
+              "total_carbohydrate": "19g",
+              "dietary_fiber": "2g",
+              "sugars": "3g",
+              "protein": "3g",
+              "vitamin_a": "4%",
+              "vitamin_c": "22%",
+              "calcium": "3%",
+              "iron": "0%"
+            }
+          },
+          {
+            "name": "Sauteed Green Beans",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "3 oz serving (85g)",
+              "calories": 40,
+              "total_fat": "2g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "42mg",
+              "total_carbohydrate": "6g",
+              "dietary_fiber": "3g",
+              "sugars": "3g",
+              "protein": "2g",
+              "vitamin_a": "12%",
+              "vitamin_c": "15%",
+              "calcium": "3%",
+              "iron": "5%"
+            }
+          },
+          {
+            "name": "Sweet Baby Ray's BBQ Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "Ounce (28g)",
+              "calories": 55,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "228mg",
+              "total_carbohydrate": "14g",
+              "dietary_fiber": "0g",
+              "sugars": "13g",
+              "protein": "0g",
+              "vitamin_a": "%",
+              "vitamin_c": "%",
+              "calcium": "0%",
+              "iron": "0%"
+            }
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Pepperoni Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Slice (113g)",
+              "calories": 306,
+              "total_fat": "10g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "28mg",
+              "sodium": "647mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "13g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "16%"
+            }
+          },
+          {
+            "name": "Cheese Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Slice (105g)",
+              "calories": 278,
+              "total_fat": "8g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "21mg",
+              "sodium": "540mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "12g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "15%"
+            }
+          }
+        ],
+        "Deli": [
+          {
+            "name": "Build Your Own Sandwich"
+          }
+        ],
+        "Kings Hawaiian Grill": [
+          {
+            "name": "Beef and Mushroom Blended Burger",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Hamburger (130g)",
+              "calories": 335,
+              "total_fat": "15g",
+              "saturated_fat": "7g",
+              "trans_fat": "1g",
+              "cholesterol": "93mg",
+              "sodium": "186mg",
+              "total_carbohydrate": "23g",
+              "dietary_fiber": "1g",
+              "sugars": "8g",
+              "protein": "25g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "4%",
+              "iron": "18%"
+            }
+          },
+          {
+            "name": "Beef & Mushroom Blended Burger w/ Cheese",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint High"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Hamburger (166g)",
+              "calories": 462,
+              "total_fat": "27g",
+              "saturated_fat": "13g",
+              "trans_fat": "1g",
+              "cholesterol": "125mg",
+              "sodium": "818mg",
+              "total_carbohydrate": "25g",
+              "dietary_fiber": "2g",
+              "sugars": "9g",
+              "protein": "31g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "21%",
+              "iron": "19%"
+            }
+          },
+          {
+            "name": "Black Bean Burger w/ King's Hawaiian Bun",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Sandwich (145g)",
+              "calories": 310,
+              "total_fat": "9g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "25mg",
+              "sodium": "483mg",
+              "total_carbohydrate": "41g",
+              "dietary_fiber": "7g",
+              "sugars": "10g",
+              "protein": "20g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "10%",
+              "iron": "14%"
+            }
+          },
+          {
+            "name": "Tempura Chicken",
+            "traits": [
+              "Nutrient Dense Low",
+              "Carbon Footprint Medium"
+            ],
+            "allergens": [
+              "Eggs",
+              "Item Is Deep Fried",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "3 Pieces (170g)",
+              "calories": 400,
+              "total_fat": "24g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "50mg",
+              "sodium": "983mg",
+              "total_carbohydrate": "24g",
+              "dietary_fiber": "0g",
+              "sugars": "2g",
+              "protein": "22g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "3%",
+              "iron": "11%"
+            }
+          },
+          {
+            "name": "Seasoned Curly Fries",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Item Is Deep Fried",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 297,
+              "total_fat": "22g",
+              "saturated_fat": "2g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "480mg",
+              "total_carbohydrate": "27g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "3g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "3%"
+            }
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Smores Bars",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Pieces (49g)",
+              "calories": 199,
+              "total_fat": "7g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "170mg",
+              "total_carbohydrate": "34g",
+              "dietary_fiber": "1g",
+              "sugars": "20g",
+              "protein": "1g",
+              "vitamin_a": "3%",
+              "vitamin_c": "6%",
+              "calcium": "5%",
+              "iron": "10%"
+            }
+          },
+          {
+            "name": "Chocolate Chunk Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Cookie (35g)",
+              "calories": 152,
+              "total_fat": "7g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "5mg",
+              "sodium": "117mg",
+              "total_carbohydrate": "21g",
+              "dietary_fiber": "1g",
+              "sugars": "13g",
+              "protein": "2g",
+              "vitamin_a": "4%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "6%"
+            }
+          }
+        ]
+      },
+      "dinner": {
+        "Signature Maize": [
+          {
+            "name": "Chicken Piccata",
+            "traits": [
+              "Nutrient Dense High",
+              "Carbon Footprint Medium"
+            ],
+            "allergens": [
+              "Alcohol",
+              "Milk",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "4 oz Serving (116g)",
+              "calories": 129,
+              "total_fat": "4g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "52mg",
+              "sodium": "248mg",
+              "total_carbohydrate": "3g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "20g",
+              "vitamin_a": "2%",
+              "vitamin_c": "3%",
+              "calcium": "1%",
+              "iron": "3%"
+            }
+          },
+          {
+            "name": "Linguine Pasta",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 176,
+              "total_fat": "1g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "0mg",
+              "total_carbohydrate": "37g",
+              "dietary_fiber": "3g",
+              "sugars": "2g",
+              "protein": "7g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "8%"
+            }
+          },
+          {
+            "name": "Roasted Cauliflower",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "2 oz (57g)",
+              "calories": 16,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "19mg",
+              "total_carbohydrate": "3g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "44%",
+              "calcium": "1%",
+              "iron": "1%"
+            }
+          },
+          {
+            "name": "Parsley",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "Tablespoon (14g)",
+              "calories": 5,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "8mg",
+              "total_carbohydrate": "1g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "0g",
+              "vitamin_a": "23%",
+              "vitamin_c": "30%",
+              "calcium": "2%",
+              "iron": "5%"
+            }
+          }
+        ],
+        "World Palate Maize": [
+          {
+            "name": "Taco Beef",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint High"
+            ],
+            "nutrition": {
+              "serving_size": "1/4 Cup (57g)",
+              "calories": 131,
+              "total_fat": "10g",
+              "saturated_fat": "4g",
+              "trans_fat": "1g",
+              "cholesterol": "35mg",
+              "sodium": "256mg",
+              "total_carbohydrate": "1g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "9g",
+              "vitamin_a": "2%",
+              "vitamin_c": "2%",
+              "calcium": "1%",
+              "iron": "6%"
+            }
+          },
+          {
+            "name": "Tortilla Chips",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1 oz Serving (28g)",
+              "calories": 142,
+              "total_fat": "6g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "116mg",
+              "total_carbohydrate": "20g",
+              "dietary_fiber": "2g",
+              "sugars": "0g",
+              "protein": "2g",
+              "vitamin_a": "%",
+              "vitamin_c": "%",
+              "calcium": "3%",
+              "iron": "3%"
+            }
+          },
+          {
+            "name": "Mexican Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 272,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "180mg",
+              "total_carbohydrate": "59g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "6g",
+              "vitamin_a": "0%",
+              "vitamin_c": "8%",
+              "calcium": "0%",
+              "iron": "12%"
+            }
+          },
+          {
+            "name": "Fresh Pico De Gallo",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1 oz Serving (28g)",
+              "calories": 5,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "3mg",
+              "total_carbohydrate": "1g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "0g",
+              "vitamin_a": "3%",
+              "vitamin_c": "7%",
+              "calcium": "0%",
+              "iron": "0%"
+            }
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "Spicy Black Beans",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Spicy",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (85g)",
+              "calories": 49,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "160mg",
+              "total_carbohydrate": "10g",
+              "dietary_fiber": "3g",
+              "sugars": "2g",
+              "protein": "3g",
+              "vitamin_a": "1%",
+              "vitamin_c": "25%",
+              "calcium": "3%",
+              "iron": "5%"
+            }
+          },
+          {
+            "name": "Tortilla Chips",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1 oz Serving (28g)",
+              "calories": 142,
+              "total_fat": "6g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "116mg",
+              "total_carbohydrate": "20g",
+              "dietary_fiber": "2g",
+              "sugars": "0g",
+              "protein": "2g",
+              "vitamin_a": "%",
+              "vitamin_c": "%",
+              "calcium": "3%",
+              "iron": "3%"
+            }
+          },
+          {
+            "name": "Mexican Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 272,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "180mg",
+              "total_carbohydrate": "59g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "6g",
+              "vitamin_a": "0%",
+              "vitamin_c": "8%",
+              "calcium": "0%",
+              "iron": "12%"
+            }
+          },
+          {
+            "name": "Fresh Pico De Gallo",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1 oz Serving (28g)",
+              "calories": 5,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "3mg",
+              "total_carbohydrate": "1g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "0g",
+              "vitamin_a": "3%",
+              "vitamin_c": "7%",
+              "calcium": "0%",
+              "iron": "0%"
+            }
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Halal Grilled Chicken Thigh",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense High",
+              "Carbon Footprint Medium"
+            ],
+            "nutrition": {
+              "serving_size": "3 oz  (85g)",
+              "calories": 152,
+              "total_fat": "9g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "76mg",
+              "total_carbohydrate": "0g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "18g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "2%",
+              "iron": "6%"
+            }
+          },
+          {
+            "name": "Garlicky Mashed Potatoes",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Milk"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 131,
+              "total_fat": "5g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "13mg",
+              "sodium": "205mg",
+              "total_carbohydrate": "19g",
+              "dietary_fiber": "2g",
+              "sugars": "3g",
+              "protein": "3g",
+              "vitamin_a": "4%",
+              "vitamin_c": "22%",
+              "calcium": "3%",
+              "iron": "0%"
+            }
+          },
+          {
+            "name": "Grilled Vegetables",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 53,
+              "total_fat": "3g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "14mg",
+              "total_carbohydrate": "5g",
+              "dietary_fiber": "2g",
+              "sugars": "4g",
+              "protein": "1g",
+              "vitamin_a": "21%",
+              "vitamin_c": "59%",
+              "calcium": "2%",
+              "iron": "2%"
+            }
+          },
+          {
+            "name": "Pesto Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "Ounce (28g)",
+              "calories": 174,
+              "total_fat": "20g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "156mg",
+              "total_carbohydrate": "1g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "0g",
+              "vitamin_a": "6%",
+              "vitamin_c": "3%",
+              "calcium": "1%",
+              "iron": "1%"
+            }
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Pepperoni Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Slice (113g)",
+              "calories": 306,
+              "total_fat": "10g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "28mg",
+              "sodium": "647mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "13g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "16%"
+            }
+          },
+          {
+            "name": "Cheese Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Slice (105g)",
+              "calories": 278,
+              "total_fat": "8g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "21mg",
+              "sodium": "540mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "12g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "15%"
+            }
+          }
+        ],
+        "Deli": [
+          {
+            "name": "Build Your Own Sandwich"
+          }
+        ],
+        "Kings Hawaiian Grill": [
+          {
+            "name": "Beef and Mushroom Blended Burger",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Hamburger (130g)",
+              "calories": 335,
+              "total_fat": "15g",
+              "saturated_fat": "7g",
+              "trans_fat": "1g",
+              "cholesterol": "93mg",
+              "sodium": "186mg",
+              "total_carbohydrate": "23g",
+              "dietary_fiber": "1g",
+              "sugars": "8g",
+              "protein": "25g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "4%",
+              "iron": "18%"
+            }
+          },
+          {
+            "name": "Beef & Mushroom Blended Burger w/ Cheese",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint High"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Hamburger (166g)",
+              "calories": 462,
+              "total_fat": "27g",
+              "saturated_fat": "13g",
+              "trans_fat": "1g",
+              "cholesterol": "125mg",
+              "sodium": "818mg",
+              "total_carbohydrate": "25g",
+              "dietary_fiber": "2g",
+              "sugars": "9g",
+              "protein": "31g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "21%",
+              "iron": "19%"
+            }
+          },
+          {
+            "name": "Black Bean Burger w/ King's Hawaiian Bun",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Sandwich (145g)",
+              "calories": 310,
+              "total_fat": "9g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "25mg",
+              "sodium": "483mg",
+              "total_carbohydrate": "41g",
+              "dietary_fiber": "7g",
+              "sugars": "10g",
+              "protein": "20g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "10%",
+              "iron": "14%"
+            }
+          },
+          {
+            "name": "Tempura Chicken",
+            "traits": [
+              "Nutrient Dense Low",
+              "Carbon Footprint Medium"
+            ],
+            "allergens": [
+              "Eggs",
+              "Item Is Deep Fried",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "2 Pieces (113g)",
+              "calories": 267,
+              "total_fat": "16g",
+              "saturated_fat": "2g",
+              "trans_fat": "0g",
+              "cholesterol": "34mg",
+              "sodium": "656mg",
+              "total_carbohydrate": "16g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "15g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "2%",
+              "iron": "7%"
+            }
+          },
+          {
+            "name": "Seasoned Curly Fries",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Item Is Deep Fried",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 297,
+              "total_fat": "22g",
+              "saturated_fat": "2g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "480mg",
+              "total_carbohydrate": "27g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "3g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "3%"
+            }
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Cookie Crumble Cheesecake",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Medium"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Pieces (74g)",
+              "calories": 271,
+              "total_fat": "16g",
+              "saturated_fat": "9g",
+              "trans_fat": "0g",
+              "cholesterol": "61mg",
+              "sodium": "200mg",
+              "total_carbohydrate": "30g",
+              "dietary_fiber": "1g",
+              "sugars": "21g",
+              "protein": "4g",
+              "vitamin_a": "1%",
+              "vitamin_c": "0%",
+              "calcium": "4%",
+              "iron": "6%"
+            }
+          },
+          {
+            "name": "Chocolate Chunk Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Cookie (35g)",
+              "calories": 152,
+              "total_fat": "7g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "5mg",
+              "sodium": "117mg",
+              "total_carbohydrate": "21g",
+              "dietary_fiber": "1g",
+              "sugars": "13g",
+              "protein": "2g",
+              "vitamin_a": "4%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "6%"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "hall": "south-quad",
+    "date": "2026-06-05",
+    "meals": {
+      "lunch": {
+        "Signature Maize": [
+          {
+            "name": "Halal Greek Nachos with Lamb",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense Low",
+              "Carbon Footprint High"
+            ],
+            "allergens": [
+              "Milk"
+            ],
+            "nutrition": {
+              "serving_size": "6 oz Serving (170g)",
+              "calories": 605,
+              "total_fat": "29g",
+              "saturated_fat": "7g",
+              "trans_fat": "0g",
+              "cholesterol": "26mg",
+              "sodium": "895mg",
+              "total_carbohydrate": "71g",
+              "dietary_fiber": "7g",
+              "sugars": "1g",
+              "protein": "16g",
+              "vitamin_a": "3%",
+              "vitamin_c": "4%",
+              "calcium": "24%",
+              "iron": "13%"
+            }
+          },
+          {
+            "name": "Falafel Relish",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/8 cup (28g)",
+              "calories": 11,
+              "total_fat": "1g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "17mg",
+              "total_carbohydrate": "1g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "0g",
+              "vitamin_a": "2%",
+              "vitamin_c": "9%",
+              "calcium": "0%",
+              "iron": "0%"
+            }
+          }
+        ],
+        "24 Carrots": [
+          {
+            "name": "Mushroom a la King",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (122g)",
+              "calories": 88,
+              "total_fat": "6g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "147mg",
+              "total_carbohydrate": "8g",
+              "dietary_fiber": "1g",
+              "sugars": "2g",
+              "protein": "4g",
+              "vitamin_a": "2%",
+              "vitamin_c": "9%",
+              "calcium": "2%",
+              "iron": "4%"
+            }
+          },
+          {
+            "name": "Couscous with Parsley",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (96g)",
+              "calories": 103,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "24mg",
+              "total_carbohydrate": "21g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "4g",
+              "vitamin_a": "1%",
+              "vitamin_c": "1%",
+              "calcium": "1%",
+              "iron": "2%"
+            }
+          },
+          {
+            "name": "Roasted Kale",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 67,
+              "total_fat": "1g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "58mg",
+              "total_carbohydrate": "13g",
+              "dietary_fiber": "3g",
+              "sugars": "0g",
+              "protein": "4g",
+              "vitamin_a": "384%",
+              "vitamin_c": "249%",
+              "calcium": "17%",
+              "iron": "12%"
+            }
+          },
+          {
+            "name": "Black Bean Burger w/ White Bun",
+            "traits": [
+              "Nutrient Dense High",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Sesame",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Sandwich (145g)",
+              "calories": 252,
+              "total_fat": "7g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "6mg",
+              "sodium": "545mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "6g",
+              "sugars": "4g",
+              "protein": "19g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "9%",
+              "iron": "14%"
+            }
+          },
+          {
+            "name": "Rice & Lentil Salad",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (85g)",
+              "calories": 130,
+              "total_fat": "6g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "148mg",
+              "total_carbohydrate": "19g",
+              "dietary_fiber": "2g",
+              "sugars": "1g",
+              "protein": "3g",
+              "vitamin_a": "5%",
+              "vitamin_c": "14%",
+              "calcium": "1%",
+              "iron": "6%"
+            }
+          }
+        ],
+        "Halal": [
+          {
+            "name": "Halal Chipotle Roast Chicken",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint Medium"
+            ],
+            "nutrition": {
+              "serving_size": "3 oz Serving (95g)",
+              "calories": 129,
+              "total_fat": "6g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "31mg",
+              "sodium": "423mg",
+              "total_carbohydrate": "3g",
+              "dietary_fiber": "0g",
+              "sugars": "0g",
+              "protein": "16g",
+              "vitamin_a": "1%",
+              "vitamin_c": "4%",
+              "calcium": "2%",
+              "iron": "4%"
+            }
+          },
+          {
+            "name": "Garlic Peppercorn Roasted Gold Potatoes",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "3 oz Serving (85g)",
+              "calories": 115,
+              "total_fat": "4g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "85mg",
+              "total_carbohydrate": "18g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "20%",
+              "calcium": "0%",
+              "iron": "0%"
+            }
+          },
+          {
+            "name": "Roasted Cauliflower",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "2 oz (57g)",
+              "calories": 16,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "19mg",
+              "total_carbohydrate": "3g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "44%",
+              "calcium": "1%",
+              "iron": "1%"
+            }
+          }
+        ],
+        "Vita": [
+          {
+            "name": "Cavatappi",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "3 oz Serving (50g)",
+              "calories": 78,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "0mg",
+              "total_carbohydrate": "16g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "3g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "0%",
+              "iron": "4%"
+            }
+          },
+          {
+            "name": "Roasted Red Pepper Alfredo Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegetarian",
+              "Carbon Footprint High"
+            ],
+            "allergens": [
+              "Milk"
+            ],
+            "nutrition": {
+              "serving_size": "1/4 Cup (57g)",
+              "calories": 94,
+              "total_fat": "8g",
+              "saturated_fat": "5g",
+              "trans_fat": "0g",
+              "cholesterol": "23mg",
+              "sodium": "343mg",
+              "total_carbohydrate": "4g",
+              "dietary_fiber": "0g",
+              "sugars": "2g",
+              "protein": "3g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "9%",
+              "iron": "0%"
+            }
+          },
+          {
+            "name": "Marinara Sauce",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/4 Cup (57g)",
+              "calories": 32,
+              "total_fat": "1g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "172mg",
+              "total_carbohydrate": "5g",
+              "dietary_fiber": "1g",
+              "sugars": "3g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "3%"
+            }
+          }
+        ],
+        "Sabroso": [
+          {
+            "name": "Taco Beef",
+            "traits": [
+              "Gluten Free",
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ],
+            "nutrition": {
+              "serving_size": "1/4 Cup (57g)",
+              "calories": 141,
+              "total_fat": "11g",
+              "saturated_fat": "4g",
+              "trans_fat": "1g",
+              "cholesterol": "37mg",
+              "sodium": "284mg",
+              "total_carbohydrate": "2g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "9g",
+              "vitamin_a": "3%",
+              "vitamin_c": "3%",
+              "calcium": "2%",
+              "iron": "7%"
+            }
+          },
+          {
+            "name": "Blackened Tofu",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Spicy",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Soy"
+            ],
+            "nutrition": {
+              "serving_size": "3 oz Serving (85g)",
+              "calories": 193,
+              "total_fat": "14g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "99mg",
+              "total_carbohydrate": "3g",
+              "dietary_fiber": "3g",
+              "sugars": "0g",
+              "protein": "16g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "11%",
+              "iron": "11%"
+            }
+          },
+          {
+            "name": "Mexican Rice",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 272,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "180mg",
+              "total_carbohydrate": "59g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "6g",
+              "vitamin_a": "0%",
+              "vitamin_c": "8%",
+              "calcium": "0%",
+              "iron": "12%"
+            }
+          },
+          {
+            "name": "Refried Beans",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/4 Cup (57g)",
+              "calories": 49,
+              "total_fat": "1g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "208mg",
+              "total_carbohydrate": "7g",
+              "dietary_fiber": "2g",
+              "sugars": "0g",
+              "protein": "2g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "3%"
+            }
+          },
+          {
+            "name": "Fresh Pico De Gallo",
+            "traits": [
+              "Gluten Free",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1 oz Serving (28g)",
+              "calories": 5,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "3mg",
+              "total_carbohydrate": "1g",
+              "dietary_fiber": "0g",
+              "sugars": "1g",
+              "protein": "0g",
+              "vitamin_a": "3%",
+              "vitamin_c": "7%",
+              "calcium": "0%",
+              "iron": "0%"
+            }
+          }
+        ],
+        "Pizziti": [
+          {
+            "name": "Deluxe Meat Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Medium"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Slice (132g)",
+              "calories": 311,
+              "total_fat": "10g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "28mg",
+              "sodium": "700mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "14g",
+              "vitamin_a": "1%",
+              "vitamin_c": "6%",
+              "calcium": "17%",
+              "iron": "15%"
+            }
+          },
+          {
+            "name": "Pepperoni Pizza",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Slice (113g)",
+              "calories": 306,
+              "total_fat": "10g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "28mg",
+              "sodium": "647mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "13g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "16%"
+            }
+          },
+          {
+            "name": "Cheese Pizza",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Slice (105g)",
+              "calories": 278,
+              "total_fat": "8g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "21mg",
+              "sodium": "540mg",
+              "total_carbohydrate": "33g",
+              "dietary_fiber": "2g",
+              "sugars": "2g",
+              "protein": "12g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "18%",
+              "iron": "15%"
+            }
+          }
+        ],
+        "Wild Fire Maize": [
+          {
+            "name": "Beef and Mushroom Blended Burger",
+            "traits": [
+              "Halal",
+              "Nutrient Dense Medium",
+              "Carbon Footprint High"
+            ],
+            "allergens": [
+              "Sesame",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Hamburger (120g)",
+              "calories": 277,
+              "total_fat": "13g",
+              "saturated_fat": "5g",
+              "trans_fat": "1g",
+              "cholesterol": "73mg",
+              "sodium": "247mg",
+              "total_carbohydrate": "15g",
+              "dietary_fiber": "0g",
+              "sugars": "2g",
+              "protein": "24g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "4%",
+              "iron": "18%"
+            }
+          },
+          {
+            "name": "Turkey Burger on White Bun",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Sesame",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Burger (165g)",
+              "calories": 261,
+              "total_fat": "10g",
+              "saturated_fat": "4g",
+              "trans_fat": "0g",
+              "cholesterol": "100mg",
+              "sodium": "722mg",
+              "total_carbohydrate": "15g",
+              "dietary_fiber": "0g",
+              "sugars": "2g",
+              "protein": "26g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "3%",
+              "iron": "6%"
+            }
+          },
+          {
+            "name": "Sweet Potato Tots",
+            "traits": [
+              "Nutrient Dense Medium",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Item Is Deep Fried"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 cup (85g)",
+              "calories": 255,
+              "total_fat": "18g",
+              "saturated_fat": "1g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "203mg",
+              "total_carbohydrate": "23g",
+              "dietary_fiber": "3g",
+              "sugars": "13g",
+              "protein": "1g",
+              "vitamin_a": "0%",
+              "vitamin_c": "0%",
+              "calcium": "3%",
+              "iron": "2%"
+            }
+          }
+        ],
+        "Kosher": [
+          {
+            "name": "Kosher Deli"
+          },
+          {
+            "name": "Romaine Salad",
+            "traits": [
+              "Gluten Free",
+              "Kosher",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "Serving (57g)",
+              "calories": 11,
+              "total_fat": "0g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "10mg",
+              "total_carbohydrate": "2g",
+              "dietary_fiber": "1g",
+              "sugars": "1g",
+              "protein": "1g",
+              "vitamin_a": "80%",
+              "vitamin_c": "5%",
+              "calcium": "1%",
+              "iron": "1%"
+            }
+          },
+          {
+            "name": "Fresh Fruit Cup",
+            "traits": [
+              "Gluten Free",
+              "Kosher",
+              "Nutrient Dense High",
+              "Vegan",
+              "Carbon Footprint Low"
+            ],
+            "nutrition": {
+              "serving_size": "1/2 Cup (113g)",
+              "calories": 177,
+              "total_fat": "1g",
+              "saturated_fat": "0g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "40mg",
+              "total_carbohydrate": "43g",
+              "dietary_fiber": "4g",
+              "sugars": "38g",
+              "protein": "3g",
+              "vitamin_a": "100%",
+              "vitamin_c": "157%",
+              "calcium": "4%",
+              "iron": "3%"
+            }
+          }
+        ],
+        "Deli": [
+          {
+            "name": "Sandwiches Made to Order"
+          }
+        ],
+        "MBakery": [
+          {
+            "name": "Chocolate Chunk Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Cookie (35g)",
+              "calories": 152,
+              "total_fat": "7g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "5mg",
+              "sodium": "117mg",
+              "total_carbohydrate": "21g",
+              "dietary_fiber": "1g",
+              "sugars": "13g",
+              "protein": "2g",
+              "vitamin_a": "4%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "6%"
+            }
+          },
+          {
+            "name": "Oatmeal Raisin Cookies",
+            "traits": [
+              "Nutrient Dense Low",
+              "Vegetarian",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Eggs",
+              "Milk",
+              "Oats",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Cookie (33g)",
+              "calories": 133,
+              "total_fat": "6g",
+              "saturated_fat": "2g",
+              "trans_fat": "0g",
+              "cholesterol": "10mg",
+              "sodium": "100mg",
+              "total_carbohydrate": "20g",
+              "dietary_fiber": "1g",
+              "sugars": "10g",
+              "protein": "2g",
+              "vitamin_a": "4%",
+              "vitamin_c": "0%",
+              "calcium": "1%",
+              "iron": "4%"
+            }
+          },
+          {
+            "name": "Smores Bars",
+            "traits": [
+              "Nutrient Dense Low Medium",
+              "Carbon Footprint Low"
+            ],
+            "allergens": [
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "nutrition": {
+              "serving_size": "Pieces (49g)",
+              "calories": 199,
+              "total_fat": "7g",
+              "saturated_fat": "3g",
+              "trans_fat": "0g",
+              "cholesterol": "0mg",
+              "sodium": "170mg",
+              "total_carbohydrate": "34g",
+              "dietary_fiber": "1g",
+              "sugars": "20g",
+              "protein": "1g",
+              "vitamin_a": "3%",
+              "vitamin_c": "6%",
+              "calcium": "5%",
+              "iron": "10%"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "hall": "twigs-at-oxford",
+    "date": "2026-06-05",
+    "meals": {}
+  }
+]

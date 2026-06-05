@@ -13542,5 +13542,69 @@
     "ja": "キャロットケーキ クリームチーズフロスティング添え",
     "es": "Pastel de Zanahoria con Glaseado de Queso Crema",
     "pt": "Bolo de cenoura com cobertura de cream cheese"
+  },
+  "Chipotle Lime Portabellos": {
+    "zh-CN": "Chipotle Lime 波塔贝洛斯",
+    "zh-TW": "Chipotle Lime 波塔貝洛斯",
+    "ko": "치폴레 라임 포르타벨로스",
+    "ja": "チポトレ ライム ポータベロス",
+    "es": "Portabellos de lima y chipotle",
+    "pt": "Chipotle Limão Portabellos"
+  },
+  "BBQ Chicken Loin": {
+    "zh-CN": "烧烤鸡腰肉",
+    "zh-TW": "烤肉雞腰肉",
+    "ko": "바베큐 치킨 허리살",
+    "ja": "BBQチキンロース",
+    "es": "Lomo De Pollo BBQ",
+    "pt": "Lombo de frango para churrasco"
+  },
+  "Wild Greens with Apples": {
+    "zh-CN": "野菜配苹果",
+    "zh-TW": "野菜配蘋果",
+    "ko": "사과를 곁들인 야생 채소",
+    "ja": "ワイルドグリーンとリンゴ",
+    "es": "Verduras silvestres con manzanas",
+    "pt": "Verduras Selvagens com Maçãs"
+  },
+  "Japanese Pork Katsu Curry": {
+    "zh-CN": "日式炸猪排咖喱",
+    "zh-TW": "日式炸豬排咖哩",
+    "ko": "일본식 돼지고기 카레",
+    "ja": "和風ポークカツカレー",
+    "es": "Curry Katsu De Cerdo Japonés",
+    "pt": "Caril de Katsu de porco japonês"
+  },
+  "Honey Mustard Sauce": {
+    "zh-CN": "蜂蜜芥末酱",
+    "zh-TW": "蜂蜜芥末醬",
+    "ko": "허니 머스타드 소스",
+    "ja": "ハニーマスタードソース",
+    "es": "Salsa De Mostaza Y Miel",
+    "pt": "Molho De Mostarda De Mel"
+  },
+  "Baked Chicken": {
+    "zh-CN": "烤鸡",
+    "zh-TW": "烤雞",
+    "ko": "구운 치킨",
+    "ja": "ベイクドチキン",
+    "es": "Pollo Al Horno",
+    "pt": "Frango Assado"
+  },
+  "Mushroom a la King": {
+    "zh-CN": "蘑菇王",
+    "zh-TW": "蘑菇王",
+    "ko": "버섯 알라 킹",
+    "ja": "マッシュルーム・ア・ラ・キング",
+    "es": "Hongo a la Rey",
+    "pt": "Cogumelo à la King"
+  },
+  "Roasted Kale": {
+    "zh-CN": "烤羽衣甘蓝",
+    "zh-TW": "烤羽衣甘藍",
+    "ko": "구운 케일",
+    "ja": "ローストケール",
+    "es": "Col rizada asada",
+    "pt": "Couve Assada"
   }
 }
