@@ -13606,5 +13606,77 @@
     "ja": "ローストケール",
     "es": "Col rizada asada",
     "pt": "Couve Assada"
+  },
+  "Vegan Pesto Mayonnaise": {
+    "zh-CN": "纯素香蒜蛋黄酱",
+    "zh-TW": "純素香蒜蛋黃醬",
+    "ko": "비건 페스토 마요네즈",
+    "ja": "ビーガンペストマヨネーズ",
+    "es": "Mayonesa De Pesto Vegano",
+    "pt": "Maionese Pesto Vegana"
+  },
+  "Vegan Provolone Cheese": {
+    "zh-CN": "纯素波伏洛干酪",
+    "zh-TW": "純素波伏洛乾酪",
+    "ko": "비건 프로볼로네 치즈",
+    "ja": "ビーガンプロヴォローネチーズ",
+    "es": "Queso Provolone Vegano",
+    "pt": "Queijo Provolone Vegano"
+  },
+  "Jicama Slaw w/ Lime": {
+    "zh-CN": "酸橙豆薯沙拉",
+    "zh-TW": "酸橙豆薯沙拉",
+    "ko": "라임을 곁들인 히카마 양배추",
+    "ja": "ヒカマスロー ライム添え",
+    "es": "Ensalada de jícama y lima",
+    "pt": "Salada de Jicama com Limão"
+  },
+  "Chicken Tortilla Soup": {
+    "zh-CN": "鸡肉玉米饼汤",
+    "zh-TW": "雞肉玉米餅湯",
+    "ko": "치킨 토르티야 수프",
+    "ja": "チキントルティーヤスープ",
+    "es": "Sopa De Tortilla De Pollo",
+    "pt": "Sopa de Tortilha de Frango"
+  },
+  "Vegetable Stir Fry w/ Edamame": {
+    "zh-CN": "毛豆炒蔬菜",
+    "zh-TW": "毛豆炒蔬菜",
+    "ko": "에다마메를 곁들인 야채 볶음",
+    "ja": "枝豆入り野菜炒め",
+    "es": "Salteado De Verduras Con Edamame",
+    "pt": "Refogado de Legumes com Edamame"
+  },
+  "Lamb Biryani": {
+    "zh-CN": "羊肉印度饭",
+    "zh-TW": "羊肉印度飯",
+    "ko": "양고기 비리야니",
+    "ja": "ラムビリヤニ",
+    "es": "Biryani de cordero",
+    "pt": "Cordeiro Biryani"
+  },
+  "Mint Coriander Sauce": {
+    "zh-CN": "薄荷香菜酱",
+    "zh-TW": "薄荷香菜醬",
+    "ko": "민트 고수풀 소스",
+    "ja": "ミントコリアンダーソース",
+    "es": "Salsa De Menta Y Cilantro",
+    "pt": "Molho de menta e coentro"
+  },
+  "Shrimp & Scallop Vietnamese Stir Fry": {
+    "zh-CN": "越南虾扇贝炒菜",
+    "zh-TW": "越南蝦扇貝炒菜",
+    "ko": "새우 & 가리비 베트남식 볶음",
+    "ja": "エビとホタテのベトナム炒め",
+    "es": "Salteado vietnamita de camarones y vieiras",
+    "pt": "Camarão e vieira vietnamita salteados"
+  },
+  "Ranch Roasted Potatoes": {
+    "zh-CN": "牧场烤土豆",
+    "zh-TW": "牧場烤馬鈴薯",
+    "ko": "랜치 구운 감자",
+    "ja": "牧場のローストポテト",
+    "es": "Patatas Asadas Ranch",
+    "pt": "Batatas Assadas Rancho"
   }
 }
