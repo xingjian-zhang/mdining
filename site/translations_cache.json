@@ -13678,5 +13678,44 @@
     "ja": "牧場のローストポテト",
     "es": "Patatas Asadas Ranch",
     "pt": "Batatas Assadas Rancho"
+  },
+  "Deep Dish Cinnamon Rolls": {
+    "zh-CN": "深盘肉桂卷",
+    "zh-TW": "深盤肉桂捲",
+    "ko": "딥디쉬 시나몬롤",
+    "ja": "ディープディッシュシナモンロール",
+    "es": "Rollos de canela en plato hondo",
+    "pt": "Rolinhos de canela em prato fundo"
+  },
+  "Salad Shirazi": {
+    "zh-CN": "沙拉设拉子",
+    "ko": "샐러드 시라지",
+    "ja": "サラダシラジ",
+    "es": "Ensalada Shirazi",
+    "pt": "Salada Shirazi"
+  },
+  "Memphis Rubbed Chicken Thigh": {
+    "zh-CN": "孟菲斯擦鸡大腿",
+    "zh-TW": "孟菲斯擦雞大腿",
+    "ko": "멤피스 문지른 닭다리",
+    "ja": "メンフィス鶏もも肉の揉み込み",
+    "es": "Muslo De Pollo Frotado Memphis",
+    "pt": "Coxa de frango esfregada Memphis"
+  },
+  "Halal Roasted Chicken": {
+    "zh-CN": "清真烤鸡",
+    "zh-TW": "清真烤雞",
+    "ko": "할랄 구운 치킨",
+    "ja": "ハラールローストチキン",
+    "es": "Pollo Asado Halal",
+    "pt": "Frango Assado Halal"
+  },
+  "Vegetable Stir Fry with Tofu": {
+    "zh-CN": "蔬菜炒豆腐",
+    "zh-TW": "蔬菜炒豆腐",
+    "ko": "두부를 곁들인 야채 볶음",
+    "ja": "豆腐の野菜炒め",
+    "es": "Salteado de Verduras con Tofu",
+    "pt": "Legumes salteados com tofu"
   }
 }
