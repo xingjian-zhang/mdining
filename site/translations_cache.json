@@ -13717,5 +13717,109 @@
     "ja": "豆腐の野菜炒め",
     "es": "Salteado de Verduras con Tofu",
     "pt": "Legumes salteados com tofu"
+  },
+  "Vegan Chipotle Mayo": {
+    "zh-CN": "纯素墨西哥辣椒蛋黄酱",
+    "zh-TW": "純素墨西哥辣椒蛋黃醬",
+    "ko": "비건 치폴레 마요네즈",
+    "ja": "ビーガンチポトレマヨネーズ",
+    "es": "Mayonesa vegana de chipotle",
+    "pt": "Maionese Chipotle Vegana"
+  },
+  "Arugula Salad with Red Onions & Carrots": {
+    "zh-CN": "芝麻菜沙拉配红洋葱和胡萝卜",
+    "zh-TW": "芝麻菜沙拉佐紅洋蔥和胡蘿蔔",
+    "ko": "적양파와 당근을 곁들인 아루굴라 샐러드",
+    "ja": "赤玉ねぎと人参のルッコラサラダ",
+    "es": "Ensalada De Rúcula Con Cebollas Moradas Y Zanahorias",
+    "pt": "Salada de Rúcula com Cebola Roxa e Cenoura"
+  },
+  "Dried Cherries": {
+    "zh-CN": "樱桃干",
+    "zh-TW": "櫻桃乾",
+    "ko": "말린 체리",
+    "ja": "ドライチェリー",
+    "es": "cerezas secas",
+    "pt": "Cerejas Secas"
+  },
+  "Fat Free Raspberry Vinaigrette": {
+    "zh-CN": "无脂覆盆子油醋汁",
+    "zh-TW": "無脂覆盆子油醋汁",
+    "ko": "무지방 라즈베리 비네그레트",
+    "ja": "無脂肪ラズベリービネグレット",
+    "es": "Vinagreta De Frambuesa Sin Grasa",
+    "pt": "Vinagrete de framboesa sem gordura"
+  },
+  "General Tso's Tempeh": {
+    "zh-CN": "左宗棠豆豉",
+    "zh-TW": "左宗棠豆豉",
+    "ko": "초 장군의 템페",
+    "ja": "ツォ将軍のテンペ",
+    "es": "Tempeh del general Tso",
+    "pt": "Tempeh do General Tso"
+  },
+  "Raisins": {
+    "zh-CN": "葡萄干",
+    "zh-TW": "葡萄乾",
+    "ko": "건포도",
+    "ja": "レーズン",
+    "es": "Pasas",
+    "pt": "Passas"
+  },
+  "Honey": {
+    "zh-CN": "蜂蜜",
+    "zh-TW": "蜂蜜",
+    "ko": "꿀",
+    "ja": "ハニー",
+    "es": "Miel",
+    "pt": "Mel"
+  },
+  "Blue Sprinkles": {
+    "zh-CN": "蓝色洒",
+    "zh-TW": "藍色灑",
+    "ko": "블루 스프링클스",
+    "ja": "ブルースプリンクル",
+    "es": "Chispitas azules",
+    "pt": "Granulado Azul"
+  },
+  "Lima Bean & Tomato Casserole": {
+    "zh-CN": "利马豆番茄砂锅",
+    "zh-TW": "利馬豆番茄砂鍋",
+    "ko": "리마 콩 & 토마토 캐서롤",
+    "ja": "リマビーンとトマトのキャセロール",
+    "es": "Cazuela De Frijoles Lima Y Tomate",
+    "pt": "Caçarola de Feijão Lima e Tomate"
+  },
+  "Chili Lime Shrimp": {
+    "zh-CN": "辣椒酸橙虾",
+    "zh-TW": "辣椒酸橙蝦",
+    "ko": "칠리 라임 새우",
+    "ja": "チリライムシュリンプ",
+    "es": "Camarones Con Chile Y Lima",
+    "pt": "Camarão com pimenta e limão"
+  },
+  "Chicken Patty w/ White Bun": {
+    "zh-CN": "白面包鸡肉饼",
+    "zh-TW": "白麵包雞肉餅",
+    "ko": "치킨 패티와 화이트 번",
+    "ja": "チキンパティ ホワイトバン添え",
+    "es": "Empanada De Pollo Con Pan Blanco",
+    "pt": "Patty de Frango com Pão Branco"
+  },
+  "Turkey Gravy": {
+    "zh-CN": "火鸡汁",
+    "zh-TW": "火雞汁",
+    "ko": "칠면조 그레이비",
+    "ja": "ターキーグレービーソース",
+    "es": "Salsa De Pavo",
+    "pt": "Molho de Peru"
+  },
+  "Rice Stick Noodles": {
+    "zh-CN": "米线",
+    "zh-TW": "米線",
+    "ko": "쌀국수",
+    "ja": "ライススティックヌードル",
+    "es": "Fideos de arroz",
+    "pt": "Macarrão De Arroz"
   }
 }
