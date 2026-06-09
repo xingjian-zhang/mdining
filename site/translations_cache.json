@@ -13821,5 +13821,77 @@
     "ja": "ライススティックヌードル",
     "es": "Fideos de arroz",
     "pt": "Macarrão De Arroz"
+  },
+  "Chole Masala": {
+    "zh-CN": "乔莱·马萨拉",
+    "zh-TW": "喬萊·馬薩拉",
+    "ko": "콜레 마살라",
+    "ja": "コレマサラ",
+    "es": "chole masala",
+    "pt": "Chole Masala"
+  },
+  "Cauliflower Stir Fry": {
+    "zh-CN": "花椰菜炒",
+    "zh-TW": "花椰菜炒",
+    "ko": "콜리플라워 볶음",
+    "ja": "カリフラワー炒め",
+    "es": "Salteado De Coliflor",
+    "pt": "Couve-flor salteada"
+  },
+  "Crispy Italian Chickpeas": {
+    "zh-CN": "脆皮意大利鹰嘴豆",
+    "zh-TW": "脆皮義大利鷹嘴豆",
+    "ko": "바삭한 이탈리안 병아리콩",
+    "ja": "カリカリのイタリアンひよこ豆",
+    "es": "Garbanzos italianos crujientes",
+    "pt": "Grão de bico italiano crocante"
+  },
+  "Greek Roasted Vegetables with Potatoes": {
+    "zh-CN": "希腊烤土豆蔬菜",
+    "zh-TW": "希臘烤馬鈴薯蔬菜",
+    "ko": "감자를 곁들인 그리스 구운 야채",
+    "ja": "ギリシャ風ロースト野菜とジャガイモ添え",
+    "es": "Verduras asadas griegas con patatas",
+    "pt": "Legumes Assados ​​​​Gregos com Batatas"
+  },
+  "Sundried Tomato Spread": {
+    "zh-CN": "晒干番茄酱",
+    "zh-TW": "曬乾番茄醬",
+    "ko": "선드라이 토마토 스프레드",
+    "ja": "ドライトマトスプレッド",
+    "es": "Crema de tomates secos",
+    "pt": "Pasta de tomate seco"
+  },
+  "Vegan Garlic Bread": {
+    "zh-CN": "纯素大蒜面包",
+    "zh-TW": "純素大蒜麵包",
+    "ko": "비건 마늘빵",
+    "ja": "ビーガンガーリックブレッド",
+    "es": "Pan de ajo vegano",
+    "pt": "Pão de Alho Vegano"
+  },
+  "Vegetable Tofu Lo Mein": {
+    "zh-CN": "蔬菜豆腐捞面",
+    "zh-TW": "蔬菜豆腐撈麵",
+    "ko": "야채 두부 로메인",
+    "ja": "野菜豆腐ローメン",
+    "es": "Tofu vegetal Lo Mein",
+    "pt": "Tofu Vegetal Lo Mein"
+  },
+  "Potato Curry": {
+    "zh-CN": "咖喱土豆",
+    "zh-TW": "咖哩土豆",
+    "ko": "감자 카레",
+    "ja": "ポテトカレー",
+    "es": "Curry De Patata",
+    "pt": "Caril de Batata"
+  },
+  "Italian Chicken Drumsticks": {
+    "zh-CN": "意大利鸡腿",
+    "zh-TW": "義大利雞腿",
+    "ko": "이탈리안 치킨 드럼스틱",
+    "ja": "イタリア産鶏ドラムスティック",
+    "es": "Muslos De Pollo Italianos",
+    "pt": "Coxinhas de Frango Italianas"
   }
 }
