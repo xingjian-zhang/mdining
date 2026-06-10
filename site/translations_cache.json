@@ -13893,5 +13893,109 @@
     "ja": "イタリア産鶏ドラムスティック",
     "es": "Muslos De Pollo Italianos",
     "pt": "Coxinhas de Frango Italianas"
+  },
+  "Black Beans": {
+    "zh-CN": "黑豆",
+    "zh-TW": "黑豆",
+    "ko": "검은콩",
+    "ja": "黒豆",
+    "es": "Frijoles Negros",
+    "pt": "Feijão Preto"
+  },
+  "Taco Seasoned Quinoa": {
+    "zh-CN": "塔克调味藜麦",
+    "zh-TW": "塔克調味藜麥",
+    "ko": "타코 양념 퀴노아",
+    "ja": "タコス味付けキヌア",
+    "es": "Quinua Sazonada Para Tacos",
+    "pt": "Quinoa temperada com taco"
+  },
+  "Guajillo Sauce": {
+    "zh-CN": "瓜吉罗酱",
+    "zh-TW": "瓜吉羅醬",
+    "ko": "과히요 소스",
+    "ja": "グアヒージョソース",
+    "es": "Salsa Guajillo",
+    "pt": "Molho Guajillo"
+  },
+  "Halal Meatball Sub": {
+    "zh-CN": "清真肉丸子",
+    "zh-TW": "清真肉丸子",
+    "ko": "할랄 미트볼 서브",
+    "ja": "ハラールミートボールサブ",
+    "es": "Sub albóndigas halal",
+    "pt": "Submarino Halal de Almôndega"
+  },
+  "Romaine Salad w/ Parmesan & Croutons": {
+    "zh-CN": "罗马生菜沙拉配帕尔马干酪和油煎面包块",
+    "zh-TW": "羅馬生菜沙拉佐帕瑪森起司和油炸麵包塊",
+    "ko": "파마산 치즈와 크루통을 곁들인 로메인 샐러드",
+    "ja": "ロメインサラダ パルメザンチーズとクルトン添え",
+    "es": "Ensalada romana con parmesano y picatostes",
+    "pt": "Salada Romaine com Parmesão e Croutons"
+  },
+  "Caesar Salad Dressing": {
+    "zh-CN": "凯撒沙拉酱",
+    "zh-TW": "凱薩沙拉醬",
+    "ko": "시저 샐러드 드레싱",
+    "ja": "シーザーサラダドレッシング",
+    "es": "Aderezo para ensalada César",
+    "pt": "Molho para Salada César"
+  },
+  "Mexican Chimichurri Chicken Power Bowl": {
+    "zh-CN": "墨西哥奇米秋里鸡肉能量碗",
+    "zh-TW": "墨西哥奇米秋裡雞肉能量碗",
+    "ko": "멕시칸 치미추리 치킨 파워볼",
+    "ja": "メキシカンチミチュリチキンパワーボウル",
+    "es": "Power Bowl de pollo al chimichurri mexicano",
+    "pt": "Tigela de frango com chimichurri mexicano"
+  },
+  "Spanakorizo": {
+    "zh-CN": "斯帕纳科里佐",
+    "zh-TW": "斯帕納科里佐",
+    "ko": "스파나코리조",
+    "ja": "スパナコリソ",
+    "es": "Spanakorizo",
+    "pt": "Spanacorizo"
+  },
+  "Orange Tofu Stir Fry": {
+    "zh-CN": "橙豆腐炒",
+    "zh-TW": "橙豆腐炒",
+    "ko": "오렌지두부볶음",
+    "ja": "オレンジ豆腐炒め",
+    "es": "Salteado De Tofu Y Naranja",
+    "pt": "Frito De Tofu Laranja"
+  },
+  "Lentil Sloppy Joe": {
+    "zh-CN": "扁豆马虎乔",
+    "zh-TW": "扁豆馬虎喬",
+    "ko": "렌즈콩 조잡한 조",
+    "ja": "レンズ豆のスロッピー・ジョー",
+    "es": "Joe descuidado de lentejas",
+    "pt": "Lentilha Sloppy Joe"
+  },
+  "Stuffed Cabbage with Lentils": {
+    "zh-CN": "小扁豆酿卷心菜",
+    "zh-TW": "小扁豆釀高麗菜",
+    "ko": "렌즈콩을 곁들인 속을 채운 양배추",
+    "ja": "キャベツのレンズ豆詰め",
+    "es": "Repollo Relleno Con Lentejas",
+    "pt": "Repolho Recheado com Lentilhas"
+  },
+  "Slow Roasted Chuck Eye": {
+    "zh-CN": "慢烤查眼",
+    "zh-TW": "慢烤查眼",
+    "ko": "슬로우 로스티드 척 아이",
+    "ja": "じっくりローストしたチャックアイ",
+    "es": "Chuck Eye asado a fuego lento",
+    "pt": "Olho de Chuck Assado Lentamente"
+  },
+  "Ratatouille": {
+    "zh-CN": "料理鼠王",
+    "zh-TW": "料理鼠王",
+    "ko": "라따뚜이",
+    "ja": "レミーのおいしいレストラン",
+    "es": "Ratatouille",
+    "pt": "Ratatouille"
   }
 }
