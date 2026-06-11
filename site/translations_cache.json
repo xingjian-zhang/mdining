@@ -13997,5 +13997,61 @@
     "ja": "レミーのおいしいレストラン",
     "es": "Ratatouille",
     "pt": "Ratatouille"
+  },
+  "Rotisserie Chicken Breast": {
+    "zh-CN": "烤鸡胸肉",
+    "zh-TW": "烤雞胸肉",
+    "ko": "로티세리 닭가슴살",
+    "ja": "ロティサリーチキンブレスト",
+    "es": "Pechuga De Pollo Asada",
+    "pt": "Peito de Frango Assado"
+  },
+  "Low Fat Cottage Cheese": {
+    "zh-CN": "低脂干酪",
+    "zh-TW": "低脂乾酪",
+    "ko": "저지방 코티지 치즈",
+    "ja": "低脂肪カッテージチーズ",
+    "es": "Requesón bajo en grasa",
+    "pt": "Queijo cottage com baixo teor de gordura"
+  },
+  "Char Grilled Baby Bok Choy": {
+    "zh-CN": "炭烤小白菜",
+    "zh-TW": "炭烤小白菜",
+    "ko": "숯불구이 청경채",
+    "ja": "チンゲンサイの炭火焼き",
+    "es": "Bok Choy bebé a la parrilla",
+    "pt": "Baby Bok Choy grelhado no carvão"
+  },
+  "Lime Tarragon Chicken": {
+    "zh-CN": "柠檬龙蒿鸡",
+    "zh-TW": "檸檬龍蒿雞",
+    "ko": "라임 타라곤 치킨",
+    "ja": "ライムタラゴンチキン",
+    "es": "Pollo Al Estragón Y Lima",
+    "pt": "Frango com estragão e limão"
+  },
+  "Vietnamese Chili Sauce": {
+    "zh-CN": "越南辣椒酱",
+    "zh-TW": "越南辣椒醬",
+    "ko": "베트남 칠리 소스",
+    "ja": "ベトナムチリソース",
+    "es": "Salsa De Chile Vietnamita",
+    "pt": "Molho de pimenta vietnamita"
+  },
+  "Sesame Chicken Edamame Bowl": {
+    "zh-CN": "芝麻鸡肉毛豆碗",
+    "zh-TW": "芝麻雞肉毛豆碗",
+    "ko": "참깨 치킨 에다마메 덮밥",
+    "ja": "セサミチキン枝豆丼",
+    "es": "Tazón de edamame con pollo y sésamo",
+    "pt": "Tigela de Edamame com Frango com Gergelim"
+  },
+  "Mango Basil Fried Rice": {
+    "zh-CN": "芒果罗勒炒饭",
+    "zh-TW": "芒果羅勒炒飯",
+    "ko": "망고 바질 볶음밥",
+    "ja": "マンゴーバジルチャーハン",
+    "es": "Arroz Frito Con Mango Y Albahaca",
+    "pt": "Arroz Frito com Manga e Manjericão"
   }
 }
