@@ -14053,5 +14053,85 @@
     "ja": "マンゴーバジルチャーハン",
     "es": "Arroz Frito Con Mango Y Albahaca",
     "pt": "Arroz Frito com Manga e Manjericão"
+  },
+  "Tofu Sofritas Burrito Bowl": {
+    "zh-CN": "豆腐 Sofritas 墨西哥卷饼碗",
+    "zh-TW": "豆腐 Sofritas 墨西哥捲餅碗",
+    "ko": "두부 소프리타스 부리또 볼",
+    "ja": "豆腐ソフリタスブリトーボウル",
+    "es": "Tazón de burrito de sofritas de tofu",
+    "pt": "Tigela de burrito de tofu sofritas"
+  },
+  "Sofrito Sauce": {
+    "zh-CN": "索菲托酱",
+    "zh-TW": "蘇菲托醬",
+    "ko": "소프리토 소스",
+    "ja": "ソフリットソース",
+    "es": "Salsa Sofrito",
+    "pt": "Molho Sofrito"
+  },
+  "Cream Style Chicken Enchiladas": {
+    "zh-CN": "奶油风味鸡肉辣酱玉米饼馅",
+    "zh-TW": "奶油風味雞肉辣醬玉米餅餡",
+    "ko": "크림 스타일 치킨 엔칠라다",
+    "ja": "クリーム風チキンエンチラーダ",
+    "es": "Enchiladas De Pollo Estilo Crema",
+    "pt": "Enchiladas de Frango Estilo Creme"
+  },
+  "Roasted Vegetable Medley": {
+    "zh-CN": "烤蔬菜杂烩",
+    "zh-TW": "烤蔬菜雜燴",
+    "ko": "구운 야채 메들리",
+    "ja": "ロースト野菜の盛り合わせ",
+    "es": "Mezcla de verduras asadas",
+    "pt": "Mistura de Legumes Assados"
+  },
+  "Philly Cheese Steak w/ Onion Roll": {
+    "zh-CN": "费城奶酪牛排配洋葱卷",
+    "zh-TW": "費城起司牛排配洋蔥捲",
+    "ko": "양파롤을 곁들인 필리 치즈 스테이크",
+    "ja": "フィラデルフィアチーズステーキ オニオンロール添え",
+    "es": "Filete De Queso Philly Con Rollo De Cebolla",
+    "pt": "Bife de queijo Philly com rolinho de cebola"
+  },
+  "Red Pepper Coulis": {
+    "zh-CN": "红辣椒酱",
+    "zh-TW": "紅辣椒醬",
+    "ko": "레드 페퍼 쿨리스",
+    "ja": "レッドペッパークーリ",
+    "es": "Coulis de pimiento rojo",
+    "pt": "Coulis de pimenta vermelha"
+  },
+  "Korean BBQ Beef": {
+    "zh-CN": "韩式烧烤牛肉",
+    "zh-TW": "韓式燒烤牛肉",
+    "ko": "한국식 바비큐 쇠고기",
+    "ja": "韓国風バーベキュービーフ",
+    "es": "Carne BBQ Coreana",
+    "pt": "Carne de churrasco coreana"
+  },
+  "Steamed Bun": {
+    "zh-CN": "包子",
+    "zh-TW": "包子",
+    "ko": "찐빵",
+    "ja": "まんじゅう",
+    "es": "Bollo al vapor",
+    "pt": "Pão Cozido no Vapor"
+  },
+  "Korean Tofu": {
+    "zh-CN": "韩国豆腐",
+    "zh-TW": "韓國豆腐",
+    "ko": "한식두부",
+    "ja": "韓国豆腐",
+    "es": "tofu coreano",
+    "pt": "Tofu Coreano"
+  },
+  "Beef Poutine": {
+    "zh-CN": "牛肉布丁",
+    "zh-TW": "牛肉布丁",
+    "ko": "쇠고기 푸틴",
+    "ja": "ビーフプーティン",
+    "es": "Poutine De Carne",
+    "pt": "Poutine de carne"
   }
 }
