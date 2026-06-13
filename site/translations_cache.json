@@ -14133,5 +14133,53 @@
     "ja": "ビーフプーティン",
     "es": "Poutine De Carne",
     "pt": "Poutine de carne"
+  },
+  "Parmesan Herb Grilled Chicken Thighs": {
+    "zh-CN": "帕尔玛香草烤鸡大腿",
+    "zh-TW": "帕爾瑪香草烤雞大腿",
+    "ko": "파마산 허브 구이 닭다리살",
+    "ja": "鶏もも肉のパルメザンハーブ焼き",
+    "es": "Muslos de pollo a la parrilla con hierbas y parmesano",
+    "pt": "Coxas de Frango Grelhado com Ervas Parmesão"
+  },
+  "Red Pepper Pesto": {
+    "zh-CN": "红辣椒香蒜酱",
+    "zh-TW": "紅辣椒香蒜醬",
+    "ko": "붉은 고추 페스토",
+    "ja": "レッドペッパーペスト",
+    "es": "Pesto De Pimiento Rojo",
+    "pt": "Pesto de pimenta vermelha"
+  },
+  "Seared Sesame Tofu with Sriracha Noodles": {
+    "zh-CN": "香煎芝麻豆腐配是拉差面条",
+    "zh-TW": "香煎芝麻豆腐配是拉差麵條",
+    "ko": "스리라차 국수를 곁들인 구운 참깨 두부",
+    "ja": "炙りごま豆腐 シラチャーヌードル添え",
+    "es": "Tofu con sésamo braseado y fideos Sriracha",
+    "pt": "Tofu de gergelim grelhado com macarrão Sriracha"
+  },
+  "Beef Barbacoa": {
+    "zh-CN": "牛肉巴巴卡",
+    "zh-TW": "牛肉巴巴卡",
+    "ko": "쇠고기 바르바코아",
+    "ja": "ビーフバルバッコア",
+    "es": "Barbacoa de ternera",
+    "pt": "Carne Barbacoa"
+  },
+  "Taco Lentils": {
+    "zh-CN": "玉米饼扁豆",
+    "zh-TW": "玉米餅扁豆",
+    "ko": "타코 렌즈콩",
+    "ja": "タコスレンズ豆",
+    "es": "Lentejas Para Tacos",
+    "pt": "Lentilhas de taco"
+  },
+  "Chicken Thigh Tikka Masala": {
+    "zh-CN": "鸡大腿香料咖喱",
+    "zh-TW": "雞大腿香料咖哩",
+    "ko": "닭다리 티카 마살라",
+    "ja": "鶏もも肉ティッカマサラ",
+    "es": "Muslo De Pollo Tikka Masala",
+    "pt": "Coxa de Frango Tikka Masala"
   }
 }
