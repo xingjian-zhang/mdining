@@ -14181,5 +14181,61 @@
     "ja": "鶏もも肉ティッカマサラ",
     "es": "Muslo De Pollo Tikka Masala",
     "pt": "Coxa de Frango Tikka Masala"
+  },
+  "House Potato Chips": {
+    "zh-CN": "自制薯片",
+    "zh-TW": "自製洋芋片",
+    "ko": "하우스 감자칩",
+    "ja": "ハウスポテトチップス",
+    "es": "Patatas fritas de la casa",
+    "pt": "Batata frita caseira"
+  },
+  "Halal Chicken Chimichurri": {
+    "zh-CN": "清真鸡Chimichurri",
+    "zh-TW": "清真雞Chimichurri",
+    "ko": "할랄 치킨 치미추리",
+    "ja": "ハラールチキンチミチュリ",
+    "es": "Chimichurri de pollo halal",
+    "pt": "Chimichurri Halal de Frango"
+  },
+  "Fresh Salsa": {
+    "zh-CN": "新鲜莎莎酱",
+    "zh-TW": "新鮮莎莎醬",
+    "ko": "신선한 살사",
+    "ja": "フレッシュサルサ",
+    "es": "Salsa Fresca",
+    "pt": "Salsa Fresca"
+  },
+  "Garden Vegetable Stir Fry w/ Edamame": {
+    "zh-CN": "毛豆炒田园蔬菜",
+    "zh-TW": "毛豆炒田園蔬菜",
+    "ko": "에다마메를 곁들인 가든 야채 볶음",
+    "ja": "庭野菜の枝豆炒め",
+    "es": "Salteado de verduras de la huerta con edamame",
+    "pt": "Legumes salteados de jardim com Edamame"
+  },
+  "Hummus Quesadilla": {
+    "zh-CN": "鹰嘴豆泥玉米饼",
+    "zh-TW": "鷹嘴豆泥玉米餅",
+    "ko": "후무스 케사디야",
+    "ja": "フムス・ケサディヤ",
+    "es": "Quesadillas De Hummus",
+    "pt": "Quesadilla de homus"
+  },
+  "White Chocolate Chip Pancakes": {
+    "zh-CN": "白巧克力片煎饼",
+    "zh-TW": "白巧克力片煎餅",
+    "ko": "화이트 초콜릿 칩 팬케이크",
+    "ja": "ホワイトチョコチップパンケーキ",
+    "es": "Panqueques con chispas de chocolate blanco",
+    "pt": "Panquecas com gotas de chocolate branco"
+  },
+  "Shrimp Po Boy": {
+    "zh-CN": "虾婆仔",
+    "zh-TW": "蝦婆仔",
+    "ko": "새우포보이",
+    "ja": "エビポーボーイ",
+    "es": "Po Chico De Camarones",
+    "pt": "Camarão Po Boy"
   }
 }
