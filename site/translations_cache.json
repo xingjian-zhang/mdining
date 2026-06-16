@@ -14237,5 +14237,53 @@
     "ja": "エビポーボーイ",
     "es": "Po Chico De Camarones",
     "pt": "Camarão Po Boy"
+  },
+  "Black Bean Chipotle Taco": {
+    "zh-CN": "黑豆墨西哥玉米卷",
+    "zh-TW": "黑豆墨西哥玉米卷",
+    "ko": "검은콩 치폴레 타코",
+    "ja": "黒豆チポトレタコス",
+    "es": "Taco de chipotle con frijoles negros",
+    "pt": "Taco Chipotle De Feijão Preto"
+  },
+  "Best Rub": {
+    "zh-CN": "最佳摩擦",
+    "zh-TW": "最佳摩擦",
+    "ko": "최고의 문지름",
+    "ja": "ベストラブ",
+    "es": "Mejor frotar",
+    "pt": "Melhor massagem"
+  },
+  "Chocolate Bread Pudding": {
+    "zh-CN": "巧克力面包布丁",
+    "zh-TW": "巧克力麵包布丁",
+    "ko": "초콜릿 빵 푸딩",
+    "ja": "チョコレートブレッドプディング",
+    "es": "Budín de pan de chocolate",
+    "pt": "Pudim De Pão De Chocolate"
+  },
+  "Mediterranean Couscous Salad": {
+    "zh-CN": "地中海蒸粗麦粉沙拉",
+    "zh-TW": "地中海蒸粗麥粉沙拉",
+    "ko": "지중해식 쿠스쿠스 샐러드",
+    "ja": "地中海クスクスのサラダ",
+    "es": "Ensalada Mediterránea De Cuscús",
+    "pt": "Salada de Cuscuz Mediterrâneo"
+  },
+  "Southwest Chicken Sandwich": {
+    "zh-CN": "西南鸡肉三明治",
+    "zh-TW": "西南雞肉三明治",
+    "ko": "사우스웨스트 치킨 샌드위치",
+    "ja": "サウスウェストチキンサンドイッチ",
+    "es": "Sándwich de pollo al suroeste",
+    "pt": "Sanduíche de Frango Sudoeste"
+  },
+  "Black Bean Salsa": {
+    "zh-CN": "黑豆莎莎酱",
+    "zh-TW": "黑豆莎莎醬",
+    "ko": "검은콩 살사",
+    "ja": "ブラックビーンサルサ",
+    "es": "Salsa De Frijoles Negros",
+    "pt": "Molho de Feijão Preto"
   }
 }
