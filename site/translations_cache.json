@@ -14285,5 +14285,53 @@
     "ja": "ブラックビーンサルサ",
     "es": "Salsa De Frijoles Negros",
     "pt": "Molho de Feijão Preto"
+  },
+  "Chipotle Halal Roast Beef on Focaccia": {
+    "zh-CN": "Chipotle 清真烤牛肉配佛卡夏",
+    "zh-TW": "Chipotle 清真烤牛肉配佛卡夏",
+    "ko": "포카치아를 곁들인 치폴레 할랄 로스트 비프",
+    "ja": "チポトレハラールローストビーフのフォカッチャ添え",
+    "es": "Carne Asada Halal Al Chipotle Sobre Focaccia",
+    "pt": "Rosbife Chipotle Halal em Focaccia"
+  },
+  "Peach Cobbler": {
+    "zh-CN": "桃子馅饼",
+    "zh-TW": "桃子派",
+    "ko": "복숭아 코블러",
+    "ja": "ピーチコブラー",
+    "es": "Zapatero de melocotón",
+    "pt": "Torta de Pêssego"
+  },
+  "Egg Salad": {
+    "zh-CN": "鸡蛋沙拉",
+    "zh-TW": "雞蛋沙拉",
+    "ko": "계란 샐러드",
+    "ja": "エッグサラダ",
+    "es": "Ensalada De Huevo",
+    "pt": "Salada de Ovo"
+  },
+  "Spanish White Beans w/ Capers": {
+    "zh-CN": "西班牙白豆配刺山柑",
+    "zh-TW": "西班牙白豆配刺山柑",
+    "ko": "케이퍼를 곁들인 스페인 흰콩",
+    "ja": "スペイン産白インゲン豆とケッパー",
+    "es": "Frijoles Blancos Españoles con Alcaparras",
+    "pt": "Feijão Branco Espanhol com Alcaparras"
+  },
+  "Curry-Honey Lacquered Salmon": {
+    "zh-CN": "咖喱蜂蜜漆三文鱼",
+    "zh-TW": "咖哩蜂蜜漆鮭魚",
+    "ko": "카레 허니 옻칠 연어",
+    "ja": "サーモンのカレーはちみつ漆",
+    "es": "Salmón Laqueado Con Curry Y Miel",
+    "pt": "Salmão Lacado com Curry e Mel"
+  },
+  "Sweet and Sour Pork": {
+    "zh-CN": "咕噜肉",
+    "zh-TW": "咕嚕肉",
+    "ko": "탕수육",
+    "ja": "酢豚",
+    "es": "Cerdo agridulce",
+    "pt": "Carne de porco agridoce"
   }
 }
