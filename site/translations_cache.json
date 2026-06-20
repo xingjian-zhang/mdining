@@ -14333,5 +14333,69 @@
     "ja": "酢豚",
     "es": "Cerdo agridulce",
     "pt": "Carne de porco agridoce"
+  },
+  "Tandoori Marinade": {
+    "zh-CN": "唐杜里腌料",
+    "zh-TW": "唐杜里醃料",
+    "ko": "탄두리 마리네이드",
+    "ja": "タンドリーマリネ",
+    "es": "Adobo tandoori",
+    "pt": "Marinada Tandoori"
+  },
+  "Fresh Baby Spinach": {
+    "zh-CN": "新鲜菠菜",
+    "zh-TW": "新鮮菠菜",
+    "ko": "신선한 아기 시금치",
+    "ja": "新鮮なほうれん草",
+    "es": "Espinacas tiernas frescas",
+    "pt": "Espinafre Fresco"
+  },
+  "Five Spice Chicken": {
+    "zh-CN": "五香鸡",
+    "zh-TW": "五香雞",
+    "ko": "파이브 스파이스 치킨",
+    "ja": "ファイブスパイスチキン",
+    "es": "Pollo Cinco Especias",
+    "pt": "Frango com cinco especiarias"
+  },
+  "Sesame Green Beans": {
+    "zh-CN": "芝麻绿豆",
+    "zh-TW": "芝麻綠豆",
+    "ko": "참깨 녹두",
+    "ja": "ごまインゲン",
+    "es": "Judías verdes con sésamo",
+    "pt": "Feijão Verde Gergelim"
+  },
+  "Halal Brisket": {
+    "zh-CN": "清真牛胸肉",
+    "zh-TW": "清真牛胸肉",
+    "ko": "할랄 양지머리",
+    "ja": "ハラールブリスケット",
+    "es": "Pechuga halal",
+    "pt": "Peito Halal"
+  },
+  "Vegetable Slaw": {
+    "zh-CN": "蔬菜沙拉",
+    "zh-TW": "蔬菜沙拉",
+    "ko": "야채 슬로",
+    "ja": "野菜コールスロー",
+    "es": "Ensalada De Verduras",
+    "pt": "Salada de legumes"
+  },
+  "Whipped Sweet Potatoes": {
+    "zh-CN": "搅打红薯",
+    "zh-TW": "攪打地瓜",
+    "ko": "휘핑 고구마",
+    "ja": "ホイップスイートポテト",
+    "es": "Batatas Batidas",
+    "pt": "Batata doce batida"
+  },
+  "Halal BBQ Meatloaf": {
+    "zh-CN": "清真烧烤肉饼",
+    "zh-TW": "清真燒烤肉餅",
+    "ko": "할랄 바베큐 미트로프",
+    "ja": "ハラールBBQミートローフ",
+    "es": "Pastel de carne a la barbacoa halal",
+    "pt": "Bolo de carne de churrasco Halal"
   }
 }
