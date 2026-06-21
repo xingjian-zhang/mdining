@@ -14397,5 +14397,45 @@
     "ja": "ハラールBBQミートローフ",
     "es": "Pastel de carne a la barbacoa halal",
     "pt": "Bolo de carne de churrasco Halal"
+  },
+  "Red Bell Pepper": {
+    "zh-CN": "红甜椒",
+    "zh-TW": "紅甜椒",
+    "ko": "붉은 피망",
+    "ja": "赤ピーマン",
+    "es": "Pimiento rojo",
+    "pt": "Pimentão Vermelho"
+  },
+  "Falafel Sauce": {
+    "zh-CN": "沙拉三明治酱",
+    "zh-TW": "沙拉三明治醬",
+    "ko": "팔라펠 소스",
+    "ja": "ファラフェルソース",
+    "es": "Salsa Falafel",
+    "pt": "Molho Falafel"
+  },
+  "Seasoned Black Beans": {
+    "zh-CN": "调味黑豆",
+    "zh-TW": "調味黑豆",
+    "ko": "양념 검은콩",
+    "ja": "味付け黒豆",
+    "es": "Frijoles Negros Sazonados",
+    "pt": "Feijão Preto Temperado"
+  },
+  "Korean Style Tempeh BBQ": {
+    "zh-CN": "韩式豆豉烧烤",
+    "zh-TW": "韓式豆豉燒烤",
+    "ko": "한국식 템페 바베큐",
+    "ja": "韓国風テンペBBQ",
+    "es": "Barbacoa de tempeh al estilo coreano",
+    "pt": "Churrasco Tempeh Estilo Coreano"
+  },
+  "Corn with Spinach and Tomato": {
+    "zh-CN": "玉米配菠菜和番茄",
+    "zh-TW": "玉米配菠菜和番茄",
+    "ko": "시금치와 토마토를 곁들인 옥수수",
+    "ja": "ほうれん草とトマトのコーン",
+    "es": "Maíz con Espinacas y Tomate",
+    "pt": "Milho com Espinafre e Tomate"
   }
 }
