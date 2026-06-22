@@ -14437,5 +14437,61 @@
     "ja": "ほうれん草とトマトのコーン",
     "es": "Maíz con Espinacas y Tomate",
     "pt": "Milho com Espinafre e Tomate"
+  },
+  "Spicy Pasta": {
+    "zh-CN": "辣面食",
+    "zh-TW": "辣麵食",
+    "ko": "매운 파스타",
+    "ja": "スパイシーパスタ",
+    "es": "Pasta Picante",
+    "pt": "Massa Picante"
+  },
+  "Sichuan Seitan": {
+    "zh-CN": "四川面筋",
+    "zh-TW": "四川麵筋",
+    "ko": "쓰촨 세이탄",
+    "ja": "四川製タン",
+    "es": "Seitán de Sichuan",
+    "pt": "Seitan de Sichuan"
+  },
+  "Lemon Pepper Shrimp Saute": {
+    "zh-CN": "柠檬胡椒虾炒",
+    "zh-TW": "檸檬胡椒蝦炒",
+    "ko": "레몬 페퍼 새우 소테",
+    "ja": "レモンペッパーシュリンプソテー",
+    "es": "Salteado De Camarones Y Pimienta Con Limón",
+    "pt": "Refogado de Camarão com Pimenta Limão"
+  },
+  "Orzo": {
+    "zh-CN": "米粒",
+    "zh-TW": "米粒",
+    "ko": "오르조",
+    "ja": "オルゾ",
+    "es": "orzo",
+    "pt": "Orzo"
+  },
+  "Spinach & Red Onion Pizza": {
+    "zh-CN": "菠菜红洋葱披萨",
+    "zh-TW": "菠菜紅洋蔥披薩",
+    "ko": "시금치 & 적양파 피자",
+    "ja": "ほうれん草とレッドオニオンのピザ",
+    "es": "Pizza de espinacas y cebolla morada",
+    "pt": "Pizza de espinafre e cebola roxa"
+  },
+  "Spaghetti": {
+    "zh-CN": "意大利细面条",
+    "zh-TW": "義大利細麵條",
+    "ko": "스파게티",
+    "ja": "スパゲッティ",
+    "es": "Espaguetis",
+    "pt": "Espaguete"
+  },
+  "Basil Pesto": {
+    "zh-CN": "罗勒香蒜酱",
+    "zh-TW": "羅勒香蒜醬",
+    "ko": "바질 페스토",
+    "ja": "バジルペスト",
+    "es": "Pesto de albahaca",
+    "pt": "Pesto de manjericão"
   }
 }
