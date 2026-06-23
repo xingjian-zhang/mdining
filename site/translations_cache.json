@@ -14493,5 +14493,37 @@
     "ja": "バジルペスト",
     "es": "Pesto de albahaca",
     "pt": "Pesto de manjericão"
+  },
+  "Chana Dal": {
+    "zh-CN": "查纳达尔",
+    "zh-TW": "查納達爾",
+    "ko": "차나 달",
+    "ja": "チャナ・ダル",
+    "es": "Chana Dal",
+    "pt": "Chana Dal"
+  },
+  "Broccoli Stir Fry": {
+    "zh-CN": "西兰花炒",
+    "zh-TW": "綠色花椰菜炒",
+    "ko": "브로콜리 볶음",
+    "ja": "ブロッコリー炒め",
+    "es": "Salteado De Brócoli",
+    "pt": "Brócolis salteado"
+  },
+  "Drake's Fried MSC Cod": {
+    "zh-CN": "Drake's 炸 MSC 鳕鱼",
+    "zh-TW": "Drake's 炸 MSC 鱈魚",
+    "ko": "드레이크의 MSC 대구 튀김",
+    "ja": "ドレイクスのフライドMSCタラ",
+    "es": "Bacalao MSC frito de Drake",
+    "pt": "Bacalhau MSC Frito Drake"
+  },
+  "Beef Meatballs with Green Harissa": {
+    "zh-CN": "绿色哈里萨辣酱牛肉丸",
+    "zh-TW": "綠色哈里薩辣醬牛肉丸",
+    "ko": "그린 하리사를 곁들인 쇠고기 미트볼",
+    "ja": "ビーフミートボールとグリーンハリッサ添え",
+    "es": "Albóndigas De Carne Con Harissa Verde",
+    "pt": "Almôndegas de Carne com Harissa Verde"
   }
 }
