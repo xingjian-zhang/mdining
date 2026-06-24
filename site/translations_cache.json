@@ -14525,5 +14525,101 @@
     "ja": "ビーフミートボールとグリーンハリッサ添え",
     "es": "Albóndigas De Carne Con Harissa Verde",
     "pt": "Almôndegas de Carne com Harissa Verde"
+  },
+  "Garlic Parmesan Chicken Wings": {
+    "zh-CN": "大蒜巴马干酪鸡翅",
+    "zh-TW": "大蒜巴馬乾酪雞翅",
+    "ko": "마늘 파마산 치킨 윙",
+    "ja": "ガーリックパルメザンチキンウィング",
+    "es": "Alitas de pollo con ajo y parmesano",
+    "pt": "Asas de frango com alho e parmesão"
+  },
+  "Garlic Oil with Thyme and Oregano": {
+    "zh-CN": "大蒜油与百里香和牛至",
+    "zh-TW": "大蒜油與百里香和牛至",
+    "ko": "백리향과 오레가노를 곁들인 마늘 오일",
+    "ja": "タイムとオレガノ入りガーリックオイル",
+    "es": "Aceite de Ajo con Tomillo y Orégano",
+    "pt": "Óleo de Alho com Tomilho e Orégano"
+  },
+  "Seasoned Red Beans": {
+    "zh-CN": "调味红豆",
+    "zh-TW": "調味紅豆",
+    "ko": "양념팥",
+    "ja": "味付小豆",
+    "es": "Frijoles Rojos Sazonados",
+    "pt": "Feijão Vermelho Temperado"
+  },
+  "Guajillo Aioli": {
+    "zh-CN": "瓜希略艾奥利",
+    "zh-TW": "瓜希略艾奧利",
+    "ko": "과히요 아이올리",
+    "ja": "グアヒージョ・アイオリ",
+    "es": "Alioli de guajillo",
+    "pt": "Guajillo Aioli"
+  },
+  "Shrimp & Andouille Sausage Pasta": {
+    "zh-CN": "虾安多维尔香肠意大利面",
+    "zh-TW": "蝦安多維爾香腸義大利麵",
+    "ko": "새우 & 앙두이유 소시지 파스타",
+    "ja": "海老とアンドゥイユのソーセージパスタ",
+    "es": "Pasta con camarones y salchicha andouille",
+    "pt": "Macarrão com Camarão e Salsicha Andouille"
+  },
+  "Beef Pepper Steak": {
+    "zh-CN": "胡椒牛排",
+    "zh-TW": "胡椒牛排",
+    "ko": "쇠고기 고추 스테이크",
+    "ja": "ビーフペッパーステーキ",
+    "es": "Filete De Res A La Pimienta",
+    "pt": "Bife de Pimenta"
+  },
+  "Chicken and Vegetable Udon Pho": {
+    "zh-CN": "鸡肉蔬菜乌冬面河粉",
+    "zh-TW": "雞肉蔬菜烏龍麵河粉",
+    "ko": "닭고기와 야채 우동 포",
+    "ja": "鶏と野菜のうどんフォー",
+    "es": "Udon Pho de pollo y verduras",
+    "pt": "Udon Pho de frango e vegetais"
+  },
+  "Japanese Edamame Veg Stir Fry w/ Udon": {
+    "zh-CN": "日本毛豆炒乌冬面",
+    "zh-TW": "日本毛豆炒烏龍麵",
+    "ko": "일본 완두콩 야채 볶음/우동",
+    "ja": "枝豆野菜炒めとうどん",
+    "es": "Salteado de verduras y edamame japonés con udon",
+    "pt": "Edamame Japonês Veg Stir Fry com Udon"
+  },
+  "Beef Bulgogi Tots": {
+    "zh-CN": "烤牛肉小块",
+    "zh-TW": "烤牛肉小塊",
+    "ko": "쇠고기 불고기 토츠",
+    "ja": "ビーフプルコギトッツ",
+    "es": "Bulgogi de ternera",
+    "pt": "Bolinhos de carne Bulgogi"
+  },
+  "Xhosa Imifino Patty": {
+    "zh-CN": "科萨·伊米菲诺·帕蒂",
+    "zh-TW": "科薩·伊米菲諾·帕蒂",
+    "ko": "코사 이미피노 패티",
+    "ja": "コーサ・イミフィノ・パティ",
+    "es": "Xhosa Imifino Patty",
+    "pt": "Patty Xhosa Imifino"
+  },
+  "Tomato Tofu Spinach Saute": {
+    "zh-CN": "番茄豆腐菠菜炒",
+    "zh-TW": "番茄豆腐菠菜炒",
+    "ko": "토마토 두부 시금치 소테",
+    "ja": "トマト豆腐ほうれん草ソテー",
+    "es": "Salteado De Tomate, Tofu Y Espinacas",
+    "pt": "Tomate Tofu Refogado de Espinafre"
+  },
+  "Orange Rice": {
+    "zh-CN": "橙饭",
+    "zh-TW": "橘子飯",
+    "ko": "오렌지 라이스",
+    "ja": "オレンジライス",
+    "es": "Arroz Naranja",
+    "pt": "Arroz Laranja"
   }
 }
