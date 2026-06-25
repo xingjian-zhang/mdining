@@ -14621,5 +14621,53 @@
     "ja": "オレンジライス",
     "es": "Arroz Naranja",
     "pt": "Arroz Laranja"
+  },
+  "Teriyaki Tofu Rice Bowl": {
+    "zh-CN": "照烧豆腐盖饭",
+    "zh-TW": "照燒豆腐蓋飯",
+    "ko": "데리야끼 두부 덮밥",
+    "ja": "照り焼き豆腐丼",
+    "es": "Tazón de arroz teriyaki y tofu",
+    "pt": "Tigela de arroz com tofu teriyaki"
+  },
+  "Baked Tomato Penne": {
+    "zh-CN": "烤番茄通心粉",
+    "zh-TW": "烤番茄通心粉",
+    "ko": "구운 토마토 펜네",
+    "ja": "焼きトマトペンネ",
+    "es": "Penne de tomate al horno",
+    "pt": "Penne De Tomate Assado"
+  },
+  "Fried Rice": {
+    "zh-CN": "炒饭",
+    "zh-TW": "炒飯",
+    "ko": "볶음밥",
+    "ja": "炒飯",
+    "es": "Arroz Frito",
+    "pt": "Arroz Frito"
+  },
+  "Wild Rice Pilaf": {
+    "zh-CN": "野米抓饭",
+    "zh-TW": "野米抓飯",
+    "ko": "야생 쌀 필라프",
+    "ja": "ワイルドライスピラフ",
+    "es": "Pilaf de arroz salvaje",
+    "pt": "Pilaf de arroz selvagem"
+  },
+  "Tofu Cacciatore": {
+    "zh-CN": "豆腐卡恰托雷",
+    "zh-TW": "豆腐卡恰托雷",
+    "ko": "두부 카치아토레",
+    "ja": "豆腐カチャトーレ",
+    "es": "Cacciatore de tofu",
+    "pt": "Cacciatore de tofu"
+  },
+  "Maize & Blue Roasted Potatoes": {
+    "zh-CN": "玉米和蓝烤土豆",
+    "zh-TW": "玉米和藍烤土豆",
+    "ko": "옥수수 & 블루 구운 감자",
+    "ja": "トウモロコシとブルーのローストポテト",
+    "es": "Maíz y papas asadas azules",
+    "pt": "Milho e Batata Assada Azul"
   }
 }
