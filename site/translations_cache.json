@@ -14669,5 +14669,29 @@
     "ja": "トウモロコシとブルーのローストポテト",
     "es": "Maíz y papas asadas azules",
     "pt": "Milho e Batata Assada Azul"
+  },
+  "Roasted Spaghetti Squash": {
+    "zh-CN": "烤意大利面南瓜",
+    "zh-TW": "烤義大利麵南瓜",
+    "ko": "구운 스파게티 스쿼시",
+    "ja": "ローストスパゲッティスカッシュ",
+    "es": "Calabaza Espagueti Asada",
+    "pt": "Abóbora Espaguete Assada"
+  },
+  "Shrimp": {
+    "zh-CN": "虾",
+    "zh-TW": "蝦",
+    "ko": "새우",
+    "ja": "エビ",
+    "es": "Camarón",
+    "pt": "Camarão"
+  },
+  "Pickle Brined Fried Chicken": {
+    "zh-CN": "泡菜炸鸡",
+    "zh-TW": "泡菜炸雞",
+    "ko": "피클소금후라이드치킨",
+    "ja": "ピクルス塩漬けフライドチキン",
+    "es": "Pollo frito en salmuera con pepinillos",
+    "pt": "Frango Frito Salgado em Picles"
   }
 }
