@@ -13692,7 +13692,8 @@
     "ko": "샐러드 시라지",
     "ja": "サラダシラジ",
     "es": "Ensalada Shirazi",
-    "pt": "Salada Shirazi"
+    "pt": "Salada Shirazi",
+    "zh-TW": "沙拉設拉子"
   },
   "Memphis Rubbed Chicken Thigh": {
     "zh-CN": "孟菲斯擦鸡大腿",
@@ -14693,5 +14694,13 @@
     "ja": "ピクルス塩漬けフライドチキン",
     "es": "Pollo frito en salmuera con pepinillos",
     "pt": "Frango Frito Salgado em Picles"
+  },
+  "Cappuccino Chocolate Chunk Muffin": {
+    "zh-CN": "卡布奇诺巧克力块松饼",
+    "zh-TW": "卡布奇諾巧克力塊鬆餅",
+    "ko": "카푸치노 초콜릿 청크 머핀",
+    "ja": "カプチーノ チョコレートチャンクマフィン",
+    "es": "Muffin con trozos de chocolate y capuchino",
+    "pt": "Muffin de Capuccino com Pedaços de Chocolate"
   }
 }
