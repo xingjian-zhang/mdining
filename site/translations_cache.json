@@ -10783,7 +10783,8 @@
     "ko": "아이스 퍼지 브라우니",
     "ja": "アイスファッジブラウニー",
     "es": "Brownie de dulce de azúcar helado",
-    "pt": "Brownie De Chocolate Gelado"
+    "pt": "Brownie De Chocolate Gelado",
+    "zh-TW": "冰軟糖布朗尼"
   },
   "Pineapple Tidbits": {
     "zh-CN": "菠萝花絮",
@@ -14702,5 +14703,29 @@
     "ja": "カプチーノ チョコレートチャンクマフィン",
     "es": "Muffin con trozos de chocolate y capuchino",
     "pt": "Muffin de Capuccino com Pedaços de Chocolate"
+  },
+  "Roasted Chicken Pizza": {
+    "zh-CN": "烤鸡披萨",
+    "zh-TW": "烤雞披薩",
+    "ko": "구운 치킨 피자",
+    "ja": "ローストチキンピザ",
+    "es": "Pizza de pollo asado",
+    "pt": "Pizza de Frango Assado"
+  },
+  "Curry Roasted Sweet Potatoes": {
+    "zh-CN": "咖喱烤红薯",
+    "zh-TW": "咖哩烤地瓜",
+    "ko": "카레구이 고구마",
+    "ja": "カレー焼き芋",
+    "es": "Batatas asadas al curry",
+    "pt": "Batata doce assada com curry"
+  },
+  "Jasmine Rice with Ginger and Lemongrass": {
+    "zh-CN": "姜柠檬草茉莉香米",
+    "zh-TW": "薑檸檬草茉莉香米",
+    "ko": "생강과 레몬그라스를 곁들인 자스민 라이스",
+    "ja": "ジンジャーとレモングラスのジャスミンライス",
+    "es": "Arroz Jazmín con Jengibre y Limoncillo",
+    "pt": "Arroz de Jasmim com Gengibre e Capim Limão"
   }
 }
