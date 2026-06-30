@@ -14727,5 +14727,29 @@
     "ja": "ジンジャーとレモングラスのジャスミンライス",
     "es": "Arroz Jazmín con Jengibre y Limoncillo",
     "pt": "Arroz de Jasmim com Gengibre e Capim Limão"
+  },
+  "Jumbo Beef Ravioli": {
+    "zh-CN": "珍宝牛肉馄饨",
+    "zh-TW": "珍寶牛肉餛飩",
+    "ko": "점보 비프 라비올리",
+    "ja": "ジャンボビーフラビオリ",
+    "es": "Ravioles de carne gigantes",
+    "pt": "Ravióli de Carne Jumbo"
+  },
+  "Halal Ancho Chicken Drumsticks": {
+    "zh-CN": "清真安乔鸡腿",
+    "zh-TW": "清真安喬雞腿",
+    "ko": "할랄 안초 치킨 드럼스틱",
+    "ja": "ハラールアンチョチキンドラムスティック",
+    "es": "Muslos De Pollo Ancho Halal",
+    "pt": "Coxinhas de frango Halal Ancho"
+  },
+  "Chocolate Chip Muffins": {
+    "zh-CN": "巧克力片松饼",
+    "zh-TW": "巧克力片鬆餅",
+    "ko": "초콜릿 칩 머핀",
+    "ja": "チョコチップマフィン",
+    "es": "Muffins con chispas de chocolate",
+    "pt": "Muffins de Chocolate"
   }
 }
