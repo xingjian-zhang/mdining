@@ -14759,5 +14759,21 @@
     "ja": "オレンジクリームケーキ",
     "es": "Pastel De Crema De Naranja",
     "pt": "Bolo De Creme De Laranja"
+  },
+  "Beef Birria": {
+    "zh-CN": "比利亚牛肉",
+    "zh-TW": "比利亞牛肉",
+    "ko": "비프 비리아",
+    "ja": "ビーフビリア",
+    "es": "Birria de Res",
+    "pt": "Birria de carne"
+  },
+  "Sliced White Onions": {
+    "zh-CN": "白洋葱切片",
+    "zh-TW": "白洋蔥切片",
+    "ko": "얇게 썬 흰 양파",
+    "ja": "白ネギのスライス",
+    "es": "Cebollas Blancas Rebanadas",
+    "pt": "Cebola Branca Fatiada"
   }
 }
