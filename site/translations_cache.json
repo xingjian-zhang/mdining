@@ -14775,5 +14775,37 @@
     "ja": "白ネギのスライス",
     "es": "Cebollas Blancas Rebanadas",
     "pt": "Cebola Branca Fatiada"
+  },
+  "Chicken Thigh": {
+    "zh-CN": "鸡大腿",
+    "zh-TW": "雞大腿",
+    "ko": "닭다리",
+    "ja": "鶏もも肉",
+    "es": "Muslo De Pollo",
+    "pt": "Coxa de frango"
+  },
+  "Watermelon Wedges": {
+    "zh-CN": "西瓜角",
+    "zh-TW": "西瓜角",
+    "ko": "수박 웨지",
+    "ja": "スイカウェッジ",
+    "es": "Gajos de sandía",
+    "pt": "Fatias de melancia"
+  },
+  "Foot Long Hot Dog w/ Bun": {
+    "zh-CN": "一英尺长的热狗配面包",
+    "zh-TW": "一英尺長的熱狗配麵包",
+    "ko": "발길이 핫도그와 번",
+    "ja": "フットロングホットドッグ パン付き",
+    "es": "Hot Dog de un pie de largo con panecillo",
+    "pt": "Cachorro-quente comprido com pão"
+  },
+  "Fried Chicken Tenders": {
+    "zh-CN": "炸鸡块",
+    "zh-TW": "炸雞塊",
+    "ko": "프라이드 치킨 텐더",
+    "ja": "フライドチキンテンダー",
+    "es": "Licitaciones De Pollo Frito",
+    "pt": "Propostas de Frango Frito"
   }
 }
