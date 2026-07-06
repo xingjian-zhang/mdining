@@ -14807,5 +14807,69 @@
     "ja": "フライドチキンテンダー",
     "es": "Licitaciones De Pollo Frito",
     "pt": "Propostas de Frango Frito"
+  },
+  "Pulled BBQ Mushrooms and Tofu": {
+    "zh-CN": "拉丝烧烤蘑菇和豆腐",
+    "zh-TW": "拉絲燒烤蘑菇和豆腐",
+    "ko": "풀드 바비큐 버섯과 두부",
+    "ja": "プルドBBQキノコと豆腐",
+    "es": "Champiñones BBQ Desmenuzados y Tofu",
+    "pt": "Cogumelos para churrasco puxados e tofu"
+  },
+  "Firecracker Tofu": {
+    "zh-CN": "爆竹豆腐",
+    "zh-TW": "爆竹豆腐",
+    "ko": "폭죽두부",
+    "ja": "爆竹豆腐",
+    "es": "Tofu petardo",
+    "pt": "Tofu de fogos de artifício"
+  },
+  "Creole Rubbed Chicken Thigh": {
+    "zh-CN": "克里奥尔擦鸡大腿",
+    "zh-TW": "克里奧爾擦雞大腿",
+    "ko": "크리올 럽드 치킨 허벅지",
+    "ja": "クレオール鶏もも肉の揉み込み",
+    "es": "Muslo De Pollo Frotado A La Criolla",
+    "pt": "Coxa de Frango Esfregada Crioula"
+  },
+  "Cocktail Sauce": {
+    "zh-CN": "鸡尾酒酱",
+    "zh-TW": "雞尾酒醬",
+    "ko": "칵테일 소스",
+    "ja": "カクテルソース",
+    "es": "Salsa De Cóctel",
+    "pt": "Molho Coquetel"
+  },
+  "Halal Chicken Drumsticks Baked": {
+    "zh-CN": "清真烤鸡腿",
+    "zh-TW": "清真烤雞腿",
+    "ko": "할랄 닭고기 드럼스틱 구이",
+    "ja": "ハラールチキンドラムスティック焼き",
+    "es": "Muslos de pollo halal al horno",
+    "pt": "Coxinhas de Frango Halal Assadas"
+  },
+  "Vegetable Seitan Lo Mein": {
+    "zh-CN": "蔬菜面筋捞面",
+    "zh-TW": "蔬菜麵筋撈麵",
+    "ko": "야채 세이탄 로메인",
+    "ja": "野菜セイタンローメン",
+    "es": "Seitán vegetal Lo Mein",
+    "pt": "Seitan Lo Mein Vegetal"
+  },
+  "Chipotle Roast Chicken": {
+    "zh-CN": "墨西哥辣椒烤鸡",
+    "zh-TW": "墨西哥辣椒烤雞",
+    "ko": "치폴레 로스트 치킨",
+    "ja": "チポトレ ローストチキン",
+    "es": "Pollo Asado Al Chipotle",
+    "pt": "Frango Assado Chipotle"
+  },
+  "Risotto": {
+    "zh-CN": "烩饭",
+    "zh-TW": "燴飯",
+    "ko": "리조또",
+    "ja": "リゾット",
+    "es": "Risotto",
+    "pt": "Risoto"
   }
 }
