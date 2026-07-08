@@ -10008,7 +10008,8 @@
     "ko": "사우스웨스트 가르반조 철판 케이크",
     "ja": "サウスウェストひよこ焼きグリドルケーキ",
     "es": "Pastel a la plancha de garbanzos del suroeste",
-    "pt": "Bolo Griddle do Sudoeste Garbanzo"
+    "pt": "Bolo Griddle do Sudoeste Garbanzo",
+    "zh-TW": "西南鷹嘴豆乾鍋餅"
   },
   "Pasta Salad with Cucumbers": {
     "zh-CN": "黄瓜意大利面沙拉",
@@ -14879,5 +14880,69 @@
     "ja": "シナモンシュガーケーキドーナツ",
     "es": "Donuts De Pastel De Azúcar Y Canela",
     "pt": "Donuts De Bolo De Açúcar De Canela"
+  },
+  "Garlic Parmesan Sauce": {
+    "zh-CN": "大蒜帕尔马干酪酱",
+    "zh-TW": "大蒜帕瑪森起司醬",
+    "ko": "마늘 파마산 소스",
+    "ja": "ガーリックパルメザンソース",
+    "es": "Salsa De Ajo Y Parmesano",
+    "pt": "Molho de Alho Parmesão"
+  },
+  "Savory Rubbed Chicken Thigh": {
+    "zh-CN": "咸味鸡腿肉",
+    "zh-TW": "鹹味雞腿肉",
+    "ko": "풍미있는 문지른 닭 허벅지",
+    "ja": "鶏もも肉の風味豊かな揉み込み",
+    "es": "Muslo De Pollo Frotado Salado",
+    "pt": "Coxa de Frango Esfregada Salgada"
+  },
+  "BBQ Seitan": {
+    "zh-CN": "烧烤面筋",
+    "zh-TW": "燒烤麵筋",
+    "ko": "BBQ 세이탄",
+    "ja": "BBQセイタン",
+    "es": "Seitán BBQ",
+    "pt": "Churrasco Seitan"
+  },
+  "Arugula Salad w/ Strawberry Vinaigrette": {
+    "zh-CN": "芝麻菜沙拉配草莓油醋汁",
+    "zh-TW": "芝麻菜沙拉佐草莓油醋汁",
+    "ko": "딸기 비네그레트를 곁들인 아루굴라 샐러드",
+    "ja": "ルッコラのサラダ ストロベリービネグレット添え",
+    "es": "Ensalada De Rúcula Con Vinagreta De Fresa",
+    "pt": "Salada de Rúcula com Vinagrete de Morango"
+  },
+  "Pork and Chicken Jambalaya": {
+    "zh-CN": "猪肉鸡肉什锦饭",
+    "zh-TW": "豬肉雞肉什錦飯",
+    "ko": "돼지고기와 닭고기 잠발라야",
+    "ja": "ポークとチキンのジャンバラヤ",
+    "es": "Jambalaya de cerdo y pollo",
+    "pt": "Jambalaya de porco e frango"
+  },
+  "Roasted Root Vegetables": {
+    "zh-CN": "烤根类蔬菜",
+    "zh-TW": "烤根莖類蔬菜",
+    "ko": "구운 뿌리채소",
+    "ja": "根菜のロースト",
+    "es": "Verduras de raíz asadas",
+    "pt": "Vegetais de raiz torrados"
+  },
+  "BBQ Chicken on Pretzel Bun": {
+    "zh-CN": "椒盐卷饼面包上的烧烤鸡",
+    "zh-TW": "椒鹽捲餅麵包上的燒烤雞",
+    "ko": "프레첼 번에 바비큐 치킨",
+    "ja": "プレッツェル バンズにバーベキュー チキン",
+    "es": "Pollo BBQ En Pan Pretzel",
+    "pt": "Frango de churrasco no pão pretzel"
+  },
+  "Lamb Gyro on Pita": {
+    "zh-CN": "皮塔饼上的羊肉陀螺",
+    "zh-TW": "皮塔餅上的羊肉陀螺",
+    "ko": "피타 위의 양고기 자이로",
+    "ja": "ラム・ジャイロ・オン・ピタ",
+    "es": "Gyro de cordero en pita",
+    "pt": "Giroscópio de cordeiro em Pita"
   }
 }
