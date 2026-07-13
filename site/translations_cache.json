@@ -14952,5 +14952,21 @@
     "ja": "チミチュリフランクステーキ",
     "es": "Filete De Flan Al Chimichurri",
     "pt": "Bife de Flanco Chimichurri"
+  },
+  "Veggie Deluxe Pizza": {
+    "zh-CN": "素食豪华披萨",
+    "zh-TW": "素食豪華披薩",
+    "ko": "베지 디럭스 피자",
+    "ja": "ベジデラックスピザ",
+    "es": "Pizza vegetariana de lujo",
+    "pt": "Pizza Vegetariana Deluxe"
+  },
+  "Teriyaki Chicken Breast": {
+    "zh-CN": "照烧鸡胸肉",
+    "zh-TW": "照燒雞胸肉",
+    "ko": "데리야끼 닭가슴살",
+    "ja": "鶏胸肉の照り焼き",
+    "es": "Pechuga De Pollo Teriyaki",
+    "pt": "Peito de Frango Teriyaki"
   }
 }
