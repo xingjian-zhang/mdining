@@ -14976,5 +14976,37 @@
     "ja": "トマトクリームソース",
     "es": "Salsa Crema De Tomate",
     "pt": "Molho Creme De Tomate"
+  },
+  "Fire Roasted Tomato Salsa": {
+    "zh-CN": "火烤番茄莎莎酱",
+    "zh-TW": "火烤番茄莎莎醬",
+    "ko": "불에 구운 토마토 살사",
+    "ja": "直火焼きトマトサルサ",
+    "es": "Salsa de tomate asado al fuego",
+    "pt": "Molho de Tomate Assado no Fogo"
+  },
+  "Chocolate Coated Ice Cream Bars": {
+    "zh-CN": "巧克力冰淇淋棒",
+    "zh-TW": "巧克力冰淇淋棒",
+    "ko": "초콜릿 코팅 아이스크림 바",
+    "ja": "チョコレートコーティングされたアイスクリームバー",
+    "es": "Barras de helado recubiertas de chocolate",
+    "pt": "Barras de sorvete com cobertura de chocolate"
+  },
+  "Blue Bunny Ornge Dream Ice Cream Bar 3oz": {
+    "zh-CN": "Blue Bunny Ornge Dream 冰淇淋棒 3 盎司",
+    "zh-TW": "Blue Bunny Ornge Dream 冰淇淋棒 3 盎司",
+    "ko": "블루 버니 오렌지 드림 아이스크림 바 3온스",
+    "ja": "ブルー バニー オレンジ ドリーム アイス クリーム バー 3オンス",
+    "es": "Barra de helado Blue Bunny Ornge Dream 3oz",
+    "pt": "Barra de sorvete Blue Bunny Ornge Dream 3 onças"
+  },
+  "BLT+A Tater Tots": {
+    "zh-CN": "BLT+炸土豆块",
+    "zh-TW": "BLT+炸馬鈴薯塊",
+    "ko": "BLT+A 테이터 토츠",
+    "ja": "BLT+A テイター トッツ",
+    "es": "BLT+A Tater Tots",
+    "pt": "Bolinhos BLT + A"
   }
 }
