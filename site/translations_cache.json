@@ -15008,5 +15008,21 @@
     "ja": "BLT+A テイター トッツ",
     "es": "BLT+A Tater Tots",
     "pt": "Bolinhos BLT + A"
+  },
+  "Baked Hashbrowns": {
+    "zh-CN": "烤薯饼",
+    "zh-TW": "烤薯餅",
+    "ko": "구운 해시브라운",
+    "ja": "ベイクドハッシュブラウン",
+    "es": "Patatas fritas al horno",
+    "pt": "Hashbrowns Assados"
+  },
+  "Vegetable Stew": {
+    "zh-CN": "炖菜",
+    "zh-TW": "燉菜",
+    "ko": "야채 스튜",
+    "ja": "野菜のシチュー",
+    "es": "Guiso De Verduras",
+    "pt": "Ensopado de Legumes"
   }
 }
