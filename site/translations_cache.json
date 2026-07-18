@@ -15024,5 +15024,29 @@
     "ja": "野菜のシチュー",
     "es": "Guiso De Verduras",
     "pt": "Ensopado de Legumes"
+  },
+  "Fried Battered Mushrooms": {
+    "zh-CN": "炸蘑菇",
+    "zh-TW": "炸蘑菇",
+    "ko": "튀긴 반죽 버섯",
+    "ja": "衣をつけて揚げたキノコ",
+    "es": "Champiñones Rebozados Fritos",
+    "pt": "Cogumelos Fritos Empanados"
+  },
+  "Southwest Breakfast Frittata": {
+    "zh-CN": "西南早餐菜肉馅煎蛋饼",
+    "zh-TW": "西南早餐菜肉餡煎蛋餅",
+    "ko": "사우스웨스트 브렉퍼스트 프리타타",
+    "ja": "サウスウェスト・ブレックファースト・フリッタータ",
+    "es": "Frittata de desayuno del suroeste",
+    "pt": "Fritada de café da manhã do sudoeste"
+  },
+  "SQ Champ's Pork Shoulder": {
+    "zh-CN": "SQ Champ 猪肩肉",
+    "zh-TW": "SQ Champ 豬肩肉",
+    "ko": "SQ챔프 돼지목살",
+    "ja": "SQチャンプの豚肩肉",
+    "es": "Paletilla de cerdo de SQ Champ",
+    "pt": "Ombro de porco SQ Champ"
   }
 }
