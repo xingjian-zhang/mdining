@@ -15072,5 +15072,21 @@
     "ja": "ベイクドスイートポテトトッツ",
     "es": "Tots de camote al horno",
     "pt": "Bolinhos de batata doce assada"
+  },
+  "BBQ Pork Chops": {
+    "zh-CN": "烧烤猪排",
+    "zh-TW": "燒烤豬排",
+    "ko": "바비큐 돼지갈비",
+    "ja": "バーベキューポークチョップ",
+    "es": "Chuletas de cerdo a la barbacoa",
+    "pt": "Costeletas de porco para churrasco"
+  },
+  "Mediterranean Quinoa Salad": {
+    "zh-CN": "地中海藜麦沙拉",
+    "zh-TW": "地中海藜麥沙拉",
+    "ko": "지중해식 퀴노아 샐러드",
+    "ja": "地中海風キヌアサラダ",
+    "es": "Ensalada Mediterránea De Quinua",
+    "pt": "Salada Mediterrânea de Quinoa"
   }
 }
