@@ -15096,5 +15096,53 @@
     "ja": "コリアンダーライムスロー",
     "es": "Ensalada De Lima Y Cilantro",
     "pt": "Salada de coentro e limão"
+  },
+  "Chile Rubbed Chicken Thigh": {
+    "zh-CN": "智利磨鸡大腿",
+    "zh-TW": "智利磨雞大腿",
+    "ko": "칠레 문지른 닭 허벅지",
+    "ja": "チリの鶏もも肉の揉み込み",
+    "es": "Muslo De Pollo Frotado Con Chile",
+    "pt": "Coxa de frango esfregada no Chile"
+  },
+  "Vegan Korean Bibimbap": {
+    "zh-CN": "纯素韩式拌饭",
+    "zh-TW": "純素韓式拌飯",
+    "ko": "비건 한식 비빔밥",
+    "ja": "ビーガン韓国ビビンバ",
+    "es": "Bibimbap coreano vegano",
+    "pt": "Bibimbap coreano vegano"
+  },
+  "Chicken Caesar Salad": {
+    "zh-CN": "鸡肉凯撒沙拉",
+    "zh-TW": "雞肉凱薩沙拉",
+    "ko": "치킨 시저 샐러드",
+    "ja": "チキンシーザーサラダ",
+    "es": "Ensalada César De Pollo",
+    "pt": "Salada César De Frango"
+  },
+  "Florida Style BBQ Beef on White Bun": {
+    "zh-CN": "佛罗里达风味烧烤牛肉配白面包",
+    "zh-TW": "佛羅裡達風味燒烤牛肉配白麵包",
+    "ko": "플로리다 스타일 바비큐 쇠고기와 화이트 번",
+    "ja": "白いバンズに乗ったフロリダ風バーベキュービーフ",
+    "es": "Carne BBQ Estilo Florida En Pan Blanco",
+    "pt": "Carne de churrasco estilo Flórida em pão branco"
+  },
+  "Baked Chicken Drumsticks": {
+    "zh-CN": "烤鸡腿",
+    "zh-TW": "烤雞腿",
+    "ko": "구운 닭고기 드럼스틱",
+    "ja": "焼き鳥ドラムスティック",
+    "es": "Muslos De Pollo Al Horno",
+    "pt": "Coxinhas de Frango Assadas"
+  },
+  "Tempeh Vietnamese Chili Stir Fry": {
+    "zh-CN": "豆豉越南辣椒炒",
+    "zh-TW": "豆豉越南辣椒炒",
+    "ko": "템페 베트남 칠리 볶음 요리",
+    "ja": "テンペのベトナムチリ炒め",
+    "es": "Tempeh salteado de chile vietnamita",
+    "pt": "Tempeh com pimenta vietnamita salteada"
   }
 }
