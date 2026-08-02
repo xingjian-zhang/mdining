@@ -15168,5 +15168,21 @@
     "ja": "バスマティライスとバターナッツスカッシュ",
     "es": "Arroz basmati con calabaza",
     "pt": "Arroz Basmati com Abóbora Butternut"
+  },
+  "Zesty Orange Chicken Tenders": {
+    "zh-CN": "香橙鸡柳",
+    "zh-TW": "香橙雞柳",
+    "ko": "제스티 오렌지 치킨 텐더",
+    "ja": "ピリッとしたオレンジのチキンテンダー",
+    "es": "Tiras de pollo picantes a la naranja",
+    "pt": "Propostas picantes de frango com laranja"
+  },
+  "Vegetable Biryani": {
+    "zh-CN": "蔬菜印度比尔雅尼菜",
+    "zh-TW": "蔬菜印度比爾雅尼菜",
+    "ko": "야채 비리야니",
+    "ja": "野菜ビリヤニ",
+    "es": "biryani vegetal",
+    "pt": "Biryani de legumes"
   }
 }
