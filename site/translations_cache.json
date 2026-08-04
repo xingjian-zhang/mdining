@@ -15192,5 +15192,21 @@
     "ja": "韓国マンゴーBBQソース",
     "es": "Salsa BBQ De Mango Coreano",
     "pt": "Molho de churrasco coreano de manga"
+  },
+  "Texas Style Beef Brisket": {
+    "zh-CN": "德州风味牛腩",
+    "zh-TW": "德州風味牛腩",
+    "ko": "텍사스 스타일 쇠고기 양지머리",
+    "ja": "テキサススタイルビーフブリスケット",
+    "es": "Pechuga de res estilo Texas",
+    "pt": "Peito de carne estilo Texas"
+  },
+  "Sweet & Spicy Baked Tofu": {
+    "zh-CN": "甜辣烤豆腐",
+    "zh-TW": "甜辣烤豆腐",
+    "ko": "달콤하고 매콤한 구운 두부",
+    "ja": "甘辛焼き豆腐",
+    "es": "Tofu horneado dulce y picante",
+    "pt": "Tofu Assado Doce e Picante"
   }
 }
