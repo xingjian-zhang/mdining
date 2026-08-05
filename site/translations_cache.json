@@ -15208,5 +15208,13 @@
     "ja": "甘辛焼き豆腐",
     "es": "Tofu horneado dulce y picante",
     "pt": "Tofu Assado Doce e Picante"
+  },
+  "Chicken": {
+    "zh-CN": "鸡",
+    "zh-TW": "雞",
+    "ko": "닭",
+    "ja": "チキン",
+    "es": "Pollo",
+    "pt": "Frango"
   }
 }
