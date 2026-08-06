@@ -15216,5 +15216,21 @@
     "ja": "チキン",
     "es": "Pollo",
     "pt": "Frango"
+  },
+  "Hoisin-Tamarind Glaze": {
+    "zh-CN": "海鲜罗望子釉",
+    "zh-TW": "海鮮羅望子釉",
+    "ko": "호이신-타마린드 글레이즈",
+    "ja": "海鮮タマリンドグレーズ",
+    "es": "Glaseado Hoisin y Tamarindo",
+    "pt": "Esmalte Hoisin-Tamarindo"
+  },
+  "Caribbean Jerk Meatballs": {
+    "zh-CN": "加勒比肉干肉丸",
+    "zh-TW": "加勒比海肉乾肉丸",
+    "ko": "캐리비안 저크 미트볼",
+    "ja": "カリビアンジャークミートボール",
+    "es": "Albóndigas caribeñas",
+    "pt": "Almôndegas caribenhas"
   }
 }
