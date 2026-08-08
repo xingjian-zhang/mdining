@@ -15232,5 +15232,45 @@
     "ja": "カリビアンジャークミートボール",
     "es": "Albóndigas caribeñas",
     "pt": "Almôndegas caribenhas"
+  },
+  "Crispy Black Bean & Quinoa Burrito": {
+    "zh-CN": "脆皮黑豆藜麦卷饼",
+    "zh-TW": "脆皮黑豆藜麥捲餅",
+    "ko": "바삭한 검은콩과 퀴노아 부리또",
+    "ja": "クリスピーブラックビーン＆キヌアブリトー",
+    "es": "Burrito crujiente de frijoles negros y quinua",
+    "pt": "Burrito Crocante de Feijão Preto e Quinoa"
+  },
+  "Gluten Free Pepperoni Pizza": {
+    "zh-CN": "无麸质意大利辣香肠披萨",
+    "zh-TW": "無麩質義大利辣香腸披薩",
+    "ko": "글루텐 프리 페퍼로니 피자",
+    "ja": "グルテンフリーのペパロニピザ",
+    "es": "Pizza de peperoni sin gluten",
+    "pt": "Pizza de calabresa sem glúten"
+  },
+  "Pizza Flatbread": {
+    "zh-CN": "披萨饼",
+    "zh-TW": "披薩餅",
+    "ko": "피자 플랫브레드",
+    "ja": "ピザフラットブレッド",
+    "es": "Pan plano para pizza",
+    "pt": "Pão achatado de pizza"
+  },
+  "French Toast Bread Pudding": {
+    "zh-CN": "法式吐司面包布丁",
+    "zh-TW": "法國吐司麵包布丁",
+    "ko": "프렌치 토스트 빵 푸딩",
+    "ja": "フレンチトースト ブレッドプディング",
+    "es": "Pudín de pan con tostadas francesas",
+    "pt": "Pudim de pão torrado francês"
+  },
+  "Strawberry Gelatin": {
+    "zh-CN": "草莓明胶",
+    "zh-TW": "草莓明膠",
+    "ko": "딸기 젤라틴",
+    "ja": "イチゴゼラチン",
+    "es": "Gelatina de Fresa",
+    "pt": "Gelatina de Morango"
   }
 }
