@@ -15288,5 +15288,29 @@
     "ja": "クランベリーホワイトチョコレートブレッドプディング",
     "es": "Pudín de pan con chocolate blanco y arándanos",
     "pt": "Pudim de Pão de Chocolate Branco com Cranberry"
+  },
+  "Honey Glazed Sweet Potatoes": {
+    "zh-CN": "蜜汁红薯",
+    "zh-TW": "蜜汁地瓜",
+    "ko": "허니 글레이즈드 고구마",
+    "ja": "ハニーグレーズスイートポテト",
+    "es": "Batatas Glaseadas Con Miel",
+    "pt": "Batata doce com cobertura de mel"
+  },
+  "Fried Chicken Drumsticks": {
+    "zh-CN": "炸鸡腿",
+    "zh-TW": "炸雞腿",
+    "ko": "프라이드 치킨 드럼스틱",
+    "ja": "フライドチキンドラムスティック",
+    "es": "Muslos De Pollo Frito",
+    "pt": "Coxinhas de Frango Frito"
+  },
+  "Southwest Dipping Sauce": {
+    "zh-CN": "西南蘸酱",
+    "zh-TW": "西南沾醬",
+    "ko": "사우스웨스트 디핑 소스",
+    "ja": "サウスウェストディップソース",
+    "es": "Salsa para mojar del suroeste",
+    "pt": "Molho Sudoeste"
   }
 }
