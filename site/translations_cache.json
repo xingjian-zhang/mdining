@@ -15344,5 +15344,29 @@
     "ja": "クレームブリュレフレンチトースト",
     "es": "Tostada francesa con crema brulée",
     "pt": "Torrada Francesa com Creme Brulée"
+  },
+  "Sliced Cheddar Cheese": {
+    "zh-CN": "切片切达干酪",
+    "zh-TW": "切片切達乾酪",
+    "ko": "슬라이스 체다 치즈",
+    "ja": "スライスチェダーチーズ",
+    "es": "Queso Cheddar Rebanado",
+    "pt": "Queijo Cheddar Fatiado"
+  },
+  "Broccoli": {
+    "zh-CN": "西兰花",
+    "zh-TW": "綠色花椰菜",
+    "ko": "브로콜리",
+    "ja": "ブロッコリー",
+    "es": "Brócoli",
+    "pt": "Brócolis"
+  },
+  "Halal Chicken and Beef Swedish Meatballs": {
+    "zh-CN": "清真鸡肉和牛肉瑞典肉丸",
+    "zh-TW": "清真雞肉和牛肉瑞典肉丸",
+    "ko": "할랄 닭고기와 쇠고기 스웨덴 미트볼",
+    "ja": "ハラールチキンとビーフのスウェーデン風ミートボール",
+    "es": "Albóndigas suecas de pollo y ternera halal",
+    "pt": "Almôndegas suecas de frango e carne Halal"
   }
 }
