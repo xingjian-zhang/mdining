@@ -15376,5 +15376,37 @@
     "ja": "細切りバーベキューポーク",
     "es": "Cerdo BBQ desmenuzado",
     "pt": "Carne de porco desfiada para churrasco"
+  },
+  "Sauteed Whitefish": {
+    "zh-CN": "炒白鱼",
+    "zh-TW": "炒白魚",
+    "ko": "흰살 생선 볶음",
+    "ja": "白身魚のソテー",
+    "es": "Pescado Blanco Salteado",
+    "pt": "Peixe branco salteado"
+  },
+  "Tempeh Swiss Steak": {
+    "zh-CN": "丹贝瑞士牛排",
+    "zh-TW": "丹貝瑞士牛排",
+    "ko": "템페 스위스 스테이크",
+    "ja": "テンペスイスステーキ",
+    "es": "Filete Suizo Tempeh",
+    "pt": "Bife Suíço Tempeh"
+  },
+  "Mushrooms and Pearl Onions Sauteed": {
+    "zh-CN": "蘑菇和珍珠洋葱炒",
+    "zh-TW": "蘑菇和珍珠洋蔥炒",
+    "ko": "버섯과 진주 양파 볶음",
+    "ja": "マッシュルームとパールオニオンのソテー",
+    "es": "Salteado de Champiñones y Cebolla Perla",
+    "pt": "Cogumelos e Cebola Pérola Refogados"
+  },
+  "Esquites": {
+    "zh-CN": "埃斯基特斯",
+    "zh-TW": "埃斯基特斯",
+    "ko": "에스콰이어",
+    "ja": "エスキーテス",
+    "es": "esquites",
+    "pt": "Esquites"
   }
 }
