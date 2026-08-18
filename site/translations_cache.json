@@ -15408,5 +15408,45 @@
     "ja": "エスキーテス",
     "es": "esquites",
     "pt": "Esquites"
+  },
+  "Country Milk Gravy": {
+    "zh-CN": "乡村牛奶肉汁",
+    "zh-TW": "鄉村牛奶肉汁",
+    "ko": "컨트리 밀크 그레이비",
+    "ja": "カントリーミルクグレービー",
+    "es": "Salsa de leche campestre",
+    "pt": "Molho de Leite Country"
+  },
+  "Smoked Whole Leg of Lamb": {
+    "zh-CN": "熏全羊腿",
+    "zh-TW": "燻全羊腿",
+    "ko": "훈제 양고기 다리 전체",
+    "ja": "子羊脚の丸ごと燻製",
+    "es": "Pierna Entera De Cordero Ahumada",
+    "pt": "Perna de cordeiro inteira defumada"
+  },
+  "Blue Cheese Bacon & Green Onion Pizza": {
+    "zh-CN": "蓝纹奶酪培根葱披萨",
+    "zh-TW": "藍紋起司培根蔥披薩",
+    "ko": "블루치즈 베이컨 & 파 피자",
+    "ja": "ブルーチーズベーコンとネギのピザ",
+    "es": "Pizza de queso azul, tocino y cebolla verde",
+    "pt": "Pizza de bacon com queijo azul e cebola verde"
+  },
+  "Pacific Blend Vegetables": {
+    "zh-CN": "太平洋混合蔬菜",
+    "zh-TW": "太平洋混合蔬菜",
+    "ko": "태평양 혼합 야채",
+    "ja": "パシフィックブレンドベジタブル",
+    "es": "Verduras mezcladas del Pacífico",
+    "pt": "Legumes Misturados do Pacífico"
+  },
+  "Italian Seasoned Green beans": {
+    "zh-CN": "意大利调味青豆",
+    "zh-TW": "義大利調味青豆",
+    "ko": "이탈리안 양념 녹두",
+    "ja": "イタリアの味付けインゲン",
+    "es": "Judías verdes sazonadas italianas",
+    "pt": "Feijão Verde Temperado Italiano"
   }
 }
