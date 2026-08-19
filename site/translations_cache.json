@@ -15448,5 +15448,37 @@
     "ja": "イタリアの味付けインゲン",
     "es": "Judías verdes sazonadas italianas",
     "pt": "Feijão Verde Temperado Italiano"
+  },
+  "Green Beans Roasted": {
+    "zh-CN": "烤青豆",
+    "zh-TW": "烤青豆",
+    "ko": "녹두 구이",
+    "ja": "いんげんのロースト",
+    "es": "Judías verdes asadas",
+    "pt": "Feijão Verde Assado"
+  },
+  "Halal Adobo Chicken Thigh": {
+    "zh-CN": "清真阿多波鸡大腿",
+    "zh-TW": "清真阿多波雞大腿",
+    "ko": "할랄 아도보 닭다리살",
+    "ja": "ハラール アドボ鶏もも肉",
+    "es": "Muslo De Pollo Adobo Halal",
+    "pt": "Coxa de Frango Halal Adobo"
+  },
+  "Risotto with Garlic Basil Tofu": {
+    "zh-CN": "大蒜罗勒豆腐烩饭",
+    "zh-TW": "大蒜羅勒豆腐燴飯",
+    "ko": "마늘 바질 두부를 곁들인 리조또",
+    "ja": "ガーリックバジル豆腐のリゾット",
+    "es": "Risotto con ajo y albahaca y tofu",
+    "pt": "Risoto com Alho Manjericão Tofu"
+  },
+  "Marinated Italian Beef": {
+    "zh-CN": "腌制意大利牛肉",
+    "zh-TW": "醃漬義大利牛肉",
+    "ko": "절인 이탈리아산 쇠고기",
+    "ja": "イタリア産牛肉のマリネ",
+    "es": "Carne Italiana Marinada",
+    "pt": "Carne Italiana Marinada"
   }
 }
