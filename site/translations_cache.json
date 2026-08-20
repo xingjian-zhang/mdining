@@ -15480,5 +15480,21 @@
     "ja": "イタリア産牛肉のマリネ",
     "es": "Carne Italiana Marinada",
     "pt": "Carne Italiana Marinada"
+  },
+  "King's Hawaiian Pork Kalua": {
+    "zh-CN": "国王夏威夷猪肉卡鲁亚",
+    "zh-TW": "國王夏威夷豬肉卡魯亞",
+    "ko": "킹스 하와이안 포크 칼루아",
+    "ja": "キングス ハワイアン ポーク カルア",
+    "es": "Kalua de cerdo hawaiano del rey",
+    "pt": "Kalua de porco havaiano do rei"
+  },
+  "Coconut Jasmine Rice": {
+    "zh-CN": "椰子茉莉香米",
+    "zh-TW": "椰子茉莉香米",
+    "ko": "코코넛 자스민 라이스",
+    "ja": "ココナッツジャスミンライス",
+    "es": "Arroz Jazmín Con Coco",
+    "pt": "Arroz De Coco Jasmim"
   }
 }
