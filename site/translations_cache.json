@@ -15496,5 +15496,21 @@
     "ja": "ココナッツジャスミンライス",
     "es": "Arroz Jazmín Con Coco",
     "pt": "Arroz De Coco Jasmim"
+  },
+  "Oven Baked Catfish": {
+    "zh-CN": "烤箱烤鲶鱼",
+    "zh-TW": "烤箱烤鯰魚",
+    "ko": "오븐에 구운 메기",
+    "ja": "ナマズのオーブン焼き",
+    "es": "Bagre Al Horno",
+    "pt": "Bagre Assado no Forno"
+  },
+  "Grilled Chicken Breast": {
+    "zh-CN": "烤鸡胸肉",
+    "zh-TW": "烤雞胸肉",
+    "ko": "구운 닭 가슴살",
+    "ja": "鶏胸肉のグリル",
+    "es": "Pechuga De Pollo A La Parrilla",
+    "pt": "Peito de Frango Grelhado"
   }
 }
