@@ -15520,5 +15520,61 @@
     "ja": "牛肉炒め",
     "es": "Carne De Res Salteada",
     "pt": "Carne Frita Mexida"
+  },
+  "Halal Chicken Breast Mediterranean": {
+    "zh-CN": "清真鸡胸肉地中海",
+    "zh-TW": "清真雞胸肉地中海",
+    "ko": "할랄 닭가슴살 지중해식",
+    "ja": "ハラール鶏胸肉地中海料理",
+    "es": "Pechuga De Pollo Halal Mediterránea",
+    "pt": "Peito de Frango Halal Mediterrâneo"
+  },
+  "Cajun Pork": {
+    "zh-CN": "卡真猪肉",
+    "zh-TW": "卡真豬肉",
+    "ko": "케이준 포크",
+    "ja": "ケイジャンポーク",
+    "es": "Cerdo cajún",
+    "pt": "Carne De Porco Cajun"
+  },
+  "Vegan Mushroom Risotto": {
+    "zh-CN": "纯素蘑菇烩饭",
+    "zh-TW": "純素蘑菇燴飯",
+    "ko": "비건 버섯 리조또",
+    "ja": "ビーガンキノコのリゾット",
+    "es": "Risotto vegano de champiñones",
+    "pt": "Risoto de Cogumelos Vegano"
+  },
+  "Kale Saute with White Beans": {
+    "zh-CN": "羽衣甘蓝炒白豆",
+    "zh-TW": "羽衣甘藍炒白豆",
+    "ko": "흰 콩을 곁들인 케일 소테",
+    "ja": "白インゲン豆入りケールソテー",
+    "es": "Salteado de col rizada con frijoles blancos",
+    "pt": "Couve Refogada com Feijão Branco"
+  },
+  "Vinnie's Pizza": {
+    "zh-CN": "维尼披萨",
+    "zh-TW": "維尼披薩",
+    "ko": "비니의 피자",
+    "ja": "ヴィニーズピザ",
+    "es": "Pizza Vinnie",
+    "pt": "Pizzaria do Vinnie"
+  },
+  "Vegan Ginger Molasses Cookie Bars": {
+    "zh-CN": "纯素姜糖蜜饼干棒",
+    "zh-TW": "純素薑糖蜜餅乾棒",
+    "ko": "비건 생강 당밀 쿠키 바",
+    "ja": "ビーガンジンジャーモラセスクッキーバー",
+    "es": "Barras de galleta veganas con melaza y jengibre",
+    "pt": "Barras de biscoitos veganos com melaço e gengibre"
+  },
+  "Tortellini w/ Red Pepper Cream Sauce": {
+    "zh-CN": "意大利饺子配红辣椒奶油酱",
+    "zh-TW": "義大利餃子佐紅辣椒奶油醬",
+    "ko": "고추크림소스를 곁들인 토르텔리니",
+    "ja": "トルテッリーニ レッドペッパークリームソース添え",
+    "es": "Tortellini con Salsa Crema de Pimiento Rojo",
+    "pt": "Tortellini c/ Molho Creme de Pimenta Vermelha"
   }
 }
