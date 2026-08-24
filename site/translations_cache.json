@@ -15576,5 +15576,69 @@
     "ja": "トルテッリーニ レッドペッパークリームソース添え",
     "es": "Tortellini con Salsa Crema de Pimiento Rojo",
     "pt": "Tortellini c/ Molho Creme de Pimenta Vermelha"
+  },
+  "Vegan Creamy Pinto Beans": {
+    "zh-CN": "纯素奶油斑豆",
+    "ko": "비건 크리미 핀토 콩",
+    "ja": "ビーガンクリーミーピントビーンズ",
+    "es": "Frijoles Pintos Cremosos Veganos",
+    "pt": "Feijão Cremoso Vegano"
+  },
+  "Tandoori Spiced Chickpeas w/ Nuts": {
+    "zh-CN": "坦杜里五香鹰嘴豆配坚果",
+    "zh-TW": "坦杜里五香鷹嘴豆配堅果",
+    "ko": "견과류를 곁들인 탄두리 양념 병아리콩",
+    "ja": "タンドリースパイスひよこ豆のナッツ添え",
+    "es": "Garbanzos Tandoori Especiados Con Nueces",
+    "pt": "Grão de bico temperado tandoori com nozes"
+  },
+  "Jeweled Rice with Almonds": {
+    "zh-CN": "杏仁宝石饭",
+    "zh-TW": "杏仁寶石飯",
+    "ko": "아몬드를 곁들인 보석 쌀",
+    "es": "Arroz Joya con Almendras",
+    "pt": "Arroz Joiado com Amêndoas"
+  },
+  "Seasoned Sugar Snap Peas": {
+    "zh-CN": "调味甜豌豆",
+    "zh-TW": "調味甜豌豆",
+    "es": "Guisantes dulces sazonados",
+    "pt": "Ervilhas temperadas"
+  },
+  "Asiago Cheese": {
+    "zh-CN": "阿夏戈奶酪",
+    "zh-TW": "阿夏戈起司",
+    "ja": "アジアーゴチーズ",
+    "es": "Queso Asiago",
+    "pt": "Queijo Asiago"
+  },
+  "Vegetable Biryani w/ Almonds and Cashews": {
+    "zh-CN": "蔬菜印度饭配杏仁和腰果",
+    "zh-TW": "蔬菜印度飯佐杏仁和腰果",
+    "ko": "아몬드와 캐슈넛을 곁들인 야채 비리야니",
+    "ja": "ベジタブルビリヤニ アーモンドとカシューナッツ添え",
+    "es": "Biryani de verduras con almendras y anacardos",
+    "pt": "Biryani de legumes com amêndoas e castanha de caju"
+  },
+  "Spicy Shrimp with Green Sauce": {
+    "zh-CN": "青酱辣虾",
+    "zh-TW": "青醬辣蝦",
+    "ko": "그린 소스를 곁들인 매콤한 새우",
+    "ja": "スパイシーシュリンプのグリーンソース添え",
+    "es": "Camarones Picantes Con Salsa Verde",
+    "pt": "Camarão Picante com Molho Verde"
+  },
+  "Tempeh Taco Crumbles": {
+    "zh-CN": "豆豉炸玉米饼碎",
+    "zh-TW": "豆豉炸玉米餅碎",
+    "ja": "テンペタコスクランブルズ",
+    "es": "Tempeh Taco Desmenuzado",
+    "pt": "Tempeh Taco Crumbles"
+  },
+  "Turkey Chili": {
+    "zh-TW": "火雞辣椒",
+    "ko": "칠면조 칠리",
+    "es": "Chile De Pavo",
+    "pt": "Peru Pimentão"
   }
 }
