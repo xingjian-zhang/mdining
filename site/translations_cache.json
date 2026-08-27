@@ -15643,5 +15643,117 @@
   },
   "Carrot Raisin Salad": {
     "zh-CN": "胡萝卜葡萄干沙拉"
+  },
+  "Smoked Grape Tomatoes": {
+    "zh-CN": "熏葡萄番茄",
+    "zh-TW": "燻葡萄番茄",
+    "ko": "훈제 포도 토마토",
+    "ja": "スモークグレープトマト",
+    "es": "Tomates Uva Ahumados",
+    "pt": "Tomate Uva Defumado"
+  },
+  "Arroz Con Pollo": {
+    "zh-CN": "阿罗兹康波罗",
+    "zh-TW": "阿羅茲康波羅",
+    "ko": "아로스 콘 폴로",
+    "ja": "アロス コン ポッロ",
+    "es": "Arroz Con Pollo",
+    "pt": "Arroz com Pollo"
+  },
+  "Vegan Peanut Butter Cookies": {
+    "zh-CN": "纯素花生酱饼干",
+    "zh-TW": "純素花生醬餅乾",
+    "ko": "비건 땅콩 버터 쿠키",
+    "ja": "ビーガンピーナッツバタークッキー",
+    "es": "Galletas veganas de mantequilla de maní",
+    "pt": "Biscoitos Veganos De Manteiga De Amendoim"
+  },
+  "Fried Breaded Pork Chops": {
+    "zh-CN": "炸猪排",
+    "zh-TW": "炸豬排",
+    "ko": "튀긴 빵가루를 입힌 돼지갈비",
+    "ja": "パン粉をまぶしたポークチョップの揚げ物",
+    "es": "Chuletas De Cerdo Empanizadas Fritas",
+    "pt": "Costeletas de porco empanadas fritas"
+  },
+  "Vegetarian Mushroom Sauce": {
+    "zh-CN": "素蘑菇酱",
+    "zh-TW": "素蘑菇醬",
+    "ko": "채식 버섯 소스",
+    "ja": "ベジタリアンマッシュルームソース",
+    "es": "Salsa De Champiñones Vegetariana",
+    "pt": "Molho Vegetariano de Cogumelos"
+  },
+  "Peruvian Tofu and Potato Stir Fry": {
+    "zh-CN": "秘鲁豆腐土豆炒",
+    "zh-TW": "秘魯豆腐馬鈴薯炒",
+    "ko": "페루 두부와 감자 볶음",
+    "ja": "ペルー豆腐とジャガイモの炒め物",
+    "es": "Salteado Peruano De Tofu Y Papas",
+    "pt": "Tofu Peruano e Batata Frita"
+  },
+  "Egg and Cheese Bagel": {
+    "zh-CN": "鸡蛋和奶酪百吉饼",
+    "zh-TW": "雞蛋和起司百吉餅",
+    "ko": "계란과 치즈 베이글",
+    "ja": "卵とチーズのベーグル",
+    "es": "Bagel de huevo y queso",
+    "pt": "Bagel de ovo e queijo"
+  },
+  "Espresso Brownie": {
+    "zh-CN": "浓缩咖啡布朗尼",
+    "zh-TW": "濃縮咖啡布朗尼",
+    "ko": "에스프레소 브라우니",
+    "ja": "エスプレッソブラウニー",
+    "es": "Brownie expreso",
+    "pt": "Brownie Expresso"
+  },
+  "Tofu Donburi Udon Noodle Bowl": {
+    "zh-CN": "豆腐盖饭乌冬面碗",
+    "zh-TW": "豆腐蓋飯烏龍麵碗",
+    "ko": "두부 돈부리 우동 국수 그릇",
+    "ja": "豆腐丼 うどん",
+    "es": "Tazón de fideos udon con tofu donburi",
+    "pt": "Tigela de macarrão tofu donburi udon"
+  },
+  "Miso Seafood Udon Noodle Bowl": {
+    "zh-CN": "味噌海鲜乌冬面碗",
+    "zh-TW": "味噌海鮮烏龍麵碗",
+    "ko": "된장 해물 우동 덮밥",
+    "ja": "味噌海鮮うどん",
+    "es": "Tazón de fideos udon con mariscos y miso",
+    "pt": "Tigela de macarrão Udon com frutos do mar Miso"
+  },
+  "Tofu Miso Udon Noodle Bowl": {
+    "zh-CN": "豆腐味噌乌冬面碗",
+    "zh-TW": "豆腐味噌烏龍麵碗",
+    "ko": "두부 된장 우동 국수 그릇",
+    "ja": "豆腐味噌うどん",
+    "es": "Tazón de fideos udon con tofu y miso",
+    "pt": "Tigela de macarrão tofu miso udon"
+  },
+  "Halal Sloppy Joe": {
+    "zh-CN": "清真马虎乔",
+    "zh-TW": "清真馬虎喬",
+    "ko": "할랄 슬로피 조",
+    "ja": "ハラール スロッピー ジョー",
+    "es": "Halal descuidado Joe",
+    "pt": "Halal Joe Desleixado"
+  },
+  "Orange Mojo Tofu": {
+    "zh-CN": "橙魔豆腐",
+    "zh-TW": "橙魔豆腐",
+    "ko": "오렌지모조두부",
+    "ja": "オレンジモジョ豆腐",
+    "es": "Tofu con mojo de naranja",
+    "pt": "Tofu Mojo Laranja"
+  },
+  "Italian Rope Sausage": {
+    "zh-CN": "意大利绳香肠",
+    "zh-TW": "義大利繩香腸",
+    "ko": "이탈리안 로프 소시지",
+    "ja": "イタリアンロープソーセージ",
+    "es": "Salchicha De Cuerda Italiana",
+    "pt": "Salsicha de Corda Italiana"
   }
 }
