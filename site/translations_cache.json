@@ -15764,5 +15764,35 @@
   },
   "Beef & Pork Meatballs": {
     "zh-CN": "牛肉猪肉丸"
+  },
+  "Pickled Onions and Cucumbers": {
+    "zh-CN": "腌洋葱和黄瓜",
+    "ko": "절인 양파와 오이",
+    "ja": "玉ねぎとキュウリのピクルス",
+    "es": "Cebollas y pepinos encurtidos",
+    "pt": "Cebola e pepino em conserva"
+  },
+  "Wilted Spinach": {
+    "zh-TW": "枯萎的菠菜",
+    "ja": "しおれたほうれん草",
+    "es": "Espinacas marchitas",
+    "pt": "Espinafre murcho"
+  },
+  "Apple Cider": {
+    "ko": "애플 사이다",
+    "ja": "アップルサイダー",
+    "es": "sidra de manzana",
+    "pt": "Cidra de maçã"
+  },
+  "Apple Cranberry Crisp": {
+    "ko": "애플 크랜베리 ​​크리스프",
+    "ja": "アップルクランベリークリスプ",
+    "es": "Crujiente De Manzana Y Arándano",
+    "pt": "Crisp de maçã e cranberry"
+  },
+  "Halal Smoked Southwestern Brisket": {
+    "ja": "ハラールスモーク南西部ブリスケット",
+    "es": "Pechuga del sudoeste ahumada halal",
+    "pt": "Peito do Sudoeste Defumado Halal"
   }
 }
