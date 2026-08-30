@@ -15788,11 +15788,84 @@
     "ko": "애플 크랜베리 ​​크리스프",
     "ja": "アップルクランベリークリスプ",
     "es": "Crujiente De Manzana Y Arándano",
-    "pt": "Crisp de maçã e cranberry"
+    "pt": "Crisp de maçã e cranberry",
+    "zh-CN": "苹果蔓越莓脆",
+    "zh-TW": "蘋果蔓越莓脆"
   },
   "Halal Smoked Southwestern Brisket": {
     "ja": "ハラールスモーク南西部ブリスケット",
     "es": "Pechuga del sudoeste ahumada halal",
     "pt": "Peito do Sudoeste Defumado Halal"
+  },
+  "Grandma Shubert's Meatloaf": {
+    "zh-CN": "舒伯特奶奶的肉饼",
+    "zh-TW": "舒伯特奶奶的肉餅",
+    "ko": "슈베르트 할머니의 미트로프",
+    "ja": "シューベルトおばあちゃんのミートローフ",
+    "es": "Pastel de carne de la abuela Shubert",
+    "pt": "Bolo de carne da vovó Shubert"
+  },
+  "Halal Braised Beef with Moroccan Spices": {
+    "zh-CN": "摩洛哥香料清真焖牛肉",
+    "zh-TW": "摩洛哥香料清真癤牛肉",
+    "ko": "모로코 향신료를 곁들인 할랄 쇠고기 조림",
+    "ja": "ハラール牛肉のモロッコ風スパイス煮込み",
+    "es": "Carne De Res Estofada Halal Con Especias Marroquíes",
+    "pt": "Carne Assada Halal com Especiarias Marroquinas"
+  },
+  "Tofu Tikka Masala": {
+    "zh-CN": "豆腐香料咖喱",
+    "zh-TW": "豆腐香料咖哩",
+    "ko": "두부 티카 마살라",
+    "ja": "豆腐ティッカマサラ",
+    "es": "Tofu tikka masala",
+    "pt": "Tofu Tikka Masala"
+  },
+  "Southwest Coleslaw": {
+    "zh-CN": "西南凉拌卷心菜",
+    "zh-TW": "西南涼拌高麗菜",
+    "ko": "남서부 양배추 샐러드",
+    "ja": "サウスウェスト コールスロー",
+    "es": "Ensalada de col del suroeste",
+    "pt": "Salada de repolho do sudoeste"
+  },
+  "Mediterranean Pearl Couscous Salad": {
+    "zh-CN": "地中海珍珠蒸粗麦粉沙拉",
+    "zh-TW": "地中海珍珠蒸粗麥粉沙拉",
+    "ko": "지중해식 진주 쿠스쿠스 샐러드",
+    "ja": "地中海のパールクスクスのサラダ",
+    "es": "Ensalada Mediterránea De Cuscús Con Perlas",
+    "pt": "Salada de Cuscuz Pérola Mediterrânea"
+  },
+  "Smoked Shredded BBQ Chicken": {
+    "zh-CN": "烟熏烤鸡丝",
+    "zh-TW": "煙燻烤雞絲",
+    "ko": "훈제 슈레드 바비큐 치킨",
+    "ja": "スモーク細切りBBQチキン",
+    "es": "Pollo BBQ Ahumado Desmenuzado",
+    "pt": "Frango defumado desfiado para churrasco"
+  },
+  "Rice Krispy Treats": {
+    "zh-CN": "米花脆点心",
+    "zh-TW": "米花脆點心",
+    "ko": "라이스 크리스피 간식",
+    "ja": "ライスクリスピートリート",
+    "es": "Delicias de arroz crujiente",
+    "pt": "Guloseimas de arroz Krispy"
+  },
+  "Butterscotch Chip Pancakes": {
+    "zh-CN": "奶油糖果片煎饼",
+    "zh-TW": "奶油糖果片煎餅",
+    "ko": "버터스카치 칩 팬케이크",
+    "ja": "バタースコッチチップパンケーキ",
+    "es": "Panqueques con chispas de caramelo",
+    "pt": "Panquecas de Caramelo"
+  },
+  "Blueberry Muffin": {
+    "zh-CN": "蓝莓松饼",
+    "zh-TW": "藍莓鬆餅",
+    "ko": "블루베리 머핀",
+    "ja": "ブルーベリーマフィン",
+    "es": "Muffin de arándanos"
   }
 }
