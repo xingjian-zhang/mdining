@@ -15903,9 +15903,75 @@
     "zh-CN": "烤安康鱼"
   },
   "Guajillo Pico de Gallo": {
-    "zh-CN": "瓜希略皮科德加洛"
+    "zh-CN": "瓜希略皮科德加洛",
+    "zh-TW": "瓜希略皮科德加洛",
+    "ko": "과히요 피코 데 갈로",
+    "ja": "グアヒージョ ピコ デ ガロ",
+    "es": "Guajillo Pico de Gallo",
+    "pt": "Guajillo Pico de Gallo"
   },
   "Premade David's Brownies": {
-    "zh-CN": "预制大卫布朗尼"
+    "zh-CN": "预制大卫布朗尼",
+    "zh-TW": "預製大衛布朗尼",
+    "ko": "미리 만들어진 데이비드 브라우니",
+    "ja": "既製のデイビッドブラウニー",
+    "es": "Brownies de David prefabricados",
+    "pt": "Brownies pré-fabricados de David"
+  },
+  "Tahini Sauce": {
+    "zh-CN": "芝麻酱",
+    "zh-TW": "芝麻醬",
+    "ko": "타히니 소스",
+    "ja": "タヒニソース",
+    "es": "Salsa Tahini",
+    "pt": "Molho Tahine"
+  },
+  "Best St. Louis Ribs": {
+    "zh-CN": "精选圣路易斯排骨",
+    "zh-TW": "精選聖路易斯豬肋排",
+    "ko": "최고의 세인트 루이스 립",
+    "ja": "セントルイスの最高のリブ",
+    "es": "Las mejores costillas de St. Louis",
+    "pt": "Melhores Costelas St. Louis"
+  },
+  "Crispy Veggie Patty on Wheat Bun": {
+    "zh-CN": "脆皮蔬菜饼配小麦面包",
+    "zh-TW": "脆皮蔬菜餅配小麥麵包",
+    "ko": "밀빵 위에 바삭한 야채 패티",
+    "ja": "小麦粉バンズに乗ったクリスピー野菜パティ",
+    "es": "Empanada Vegetariana Crujiente Sobre Pan De Trigo",
+    "pt": "Patty Vegetariano Crocante no Pão de Trigo"
+  },
+  "Chicken Chorizo": {
+    "zh-CN": "鸡肉香肠",
+    "zh-TW": "雞肉香腸",
+    "ko": "치킨 초리조",
+    "ja": "チキンチョリソ",
+    "es": "Chorizo ​​De Pollo",
+    "pt": "Chouriço de Frango"
+  },
+  "Penne Pasta with Marinara Sauce": {
+    "zh-CN": "番茄酱通心粉",
+    "zh-TW": "番茄醬通心粉",
+    "ko": "마리나라 소스를 곁들인 펜네 파스타",
+    "ja": "ペンネパスタ マリナラソース添え",
+    "es": "Pasta Penne con Salsa Marinara",
+    "pt": "Macarrão Penne com Molho Marinara"
+  },
+  "Beef Noodle Soup": {
+    "zh-CN": "牛肉面汤",
+    "zh-TW": "牛肉麵湯",
+    "ko": "쇠고기 국수 수프",
+    "ja": "牛肉麺のスープ",
+    "es": "Sopa De Fideos Con Carne",
+    "pt": "Sopa de Macarrão de Carne"
+  },
+  "Mojito Chicken": {
+    "zh-CN": "莫吉托鸡",
+    "zh-TW": "莫吉托雞",
+    "ko": "모히토 치킨",
+    "ja": "モヒートチキン",
+    "es": "Pollo Mojito",
+    "pt": "Frango Mojito"
   }
 }
