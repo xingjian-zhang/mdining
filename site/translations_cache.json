@@ -15888,7 +15888,12 @@
     "zh-CN": "花生酱和椰子日落酱"
   },
   "Broccoli and Cheese Quiche": {
-    "zh-CN": "西兰花和奶酪乳蛋饼"
+    "zh-CN": "西兰花和奶酪乳蛋饼",
+    "zh-TW": "綠花椰菜和起司乳蛋餅",
+    "ko": "브로콜리와 치즈 키슈",
+    "ja": "ブロッコリーとチーズのキッシュ",
+    "es": "Quiche de brócoli y queso",
+    "pt": "Quiche de brócolis e queijo"
   },
   "Jackfruit Bunny Chow": {
     "zh-CN": "菠萝蜜兔子周"
@@ -15973,5 +15978,85 @@
     "ja": "モヒートチキン",
     "es": "Pollo Mojito",
     "pt": "Frango Mojito"
+  },
+  "Breakfast Enchiladas": {
+    "zh-CN": "早餐玉米卷饼",
+    "zh-TW": "早餐玉米捲餅",
+    "ko": "아침 엔칠라다",
+    "ja": "朝食のエンチラーダ",
+    "es": "Enchiladas De Desayuno",
+    "pt": "Enchiladas de café da manhã"
+  },
+  "Shrimp & Corn Soup": {
+    "zh-CN": "虾玉米汤",
+    "zh-TW": "蝦玉米湯",
+    "ko": "새우 & 옥수수 수프",
+    "ja": "エビとコーンのスープ",
+    "es": "Sopa De Camarones Y Maíz",
+    "pt": "Sopa de Camarão e Milho"
+  },
+  "Pesto Meatball Pizza": {
+    "zh-CN": "香蒜肉丸披萨",
+    "zh-TW": "香蒜肉丸披薩",
+    "ko": "페스토 미트볼 피자",
+    "ja": "ペストミートボールピザ",
+    "es": "Pizza de albóndigas al pesto",
+    "pt": "Pizza de almôndega com pesto"
+  },
+  "Apple Brined Smoked Chicken Wings": {
+    "zh-CN": "苹果腌烟熏鸡翅",
+    "zh-TW": "蘋果醃煙燻雞翅",
+    "ko": "사과에 절인 훈제 닭 날개",
+    "ja": "リンゴの塩漬けスモークチキンウィング",
+    "es": "Alitas de pollo ahumadas en salmuera de manzana",
+    "pt": "Asas de frango defumado com salmoura de maçã"
+  },
+  "Blue Cheese Salad Dressing": {
+    "zh-CN": "蓝纹奶酪沙拉酱",
+    "zh-TW": "藍紋起司沙拉醬",
+    "ko": "블루치즈 샐러드 드레싱",
+    "ja": "ブルーチーズサラダドレッシング",
+    "es": "Aderezo para ensalada de queso azul",
+    "pt": "Molho para Salada de Queijo Azul"
+  },
+  "Korean Style Tofu Power Bowl": {
+    "zh-CN": "韩式豆腐能量碗",
+    "zh-TW": "韓式豆腐能量碗",
+    "ko": "한식 두부 파워볼",
+    "ja": "韓国風豆腐パワーボウル",
+    "es": "Power Bowl de tofu estilo coreano",
+    "pt": "Power Bowl de tofu estilo coreano"
+  },
+  "Roasted Vegetable Flatbread Pizza": {
+    "zh-CN": "烤蔬菜面包披萨",
+    "zh-TW": "烤蔬菜麵包披薩",
+    "ko": "구운 야채 플랫브레드 피자",
+    "ja": "ロースト野菜のフラットブレッドピザ",
+    "es": "Pizza de pan plano con verduras asadas",
+    "pt": "Pizza de pão sírio com legumes assados"
+  },
+  "Shrimp Taco on Flour Tortilla": {
+    "zh-CN": "玉米饼虾炸玉米饼",
+    "zh-TW": "玉米餅蝦炸玉米餅",
+    "ko": "밀가루 토르티야에 새우 타코",
+    "ja": "エビのタコス 小麦粉トルティーヤ",
+    "es": "Taco de camarones sobre tortilla de harina",
+    "pt": "Taco de Camarão em Tortilla de Farinha"
+  },
+  "Smoked Street Corn": {
+    "zh-CN": "烟熏街玉米",
+    "zh-TW": "煙燻街玉米",
+    "ko": "훈제 길거리 옥수수",
+    "ja": "スモークストリートコーン",
+    "es": "Maíz callejero ahumado",
+    "pt": "Milho de rua defumado"
+  },
+  "Vegetable Stir Fry with Tempeh": {
+    "zh-CN": "豆豉炒蔬菜",
+    "zh-TW": "豆豉炒蔬菜",
+    "ko": "템페를 곁들인 야채 볶음",
+    "ja": "野菜のテンペ炒め",
+    "es": "Salteado de verduras con tempeh",
+    "pt": "Refogado de Legumes com Tempeh"
   }
 }
