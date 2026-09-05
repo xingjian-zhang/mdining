@@ -15782,7 +15782,9 @@
     "ko": "애플 사이다",
     "ja": "アップルサイダー",
     "es": "sidra de manzana",
-    "pt": "Cidra de maçã"
+    "pt": "Cidra de maçã",
+    "zh-CN": "苹果酒",
+    "zh-TW": "蘋果酒"
   },
   "Apple Cranberry Crisp": {
     "ko": "애플 크랜베리 ​​크리스프",
@@ -16058,5 +16060,101 @@
     "ja": "野菜のテンペ炒め",
     "es": "Salteado de verduras con tempeh",
     "pt": "Refogado de Legumes com Tempeh"
+  },
+  "Hamburger Bun": {
+    "zh-CN": "汉堡面包",
+    "zh-TW": "漢堡麵包",
+    "ko": "햄버거빵",
+    "ja": "ハンバーガーバンズ",
+    "es": "Pan De Hamburguesa",
+    "pt": "Pão de hambúrguer"
+  },
+  "Canadian Cheese Soup": {
+    "zh-CN": "加拿大芝士汤",
+    "zh-TW": "加拿大芝士湯",
+    "ko": "캐나다 치즈 수프",
+    "ja": "カナディアンチーズスープ",
+    "es": "Sopa De Queso Canadiense",
+    "pt": "Sopa de Queijo Canadense"
+  },
+  "Pickled Mango and Cucumber": {
+    "zh-CN": "腌芒果和黄瓜",
+    "zh-TW": "醃芒果和黃瓜",
+    "ko": "절인 망고와 오이",
+    "ja": "マンゴーとキュウリのピクルス",
+    "es": "Mango y pepino encurtidos",
+    "pt": "Manga e Pepino em Conserva"
+  },
+  "Parmesan & Green Onion Potatoes": {
+    "zh-CN": "帕尔马干酪和葱土豆",
+    "zh-TW": "帕瑪森起司和蔥土豆",
+    "ko": "파마산 치즈와 파 감자",
+    "ja": "パルメザンチーズとネギのポテト",
+    "es": "Patatas con parmesano y cebolla verde",
+    "pt": "Batatas com parmesão e cebola verde"
+  },
+  "Cheddar Cheese Curds": {
+    "zh-CN": "切达干酪凝乳",
+    "zh-TW": "切達乾酪凝乳",
+    "ko": "체다 치즈 커드",
+    "ja": "チェダーチーズカード",
+    "es": "Cuajada de queso cheddar",
+    "pt": "Coalhada De Queijo Cheddar"
+  },
+  "Beef Gravy": {
+    "zh-CN": "牛肉汁",
+    "zh-TW": "牛肉汁",
+    "ko": "쇠고기 그레이비",
+    "ja": "ビーフグレービーソース",
+    "es": "Salsa De Carne",
+    "pt": "Molho de Carne"
+  },
+  "Lemon Pie Donut": {
+    "zh-CN": "柠檬派甜甜圈",
+    "zh-TW": "檸檬派甜甜圈",
+    "ko": "레몬파이 도넛",
+    "ja": "レモンパイドーナツ",
+    "es": "Donut De Tarta De Limón",
+    "pt": "Donut de Torta de Limão"
+  },
+  "Tuna": {
+    "zh-CN": "金枪鱼",
+    "zh-TW": "鮪魚",
+    "ko": "참치",
+    "ja": "マグロ",
+    "es": "Atún",
+    "pt": "Atum"
+  },
+  "Broccoli Quinoa Power Bowl w/ Coconut": {
+    "zh-CN": "西兰花藜麦强力碗配椰子",
+    "zh-TW": "綠花椰菜藜麥強力碗佐椰子",
+    "ko": "코코넛이 들어간 브로콜리 퀴노아 파워볼",
+    "ja": "ブロッコリー・キヌア・ココナッツ入りパワーボウル",
+    "es": "Power Bowl de brócoli, quinua y coco",
+    "pt": "Power Bowl de brócolis e quinoa com coco"
+  },
+  "Hawaiian Chicken": {
+    "zh-CN": "夏威夷鸡",
+    "zh-TW": "夏威夷雞",
+    "ko": "하와이안 치킨",
+    "ja": "ハワイアンチキン",
+    "es": "Pollo Hawaiano",
+    "pt": "Frango Havaiano"
+  },
+  "Black Bean & Hominy Salad": {
+    "zh-CN": "黑豆玉米粥沙拉",
+    "zh-TW": "黑豆玉米粥沙拉",
+    "ko": "검은콩 & 호미니 샐러드",
+    "ja": "黒豆とホミニーのサラダ",
+    "es": "Ensalada de frijoles negros y maíz molido",
+    "pt": "Salada de Feijão Preto e Canjica"
+  },
+  "Yellow Cake with Buttercream Frosting": {
+    "zh-CN": "奶油糖霜黄蛋糕",
+    "zh-TW": "奶油糖霜黃蛋糕",
+    "ko": "버터크림 프로스팅을 곁들인 노란 케이크",
+    "ja": "バタークリームフロスティングのイエローケーキ",
+    "es": "Pastel Amarillo con Glaseado de Crema de Mantequilla",
+    "pt": "Bolo Amarelo com Cobertura de Buttercream"
   }
 }
